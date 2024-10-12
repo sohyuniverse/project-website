@@ -1,0 +1,109 @@
+---
+title: "Quarto Document"
+author: "Sohyun Park"
+date: 'Oct 4, 2024'
+toc: true
+number-sections: true
+highlight-style: pygments
+format: 
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf: 
+    geometry: 
+      - top=30mm
+      - left=20mm
+  docx: default
+bibliography: From 16:09:24.bib
+reference-location: margin
+citation-location: margin
+jupyter: python3
+---
+
+[Quarto Document](https://quarto.org/docs/get-started/authoring/vscode.html)
+
+# Sections
+
+## Colors
+
+- Red
+- Green 
+- Blue
+
+## Shapes
+
+- Square
+- Circle
+- Triangle
+
+## Textures
+
+- Smooth
+- Bumpy
+- Fuzzy
+
+## Equations
+
+Einstein's theory of special relatively that expresses the equivalence of mass and energy:
+
+$E = mc^{2}$
+
+# Citations
+
+Mary says *Hydrophobicity is ubiquitous. Many aquatic and semi-aquatic plants, such as the lotus, utilise  hydrophobicity in their self-cleaning mechanisms which reduce their chances of infection from  harmful pathogens present in the bodies of water in which they grow [2]. Butterflies have  been found to utilise hydrophobicity to ensure that rain droplets which fall on their wings roll  off away from their bodies [3]. Proteins have been found to utilise localised hydrophobicity to  evacuate surrounding water and enable ligand binding [4]. Detergents utilise the hydrophobicity driven self assembly of amphiphilic molecules into micelle structures to remove grease  from clothes [5]. The influence of hydrophobicity is felt in every aspect of our lives.* [@coe_hydrophobicity_nodate].
+
+# Cross References
+
+See @fig-simple in @sec-plot for a demonstration of a simple plot. 
+
+See @eq-stddev to better understand standard deviation.
+
+## Plot {#sec-plot}
+
+```{python}
+#| label: fig-simple
+#| fig-cap: "Simple Plot"
+import matplotlib.pyplot as plt
+plt.plot([1,23,2,4])
+plt.show()
+```
+
+## Equation {#sec-equation}
+
+$$
+s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2}
+$$ {#eq-stddev}
+
+# Callouts
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `tip`, `warning`, `caution`, and `important`.
+:::
+
+# Placing Colorbars
+
+Colorbars indicate the quantitative extent of image data.
+Placing in a figure is non-trivial because room needs to
+be made for them. The simplest case is just attaching a 
+colorbar to each axes:^[See the [Matplotlib Gallery](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/colorbar_placement.html) to explore colorbars further].
+
+```{python}
+#| code-fold: true
+# #| column: screen-inset
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig, axs = plt.subplots(2, 2)
+fig.set_size_inches(20, 8)
+cmaps = ['RdBu_r', 'viridis']
+for col in range(2):
+    for row in range(2):
+        ax = axs[row, col]
+        pcm = ax.pcolormesh(
+          np.random.random((20, 20)) * (col + 1),
+          cmap=cmaps[col]
+        )
+        fig.colorbar(pcm, ax=ax)
+plt.show()
+```

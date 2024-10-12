@@ -1,0 +1,456 @@
+---
+title: List of My Reading
+toc: true
+bibliography: quarto.bib
+reference-location: margin
+citation-location: margin
+---
+
+## 2024/9/21 - 10/3 *What is a Complex System?*
+
+By James Ladyman and Karoline Wiesner
+
+My final-year MSci project involved the study of a complex system, foreign exchange markets. Each individual currency was treated as a spin in the Ising model, and by applying E.T. Jaynes's principle of maximum entropy, we discovered the structure of interactions between these entities. Remarkably, this simple model of magnetism can also describe the phase transitions of liquid-gas systems, as they fall into the same universality class. This model has even been extended to study how critical our brain is, giving rise to the field of the critical brain hypothesis. Therefore, many ideas during my research project were derived from neuroscience papers. The financial market and the brain: both are complex systems.
+
+About a year ago, I read a paper published by James Ladyman, a professor of philosophy of science at Bristol, titled 'What is a Complex System?' [@ladyman2013complex]. As I started my PhD at Bristol, my second supervisor, Francesco, mentioned that he also published a book about complexity. It became clear to me that I should read this book.
+
+Chapter 1 presents The Truisms of Complexity Science as follows: 
+
+*1. More is different.*
+
+*2. Nonliving systems can generate order.*
+
+*3. Complexity can come from simplicity.*
+
+*4. Coordinated behaviour does not require an overall controller.*
+
+*5. Complex systems are often modelled as networks or information processing systems.*
+
+*6. There are various kinds of invariance and forms of universal behaviour in complex systems.*
+
+*7. Complexity science is computational and probabilistic.*
+
+*8. Complexity science involves multiple disciplines.*
+
+*9. There is a difference between the order that complex systems produce and the order of the complex systems themselves.*
+
+Features that are necessary and sufficient for which kinds of complexity and complex system are as follows: 
+
+*1. Numerosity: complex systems involve many interactions among many components.*
+
+*2. Disorder and diversity: the interactions in a complex system are not coordinated or controlled centrally, and the components may differ.*
+
+*3. Feedback: the interactions in complex systems are iterated so that there is feedback from previous interactions on a time scale relevant to the system’s emergent dynamics.*
+
+*4. Non-equilibrium: complex systems are open to the environment and are often driven by something external.*
+
+*5. Spontaneous order and self-organisation: complex systems exhibit structure and order that arises out of the interactions among their parts.*
+
+*6. Nonlinearity: complex systems exhibit nonlinear dependence on parameters or external drivers.*
+
+*7. Robustness: the structure and function of complex systems is stable under relevant perturbations.*
+
+*8. Nested structure and modularity: there may be multiple scales of structure, clustering and specialisation of function in complex systems.*
+
+*9. History and memory: complex systems often require a very long history to exist and often store information about history.*
+
+*10. Adaptive behaviour: complex systems are often able to modify their behaviour depending on the state of the environment and the predictions they make about it.*
+
+---
+
+2024/9/27
+
+Reading *What is a Complex System?* by James Ladyman and Karoline Wiesner. The purpose of reading is to understand how systems out of thermodynamic equilibrium (a feature of complex systems) relate to a wide range of concepts associated with complexity.
+
+   • There was a video that helped clarify what is meant by a Markov chain and a stochastic process being stationary: [Markov Chains Clearly Explained! Part - 1](https://www.youtube.com/watch?v=i3AkTO9HLXo&list=PLM8wYQRetTxBkdvBtz-gw8b9lcVkdXQKV). His other videos are helpful as well. For example, when I saw $P_{ij}^{(n)} = A_{ij}^n$ from the *n-Step Transition Matrix* video (Part 3), it was quite surprising. However, the Part 5 video on hidden Markov models wasn’t very helpful, but reading the appendix in the book was sufficient.
+
+   • What I’ve felt from reading this book (currently at p.90) is that it presents a lot of different ideas and has interesting discussions on the history of science, but I only seem to get excited when it starts mentioning the brain. I'm not sure if I’m necessarily interested in quantifying complexity. From the Apple notes on 28/9/2024:
+
+   *As I’m reading through *What is a Complex System?*, it seems that the description of a complex system arises as we have more representations at different scales of analysis. The concept of ‘complexity’ was destined to arise as the scientific era evolved.  
+   Non-equilibrium systems arise because we define what systems are in thermodynamic equilibrium, which are idealisations.  
+   Things that fail to be idealised fall into this dualistic concept: non-equilibrium.*
+
+---
+
+2024/10/3
+
+It took about two weeks to finish this book. It was an accessible read until I reached chapter 4, which was *Measuring Features of Complex Systems*. In the end, I'm glad that I read it, even though I somehow felt rushed to finish as there were other responsibilities to manage continuously, such as setting up clusters for my university Mac, teaching, office setup, etc. Most importantly, from now on, I am going to focus on reading material that is directly related to my project since it may give the impression to my supervisors that I'm not working hard. Reading a book like this takes a long time, as there are many new terms I had not encountered before.
+
+Anyway, it was a good read. Would I buy a physical copy for myself? Maybe not, but it was a good one.
+
+## 2024/10/4 - *Hydrophobicity Across Length Scales: The Role of Surface Criticality*
+
+By Mary Kathryn Coe
+
+### Q1. *Resolved*
+
+![On page 35, Chapter 2.1](images/Hydrophobicity%20Across%20Length%20Scales/Screenshot%202024-10-04%20at%2001.12.24.png)
+
+I'm not entirely sure why the surface tension is defined in that way, as it's normally considered force per unit area. So, I asked ChatGPT:
+
+<details>
+<summary>Click to reveal the answer!</summary>
+
+The definition of surface tension in this context is derived from the thermodynamic perspective, which connects surface tension to the grand potential difference between a bulk fluid and a system with an interface. The reasoning follows these steps:
+
+1. **Grand Potential Definition**: The grand potential, $\Omega$, is given by:
+   $$
+   \Omega = U - TS - \mu N
+   $$
+   This expression is crucial for systems where particle number and volume are allowed to fluctuate, such as liquid-vapour interfaces.
+
+2. **Surface Tension from Thermodynamics**: Surface tension, $\gamma$, represents the energy cost per unit area to create an interface. In thermodynamic terms, this corresponds to how much the grand potential increases when introducing an interface between coexisting phases (liquid and vapour).
+
+3. **Difference between Bulk and Interface**: The bulk grand potential, $\Omega_b$, corresponds to a system without an interface (uniform bulk). When an interface is introduced, the grand potential changes, denoted as $\Omega_{\text{ex}}$, the excess grand potential:
+   $$
+   \Omega_{\text{ex}} = \Omega - \Omega_b
+   $$
+
+4. **Surface Tension as Excess Grand Potential per Unit Area**: The surface tension is then defined as the excess grand potential per unit area, $A$, required to form the interface:
+   $$
+   \gamma = \frac{\Omega_{\text{ex}}}{A} = \frac{\Omega - \Omega_b}{A}
+   $$
+   This formulation makes sense because surface tension describes the energetic cost to create a unit area of interface between two phases.
+
+In summary, while surface tension is often discussed in terms of force per unit length in simpler mechanical contexts, in thermodynamics, it is expressed as the excess grand potential per unit area. This ties into how interfaces modify the system's energy in comparison to the bulk. The two definitions are equivalent but applied in different contexts: mechanical (force/length) vs. thermodynamic (energy/area).
+
+</details>
+
+<details>
+<summary>Derivation of equation 2.1.8, 2.1.9, 2.1.10</summary>
+
+$$
+\Omega_b(\mu, V, T) = U - TS - \mu N = -pV
+$$
+
+Taking the differential:
+
+$$
+d\Omega_b = d(U - TS - \mu N)
+$$
+
+Using the first law of thermodynamics:
+
+$$
+dU = TdS - pdV + \mu dN
+$$
+
+Differentiating $TS$:
+
+$$
+d(TS) = TdS + SdT
+$$
+
+Differentiating $\mu N$:
+
+$$
+d(\mu N) = \mu dN + N d\mu
+$$
+
+Substituting these into the differential for $\Omega_b$:
+
+$$
+d\Omega_b = (TdS - pdV + \mu dN) - (TdS + SdT) - (\mu dN + N d\mu)
+$$
+
+Simplifying:
+
+$$
+d\Omega_b = -S_b dT - N_b d\mu - p dV
+$$
+
+For constant volume ($dV = 0$), *the volume is assumed to remain constant because we are focusing on surface effects rather than bulk volume changes.*:
+
+$$
+d\Omega_b = -S_b dT - N_b d\mu
+$$
+
+Now for equation (2.1.6):
+
+$$
+\Omega(\mu, V, T) = U - TS - \mu N = -pV + \gamma A
+$$
+
+Taking the differential:
+
+$$
+d\Omega = d(U - TS - \mu N + \gamma A)
+$$
+
+Substituting differentials:
+
+$$
+d\Omega = TdS - pdV + \mu dN - (TdS + SdT) - (\mu dN + N d\mu) + \gamma dA + A d\gamma
+$$
+
+Simplifying:
+
+$$
+d\Omega = -S dT - N d\mu + \gamma dA
+$$
+
+Now subtract:
+
+$$
+d\Omega - d\Omega_b = (-S dT - N d\mu + \gamma dA) - (-S_b dT - N_b d\mu)
+$$
+
+Simplifying:
+
+$$
+d\Omega - d\Omega_b = -(S - S_b)dT - (N - N_b)d\mu + \gamma dA
+$$
+
+This is equation (2.1.8).
+
+---
+
+From equation (2.1.7):
+
+$$
+\gamma = \frac{\Omega_{\text{ex}}}{A} = \frac{\Omega - \Omega_b}{A}
+$$
+
+Taking the differential:
+
+$$
+d\gamma = \frac{d\Omega_{\text{ex}}}{A} = \frac{d\Omega - d\Omega_b}{A}
+$$
+
+Now, use the result from equation (2.1.8):
+
+$$
+d\Omega - d\Omega_b = -(S - S_b) dT - (N - N_b) d\mu + \gamma dA
+$$
+
+So:
+
+$$
+d\Omega_{\text{ex}} = -s_{\text{ex}} A dT - \Gamma d\mu + \gamma dA
+$$
+
+where:
+
+- $s_{\text{ex}} = \frac{S - S_b}{A}$ is the surface excess entropy per unit area,
+- $\Gamma = N - N_b$ is the excess number of particles (adsorption).
+
+Dividing through by $A$, we get:
+
+$$
+\frac{d\Omega_{\text{ex}}}{A} = -s_{\text{ex}} dT - \frac{\Gamma}{A} d\mu + \gamma \frac{dA}{A}
+$$
+
+Now, using the fact that $\gamma \frac{dA}{A}$ is small for constant area, we can ignore this term, giving:
+
+$$
+s_{\text{ex}} dT + \frac{\Gamma}{A} d\mu + d\gamma = 0
+$$
+
+This is equation (2.1.9).
+
+---
+
+Rearrange equation (2.1.9):
+
+$$
+\frac{\Gamma}{A} d\mu = -s_{\text{ex}} dT - d\gamma
+$$
+
+At constant temperature ($dT = 0$), this simplifies to:
+
+$$
+\frac{\Gamma}{A} d\mu = -d\gamma
+$$
+
+Now, dividing both sides by $d\mu$, we get:
+
+$$
+\frac{\Gamma}{A} = -\left(\frac{\partial \gamma}{\partial \mu}\right)_T
+$$
+
+This is equation (2.1.10).
+
+</details>
+
+And I need to ask about equations 2.1.11 to 2.1.13, as I cannot find reference [40].
+
+### Q2. *Resolved*
+
+![On page 40, Chapter 2.3](images/Hydrophobicity%20Across%20Length%20Scales/Screenshot%202024-10-04%20at%2020.33.41.png)
+
+I wasn't sure what the one-particle density is or its use, so I asked ChatGPT:
+
+<details>
+<summary>Click to reveal the answer!</summary>
+
+The one-particle density function, often denoted as $\rho^{(1)}(\mathbf{r})$, represents the probability density of finding a particle at a specific position $\mathbf{r}$ in a system of particles. It describes how particles are distributed in space on average and is a key observable in statistical mechanics and the study of fluids.
+
+The equation given is:
+
+$$
+\hat{\rho}^{(1)}(\mathbf{r}) = \sum_{j=1}^{N} \delta(\mathbf{r} - \mathbf{r}_j)
+$$
+
+This is the **one-particle density operator**, and it has the following meaning:
+
+1. **Dirac Delta Function**: $\delta(\mathbf{r} - \mathbf{r}_j)$ is a Dirac delta function that ‘picks out’ the position of the $j$-th particle. It is equal to zero everywhere except at $\mathbf{r}_j$, where it is infinite, ensuring that it integrates to 1. Thus, it counts the presence of a particle at $\mathbf{r}_j$.
+
+2. **Summation over All Particles**: The sum runs over all particles $j$ from 1 to $N$, so this operator adds up the contributions from all particles in the system, effectively counting the number of particles at position $\mathbf{r}$.
+
+In essence, the one-particle density operator $\hat{\rho}^{(1)}(\mathbf{r})$ gives the total number of particles at position $\mathbf{r}$ in the system. Since it is an operator, the actual **one-particle density** $\langle \hat{\rho}^{(1)}(\mathbf{r}) \rangle$, as defined in equation (2.3.2), is obtained by averaging over all possible configurations of the system in the given ensemble (such as the grand canonical ensemble).
+
+*Why Does It Look Like This?*
+
+The form of equation (2.3.1) stems from how we represent the microscopic distribution of particles in space. The Dirac delta function ensures that for each particle, its position contributes to the overall density only at the exact location where that particle exists. This is a standard way to construct density operators in statistical mechanics because:
+
+- The delta function precisely pinpoints the position of a particle.
+- Summing over all particles ensures that the density operator accounts for the total number of particles present in the system.
+
+This representation allows us to describe spatially inhomogeneous systems where the density may vary across different regions (e.g., near a surface or an external potential). For homogeneous fluids, where particles are evenly distributed, this density would reduce to a constant value (the bulk density $\rho_b$).
+
+*Summary*
+
+The one-particle density operator, $\hat{\rho}^{(1)}(\mathbf{r})$, reflects how particles are distributed in space at a microscopic level. The delta functions track the positions of individual particles, and summing over all particles gives the total density at position $\mathbf{r}$. The actual one-particle density function $\rho^{(1)}(\mathbf{r})$ is then the ensemble average of this operator over all configurations of the system.
+
+</details>
+
+### Q3. *Resolved*
+
+![On page 43, Chapter 2.3](images/Hydrophobicity%20Across%20Length%20Scales/Screenshot%202024-10-04%20at%2022.36.13.png)
+
+I wasn't sure why each variable is specifically chosen to form those equations. For example, in section 2.4.3, I do not understand why λ can be factored out of g on the right-hand side when λ has two different exponents, a and b. So, I asked ChatGPT:
+
+<details>
+<summary>Click to reveal the answer!</summary>
+
+Starting with Equation (2.4.3):
+
+$$
+g(\lambda^a u, \lambda^b v) = \lambda g(u, v)
+$$
+
+This equation states that the function $g(u, v)$ is a **generalised homogeneous function**. To understand why it takes this form and why $\lambda$ appears outside the function on the right-hand side, let's break this down:
+
+1. **Homogeneous Functions**: A function is called homogeneous of degree $\alpha$ if, when all its arguments are scaled by a factor $\lambda$, the function itself scales by $\lambda^\alpha$. Mathematically, for a homogeneous function $f(x, y)$, we would have:
+   $$
+   f(\lambda x, \lambda y) = \lambda^\alpha f(x, y)
+   $$
+   This property is common in critical phenomena where we are dealing with power-law behaviour near critical points.
+
+2. **Generalised Homogeneous Functions**: The function $g(u, v)$ is a **generalised** homogeneous function because it allows different exponents for different variables. In this case, the variables $u$ and $v$ scale with different exponents $a$ and $b$ under the same scaling factor $\lambda$.
+
+   - $\lambda^a u$: Here, $u$ is scaled by $\lambda^a$. This implies that $u$ behaves differently under scaling compared to $v$.
+   - $\lambda^b v$: Similarly, $v$ is scaled by $\lambda^b$.
+
+3. **Why $\lambda$ can be factored out**: The key to understanding why $\lambda$ can be factored out on the right-hand side despite having different exponents for $u$ and $v$ lies in the definition of a generalised homogeneous function. By construction, we impose that when the variables are scaled in a particular way (with exponents $a$ and $b$), the function scales by $\lambda$ itself. This is a property we assign to $g(u, v)$. It doesn’t mean that $\lambda$ is constant; rather, the entire function $g(u, v)$ is designed to respond to the scaling in this specific manner.
+
+   The exponents $a$ and $b$ control how $u$ and $v$ individually respond to scaling, but the overall response of the function is to scale as $\lambda$. The scaling of the function on the right-hand side doesn't contradict the fact that $\lambda$ has different exponents inside the arguments. This is simply a mathematical constraint on how the function $g(u, v)$ behaves under scaling.
+
+   In other words, the form:
+   $$
+   g(\lambda^a u, \lambda^b v)
+   $$
+   ensures that the function scales uniformly by $\lambda$, despite the individual variables scaling differently.
+
+Equation (2.4.4): 
+
+Now, let's explain how this scaling idea applies to the singular part of the free energy in equation (2.4.4):
+
+$$
+\omega_{\text{sing}}(\delta \mu, t) = \lambda^{-d} \omega_{\text{sing}}(\lambda^a \delta \mu, \lambda^b t)
+$$
+
+1. **Variables**:
+   - $\delta \mu = \mu - \mu_{\text{co}}$ is the difference between the chemical potential $\mu$ and the critical chemical potential $\mu_{\text{co}}$.
+   - $t$ is the reduced temperature: $t = \frac{T - T_c}{T_c}$.
+   - $d$ is the dimensionality of the system (important for scaling relations).
+
+2. **Applying the Scaling Relation**:
+   Here, the function $\omega_{\text{sing}}$, which represents the singular part of the free energy, is assumed to be a generalised homogeneous function. This means it should follow a scaling law similar to the one introduced in equation (2.4.3).
+
+   The variables $\delta \mu$ and $t$ are scaled by $\lambda^a$ and $\lambda^b$, respectively, where $a$ and $b$ are scaling exponents that determine how $\delta \mu$ and $t$ change when scaled by $\lambda$.
+
+3. **Why $\lambda^{-d}$?**
+   - The factor $\lambda^{-d}$ appears because we are dealing with free energy, which is an extensive quantity. In thermodynamics, extensive quantities scale with the volume of the system, and in $d$-dimensional space, the volume scales as $\lambda^d$. Since we are dealing with the **singular** part of the free energy, the scaling reflects the dimensionality of the system. The minus sign arises because, under scaling, the free energy decreases as the system grows larger.
+
+4. **The Free Choice of $\lambda$**:
+   The scaling factor $\lambda$ is arbitrary, meaning you can choose its value to simplify the equation. In this case, we choose $\lambda^b = t^{-1}$, which simplifies the second argument (the temperature dependence) of $\omega_{\text{sing}}$. By doing this, we reduce the complexity of the equation and make the temperature scaling explicit.
+
+Equation (2.4.5): 
+
+This equation shows the final form after choosing $\lambda^b = t^{-1}$:
+
+$$
+\omega_{\text{sing}}(\delta \mu, t) = t^{d/b} \omega_{\text{sing}}(t^{-a/b} \delta \mu, 1)
+$$
+
+- **Why this form?**
+  By setting $\lambda^b = t^{-1}$, we have scaled out the temperature dependence in the second argument of $\omega_{\text{sing}}$. This isolates the temperature dependence into the prefactor $t^{d/b}$, while leaving a scaling function that depends only on the ratio $\delta \mu / t^{a/b}$, which is now the only scaling variable.
+
+  - $t^{d/b}$: This represents how the singular part of the free energy depends on temperature near the critical point. The exponent $d/b$ dictates how strongly the free energy diverges as $t \to 0$ (the critical point).
+  - $\Sigma\left( \frac{\delta \mu}{t^{a/b}} \right)$: The function $\Sigma$ is the scaling function, which encodes the remaining dependence on the scaled chemical potential $\delta \mu / t^{a/b}$.
+
+In Summary:
+- In equation (2.4.3), the exponents $a$ and $b$ control how the variables $u$ and $v$ scale. Despite their different scaling behaviours, the overall function scales by $\lambda$ because it is designed as a generalised homogeneous function.
+- In equation (2.4.4), the singular part of the free energy near the critical point follows a similar scaling law, with the dimensionality $d$ appearing as a factor to reflect the extensive nature of free energy.
+- In equation (2.4.5), we choose $\lambda^b = t^{-1}$ to simplify the scaling form, making the dependence on temperature explicit and reducing the complexity of the equation. The resulting expression separates the prefactor $t^{d/b}$ and leaves a scaling function that depends only on the ratio $\delta \mu / t^{a/b}$, which captures the critical behaviour.
+
+</details>
+
+<details>
+<summary>Fluctuations? *One correlated entity*?</summary>
+
+In the context of phase transitions, particularly near a **critical point**, the term "fluctuations" refers to **fluctuations in the local density** of the system. Let’s explain in detail what this means, especially in the context of **critical opalescence** and **long-range correlations**.
+
+1. **Density Fluctuations**:
+When we talk about "density" in this context, we mean the **number density** of particles in a given volume. In simple terms, it's how densely packed the particles are in a particular region. The density can fluctuate due to thermal motion, and these fluctuations are typically small and localised in non-critical conditions.
+
+However, as a system approaches the critical point of a phase transition (e.g., a liquid-vapour transition), the magnitude of these fluctuations grows dramatically.
+
+#### What happens near the critical point?
+- **Correlation Length ($\xi$)**: The correlation length $\xi$ represents the distance over which particles in the system are correlated or "communicate" with each other. Normally, this length is finite, and beyond this distance, the properties of the system in one region do not affect another region.
+  
+  Near the critical point, however, $\xi \to \infty$. This means that particles separated by very large distances (even macroscopic scales) are correlated with each other. The entire system essentially becomes **one correlated entity**.
+  
+- **Diverging Fluctuations**: As the correlation length grows, the fluctuations in the local density (i.e., how many particles are in a given region at any time) also grow larger. This happens because, when the correlation length is large, particles across large distances influence each other. As a result, fluctuations occur over all length scales, from small to very large.
+
+- **Density Fluctuations**: Specifically, these are **fluctuations in the number of particles** in a given volume. Imagine regions in a fluid where the particle density becomes temporarily higher or lower than the average. At the critical point, these fluctuations become very large and occur over very large distances, leading to the system appearing "cloudy" or "milky" — this is the phenomenon of **critical opalescence**.
+
+2. **What exactly is fluctuating?**
+At the critical point, **density** is the key fluctuating quantity, but more generally, the term “fluctuations” can refer to:
+
+- **Order Parameter Fluctuations**: Near a critical point, there is typically an **order parameter** that characterises the phase transition. For example, in the liquid-vapour transition, this order parameter could be the **difference in density** between the liquid and vapour phases. As the system approaches the critical point, the fluctuations in the order parameter become large.
+  
+  For example, in a fluid near the liquid-vapour critical point:
+  - In the liquid phase, particles are densely packed.
+  - In the vapour phase, particles are more spread out.
+  
+  Near the critical point, there is no sharp distinction between liquid and vapour phases. Instead, the system fluctuates between states that resemble both phases. You might see a region that has the density of a liquid next to a region that has the density of a vapour, and these regions appear and disappear rapidly.
+
+3. **Why do these fluctuations occur?**
+At the critical point, the system is in a delicate balance between two phases (e.g., liquid and vapour). The free energy landscape becomes very flat near the critical point, meaning that the system can fluctuate easily between different configurations with very little energy cost. These fluctuations span all length scales, leading to the phenomenon where large regions of the system can fluctuate in density.
+
+4. **Critical Opalescence**:
+The critical opalescence mentioned in the text is a direct consequence of these large fluctuations in density. Light passing through the fluid is scattered by the density fluctuations. Since the fluctuations occur over a wide range of length scales (from very small to very large), they scatter light across all wavelengths, leading to the "milky" appearance of the fluid near the critical point.
+
+- **Why does light scatter?** Light is scattered by regions of varying density because the refractive index of the fluid depends on its density. When the density fluctuates significantly over large distances, light passing through the fluid encounters regions of different densities, leading to scattering in all directions.
+
+Summary:
+
+- **What is fluctuating near the critical point?**: Primarily, the **number density** (i.e., the number of particles per unit volume) fluctuates near the critical point.
+- **Why do these fluctuations grow?**: As the correlation length $\xi$ becomes large, regions of the system separated by large distances become correlated, allowing large-scale fluctuations in density.
+- **What’s the physical manifestation?**: These fluctuations lead to observable phenomena such as **critical opalescence**, where light is scattered by the large fluctuations in density, causing the fluid to appear milky or cloudy.
+
+In short, the "fluctuations" near the critical point refer to **density fluctuations**, which are tied to the divergence of the correlation length, and these fluctuations grow larger and affect larger regions of the system as the critical point is approached.
+
+</details>
+
+---
+
+From chapter 2.4.3, I decided to skim through this document as it became too technical to understand the entire thesis when it began with perturbation theory. Additionally, many concepts here are primarily from equilibrium statistical physics.
+
+::: {.callout-note}
+Chapter 2.4.5: *Wetting and Drying Phase Transitions* is very well written and full of useful knowledge. For the next project meeting, let's prepare a slide to go over this.
+:::
+
+[Wetting and Drying Phase Transitions](documents/Coe-Hydrophobicity-Across-Length-Scales-The-Role-of-S-49-54.pdf)

@@ -1,0 +1,44 @@
+# Theme Showdown
+
+From a pool of [25 themes](https://quarto.org/docs/output-formats/html-themes.html), the **chosen ones** are:
+
+   • default  
+   • flatly  
+   • minty  
+   • sandstone  
+   • united  
+   • yeti
+
+Cue the dramatic music...
+
+<audio controls>
+  <source src="music/Rocky Balboa - Theme Song.mp3" type="audio/mpeg">
+</audio>
+
+**Round 1: flatly vs default**  
+Winner: **flatly**!
+
+**Round 2: minty vs sandstone**  
+Result: A tie!
+
+**Round 3: united vs yeti**  
+Winner: **united**!
+
+---
+
+## **Semi-Finals**
+
+**Match 1: flatly vs minty**  
+Winner: **flatly** (Minty was fresh, but flatly had the edge!)
+
+**Match 2: united vs sandstone**  
+Winner: **united**!
+
+---
+
+## **Final Round!**
+
+**flatly vs united**  
+Winner: **flatly**! More professional, less adorable. But honestly, united put up a cute fight.
+
+For now, **flatly** reigns supreme... but united is right there, ready for a rematch.

@@ -1,0 +1,48 @@
+---
+title: Project Description
+toc: true
+bibliography: From 14:08:24.bib
+csl: diabetologia.csl
+reference-location: margin
+citation-location: margin
+---
+
+In terms of the project on ‘Active Drying’, *drying* is an equilibrium surface phase transition that occurs when a fluid at liquid-vapour coexistence is in contact with an infinite planar substrate that is sufficiently weakly attractive to the fluid particles, such that the vapour phase prefers to be at the substrate. Surface phase transitions can be first-order or critical, and previous results (see [@evans_drying_2017; @evans_unified_2019]) show that drying is generally a critical surface phase transition.
+
+Previous work on ABPs has shown that they can exhibit a first-order wetting transition (see [@turci_partial_2024]). This effect has been investigated by looking at liquid-vapour ‘slabs’ and droplets, showing consistent results. However, the mechanism by which the wetting transition is traversed does not seem to allow for the possibility of a drying transition. To have a chance of observing this, we need to understand the mechanism by which ABPs interact with a surface.
+
+The aggregation effect at a hard wall arises because ABPs become trapped at the wall and cannot diffuse away quickly enough. The project will attempt to induce a drying transition by coupling the ABP velocity vector to the wall-fluid interaction in such a way as to produce a torque that creates an effective wall-fluid repulsion, possibly enabling a drying transition. Our task will be to modify a standard MD simulation package to introduce this torque and then proceed similarly to the Turci and Wilding paper in PRL 2021 (see [@turci_wetting_2021]), to try to observe a drying transition. If evidence for this is seen, then we will try to quantify the character of the transition and analyse its critical properties.
+
+# Useful Links
+
+## General
+
+[Weekly update of my TSR (Teaching Support Roles)](https://docs.google.com/spreadsheets/d/1KawPLUBrlTWHJFp9Wju62MBNK2TeH_sQlse-GgJhXiY/edit?usp=sharing)
+
+[Document search](https://www-webofscience-com.bris.idm.oclc.org/wos/woscc/basic-search)
+
+[Upcoming events by Nonlinear and Complex Physics Group](http://complexity-physics.org/blog/category/events/)
+
+[Courses to audit](https://www.bris.ac.uk/unit-programme-catalogue/RouteStructure.jsa?byCohort=N&cohort=Y&routeLevelCode=4&ayrCode=24%2F25&modeOfStudyCode=Full+Time&programmeCode=2PHYS024U)
+
+[MPAGS Training Modules](https://warwick.ac.uk/fac/sci/physics/mpags/modules/)
+
+[Physics PGR SharePoint site](https://uob.sharepoint.com/sites/physics/SitePages/postgraduate-research-students-category.aspx?xsdata=MDV8MDJ8fDJiODQ5OWNkN2NmODQ1YjI1NTZjMDhkY2RjOWMxZjA0fGIyZTQ3ZjMwY2Q3ZDRhNGVhNWRhYjE4Y2YxYTQxNTFifDB8MHw2Mzg2Mjc4MTAyNzMxNTQ0MTJ8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMMk5vWVhSekx6RTVPakF4Wm1VM1pHSmtMVFprTlRFdE5EZGxZUzFoTVdJMExUWm1OV0kwWm1WaFpEQmxZMTgxT1RZelpUWmpNeTB5Wm1NNUxUUTBZVGt0T1dJNU1DMWlZVEptTlRaaU9UQXlORFJBZFc1eExtZGliQzV6Y0dGalpYTXZiV1Z6YzJGblpYTXZNVGN5TnpFNE5ESXlOams0TUE9PXw5NDBiYTM2YzEyZjE0Y2I1NTU2YzA4ZGNkYzljMWYwNHwyMjFiOWI1Nzc0MmI0NjRkYjIxMTIwOTFmYmZhNzBjZA%3D%3D&sdata=Zm12U1I1RGhFMmpDQm5XM200UENFbHlyV0xHZnBLRURVcWtxVUdNeklvMD0%3D&ovuser=b2e47f30-cd7d-4a4e-a5da-b18cf1a4151b%2Csp13328%40bristol.ac.uk&OR=Teams-HL&CT=1727184244025&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNDA4MTcwMDQxOSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D): 
+*These pages should provide you with a 'one-stop-shop' for all of your PGR needs, including information about progress procedures, forms and examinations.*
+
+[MyERP](https://myerp.bris.ac.uk/agresso/)
+
+## IT
+
+[ACRC HPC Documentation and User Guides](https://www.acrc.bris.ac.uk/protected/hpc-docs/index.html#)
+
+[Buying and borrowing IT](https://uob.sharepoint.com/sites/itservices/SitePages/buying-it.aspx)
+
+[Introducing HOOMD-blue](https://hoomd-blue.readthedocs.io/en/latest/tutorial/00-Introducing-HOOMD-blue/00-index.html): 
+*HOOMD-blue is a Python package that performs Molecular Dynamics and hard particle Monte Carlo simulations. HOOMD-blue is general and can be used to model nanoparticles, bead-spring polymers, active matter, and many other types of systems.*
+
+[Data Science and Research Software Engineering Training](https://bristol-training.github.io)
+
+[BDDS Python workshops](https://github.com/BristolDataScienceSociety)
+
+[Quarto Tutorial](https://quarto.org/docs/get-started/hello/vscode.html)

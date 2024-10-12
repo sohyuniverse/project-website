@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  sidebar:
+    style: "docked"
+    search: true
+    title: "Bristol Active Matter Group"
+    contents:
+      - text: "Home"
+        href: index.qmd
+      - section: "Project Notes"
+        contents: 
+          - notes.qmd
+          - reading.qmd
+      - section: "Website Design"
+        contents:
+          - theme.qmd
+          - section: "Quarto Tutorial"
+            contents:
+            - tutorial-basics.qmd
+            - tutorial-computations.qmd
+            - tutorial-document.qmd
+      - text: "About"
+        href: about.qmd
+
+format:
+  html:
+    theme: flatly
+    toc: true
