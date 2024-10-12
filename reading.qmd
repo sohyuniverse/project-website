@@ -453,4 +453,4 @@ From chapter 2.4.3, I decided to skim through this document as it became too tec
 Chapter 2.4.5: *Wetting and Drying Phase Transitions* is very well written and full of useful knowledge. For the next project meeting, let's prepare a slide to go over this.
 :::
 
-[Wetting and Drying Phase Transitions](documents/Coe-Hydrophobicity-Across-Length-Scales-The-Role-of-S-49-54.pdf)
+[Wetting and Drying Phase Transitions](documents/Coe - Hydrophobicity Across Length Scales The Role of S-49-54.pdf)

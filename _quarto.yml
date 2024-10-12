@@ -27,5 +27,5 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme: united
     toc: true
