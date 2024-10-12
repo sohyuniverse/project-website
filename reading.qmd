@@ -1,7 +1,7 @@
 ---
 title: List of My Reading
 toc: true
-bibliography: quarto.bib
+bibliography: references/quarto.bib
 reference-location: margin
 citation-location: margin
 ---

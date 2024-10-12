@@ -1,7 +1,7 @@
 ---
 title: Project Description
 toc: true
-bibliography: From 14:08:24.bib
+bibliography: references/From 14:08:24.bib
 csl: diabetologia.csl
 reference-location: margin
 citation-location: margin

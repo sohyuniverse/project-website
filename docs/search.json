@@ -31,5 +31,266 @@
       "Project Notes",
       "List of My Reading"
     ]
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Busy weeks due to starting three teaching modules: Weekly update of my TSR (Teaching Support Roles). Looking back, I wish I could have completed more reading, as there isn’t much to talk about in terms of active matter research for the next project meeting on Monday.",
+    "crumbs": [
+      "Project Notes",
+      "Weekly Notes"
+    ]
+  },
+  {
+    "objectID": "notes.html#week-2",
+    "href": "notes.html#week-2",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Busy weeks due to starting three teaching modules: Weekly update of my TSR (Teaching Support Roles). Looking back, I wish I could have completed more reading, as there isn’t much to talk about in terms of active matter research for the next project meeting on Monday.",
+    "crumbs": [
+      "Project Notes",
+      "Weekly Notes"
+    ]
+  },
+  {
+    "objectID": "notes.html#week-3",
+    "href": "notes.html#week-3",
+    "title": "Weekly Notes",
+    "section": "Week 3",
+    "text": "Week 3\n\n2024/9/30 Weekly project meeting\n\nThings to discuss\n\nMeeting with Max on Friday at noon (4th of Oct), thinking of going to Budapest Café\n‘Setting Expectations’ document\nTwo conferences to join:\n• The Dao of Complexity workshop\n• The Statistical Physics of Cognition\nSo, a trip to London, how to sort out things with Clarity, and other arrangements.\nSet up RDSF data storage (Though I checked, OneDrive for Business offers 2TB of storage: Overview of OneDrive for Business)\nBrief plan discussion: reading Mary Coe’s thesis, then Understanding Molecular Simulation book\nAre there MSci students working on this project? \n\n\n\n\n2024/10/2 Why are the clouds at the same height when I look at the cloudy sky?\n\n\n\nView from Brandon Hill\n\n\nWhen we observe clouds appearing at the same height, it’s often due to a phenomenon where a particular layer of the atmosphere has the right conditions for cloud formation. In the troposphere (the lowest layer of the atmosphere), clouds form when the air cools to its dew point, causing water vapour to condense into droplets or ice crystals. This typically happens at specific altitudes where temperature and pressure conditions are ideal for condensation.\nClouds that seem to form at the same height are likely part of the same atmospheric layer, known as a cloud base. The cloud base marks the altitude at which rising air reaches its dew point. If the conditions across the sky are uniform, we’ll see many clouds forming at roughly the same altitude, giving the illusion of a flat layer of clouds.\nCloud formation is fundamentally a non-equilibrium process. It results from dynamic atmospheric conditions like rising air currents, changes in temperature and pressure, and the continuous exchange of energy. These factors drive processes such as condensation and evaporation, which are inherently out of equilibrium. This aligns with the behaviour of active matter systems, where each particle consumes energy to move, keeping the system perpetually out of equilibrium.\nTo create an effective repulsion in our ABP simulations, we consider modifying the wall-fluid interactions to induce a torque that reorients particles away from the surface. One approach might be to introduce an anisotropic interaction potential near the wall. When an ABP approaches the surface, this potential could apply a torque that turns the particle’s propulsion direction away from the wall, effectively reducing its tendency to accumulate there.\n\n\n\n2024/10/5 An idea of beginning the introduction\nThis thesis is ultimately about phase transitions. The central question is: what happens during a transition, for example, from water to ice, from a fluid to a superfluid, or from a paramagnet to a ferromagnet? The physics of such transitions is rich and complex. There are a number of different theoretical tools available to understand them. The study begins by examining thermodynamics and extends to the application of statistical mechanics to these transitions. Additionally, statistical field theory, a fully-fledged field theory similar to what is seen in particle physics or general relativity, will be applied. The goal is to use these approaches, along with concepts of symmetry and other properties, to understand different phases of matter.\nFor a long time, understanding phase transitions was a mystery, especially what’s known as a critical point. It’s an interesting situation: we have something as familiar as water, and it was not until the mid-20th century that significant progress was made. The phase behaviour of water can be examined using a pressure-temperature diagram:\n\n\n\nPhase diagram of water (Cmglee n.d.)\n\nCmglee. n.d. “Phase Diagram of Water Simplified.” https://commons.wikimedia.org/wiki/File:Phase_diagram_of_water_simplified.svg.\n\n\n\nOn the horizontal axis is temperature, and on the vertical axis is pressure.\nThe phase diagram for water features three regions: steam, water, and ice.\nThere’s a point called the triple point, where all three phases coexist, and a critical point, which marks the end of the liquid-gas boundary.\n\nWater is essential, as most of us are mostly water, and yet the physics of what happens at this critical point wasn’t understood for the longest time. It’s a system that is incredibly close to us, yet to understand it requires some of the deepest ideas in physics, particularly the renormalisation group.\nIn this sense, phase transitions form a uniquely positioned subject. They are simultaneously very close to our everyday experience and yet require extremely deep ideas to understand properly. Most other areas of physics are typically far removed from daily life. Quantum mechanics operates on microscopic scales, and astrophysics on cosmological scales, both far from what can be intuitively grasped. But here, some really deep, beautiful puzzles are found in the world around us.",
+    "crumbs": [
+      "Project Notes",
+      "Weekly Notes"
+    ]
+  },
+  {
+    "objectID": "notes.html#week-4",
+    "href": "notes.html#week-4",
+    "title": "Weekly Notes",
+    "section": "Week 4",
+    "text": "Week 4\n\n2024/10/7 Weekly project meeting\n\nThings to discuss\n\nOverleaf template for the thesis, as I will start writing what I learn for either the introduction or theory sections. Found one: Link\n\n\n\n\n2024/10/8 Analytical Mechanics\nI’ve been watching Tom’s lectures on Analytical Mechanics once more. I’ve just finished part 2. The topics are:\n\nCalculus of variations\nLagrangian mechanics\nHamiltonian mechanics\n\nWhy did I start watching it?\nWell, during the last project meeting, I had a naïve question about whether we could formulate a Lagrangian for the drying scenario. For example, in my supervisor’s papers, they couldn’t manage to observe the drying transition in their setup. So, I asked if, when the trajectory of all particles is away from the surface, we could possibly derive an analytical equation of forces between the particles and the wall to induce torque. Just a pure naïve idea.\nNigel mentioned that the principle of least action makes sense in equilibrium settings, so I had to revise that concept. The Lagrangian is the kinetic energy minus the potential energy, whatever this quantity is. In non-equilibrium systems, energy keeps changing since active agents continuously consume energy. Also, the effective potential depends on the properties of the wall. So, the Lagrangian would become time-dependent, which now makes sense based on what Nigel said.\nThe beautiful theorem was revisited from his lectures: Noether’s theorem.\n\nIf the laws of physics don’t depend on time, energy is conserved.\nSimilarly, if the system has translational or rotational invariance, momentum or angular momentum is conserved, respectively.\n\nThis is beautiful: conserved quantities derive from the symmetries of the system. It also implies that since energy is not conserved for the system I’m interested in, the equations of motion would be time-dependent. I think it would be useful to pay attention to how the equations of motion for active Brownian particles are formulated once I revise their papers.\nAs for his lectures, I’ll continue with part 3 since I’ve already watched the first two. That said, I remember his lecture notes being better than the video recordings, although his video lectures on phase transitions were much more inspiring. So, a note for my future self: when revising the content of the analytical formulation of mechanics, read his lecture notes.\n\n\nPrograms I made\nBefore doing that, I made a Python program that:\n\ndownloads all lectures from Mediasite from the unit I select,\ndetects and removes sections of silence in both the video and audio tracks, applying a buffer of 0.5 seconds before and after each silence to make the transitions smoother,\nsyncs the video and audio together seamlessly to create an mp4 file (the original files were mov, which were almost 10x larger in size),\nkeeps the system active throughout the process by using caffeinate to prevent the computer from going to sleep,\ntracks and reports the download status, ensuring that any interrupted downloads are handled smoothly by automatically updating cookies for authentication,\nensures frame rate consistency to avoid any sync issues that might arise due to different frame rates,\nautomatically manages temporary files created during the silence detection process, keeping the system clean after the task is done.\n\nI’m not sure if I’m allowed to share this code on GitHub, but it was a fun project.\n\n\n\nDownloaded lectures\n\n\nWhy did I make it? Because…\n\nI’ve always felt lazy logging into Blackboard (the university website) every time I wanted to watch videos during my undergraduate years.\nI personally wanted to collect the lectures before they disappeared from the website.\nThere are many pauses in the lectures where the lecturer doesn’t speak while writing equations or words. Removing these pauses also saves total viewing time. Observe the difference:\n\nTotal time to watch all videos of AM (Analytical Mechanics):\n\nAM: 9 hours, 18 minutes, 34 seconds\nProcessed_AM: 8 hours, 23 minutes, 50 seconds\nProcessed_AM (no buffer of 0.5s): 7 hours, 23 minutes, 28 seconds\n\nTotal time to watch all videos of PT (Physics of Phase Transitions):\n\nPT: 11 hours, 42 minutes, 19 seconds\nProcessed_PT: 10 hours, 49 minutes, 18 seconds\nProcessed_PT (no buffer of 0.5s): 9 hours, 45 minutes, 29 seconds\n\nThe buffer is necessary as it makes the transitions feel more natural by introducing a brief pause rather than cutting the silences completely. Watch an example below (duration change: 18:09 (before processing) → 15:29 (after processing with buffers)):\n\n\nVideo\nAM 2.5a Noether’s Theorem",
+    "crumbs": [
+      "Project Notes",
+      "Weekly Notes"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Project Description",
+    "section": "",
+    "text": "In terms of the project on ‘Active Drying’, drying is an equilibrium surface phase transition that occurs when a fluid at liquid-vapour coexistence is in contact with an infinite planar substrate that is sufficiently weakly attractive to the fluid particles, such that the vapour phase prefers to be at the substrate. Surface phase transitions can be first-order or critical, and previous results (see [1, 2]) show that drying is generally a critical surface phase transition.\nPrevious work on ABPs has shown that they can exhibit a first-order wetting transition (see [3]). This effect has been investigated by looking at liquid-vapour ‘slabs’ and droplets, showing consistent results. However, the mechanism by which the wetting transition is traversed does not seem to allow for the possibility of a drying transition. To have a chance of observing this, we need to understand the mechanism by which ABPs interact with a surface.\nThe aggregation effect at a hard wall arises because ABPs become trapped at the wall and cannot diffuse away quickly enough. The project will attempt to induce a drying transition by coupling the ABP velocity vector to the wall-fluid interaction in such a way as to produce a torque that creates an effective wall-fluid repulsion, possibly enabling a drying transition. Our task will be to modify a standard MD simulation package to introduce this torque and then proceed similarly to the Turci and Wilding paper in PRL 2021 (see [4]), to try to observe a drying transition. If evidence for this is seen, then we will try to quantify the character of the transition and analyse its critical properties.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#general",
+    "href": "index.html#general",
+    "title": "Project Description",
+    "section": "General",
+    "text": "General\nWeekly update of my TSR (Teaching Support Roles)\nDocument search\nUpcoming events by Nonlinear and Complex Physics Group\nCourses to audit\nMPAGS Training Modules\nPhysics PGR SharePoint site: These pages should provide you with a ‘one-stop-shop’ for all of your PGR needs, including information about progress procedures, forms and examinations.\nMyERP",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#it",
+    "href": "index.html#it",
+    "title": "Project Description",
+    "section": "IT",
+    "text": "IT\nACRC HPC Documentation and User Guides\nBuying and borrowing IT\nIntroducing HOOMD-blue: HOOMD-blue is a Python package that performs Molecular Dynamics and hard particle Monte Carlo simulations. HOOMD-blue is general and can be used to model nanoparticles, bead-spring polymers, active matter, and many other types of systems.\nData Science and Research Software Engineering Training\nBDDS Python workshops\nQuarto Tutorial",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Purpose of this Website",
+    "section": "",
+    "text": "Purpose of this Website\nAs I ended week 2 on the 27th of September, I thought it would be useful to keep track of the following from next week (week 3):\n\nWhat I did every day (mostly bookmarking or a summary)\nA brief summary of what was discussed in project meetings\nThings I hope to discuss or ask in the next project meeting\nUseful resources as links, since I often don’t keep track of what I bookmarked in Safari\n\nAuthor: Sohyun Park\nSupervisors: Prof. Nigel Wilding, Dr. Francesco Turci",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "tutorial-document.html",
+    "href": "tutorial-document.html",
+    "title": "Quarto Document",
+    "section": "",
+    "text": "Quarto Document",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Document"
+    ]
+  },
+  {
+    "objectID": "tutorial-document.html#colors",
+    "href": "tutorial-document.html#colors",
+    "title": "Quarto Document",
+    "section": "1.1 Colors",
+    "text": "1.1 Colors\n\nRed\nGreen\nBlue",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Document"
+    ]
+  },
+  {
+    "objectID": "tutorial-document.html#shapes",
+    "href": "tutorial-document.html#shapes",
+    "title": "Quarto Document",
+    "section": "1.2 Shapes",
+    "text": "1.2 Shapes\n\nSquare\nCircle\nTriangle",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Document"
+    ]
+  },
+  {
+    "objectID": "tutorial-document.html#textures",
+    "href": "tutorial-document.html#textures",
+    "title": "Quarto Document",
+    "section": "1.3 Textures",
+    "text": "1.3 Textures\n\nSmooth\nBumpy\nFuzzy",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Document"
+    ]
+  },
+  {
+    "objectID": "tutorial-document.html#equations",
+    "href": "tutorial-document.html#equations",
+    "title": "Quarto Document",
+    "section": "1.4 Equations",
+    "text": "1.4 Equations\nEinstein’s theory of special relatively that expresses the equivalence of mass and energy:\nE = mc^{2}",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Document"
+    ]
+  },
+  {
+    "objectID": "tutorial-document.html#sec-plot",
+    "href": "tutorial-document.html#sec-plot",
+    "title": "Quarto Document",
+    "section": "3.1 Plot",
+    "text": "3.1 Plot\n\n\nCode\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: Simple Plot",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Document"
+    ]
+  },
+  {
+    "objectID": "tutorial-document.html#sec-equation",
+    "href": "tutorial-document.html#sec-equation",
+    "title": "Quarto Document",
+    "section": "3.2 Equation",
+    "text": "3.2 Equation\n\ns = \\sqrt{\\frac{1}{N-1} \\sum_{i=1}^N (x_i - \\overline{x})^2}\n\\tag{1}",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Document"
+    ]
+  },
+  {
+    "objectID": "tutorial-basics.html",
+    "href": "tutorial-basics.html",
+    "title": "Quarto Basics",
+    "section": "",
+    "text": "Quarto Basics\nFor a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Basics"
+    ]
+  },
+  {
+    "objectID": "tutorial-computations.html",
+    "href": "tutorial-computations.html",
+    "title": "Quarto Computations",
+    "section": "",
+    "text": "Quarto Computations",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Computations"
+    ]
+  },
+  {
+    "objectID": "tutorial-computations.html#numpy",
+    "href": "tutorial-computations.html#numpy",
+    "title": "Quarto Computations",
+    "section": "NumPy",
+    "text": "NumPy\n\n\nCode\nimport numpy as np\na = np.arange(15).reshape(3, 5)\na\n\n\narray([[ 0,  1,  2,  3,  4],\n       [ 5,  6,  7,  8,  9],\n       [10, 11, 12, 13, 14]])",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Computations"
+    ]
+  },
+  {
+    "objectID": "tutorial-computations.html#matplotlib",
+    "href": "tutorial-computations.html#matplotlib",
+    "title": "Quarto Computations",
+    "section": "Matplotlib",
+    "text": "Matplotlib\n\n\nCode\nimport matplotlib.pyplot as plt\n\nfig = plt.figure()\n# fig.set_size_inches(12, 7)\nx = np.arange(10)\ny = 2.5 * np.sin(x / 20 * np.pi)\nyerr = np.linspace(0.05, 0.2, 10)\n\nplt.errorbar(x, y + 3, yerr=yerr, label='both limits (default)')\nplt.errorbar(x, y + 2, yerr=yerr, uplims=True, label='uplims=True')\nplt.errorbar(x, y + 1, yerr=yerr, uplims=True, lolims=True,\n             label='uplims=True, lolims=True')\n\nupperlimits = [True, False] * 5\nlowerlimits = [False, True] * 5\nplt.errorbar(x, y, yerr=yerr, uplims=upperlimits, lolims=lowerlimits,\n             label='subsets of uplims and lolims')\n\nplt.legend(loc='lower right')\nplt.show(fig)\n\n\n\n\n\n\n\n\nFigure 1: Errorbar limit selector",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Computations"
+    ]
+  },
+  {
+    "objectID": "tutorial-computations.html#plotly",
+    "href": "tutorial-computations.html#plotly",
+    "title": "Quarto Computations",
+    "section": "Plotly",
+    "text": "Plotly\n\nCode\n\"\"\"\nThis allows our figure display to span out beyond the normal body text column.\n#| column: page\n\"\"\"\n\nimport plotly.express as px\nimport plotly.io as pio\ngapminder = px.data.gapminder()\ndef gapminder_plot(year):\n    gapminderYear = gapminder.query(\"year == \" + \n                                    str(year))\n    fig = px.scatter(gapminderYear, \n                     x=\"gdpPercap\", y=\"lifeExp\",\n                     size=\"pop\", size_max=60,\n                     hover_name=\"country\")\n    fig.show()\n    \ngapminder_plot(1957)\ngapminder_plot(2007)\n\n\n\n\n\n\n\n\n\n                                                \n\n\n(a) Gapminder: 1957\n\n\n\n\n\n\n\n\n                                                \n\n\n(b) Gapminder: 2007\n\n\n\n\n\n\n\nFigure 2: Life Expectancy and GDP",
+    "crumbs": [
+      "Website Design",
+      "Quarto Tutorial",
+      "Quarto Computations"
+    ]
+  },
+  {
+    "objectID": "theme.html",
+    "href": "theme.html",
+    "title": "Theme Showdown",
+    "section": "",
+    "text": "From a pool of 25 themes, the chosen ones are:\n• default\n• flatly\n• minty\n• sandstone\n• united\n• yeti\nCue the dramatic music…\n\n\n\nRound 1: flatly vs default\nWinner: flatly!\nRound 2: minty vs sandstone\nResult: A tie!\nRound 3: united vs yeti\nWinner: united!\n\n\n\nMatch 1: flatly vs minty\nWinner: flatly (Minty was fresh, but flatly had the edge!)\nMatch 2: united vs sandstone\nWinner: united!\n\n\n\n\nflatly vs united\nWinner: flatly! More professional, less adorable. But honestly, united put up a cute fight.\nFor now, flatly reigns supreme… but united is right there, ready for a rematch.",
+    "crumbs": [
+      "Website Design",
+      "Theme Showdown"
+    ]
+  },
+  {
+    "objectID": "theme.html#semi-finals",
+    "href": "theme.html#semi-finals",
+    "title": "Theme Showdown",
+    "section": "",
+    "text": "Match 1: flatly vs minty\nWinner: flatly (Minty was fresh, but flatly had the edge!)\nMatch 2: united vs sandstone\nWinner: united!",
+    "crumbs": [
+      "Website Design",
+      "Theme Showdown"
+    ]
+  },
+  {
+    "objectID": "theme.html#final-round",
+    "href": "theme.html#final-round",
+    "title": "Theme Showdown",
+    "section": "",
+    "text": "flatly vs united\nWinner: flatly! More professional, less adorable. But honestly, united put up a cute fight.\nFor now, flatly reigns supreme… but united is right there, ready for a rematch.",
+    "crumbs": [
+      "Website Design",
+      "Theme Showdown"
+    ]
   }
 ]
