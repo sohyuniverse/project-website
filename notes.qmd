@@ -324,3 +324,121 @@ Why did I make it? Because...
 The buffer is necessary as it makes the transitions feel more natural by introducing a brief pause rather than cutting the silences completely. Watch an example below (duration change: 18:09 (before processing) → 15:29 (after processing with buffers)):
 
 ![AM 2.5a Noether's Theorem](videos/notes/processed_AM 2.5a Noether's Theorem.mp4)
+
+### 2024/10/12 Making a presentation
+
+---
+title: "Hydrophobicity Across Length Scales: Wetting and Drying Phase Transitions"
+author: "Sohyun Park"
+format: revealjs
+---
+
+#### Introduction
+In this presentation, I'm going to explain the theoretical foundations of hydrophobicity by examining **wetting** and **drying** phase transitions. The phenomena are driven by **surface tension** and **critical temperature scaling**.
+
+#### Young's Equation
+
+Consider a droplet of liquid on a surface. The contact angle, denoted as θ, quantifies the affinity between the liquid and the surface. This angle is determined by resolving the surface tensions of the interfaces involved. The relationship is given by **Young’s equation**:
+
+$$
+\cos \theta = \frac{\gamma_{sv} - \gamma_{sl}}{\gamma_{lv}} \tag{1}
+$$
+
+Where:
+- $\gamma_{sv}$ is the surface-vapour tension
+- $\gamma_{sl}$ is the surface-liquid tension
+- $\gamma_{lv}$ is the liquid-vapour tension
+
+##### Hydrophobic vs Hydrophilic
+- **Hydrophobic** surfaces: $90^\circ < \theta < 180^\circ$
+- **Hydrophilic** surfaces: $0^\circ < \theta < 90^\circ$
+
+At two extremes:
+
+- $\theta = 0^\circ$: Full wetting.
+- $\theta = 180^\circ$: Perfect drying.
+
+#### Surface Phase Transitions
+
+The approach to the two limiting cases represents surface phase transitions—wetting for $\theta = 0^\circ$ and drying for $\theta = 180^\circ$.
+
+##### Cahn's Scaling Law
+Cahn's theory explains the scaling behaviour of surface tensions as the critical temperature $T_c$ is approached (see: [@cahn1977critical]). The surface tension vanishes following the power law:
+
+$$
+\gamma_{lv} \sim (-t)^\mu \quad \text{with} \quad \mu = (d-1)\nu
+$$
+
+For a fluid with $d = 3$, the critical exponent is $\nu \approx 0.63$, yielding $\mu \approx 1.26$.
+
+##### Contact Angle Near $T_c$
+As $T_c$ is approached, the contact angle vanishes:
+
+$$
+\cos \theta \sim t^{\beta - \mu} \quad \text{with} \quad \beta \approx 0.33
+$$
+
+Thus, $\cos \theta$ diverges as $t^{-0.93}$, but is constrained to $|\cos \theta| \leq 1$.
+
+###### **Why $\beta - \mu$?**
+
+Near the critical temperature, both $\gamma_{sv}$ and $\gamma_{sl}$ vanish. As $T$ approaches $T_c$, $\gamma_{lv}$ tends to zero as $(-t)^\mu$. The numerator $\gamma_{sv} - \gamma_{sl}$ scales with the order parameter difference $\Delta \rho = \rho_l - \rho_v$, because the distinction between liquid and vapour phases diminishes. This gives:
+
+$$
+\gamma_{sv} - \gamma_{sl} \sim (-t)^\beta
+$$
+
+By substituting the scaling behaviours of $\gamma_{lv}$ and $\gamma_{sv} - \gamma_{sl}$ into Young’s equation, we get:
+
+$$
+\cos \theta \sim \frac{(-t)^\beta}{(-t)^\mu} = t^{\beta - \mu}
+$$
+
+#### Wetting and Drying Transitions
+
+The phase transition occurs at a specific temperature:
+
+- **Wetting** occurs at $T_W$, where $\cos \theta = 1$.
+- **Drying** occurs at $T_D$, where $\cos \theta = -1$.
+
+At these temperatures, a macroscopic layer of liquid or vapour forms at the surface.
+
+##### Critical vs First-Order Transitions
+The nature of these transitions can be:
+
+- **Critical**: The equilibrium film width $\ell_{eq}$ grows continuously as $T_D$ is approached.
+- **First-order**: The film width jumps discontinuously.
+
+Below are illustrations of critical and first-order transitions for drying:
+
+<!-- 
+
+```{r}
+# Insert visual figure using code or links to diagrams
+```
+
+-->
+
+#### Predrying Transitions
+In systems undergoing first-order drying, **predrying** can occur at temperatures $T > T_D$. In this case, the vapour film transitions from a thin to a thick layer before the full drying transition at $T_D$.
+
+##### Scaling Behaviour
+The equilibrium film width $\ell_{eq}$ exhibits different behaviours depending on the order of the transition:
+
+$$
+\ell_{eq} = \frac{-\Gamma}{A_{sv} \Delta \rho}
+$$
+
+Where:
+
+- $\Gamma = \int \mathrm{d}r \, [\rho(r) - \rho_b]$ is the adsorption, which describes the excess of fluid near the surface relative to the bulk.
+- $A_{sv}$ is the surface area of the substrate-vapour interface
+- $\Delta \rho = \rho_l - \rho_v$ is the difference between the liquid and vapour densities
+
+For $\rho(r)$, we know from the statistical mechanics of fluids that the one-particle density $\rho^{(1)}(r)$ can be written in the form of an ensemble average.:
+
+$$
+\langle \hat{\rho}^{(1)}(r) \rangle = \frac{1}{\Xi} \sum_{j=1}^\infty \frac{e^{\beta \mu N}}{\Lambda^{3N}(N-1)!} \int \mathrm{d}r^{N-1} e^{-\beta[\Phi(r^N) + V_{\text{ext}}(r^N)]}
+$$
+
+This defines the fluid's spatially varying density at a microscopic level.
