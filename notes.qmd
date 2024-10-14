@@ -325,6 +325,12 @@ The buffer is necessary as it makes the transitions feel more natural by introdu
 
 ![AM 2.5a Noether's Theorem](videos/notes/processed_AM 2.5a Noether's Theorem.mp4)
 
+---
+
+A beautiful quote from Tom: 
+
+*From AM 3.4, classical mechanics is the geometry of phase space. All of the geometries (symplectic form, canonical transformations, etc.) describe the phenomenology of classical mechanics.*
+
 ### 2024/10/12 Making a presentation
 
 ---
@@ -412,11 +418,7 @@ The nature of these transitions can be:
 Below are illustrations of critical and first-order transitions for drying:
 
 <!-- 
-
-```{r}
 # Insert visual figure using code or links to diagrams
-```
-
 -->
 
 #### Predrying Transitions
