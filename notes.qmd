@@ -333,12 +333,6 @@ A beautiful quote from Tom:
 
 ### 2024/10/12 Making a presentation
 
----
-title: "Hydrophobicity Across Length Scales: Wetting and Drying Phase Transitions"
-author: "Sohyun Park"
-format: revealjs
----
-
 #### Introduction
 In this presentation, I'm going to explain the theoretical foundations of hydrophobicity by examining **wetting** and **drying** phase transitions. The phenomena are driven by **surface tension** and **critical temperature scaling**.
 

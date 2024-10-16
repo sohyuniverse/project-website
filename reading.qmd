@@ -454,3 +454,15 @@ Chapter 2.4.5: *Wetting and Drying Phase Transitions* is very well written and f
 :::
 
 [Wetting and Drying Phase Transitions](documents/Coe - Hydrophobicity Across Length Scales The Role of S-49-54.pdf)
+
+I've been reading up to *Views of Hydrophobicity*, but I realised that I'm not sure how much of the stuff I learn from this thesis is related to active systems. So, I decided to review all articles given by my supervisors.
+
+## 2024/10/14 - *Colloquium: Inclusions, boundaries, and disorder in scalar active matter*
+
+Three different models of active matter are discussed here: ABP (active Brownian particles), RTP (run-and-tumble particles), and AOUP (active Ornstein-Uhlenbeck particles). ABP is a model that I'm going to investigate initially because it's the simplest particle model, but I want to be aware that there are other models. From page 3, what is interesting is this, since I saw somewhere that detailed balance doesn't hold for non-equilibrium systems:
+
+::: {.callout-note}
+On the contrary, in a harmonic potential AOUPs always have a steady state given by a centered Gaussian distribution (Szamel, 2014) and, somewhat surprisingly, their dynamics obey detailed balance (Fodor et al., 2016).
+:::
+
+I wanted to revisit the detailed balance algorithm more deeply, so I started reading *Understanding Molecular Simulation*.
