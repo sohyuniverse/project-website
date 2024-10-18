@@ -87,35 +87,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -534,7 +505,7 @@ Cmglee. n.d. <span>“Phase Diagram of Water Simplified.”</span> <a href="http
 <p>In this sense, phase transitions form a uniquely positioned subject. They are simultaneously very close to our everyday experience and yet require extremely deep ideas to understand properly. Most other areas of physics are typically far removed from daily life. Quantum mechanics operates on microscopic scales, and astrophysics on cosmological scales, both far from what can be intuitively grasped. But here, some really deep, beautiful puzzles are found in the world around us.</p>
 </section>
 </section>
-<section id="week-4" class="level2 page-columns page-full">
+<section id="week-4" class="level2">
 <h2 class="anchored" data-anchor-id="week-4">Week 4</h2>
 <section id="weekly-project-meeting-1" class="level3">
 <h3 class="anchored" data-anchor-id="weekly-project-meeting-1">2024/10/7 Weekly project meeting</h3>
@@ -613,113 +584,13 @@ Cmglee. n.d. <span>“Phase Diagram of Water Simplified.”</span> <a href="http
 <p><em>From AM 3.4, classical mechanics is the geometry of phase space. All of the geometries (symplectic form, canonical transformations, etc.) describe the phenomenology of classical mechanics.</em></p>
 </section>
 </section>
-<section id="making-a-presentation" class="level3 page-columns page-full">
+<section id="making-a-presentation" class="level3">
 <h3 class="anchored" data-anchor-id="making-a-presentation">2024/10/12 Making a presentation</h3>
-<section id="introduction" class="level4">
-<h4 class="anchored" data-anchor-id="introduction">Introduction</h4>
-<p>In this presentation, I’m going to explain the theoretical foundations of hydrophobicity by examining <strong>wetting</strong> and <strong>drying</strong> phase transitions. The phenomena are driven by <strong>surface tension</strong> and <strong>critical temperature scaling</strong>.</p>
-<hr>
-</section>
-<section id="youngs-equation" class="level4">
-<h4 class="anchored" data-anchor-id="youngs-equation">Young’s Equation</h4>
-<p>Consider a droplet of liquid on a surface. The contact angle, denoted as θ, quantifies the affinity between the liquid and the surface. This angle is determined by resolving the surface tensions of the interfaces involved. The relationship is given by <strong>Young’s equation</strong>:</p>
-<p><span class="math display">\[
-\cos \theta = \frac{\gamma_{sv} - \gamma_{sl}}{\gamma_{lv}} \tag{1}
-\]</span></p>
-<p>Where: - <span class="math inline">\(\gamma_{sv}\)</span> is the surface-vapour tension - <span class="math inline">\(\gamma_{sl}\)</span> is the surface-liquid tension - <span class="math inline">\(\gamma_{lv}\)</span> is the liquid-vapour tension</p>
-<section id="hydrophobic-vs-hydrophilic" class="level5">
-<h5 class="anchored" data-anchor-id="hydrophobic-vs-hydrophilic">Hydrophobic vs Hydrophilic</h5>
-<ul>
-<li><strong>Hydrophobic</strong> surfaces: <span class="math inline">\(90^\circ &lt; \theta &lt; 180^\circ\)</span></li>
-<li><strong>Hydrophilic</strong> surfaces: <span class="math inline">\(0^\circ &lt; \theta &lt; 90^\circ\)</span></li>
-</ul>
-<p>At two extremes:</p>
-<ul>
-<li><span class="math inline">\(\theta = 0^\circ\)</span>: Full wetting.</li>
-<li><span class="math inline">\(\theta = 180^\circ\)</span>: Perfect drying.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="surface-phase-transitions" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="surface-phase-transitions">Surface Phase Transitions</h4>
-<p>The approach to the two limiting cases represents surface phase transitions—wetting for <span class="math inline">\(\theta = 0^\circ\)</span> and drying for <span class="math inline">\(\theta = 180^\circ\)</span>.</p>
-<section id="cahns-scaling-law" class="level5 page-columns page-full">
-<h5 class="anchored" data-anchor-id="cahns-scaling-law">Cahn’s Scaling Law</h5>
-<p>Cahn’s theory explains the scaling behaviour of surface tensions as the critical temperature <span class="math inline">\(T_c\)</span> is approached (see: <span class="citation" data-cites="cahn1977critical">(<a href="#ref-cahn1977critical" role="doc-biblioref">Cahn 1977</a>)</span>). The surface tension vanishes following the power law:</p>
-<div class="no-row-height column-margin column-container"><div id="ref-cahn1977critical" class="csl-entry" role="listitem">
-Cahn, John W. 1977. <span>“Critical Point Wetting.”</span> <em>The Journal of Chemical Physics</em> 66 (8): 3667–72.
-</div></div><p><span class="math display">\[
-\gamma_{lv} \sim (-t)^\mu \quad \text{with} \quad \mu = (d-1)\nu
-\]</span></p>
-<p>For a fluid with <span class="math inline">\(d = 3\)</span>, the critical exponent is <span class="math inline">\(\nu \approx 0.63\)</span>, yielding <span class="math inline">\(\mu \approx 1.26\)</span>.</p>
-</section>
-<section id="contact-angle-near-t_c" class="level5">
-<h5 class="anchored" data-anchor-id="contact-angle-near-t_c">Contact Angle Near <span class="math inline">\(T_c\)</span></h5>
-<p>As <span class="math inline">\(T_c\)</span> is approached, the contact angle vanishes:</p>
-<p><span class="math display">\[
-\cos \theta \sim t^{\beta - \mu} \quad \text{with} \quad \beta \approx 0.33
-\]</span></p>
-<p>Thus, <span class="math inline">\(\cos \theta\)</span> diverges as <span class="math inline">\(t^{-0.93}\)</span>, but is constrained to <span class="math inline">\(|\cos \theta| \leq 1\)</span>.</p>
-<section id="why-beta---mu" class="level6">
-<h6 class="anchored" data-anchor-id="why-beta---mu"><strong>Why <span class="math inline">\(\beta - \mu\)</span>?</strong></h6>
-<p>Near the critical temperature, both <span class="math inline">\(\gamma_{sv}\)</span> and <span class="math inline">\(\gamma_{sl}\)</span> vanish. As <span class="math inline">\(T\)</span> approaches <span class="math inline">\(T_c\)</span>, <span class="math inline">\(\gamma_{lv}\)</span> tends to zero as <span class="math inline">\((-t)^\mu\)</span>. The numerator <span class="math inline">\(\gamma_{sv} - \gamma_{sl}\)</span> scales with the order parameter difference <span class="math inline">\(\Delta \rho = \rho_l - \rho_v\)</span>, because the distinction between liquid and vapour phases diminishes. This gives:</p>
-<p><span class="math display">\[
-\gamma_{sv} - \gamma_{sl} \sim (-t)^\beta
-\]</span></p>
-<p>By substituting the scaling behaviours of <span class="math inline">\(\gamma_{lv}\)</span> and <span class="math inline">\(\gamma_{sv} - \gamma_{sl}\)</span> into Young’s equation, we get:</p>
-<p><span class="math display">\[
-\cos \theta \sim \frac{(-t)^\beta}{(-t)^\mu} = t^{\beta - \mu}
-\]</span></p>
-</section>
-</section>
-</section>
-<section id="wetting-and-drying-transitions" class="level4">
-<h4 class="anchored" data-anchor-id="wetting-and-drying-transitions">Wetting and Drying Transitions</h4>
-<p>The phase transition occurs at a specific temperature:</p>
-<ul>
-<li><strong>Wetting</strong> occurs at <span class="math inline">\(T_W\)</span>, where <span class="math inline">\(\cos \theta = 1\)</span>.</li>
-<li><strong>Drying</strong> occurs at <span class="math inline">\(T_D\)</span>, where <span class="math inline">\(\cos \theta = -1\)</span>.</li>
-</ul>
-<p>At these temperatures, a macroscopic layer of liquid or vapour forms at the surface.</p>
-<section id="critical-vs-first-order-transitions" class="level5">
-<h5 class="anchored" data-anchor-id="critical-vs-first-order-transitions">Critical vs First-Order Transitions</h5>
-<p>The nature of these transitions can be:</p>
-<ul>
-<li><strong>Critical</strong>: The equilibrium film width <span class="math inline">\(\ell_{eq}\)</span> grows continuously as <span class="math inline">\(T_D\)</span> is approached.</li>
-<li><strong>First-order</strong>: The film width jumps discontinuously.</li>
-</ul>
-<p>Below are illustrations of critical and first-order transitions for drying:</p>
-<!-- 
-# Insert visual figure using code or links to diagrams
--->
-</section>
-</section>
-<section id="predrying-transitions" class="level4">
-<h4 class="anchored" data-anchor-id="predrying-transitions">Predrying Transitions</h4>
-<p>In systems undergoing first-order drying, <strong>predrying</strong> can occur at temperatures <span class="math inline">\(T &gt; T_D\)</span>. In this case, the vapour film transitions from a thin to a thick layer before the full drying transition at <span class="math inline">\(T_D\)</span>.</p>
-<section id="scaling-behaviour" class="level5">
-<h5 class="anchored" data-anchor-id="scaling-behaviour">Scaling Behaviour</h5>
-<p>The equilibrium film width <span class="math inline">\(\ell_{eq}\)</span> exhibits different behaviours depending on the order of the transition:</p>
-<p><span class="math display">\[
-\ell_{eq} = \frac{-\Gamma}{A_{sv} \Delta \rho}
-\]</span></p>
-<p>Where:</p>
-<ul>
-<li><span class="math inline">\(\Gamma = \int \mathrm{d}r \, [\rho(r) - \rho_b]\)</span> is the adsorption, which describes the excess of fluid near the surface relative to the bulk.</li>
-<li><span class="math inline">\(A_{sv}\)</span> is the surface area of the substrate-vapour interface</li>
-<li><span class="math inline">\(\Delta \rho = \rho_l - \rho_v\)</span> is the difference between the liquid and vapour densities</li>
-</ul>
-<p>For <span class="math inline">\(\rho(r)\)</span>, we know from the statistical mechanics of fluids that the one-particle density <span class="math inline">\(\rho^{(1)}(r)\)</span> can be written in the form of an ensemble average.:</p>
-<p><span class="math display">\[
-\langle \hat{\rho}^{(1)}(r) \rangle = \frac{1}{\Xi} \sum_{j=1}^\infty \frac{e^{\beta \mu N}}{\Lambda^{3N}(N-1)!} \int \mathrm{d}r^{N-1} e^{-\beta[\Phi(r^N) + V_{\text{ext}}(r^N)]}
-\]</span></p>
-<p>This defines the fluid’s spatially varying density at a microscopic level.</p>
+<p><a href="https://www.overleaf.com/project/670f722528944d7d9b10009d">241016 Overleaf Presentation for Project Meeting</a></p>
 
 
 
-</section>
-</section>
+
 </section>
 </section>
 

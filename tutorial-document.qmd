@@ -14,7 +14,7 @@ format:
       - top=30mm
       - left=20mm
   docx: default
-bibliography: From 16:09:24.bib
+bibliography: references/From 16:09:24.bib
 reference-location: margin
 citation-location: margin
 jupyter: python3
