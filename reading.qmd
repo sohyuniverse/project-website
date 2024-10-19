@@ -6,7 +6,7 @@ reference-location: margin
 citation-location: margin
 ---
 
-## 2024/9/21 - 10/3 *What is a Complex System?*
+## 2024/9/21 - 10/3 *What is a Complex System?* (Completed)
 
 By James Ladyman and Karoline Wiesner
 
@@ -466,3 +466,22 @@ On the contrary, in a harmonic potential AOUPs always have a steady state given 
 :::
 
 I wanted to revisit the detailed balance algorithm more deeply, so I started reading *Understanding Molecular Simulation*.
+
+## 2024/10/18 - 10/19 *On the Motion of Small Particles Suspended in Liquids at Rest Required by the Molecular-Kinetic Theory of Heat* (Completed)
+
+By Albert Einstein
+
+Since I am studying a model called active Brownian particles, a thought occurred to me: I should actually read where this understanding of Brownian motion came from!  This was done by the very man: Albert Einstein in 1905 [@einstein1905motion]. I normally leave my iPad in my office so whenever I needed derivations, I used a pen and note, quite a classical way while reading a classical paper:
+
+[My handwritten notes](documents/241019 Scan.pdf)
+
+I'm so glad that I read this. It reminded me of how much I loved studying thermodynamics during my undergraduate studies. It was kind of like studying geometry (or topology). I consider a system subject to constraints and investigate how the particle behaves given the state variables. The paper wasn't straightforward to read, as I had to remind myself of several concepts such as the continuous form of entropy, perturbation theory, and Fourier transforms to find a solution for diffusion equations.
+
+I really liked the way he displayed his logic. He considers a system: a pure solvent and suspended particles. These particles are confined by a semi-permeable wall, which only allows solvent to flow, not the solute. Then he thinks about the existing concept of osmotic pressure, which inhibits the solvent from moving to equalise concentrations. He then makes several *reasonable* assumptions, such as:
+
+1. Suspended particles have slow and irregular motions due to the solvent's molecules.
+2. The motions of those individual particles are independent of each other.
+
+He then links the diffusion coefficient to two different contexts. The first is through the theory of diffusion, involving concepts of entropy and free energy. The second is through the theory of thermal molecular motion, where he considers the rate of change of density. By uniting these two theories, he arrives at the root-mean-square displacement of the particle. Wow!
+
+I'm so happy to have chosen a theoretical physics PhD. Thinking about how theories interconnect reveals a universal understanding. I’m looking forward to reading more of his articles.
