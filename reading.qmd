@@ -482,6 +482,6 @@ I really liked the way he displayed his logic. He considers a system: a pure sol
 1. Suspended particles have slow and irregular motions due to the solvent's molecules.
 2. The motions of those individual particles are independent of each other.
 
-He then links the diffusion coefficient to two different contexts. The first is through the theory of diffusion, involving concepts of entropy and free energy. The second is through the theory of thermal molecular motion, where he considers the rate of change of density. By uniting these two theories, he arrives at the root-mean-square displacement of the particle. Wow!
+He then links the diffusion coefficient to two different contexts. The first is through the theory of diffusion, involving concepts of entropy and free energy. The second is through the theory of thermal molecular motion, where he considers the rate of change of density. By uniting these two theories, he arrives at the root-mean-square displacement of the suspended particle. Wow!
 
 I'm so happy to have chosen a theoretical physics PhD. Thinking about how theories interconnect reveals a universal understanding. I’m looking forward to reading more of his articles.
