@@ -1,0 +1,68 @@
+---
+title: Conferences
+toc: true
+bibliography: references/quarto.bib
+reference-location: margin
+citation-location: margin
+---
+
+# Fluids and materials seminar
+
+## 2024/10/24 *Stabilising travelling waves from fluid turbulence.*
+
+By Dan Lucas from St Andrews
+
+### Abstract
+
+An attractive approach to tackling the complexity of a turbulent fluid flow is to view the behaviour from a dynamical systems perspective. That is, we might imagine a trajectory navigating a high dimensional phase space directed by the stable and unstable manifolds of simple invariant states. In a fluid system such invariant states might take the form of steady equilibria, travelling waves or time periodic orbits. In many cases isolating such states is challenging due to their high instability. In this talk we will introduce the method of “time-delayed feedback control” as a method to passively stabilise travelling wave solutions to the Navier-Stokes equations. We will survey recent results in this project where we successfully stabilise states from two-dimensional turbulence and turbulence in a rectilinear periodic pipe. In both cases travelling waves can be stabilised at relatively large Reynolds numbers, and in each situation we outline some novel approaches to improve the performance of the control. Along the way we perform linear stability analyses and use methods from control theory to validate our results and help us gain additional insight into the mechanisms underpinning successful control. We also demonstrate gradient descent methods to help optimise control parameters to avoid laborious searching and enable states to be obtained from speculative guesses.
+
+### Preparation
+
+Before going to the seminar, there were concepts I couldn't understand from the abstract, which were:
+
+1. **Stable and unstable manifolds of simple invariant states**: 
+   - In dynamical systems, an *invariant state* refers to a state of the system that doesn't change over time (e.g., a fixed point or periodic orbit). *Manifolds* are like paths or surfaces that represent how nearby points behave relative to this state. 
+     - A *stable manifold* means nearby points move towards the invariant state (like water flowing towards a drain).
+     - An *unstable manifold* means nearby points move away from the state (like a ball rolling off the top of a hill).
+
+2. **Steady equilibria, travelling waves, or time-periodic orbits**: 
+   - *Steady equilibria* are solutions where the system remains constant over time.
+   - *Travelling waves* are wave-like solutions that maintain their shape while moving through space.
+   - *Time-periodic orbits* are states where the system repeats its behaviour in a regular time cycle, like a pendulum swinging back and forth.
+
+3. **Time-delayed feedback control**: 
+   - This is a control method where the system’s state is monitored and the control signal applied is based on the system’s past states, not its current state. The *delay* refers to how far back in time you look to adjust the system's behaviour. It's often used to stabilise unstable systems by correcting them with delayed feedback.
+
+4. **Rectilinear periodic pipe**: 
+   - This describes a straight (rectilinear) pipe where the fluid flow repeats itself periodically along the length of the pipe, meaning the pipe’s conditions are the same at regular intervals.
+
+5. **Reynolds numbers**: 
+   - The *Reynolds number* is a dimensionless quantity used to predict the flow behaviour of fluids. It compares inertial forces to viscous forces and helps determine whether a flow will be laminar (smooth) or turbulent (chaotic). Larger Reynolds numbers typically indicate turbulent flow.
+
+6. **Control theory**: 
+   - This is a field of study focused on how to control systems to achieve desired behaviours. It involves using mathematical models to design strategies (called controllers) to manage dynamic systems (like fluid flow) so they behave in a certain way.
+
+7. **Speculative guesses**: 
+   - This refers to making educated guesses about the system’s parameters or initial conditions to find solutions or states of interest without fully knowing the correct values in advance. It suggests an exploratory approach.
+
+### My reflection
+
+I could not understand most of what he talked about, so my mind wandered. I began thinking about how I could approach solving an important problem in the vaping industry: the ideal position (such as height) of the coil in the atomiser. The object of interest can be described as follows:
+
+1. There are posts (positive/negative), and the coil is usually installed between them. The coil is typically made from Kanthal A1, NiChrome80, or SS316L, listed in order of common usage.
+2. Since the coil is wrapped in a helical form, cotton is inserted inside the coil to hold the e-liquid (it's easier to see than explain—check my business [Instagram](https://www.instagram.com/mizzvape/)).
+3. The e-liquid consists of four components: PG (propylene glycol), which has low viscosity, VG (vegetable glycerin), which has high viscosity, flavourings (dissolved in PG), and nicotine (also dissolved in PG). We can approximate the e-liquid as a mix of PG and VG.
+4. Air typically enters from the side, while the vaporised liquid and air leave through the top of the atomiser by suction.
+5. The temperature of the coil continuously changes, affecting the vaporisation process. This temperature is influenced by how incoming air interacts with the droplets formed on the coil.
+
+The vaping industry mainly focuses on finding the optimal coil height by using computational aerodynamics software to maximise airflow around the coil, prolonging its life. However, not all of these simulations reflect reality very well because:
+
+1. The power, which dictates the temperature gradient of the coil, is determined by the user's settings on their vape mod.
+2. Everyone's suction strength varies.
+3. Coil diameters differ.
+4. The ratio of PG to VG depends on the user—typically 50/50 for mouth-to-lung vaping and 30/70 for direct-lung vaping.
+5. Ambient temperature, which affects the incoming air, differs from user to user.
+6. Depending on how the cotton is placed inside the atomiser, the available volume for airflow can change.
+7. There is a continuous influx of liquid through the cotton during vaporisation.
+
+So, many factors are involved. I was thinking that I could approach this problem from a different angle: how can I make all the droplets evaporate effectively? I'm not sure if I can tackle this in the context of active drying, but it's a possibility.

@@ -485,3 +485,17 @@ I really liked the way he displayed his logic. He considers a system: a pure sol
 He then links the diffusion coefficient to two different contexts. The first is through the theory of diffusion, involving concepts of entropy and free energy. The second is through the theory of thermal molecular motion, where he considers the rate of change of density. By uniting these two theories, he arrives at the root-mean-square displacement of the suspended particle. Wow!
 
 I'm so happy to have chosen a theoretical physics PhD. Thinking about how theories interconnect reveals a universal understanding. I’m looking forward to reading more of his articles.
+
+## 2024/10/23 - *Understanding Molecular Simulation, 3rd Ed*
+
+By Dann Frenkel and Berend Smit
+
+### Interesting discussion of what it means by a *'model'* in science
+
+![On page 6, Introduction](images/Understanding Molecular Simulation/Screenshot 2024-10-23 at 16.38.54.png)
+
+### Important equilibrium conditions
+
+![On page 22, 2.1.2 Chemical potential and equilibrium](images/Understanding Molecular Simulation/Screenshot 2024-10-24 at 17.45.55.png)
+
+Read up to p.46 (2024/10/24)
