@@ -356,3 +356,23 @@ Please let me know if you would like me to send my CV. For now, I have attached 
 - [3] A.D. Bruce, N.B. Wilding, G.J. Ackland, Free energy of crystalline solids: a lattice-switch Monte Carlo method, Phys. Rev. Lett. 79 (16) (1997) 3002–3005
 - [4] S. Consta, N.B. Wilding, D. Frenkel, Z. Alexandrowicz, Recoil growth: an efficient simulation method for multi-polymer systems, J. Chem. Phys. 110 (6) (1999) 3220–3228
 - [5] F. Turci, N.B. Wilding, Phase separation and multibody effects in three-dimensional active Brownian particles, Phys. Rev. Lett. 126.3 (2021) 038002.
+
+## Week 7
+
+### 2024/10/28 Weekly project meeting
+
+#### Things to discuss
+
+1. My plan over a few days: reading two papers by Lloyd Demetrius, as this week’s fluids and materials seminar sounds very interesting and takes place on 31 October. The title and abstract are as follows:
+
+Lloyd Demetriou, Thurs 31st Oct, 14:00-15:00, G.07
+
+Title: The evolutionary dynamics of collective behaviour: From inorganic matter to living matter
+
+Abstract: 
+Collective behaviour of the atoms and molecules in inorganic matter is described by the statistical parameter thermodynamic entropy, and encoded by the Second Law of Thermodynamics.
+Collective behaviour of the metabolic units that comprise organic matter is described by the statistical parameter evolutionary entropy, and encoded by the Entropic Principle of Evolution: Evolutionary entropy increases in systems driven by a stable energy source, and decreases in systems driven by a fluctuating energy source.
+The relation between the Second Law of Thermodynamics and the Entropic Principle of Evolution will be described.
+The origin of cellular life can be described in terms of the transition from inorganic matter to cooperative assemblies of organic matter. The implications of the Second Law and the Entropic Principle for the emergence of cellular life will be delineated.
+
+2. Ask about page 51 on *Molecular Dynamics Simulation* showing notes written on Zotero.

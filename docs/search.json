@@ -496,7 +496,7 @@
     "href": "reading.html#understanding-molecular-simulation-3rd-ed",
     "title": "List of My Reading",
     "section": "2024/10/23 - Understanding Molecular Simulation, 3rd Ed",
-    "text": "2024/10/23 - Understanding Molecular Simulation, 3rd Ed\nBy Dann Frenkel and Berend Smit\n\nInteresting discussion of what it means by a ‘model’ in science\n\n\n\nOn page 6, Introduction\n\n\n\n\nImportant equilibrium conditions\n\n\n\nOn page 22, 2.1.2 Chemical potential and equilibrium\n\n\nRead up to p.46 (2024/10/24)",
+    "text": "2024/10/23 - Understanding Molecular Simulation, 3rd Ed\nBy Dann Frenkel and Berend Smit\n\nInteresting discussion of what it means by a ‘model’ in science\n\n\n\nOn page 6, Introduction",
     "crumbs": [
       "Project Notes",
       "List of My Reading"
@@ -532,6 +532,17 @@
     "text": "Groups\nSoft matter community\nUpcoming events by Nonlinear and Complex Physics Group",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "notes.html#week-7",
+    "href": "notes.html#week-7",
+    "title": "Weekly Notes",
+    "section": "Week 7",
+    "text": "Week 7\n\n2024/10/28 Weekly project meeting\n\nThings to discuss\n\nMy plan over a few days: reading two papers by Lloyd Demetrius, as this week’s fluids and materials seminar sounds very interesting and takes place on 31 October. The title and abstract are as follows:\n\nLloyd Demetriou, Thurs 31st Oct, 14:00-15:00, G.07\nTitle: The evolutionary dynamics of collective behaviour: From inorganic matter to living matter\nAbstract: Collective behaviour of the atoms and molecules in inorganic matter is described by the statistical parameter thermodynamic entropy, and encoded by the Second Law of Thermodynamics. Collective behaviour of the metabolic units that comprise organic matter is described by the statistical parameter evolutionary entropy, and encoded by the Entropic Principle of Evolution: Evolutionary entropy increases in systems driven by a stable energy source, and decreases in systems driven by a fluctuating energy source. The relation between the Second Law of Thermodynamics and the Entropic Principle of Evolution will be described. The origin of cellular life can be described in terms of the transition from inorganic matter to cooperative assemblies of organic matter. The implications of the Second Law and the Entropic Principle for the emergence of cellular life will be delineated.\n\nAsk about page 51 on Molecular Dynamics Simulation showing notes written on Zotero.",
+    "crumbs": [
+      "Project Notes",
+      "Weekly Notes"
     ]
   }
 ]
