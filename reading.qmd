@@ -499,3 +499,21 @@ By Dann Frenkel and Berend Smit
 ![On page 22, 2.1.2 Chemical potential and equilibrium](images/Understanding Molecular Simulation/Screenshot 2024-10-24 at 17.45.55.png)
 
 Read up to p.46 (2024/10/24)
+
+### Questions to ask in the project meeting
+
+![On page 30, 2.2.3 Towards classical statistical mechanics](images/Understanding Molecular Simulation/Screenshot 2024-10-25 at 23.34.58.png)
+
+I do not know how to derive this from 2.2.17 to 2.2.18.
+
+## 2024/11/2 - *Physics and Beyond* {#sec-physics-and-beyond}
+
+By Werner Heisenberg
+
+It's the first time I'm reading this in English; the title of the book in Korean is 부분과 전체, which might translate to *Parts and the Whole*. I've read it many times, and it has been highly influential to me as a physicist. To capture some of the things I want to revisit later:
+
+![On page 72, Fresh Fields (1926-1927)](images/Physics and Beyond/Screenshot 2024-11-04 at 08.43.51.png)
+
+![On page 80, Fresh Fields (1926-1927)](images/Physics and Beyond/Screenshot 2024-11-04 at 09.10.47.png)
+
+So far, having read up to page 89, it has all been interesting, except for Chapter 4 (*Lessons in Politics and History*).

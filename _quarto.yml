@@ -30,3 +30,6 @@ format:
   html:
     theme: flatly
     toc: true
+
+crossref:
+  chapters: true
