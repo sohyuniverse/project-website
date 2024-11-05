@@ -508,12 +508,38 @@ I do not know how to derive this from 2.2.17 to 2.2.18.
 
 ## 2024/11/2 - *Physics and Beyond* {#sec-physics-and-beyond}
 
-By Werner Heisenberg
-
-It's the first time I'm reading this in English; the title of the book in Korean is 부분과 전체, which might translate to *Parts and the Whole*. I've read it many times, and it has been highly influential to me as a physicist. To capture some of the things I want to revisit later:
+It's the first time I'm reading this in English; the title of the book in Korean is 부분과 전체, which might translate to *Parts and the Whole*. I've read it many times since I was in high school, and it has been highly influential to me as a physicist throughout my life. To capture some of the things I want to revisit later:
 
 ![On page 72, Fresh Fields (1926-1927)](images/Physics and Beyond/Screenshot 2024-11-04 at 08.43.51.png)
 
 ![On page 80, Fresh Fields (1926-1927)](images/Physics and Beyond/Screenshot 2024-11-04 at 09.10.47.png)
 
-So far, having read up to page 89, it has all been interesting, except for Chapter 4 (*Lessons in Politics and History*).
+So far, having read up to page 89, it has all been interesting, except for Chapter 4 (*Lessons in Politics and History*). When the development of quantum mechanics was presented in Chapters 5 and 6, I felt my heart pounding as I read through, just as it did when I first read this book.
+
+![On page 97, Atomic Physics and Pragmatism (1929)](images/Physics and Beyond/Screenshot 2024-11-04 at 20.20.52.png)
+
+All these realms were so enjoyable to learn, but now, as a researcher, I wonder what realms are still open. I thought one of them was non-equilibrium statistical thermodynamics, but it appears to me that this theory can't be axiomatic, implying that all systems out of equilibrium must be described differently.
+
+![On page 109, The Relationship between Biology, Physics and Chemistry (1930-1932)](images/Physics and Beyond/Screenshot 2024-11-04 at 21.20.51-down.png)
+
+'Forms through which matter streams,' as Niels Bohr described, was the most profound characterisation of organisms I have encountered. I used to wonder, what about this structure remains? Does it actually persist, given that a person changes continuously as a child becomes an adult? Is it simply the name (person) we assign that represents this form of life? With this thought, is there really a distinction between animate and inanimate objects?
+
+When I read *Timaeus* by Plato in high school, he described geometrical forms as the basis of earth, fire, water, and air, even though I found his idea peculiar (like everything is made of right triangles). At the time, I thought the properties that define those mathematical forms were responsible for things maintaining their structure in the way we perceive over time (since all forms change shape as time passes). My master's research was also focused on investigating this homeostasis in an ideal structure—not physical but something we perceive—in the context of foreign exchange markets. This line of thought was also captured well by Bohr’s question: "Can quantum mechanics explain nature's tendency to form structures through which matter with fixed chemical properties can stream for a limited time?"
+
+![On page 128, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 09.48.38.png)
+
+This passage about the discovery of antimatter was one of the reasons I chose a physics degree, along with my ambition to formally study general relativity. Although I didn’t score well in my particle physics exam in third year due to a part-time job over winter break, it remains one of the most exciting units I've taken. Here are the scores and ratings I gave to my third and fourth-year units with scores of at least 4:
+
+5: Physics Research Project (83), Quantum Physics (88)  
+4.5: Physics of Phase Transitions (85), Analytical Mechanics (66), Particle Physics (58)  
+4: Quantum Information Theory (68), Foundations of Modern Physics (68), Methods of Theoretical Physics (63)  
+
+It’s surprising that general relativity only scored 3.5, but it seems I didn’t enjoy the lecture style despite being fascinated by the content.
+
+![On page 134, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 10.11.03.png)
+
+This passage captures the reason I didn’t pursue a philosophy degree, despite having written about philosophy of science. What I realised was the fluidity of language, and at some point, reading philosophy felt like participating in a language game. Even when I wrote [*The Self and the World*](https://docs.google.com/document/d/1lGEIUBTY_RgLZfvyVO8nhSzJ_3SpVR0n1QEegImHv4g/edit?usp=sharing), I included definitions for the terms I used in the document. In contrast, I conceived mathematical objects as eternal, grounded solidly in axioms. I couldn’t imagine any language other than this to describe the hidden secrets of the universe as eternal representations—unchanging, unmoved, and concrete.
+
+![On page 136, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 11.16.00.png)
+
+Another book I feel closely connected to is the Tao Te Ching by Lao Tzu. It’s probably not an exaggeration to say that my whole life has been devoted to understanding the meaning of Tao, even though Lao Tzu paradoxically said, “The Tao that can be described is not the eternal Tao.” One day, I realised it is synonymous with the Truth or, in more Platonic terms, the formless. Ineffable. That’s when I wrote this diary: [Is "It" a Joke?](https://sohyuniverse.wordpress.com/2024/09/17/2023-03-27-is-it-a-joke/)
