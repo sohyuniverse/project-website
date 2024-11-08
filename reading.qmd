@@ -506,7 +506,7 @@ Read up to p.46 (2024/10/24)
 
 I do not know how to derive this from 2.2.17 to 2.2.18.
 
-## 2024/11/2 - *Physics and Beyond* {#sec-physics-and-beyond}
+## 2024/11/2 - 11/8 *Physics and Beyond* {#sec-physics-and-beyond}
 
 It's the first time I'm reading this in English; the title of the book in Korean is 부분과 전체, which might translate to *Parts and the Whole*. I've read it many times since I was in high school, and it has been highly influential to me as a physicist throughout my life. To capture some of the things I want to revisit later:
 
@@ -564,4 +564,26 @@ These chapters were not enjoyable to read: *Revolution and University Life (1933
 
 ![On page 195, The Responsibility of the Scientist (1945-1950)](images/Physics and Beyond/Screenshot 2024-11-06 at 10.04.36.png)
 
-This reveals the reason why I chose the theme of active matter. I was curious about how this model suddenly emerged in the last 25 years. Why is there such a sudden interest in this concept? What possibilities does it offer for understanding nature? What contributions can I make to the circle of human knowledge?
+This reveals the reason why I chose the theme of *active matter*. I was curious about how this model suddenly emerged in the last 25 years. Why is there such a sudden interest in this concept? What possibilities does it offer for understanding nature? What contributions can I make to the circle of human knowledge?
+
+---
+
+While reading through the *Scientific and Political Disputes (1956-1957)* chapter, I realised I can only concentrate when scientific matters are being discussed, such as the conversations between Heisenberg and Wolfgang about the mathematical theory for elementary particles. 
+
+![On page 230, The Unified Field Theory (1957-1958)](images/Physics and Beyond/Screenshot 2024-11-08 at 10.33.36.png)
+
+However, everything that followed from the passage in the image was fascinating—especially when they started discussing symmetries (for example, the universe as a whole does not necessarily have to be symmetrical with respect to the operations under which natural laws remain invariant), relativistic quantum field theories, and more, which captivated me when I studied particle physics in my third year.
+
+---
+
+![On page 240, Elementary Particles and Platonic Philosophy (1961-1965)](images/Physics and Beyond/Screenshot 2024-11-08 at 17.04.56-down.png)
+
+I have finally finished the book. Although the above image is not the last page, I love this book because it begins with Plato and ends with him. *Timaeus* was the book that shaped my worldview when I was in high school, and when I first encountered *Physics and Beyond*, I was thrilled to find someone in history who asked the same questions I had while reading *Timaeus*. Since then, my understanding has deepened, and I’ve come to see that all philosophy traces back to Plato. Last year, a decade later, I finally had a direct understanding of what Plato described through some interesting experiences.
+
+Even beyond that passage in the screenshot, it’s truly worth rereading. People at that time were already considering how natural laws conform to different scales, touching on the concept of *emergence*, which is the field I’m now working in.
+
+While reading this book, I rewatched the documentary series *Atom*, hosted by Jim Al-Khalili. I remember watching it for the first time in high school, loving it immensely, and being struck by statements from scholars like Paul Dirac, who said, “A physical law must possess mathematical beauty.” I was curious about what QED implied once I start learning about it at university, such as how all the matter we see is just reflections of virtual particles. That was a long time ago, and that naïveté and curiosity are what led me to study physics. I’d like to close with what Jim Al-Khalili said (even though I largely disagree with his interpretation of quantum mechanics in that chapter) at the end of *The Illusion of Reality* (the third episode): 
+
+*In the last 100 years, we have peered deep inside the atom, the basic building block of the universe. And inside this tiny object, we have found a strange new world governed by exotic laws that at times seem to defy reason. Atoms present us with dizzying contradictions. They can behave both as particles or waves. They appear to be in more than one place at the same time. They force us to rethink what we mean by past and future, by cause and effect. And they tell us strange things about where the universe came from and where it's going. Pretty amazing stuff for something that's just a millionth of a millimetre across. That's why Niels Bohr, the father of atomic physics, once said that, when it comes to atoms, language can only be used as poetry. What's fascinating to me is that although we've learnt an incredible amount about atoms and their behaviour, our scientific journey has only just begun. Because although we know how a single atom or just a few atoms behave, the way trillions of them come together in concert to create the world around us is still largely a mystery. To give you one dramatic example, the atoms that make up my body are identical to the atoms in the rocks, the trees, the air, even the stars. And yet, they come together to create a conscious being who can ask the question, “What is an atom?” Explaining all that is surely the next great challenge in science.*
+
+I realised that the “next great challenge” he mentioned is the same one I’ve been drawn to since studying physics: the emergence of consciousness. The most intriguing question, perhaps prompted by an interesting dream I had last night, is how our mind creates the world and perceives it simultaneously when we dream. When I'm awake, I can do this partially; for instance, when I think about walking down the corridor where my office is located, I can imagine it while experiencing it at the same time. It seems this ability expands to full capacity in dreams. Once I understand that mechanism, I might be able to discern, even when awake, whether I am still dreaming and creating the world while simultaneously perceiving it.

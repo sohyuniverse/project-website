@@ -454,3 +454,16 @@ I was quite surprised by how many qualities he actually shared with another of m
 Hermes made plenty of eye contact and made excellent use of pauses during his explanations, allowing students to form images in their minds for better understanding.
 
 There was much for me to learn from his approach to lecturing. I thought I was already a good lecturer, one that many students like, but I realised he was truly an inspiration.
+
+### 2024/11/8 Active Brownian Particles (ABPs)
+
+I now understand why ABPs drive the system out of equilibrium. I love deriving everything mathematically from first principles.
+
+Things I have understood:
+
+- The equations of motion for ABPs are described by overdamped Langevin equations.
+- Persistent fluxes of particles prevent the detailed balance condition; therefore, there is no Boltzmann distribution.
+
+I'm still uncertain about the concept of entropy production. When I finish reading *Physics and Beyond*, I'll start reading *Understanding Molecular Simulation* again, as it has a chapter that discusses this concept.
+
+These are the PDF notes that I wrote: [My handwritten notes](documents/241108 Active Brownian Particles.pdf)
