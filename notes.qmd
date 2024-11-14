@@ -265,3 +265,170 @@ Things I have understood:
 I'm still uncertain about the concept of entropy production. When I finish reading *Physics and Beyond*, I'll start reading *Understanding Molecular Simulation* again, as it has a chapter that discusses this concept.
 
 These are the PDF notes that I wrote: [My handwritten notes](documents/241108 Active Brownian Particles.pdf)
+
+## Week 9
+
+### 2024/11/13 Mathpix and Stochastic Processes
+
+Francesco introduced a tool called [Mathpix](https://mathpix.com), which looks incredibly useful for converting handwritten notes from Goodnotes into formal documents!
+
+He also shared his draft notes on random walks and stochastic processes: [Handbook of Particle-Based Simulation of Fluids](https://atooms.frama.io/handbook/html/contents/rw.html), which I can download as `.ipynb` files to experiment with the code.
+
+I also received a very warm, thoughtful email from Nigel, my supervisor. Since I’d like to reread it often, I want to preserve it here with password protection:
+
+```{=html}
+<div id="protected-content" style="display:none; white-space: pre-wrap; font-family: 'Courier New', Courier, monospace; padding: 20px; border: 1px solid #ccc; background-color: #fdf7e4; border-radius: 5px;">
+  <p>
+Hi Sohyun,
+
+Thanks for your messages. (I thought I’d move things to email as it is easier for longer conversations).
+
+Happy to talk about your worries at the next meeting. I would just say at the start that I am not currently concerned about your progress. It is normal at the start of a PhD to spend quite a lot of time “getting the lay of the land”. We appreciate that with such a lot of new ideas and concepts that things can sometimes feel overwhelming, and it can be difficult to separate the wood from the trees. Please be reassured that this is normal.
+
+I would also say that it is very positive that you are engaged with a good number of complex concepts and trying to understand them in your own terms. The students who don’t make progress are usually the ones who are not engaged, so again I think you can be reassured.
+
+When it comes to reading papers/books that we have suggested, I just wanted to comment that the way most scientists absorb information is usually not by sitting down, reading a paper from cover to cover and not putting it down until they understand every detail. If we did that, we wouldn’t get anything done. Rather we try to first get a feel for roughly what the message of the paper is talking about, the main ideas if you like, and very often that is as far as it goes. If there is something that we find particularly interesting or relevant we might go into more detail, but I would say that that is the exception. So, if we put papers on Zotero and suggest you look at them, we don’t mean that you need to read and understand everything in great detail. In most cases you might just want to get a rough idea of what a paper is about (AI can help here) and build up some familiarity with the types of approaches and language that are used in the field.
+
+Another comment I would make is that it is not always necessary as a PhD student to be able to derive from first principles the methods and results that underpin your approach. Of course, we need to feel reasonably confident that we are using tried and tested techniques for which the strengths and weakness are known. But often the methods themselves might be based on decades of work drawn from vast fields of literature. If one were not to try to make progress until all the foundations had been thoroughly understood, then there would be little time left to measure things. I think it is quite right and proper that you want to understand where the Langevin or ABP equations of motion comes from and how this translates into a time stepping algorithm for evolving the system. But I don’t think one necessarily needs to go all the way back to Einstein’s original papers to do this.  You told me (I think in the context of your project last year) that you felt the need to understand all the foundations before making progress on the project. I would just comment that often we learn ‘on the job’, so to say, ie we might start calculating or measuring without understanding completely what we are doing or why, but the process of ‘doing’ builds that understanding.
+
+Anyway, I hope these comments help and we can certainly discuss further next week.
+
+Best wishes,
+
+Nigel
+  </p>
+</div>
+
+<div id="password-prompt">
+  <label for="password">Type password to reveal the email:</label>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Submit</button>
+</div>
+
+<script>
+  function checkPassword() {
+    const inputPassword = document.getElementById('password').value;
+    const correctPassword = "7942";  // Set your password here
+
+    if (inputPassword === correctPassword) {
+      document.getElementById('protected-content').style.display = "block";
+      document.getElementById('password-prompt').style.display = "none";
+    } else {
+      alert("Incorrect password. Try again.");
+    }
+  }
+</script>
+```
+
+### 2024/11/14 Reading Francesco's notes
+
+I asked a couple of questions to ChatGPT while reading it. Their answers were:
+
+![On One dimensional motion and its statistics, Random Walks](images/Particle-Based Simulation of Fluids/Screenshot 2024-11-14 at 19.30.16.png)
+
+<details>
+<summary>Click to reveal the answer!</summary>
+
+In this context, the **factor 2** accounts for a restriction in the random walk model related to how steps accumulate over time.
+
+For a simple one-dimensional random walk on a lattice (with lattice spacing $a$), the particle moves by one lattice unit per time step, either to the left or right. This discrete nature of the walk leads to the following pattern:
+
+1. **Even and Odd Positions:** 
+   - If the walk starts at the origin, then after an even number of steps $t$, the particle can only be at even lattice positions (multiples of $2a$), because it has made an even number of moves.
+   - Similarly, after an odd number of steps $t$, the particle will only be at odd lattice positions (odd multiples of $a$).
+
+2. **Even and Odd Times:**
+   - For **even $t$**, the probability distribution $P(x, t)$ will only have non-zero values at **even lattice positions**.
+   - For **odd $t$**, $P(x, t)$ will only have non-zero values at **odd lattice positions**.
+
+This constraint implies that half of the possible bins (positions) are unfilled for a given time $t$ because only positions matching the parity of $t$ are reachable. To represent this correctly in the continuous approximation of $P(x, t)$, the **factor 2** compensates for this limitation by doubling the probability density to account for the missing (unreachable) positions. 
+
+In essence, the factor 2 ensures that the probability distribution $P(x, t)$ normalises correctly even though only half of the possible positions are accessible at any given time due to the parity constraint.
+
+---
+
+Here are answers to your questions based on the proof and equation provided:
+
+1. Why is the combination written as $\frac{N!}{n_1! n_2!}$?
+
+This combination term represents the **number of distinct ways** to arrange a sequence with $n_1$ right steps and $n_2$ left steps out of $N$ total steps. In combinatorics, when we have a sequence with repetitions (here, right and left steps), the number of unique arrangements is given by dividing the factorial of the total number of steps, $N!$, by the factorials of the number of steps of each type, $n_1!$ and $n_2!$. This accounts for the fact that swapping identical steps (all right steps, for example) doesn’t create a new unique path.
+
+2. Why is this multiplied by $p^{\frac{1}{2}(N+m)} q^{\frac{1}{2}(N-m)}$ to give $P(m, N)$?
+
+The probability of a specific path occurring (with exactly $n_1$ steps to the right and $n_2$ steps to the left) is the product of the probability of each step. Since each right step has probability $p$ and each left step has probability $q = 1 - p$, the probability of any particular path with $n_1 = \frac{1}{2}(N + m)$ right steps and $n_2 = \frac{1}{2}(N - m)$ left steps is:
+
+$$
+p^{n_1} q^{n_2} = p^{\frac{1}{2}(N + m)} q^{\frac{1}{2}(N - m)}
+$$
+
+Multiplying this by the combinatorial factor $\frac{N!}{n_1! n_2!}$ gives the total probability $P(m, N)$, as it accounts for all possible distinct paths that result in the final position $m$.
+
+3. What does it mean by the ‘first’ and ‘second’ central moments?
+
+The **first central moment** of a distribution is the **mean** (or expected value) of the distribution, represented as $\langle k \rangle$ for the binomial distribution in this proof. It indicates the average or most likely position after $N$ steps.
+
+The **second central moment** is the **variance**, which is the expected value of the squared deviation from the mean. For the binomial distribution here, the variance is calculated as $\sigma^2 = \langle k^2 \rangle - \langle k \rangle^2$. The variance measures the spread of the distribution around the mean. Together, the first and second moments describe the central tendency and spread of the distribution.
+
+4. How can we use the final expression in the proof to arrive at equation (2)?
+
+To arrive at equation (2), follow these steps based on the large $N$ limit:
+
+1. **Convergence to Normal Distribution**: For large $N$, the binomial distribution $P(k, N)$ converges to a normal distribution (Central Limit Theorem) with mean $\langle k \rangle = N/2$ and variance $\text{Var}[k] = N/4$. The form becomes:
+
+   $$
+   P(k, N) \approx \frac{1}{\sqrt{2\pi N/4}} \exp\left(-\frac{(k - N/2)^2}{2N/4}\right)
+   $$
+
+2. **Rewrite in Terms of $m$**: Recall that $m = 2k - N$. This substitution transforms $P(k, N)$ to $P(m, N)$. Expressing $k$ in terms of $m$ gives $k = \frac{N + m}{2}$. Substitute $k$ and rewrite the exponent in terms of $m$.
+
+3. **Simplify the Result**: After substitution and simplification, you obtain:
+
+   $$
+   P(m, N) = \frac{2}{\sqrt{2\pi N}} \exp\left(-\frac{m^2}{2N}\right)
+   $$
+
+4. **Transition to Continuous Variables**: In the continuous limit, let $t = N \Delta t$ (where $\Delta t$ is the time step). Then, replacing $N$ with $t/\Delta t$ in the expression, you arrive at the form of equation (2):
+
+   $$
+   P(x, t) \approx \frac{2}{\sqrt{2\pi l^2 t / \Delta t}} \exp\left(-\frac{x^2 \Delta t}{2 l^2 t}\right)
+   $$
+
+This final expression is the continuous probability density function for displacement $x$ at time $t$, matching equation (2) in the problem.
+
+---
+
+Thank you for clarifying. Here’s a deeper look into each part:
+
+1. Why is the combination written as $\frac{N!}{n_1! n_2!}$?
+
+The combination $\frac{N!}{n_1! n_2!}$ arises from a fundamental combinatorial principle when considering paths of independent steps. Here’s why this form is specifically chosen:
+
+   - **Fundamental Counting Principle**: For $N$ total steps, if each step could either go right or left, you could naively think that each unique ordering of right and left steps forms a distinct path. However, some steps are identical (right steps and left steps).
+   - **Correcting for Identical Arrangements**: Since a particular sequence with $n_1$ right steps and $n_2$ left steps will appear repeatedly due to the indistinguishability of identical steps, we divide by the factorials of these counts ($n_1!$ and $n_2!$) to avoid overcounting.
+   - **Why Factorials Specifically?**: Factorials count the number of ways to arrange $n_1$ right steps among themselves or $n_2$ left steps among themselves. By dividing $N!$ (the total permutations) by $n_1! n_2!$, we’re specifically removing duplicate configurations of right and left steps, leaving only the unique paths. Thus, $\frac{N!}{n_1! n_2!}$ counts the number of distinct ways to take $n_1$ right and $n_2$ left steps out of $N$, preserving only unique configurations.
+
+2. Why is the total probability the product of the combinatorial factor and the probability of a specific path occurring?
+
+To understand this, we need to consider the role of independence and probability aggregation:
+
+   - **Independence of Steps**: Each step is independent and has its own probability of being right ($p$) or left ($q = 1 - p$). The probability of one particular sequence occurring is therefore $p^{n_1} q^{n_2}$.
+   - **Probability of Each Unique Path**: Since each unique path represents one way of achieving a final position $m$ (which corresponds to $n_1$ right steps and $n_2$ left steps), the probability of ending at $m$ is the sum of probabilities for all such unique paths.
+   - **Combinatorial Factor Accounts for All Unique Paths**: Instead of explicitly summing over each arrangement (which would be infeasible for large $N$), the combinatorial factor $\frac{N!}{n_1! n_2!}$ tells us how many such paths exist. By multiplying this count by the probability of any specific path configuration $p^{n_1} q^{n_2}$, we obtain the **total probability** of reaching position $m$. This is because each of the $\frac{N!}{n_1! n_2!}$ paths has the same probability $p^{n_1} q^{n_2}$, and hence their total contribution to $P(m, N)$ is the product.
+
+3. What does ‘first’ and ‘second central moments’ mean, and why are they ‘central’?
+
+Moments are measures of the shape of a distribution relative to a reference point:
+
+   - **First Moment**: The first moment relative to zero (mean) is the average, which gives the central tendency.
+   - **Second Moment**: The second moment relative to the mean is the variance, which describes the spread around the mean.
+   - **Why ‘Central’?**: These moments are measured relative to the mean (a central point of the distribution), rather than from zero. This is crucial in probability and statistics because measuring variance relative to the mean provides a clearer picture of the dispersion around the most typical value rather than from a fixed point. For example, the second central moment is the **variance**, which quantifies how data points typically deviate from the mean, thus centralising the spread description.
+
+4. Why does $l$ appear in the final expression, and how is it derived?
+
+The appearance of $l$ in the final expression relates to the **scale of random steps** in the walk. Here’s why $l$ enters the equation in that specific form:
+
+   - **Role of $l$**: $l$ represents the step size or spatial scale for each step in the random walk. When scaling up to $N$ steps, the typical displacement (mean squared displacement) should depend on both the number of steps and the step size. Intuitively, larger steps (higher $l$) mean the walker covers more distance over the same number of steps.
+   - **Variance Contribution**: For each step, $\xi$ has unit variance, but since each step is scaled by $l$, the effective variance of each step is $l^2$. Consequently, after $N$ steps, the total variance in displacement (mean squared displacement) is $N \times l^2$.
+   - **In the Limit to Continuous Space**: When we transition to a continuous probability distribution for displacement, we see this dependence in the term $l^2 t / \Delta t$ in the denominator of the Gaussian expression, reflecting the cumulative effect of each step’s scale.
+
+</details>

@@ -281,6 +281,11 @@ window.Quarto = {
   <li><a href="#being-a-good-lecturer" id="toc-being-a-good-lecturer" class="nav-link" data-scroll-target="#being-a-good-lecturer">2024/11/5 Being a Good Lecturer</a></li>
   <li><a href="#active-brownian-particles-abps" id="toc-active-brownian-particles-abps" class="nav-link" data-scroll-target="#active-brownian-particles-abps">2024/11/8 Active Brownian Particles (ABPs)</a></li>
   </ul></li>
+  <li><a href="#week-9" id="toc-week-9" class="nav-link" data-scroll-target="#week-9">Week 9</a>
+  <ul class="collapse">
+  <li><a href="#mathpix-and-stochastic-processes" id="toc-mathpix-and-stochastic-processes" class="nav-link" data-scroll-target="#mathpix-and-stochastic-processes">2024/11/13 Mathpix and Stochastic Processes</a></li>
+  <li><a href="#reading-francescos-notes" id="toc-reading-francescos-notes" class="nav-link" data-scroll-target="#reading-francescos-notes">2024/11/14 Reading Francesco’s notes</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -554,6 +559,164 @@ Cmglee. n.d. <span>“Phase Diagram of Water Simplified.”</span> <a href="http
 </ul>
 <p>I’m still uncertain about the concept of entropy production. When I finish reading <em>Physics and Beyond</em>, I’ll start reading <em>Understanding Molecular Simulation</em> again, as it has a chapter that discusses this concept.</p>
 <p>These are the PDF notes that I wrote: <a href="documents/241108 Active Brownian Particles.pdf">My handwritten notes</a></p>
+</section>
+</section>
+<section id="week-9" class="level2">
+<h2 class="anchored" data-anchor-id="week-9">Week 9</h2>
+<section id="mathpix-and-stochastic-processes" class="level3">
+<h3 class="anchored" data-anchor-id="mathpix-and-stochastic-processes">2024/11/13 Mathpix and Stochastic Processes</h3>
+<p>Francesco introduced a tool called <a href="https://mathpix.com">Mathpix</a>, which looks incredibly useful for converting handwritten notes from Goodnotes into formal documents!</p>
+<p>He also shared his draft notes on random walks and stochastic processes: <a href="https://atooms.frama.io/handbook/html/contents/rw.html">Handbook of Particle-Based Simulation of Fluids</a>, which I can download as <code>.ipynb</code> files to experiment with the code.</p>
+<p>I also received a very warm, thoughtful email from Nigel, my supervisor. Since I’d like to reread it often, I want to preserve it here with password protection:</p>
+<div id="protected-content" style="display:none; white-space: pre-wrap; font-family: 'Courier New', Courier, monospace; padding: 20px; border: 1px solid #ccc; background-color: #fdf7e4; border-radius: 5px;">
+  <p>
+Hi Sohyun,
+
+Thanks for your messages. (I thought I’d move things to email as it is easier for longer conversations).
+
+Happy to talk about your worries at the next meeting. I would just say at the start that I am not currently concerned about your progress. It is normal at the start of a PhD to spend quite a lot of time “getting the lay of the land”. We appreciate that with such a lot of new ideas and concepts that things can sometimes feel overwhelming, and it can be difficult to separate the wood from the trees. Please be reassured that this is normal.
+
+I would also say that it is very positive that you are engaged with a good number of complex concepts and trying to understand them in your own terms. The students who don’t make progress are usually the ones who are not engaged, so again I think you can be reassured.
+
+When it comes to reading papers/books that we have suggested, I just wanted to comment that the way most scientists absorb information is usually not by sitting down, reading a paper from cover to cover and not putting it down until they understand every detail. If we did that, we wouldn’t get anything done. Rather we try to first get a feel for roughly what the message of the paper is talking about, the main ideas if you like, and very often that is as far as it goes. If there is something that we find particularly interesting or relevant we might go into more detail, but I would say that that is the exception. So, if we put papers on Zotero and suggest you look at them, we don’t mean that you need to read and understand everything in great detail. In most cases you might just want to get a rough idea of what a paper is about (AI can help here) and build up some familiarity with the types of approaches and language that are used in the field.
+
+Another comment I would make is that it is not always necessary as a PhD student to be able to derive from first principles the methods and results that underpin your approach. Of course, we need to feel reasonably confident that we are using tried and tested techniques for which the strengths and weakness are known. But often the methods themselves might be based on decades of work drawn from vast fields of literature. If one were not to try to make progress until all the foundations had been thoroughly understood, then there would be little time left to measure things. I think it is quite right and proper that you want to understand where the Langevin or ABP equations of motion comes from and how this translates into a time stepping algorithm for evolving the system. But I don’t think one necessarily needs to go all the way back to Einstein’s original papers to do this.  You told me (I think in the context of your project last year) that you felt the need to understand all the foundations before making progress on the project. I would just comment that often we learn ‘on the job’, so to say, ie we might start calculating or measuring without understanding completely what we are doing or why, but the process of ‘doing’ builds that understanding.
+
+Anyway, I hope these comments help and we can certainly discuss further next week.
+
+Best wishes,
+
+Nigel
+  </p>
+</div>
+
+<div id="password-prompt">
+  <label for="password">Type password to reveal the email:</label>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Submit</button>
+</div>
+
+<script>
+  function checkPassword() {
+    const inputPassword = document.getElementById('password').value;
+    const correctPassword = "7942";  // Set your password here
+
+    if (inputPassword === correctPassword) {
+      document.getElementById('protected-content').style.display = "block";
+      document.getElementById('password-prompt').style.display = "none";
+    } else {
+      alert("Incorrect password. Try again.");
+    }
+  }
+</script>
+</section>
+<section id="reading-francescos-notes" class="level3">
+<h3 class="anchored" data-anchor-id="reading-francescos-notes">2024/11/14 Reading Francesco’s notes</h3>
+<p>I asked a couple of questions to ChatGPT while reading it. Their answers were:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Particle-Based Simulation of Fluids/Screenshot 2024-11-14 at 19.30.16.png" class="img-fluid figure-img"></p>
+<figcaption>On One dimensional motion and its statistics, Random Walks</figcaption>
+</figure>
+</div>
+<details>
+<summary>
+Click to reveal the answer!
+</summary>
+<p>In this context, the <strong>factor 2</strong> accounts for a restriction in the random walk model related to how steps accumulate over time.</p>
+<p>For a simple one-dimensional random walk on a lattice (with lattice spacing <span class="math inline">\(a\)</span>), the particle moves by one lattice unit per time step, either to the left or right. This discrete nature of the walk leads to the following pattern:</p>
+<ol type="1">
+<li><strong>Even and Odd Positions:</strong>
+<ul>
+<li>If the walk starts at the origin, then after an even number of steps <span class="math inline">\(t\)</span>, the particle can only be at even lattice positions (multiples of <span class="math inline">\(2a\)</span>), because it has made an even number of moves.</li>
+<li>Similarly, after an odd number of steps <span class="math inline">\(t\)</span>, the particle will only be at odd lattice positions (odd multiples of <span class="math inline">\(a\)</span>).</li>
+</ul></li>
+<li><strong>Even and Odd Times:</strong>
+<ul>
+<li>For <strong>even <span class="math inline">\(t\)</span></strong>, the probability distribution <span class="math inline">\(P(x, t)\)</span> will only have non-zero values at <strong>even lattice positions</strong>.</li>
+<li>For <strong>odd <span class="math inline">\(t\)</span></strong>, <span class="math inline">\(P(x, t)\)</span> will only have non-zero values at <strong>odd lattice positions</strong>.</li>
+</ul></li>
+</ol>
+<p>This constraint implies that half of the possible bins (positions) are unfilled for a given time <span class="math inline">\(t\)</span> because only positions matching the parity of <span class="math inline">\(t\)</span> are reachable. To represent this correctly in the continuous approximation of <span class="math inline">\(P(x, t)\)</span>, the <strong>factor 2</strong> compensates for this limitation by doubling the probability density to account for the missing (unreachable) positions.</p>
+<p>In essence, the factor 2 ensures that the probability distribution <span class="math inline">\(P(x, t)\)</span> normalises correctly even though only half of the possible positions are accessible at any given time due to the parity constraint.</p>
+<hr>
+<p>Here are answers to your questions based on the proof and equation provided:</p>
+<ol type="1">
+<li>Why is the combination written as <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span>?</li>
+</ol>
+<p>This combination term represents the <strong>number of distinct ways</strong> to arrange a sequence with <span class="math inline">\(n_1\)</span> right steps and <span class="math inline">\(n_2\)</span> left steps out of <span class="math inline">\(N\)</span> total steps. In combinatorics, when we have a sequence with repetitions (here, right and left steps), the number of unique arrangements is given by dividing the factorial of the total number of steps, <span class="math inline">\(N!\)</span>, by the factorials of the number of steps of each type, <span class="math inline">\(n_1!\)</span> and <span class="math inline">\(n_2!\)</span>. This accounts for the fact that swapping identical steps (all right steps, for example) doesn’t create a new unique path.</p>
+<ol start="2" type="1">
+<li>Why is this multiplied by <span class="math inline">\(p^{\frac{1}{2}(N+m)} q^{\frac{1}{2}(N-m)}\)</span> to give <span class="math inline">\(P(m, N)\)</span>?</li>
+</ol>
+<p>The probability of a specific path occurring (with exactly <span class="math inline">\(n_1\)</span> steps to the right and <span class="math inline">\(n_2\)</span> steps to the left) is the product of the probability of each step. Since each right step has probability <span class="math inline">\(p\)</span> and each left step has probability <span class="math inline">\(q = 1 - p\)</span>, the probability of any particular path with <span class="math inline">\(n_1 = \frac{1}{2}(N + m)\)</span> right steps and <span class="math inline">\(n_2 = \frac{1}{2}(N - m)\)</span> left steps is:</p>
+<p><span class="math display">\[
+p^{n_1} q^{n_2} = p^{\frac{1}{2}(N + m)} q^{\frac{1}{2}(N - m)}
+\]</span></p>
+<p>Multiplying this by the combinatorial factor <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> gives the total probability <span class="math inline">\(P(m, N)\)</span>, as it accounts for all possible distinct paths that result in the final position <span class="math inline">\(m\)</span>.</p>
+<ol start="3" type="1">
+<li>What does it mean by the ‘first’ and ‘second’ central moments?</li>
+</ol>
+<p>The <strong>first central moment</strong> of a distribution is the <strong>mean</strong> (or expected value) of the distribution, represented as <span class="math inline">\(\langle k \rangle\)</span> for the binomial distribution in this proof. It indicates the average or most likely position after <span class="math inline">\(N\)</span> steps.</p>
+<p>The <strong>second central moment</strong> is the <strong>variance</strong>, which is the expected value of the squared deviation from the mean. For the binomial distribution here, the variance is calculated as <span class="math inline">\(\sigma^2 = \langle k^2 \rangle - \langle k \rangle^2\)</span>. The variance measures the spread of the distribution around the mean. Together, the first and second moments describe the central tendency and spread of the distribution.</p>
+<ol start="4" type="1">
+<li>How can we use the final expression in the proof to arrive at equation (2)?</li>
+</ol>
+<p>To arrive at equation (2), follow these steps based on the large <span class="math inline">\(N\)</span> limit:</p>
+<ol type="1">
+<li><p><strong>Convergence to Normal Distribution</strong>: For large <span class="math inline">\(N\)</span>, the binomial distribution <span class="math inline">\(P(k, N)\)</span> converges to a normal distribution (Central Limit Theorem) with mean <span class="math inline">\(\langle k \rangle = N/2\)</span> and variance <span class="math inline">\(\text{Var}[k] = N/4\)</span>. The form becomes:</p>
+<p><span class="math display">\[
+P(k, N) \approx \frac{1}{\sqrt{2\pi N/4}} \exp\left(-\frac{(k - N/2)^2}{2N/4}\right)
+\]</span></p></li>
+<li><p><strong>Rewrite in Terms of <span class="math inline">\(m\)</span></strong>: Recall that <span class="math inline">\(m = 2k - N\)</span>. This substitution transforms <span class="math inline">\(P(k, N)\)</span> to <span class="math inline">\(P(m, N)\)</span>. Expressing <span class="math inline">\(k\)</span> in terms of <span class="math inline">\(m\)</span> gives <span class="math inline">\(k = \frac{N + m}{2}\)</span>. Substitute <span class="math inline">\(k\)</span> and rewrite the exponent in terms of <span class="math inline">\(m\)</span>.</p></li>
+<li><p><strong>Simplify the Result</strong>: After substitution and simplification, you obtain:</p>
+<p><span class="math display">\[
+P(m, N) = \frac{2}{\sqrt{2\pi N}} \exp\left(-\frac{m^2}{2N}\right)
+\]</span></p></li>
+<li><p><strong>Transition to Continuous Variables</strong>: In the continuous limit, let <span class="math inline">\(t = N \Delta t\)</span> (where <span class="math inline">\(\Delta t\)</span> is the time step). Then, replacing <span class="math inline">\(N\)</span> with <span class="math inline">\(t/\Delta t\)</span> in the expression, you arrive at the form of equation (2):</p>
+<p><span class="math display">\[
+P(x, t) \approx \frac{2}{\sqrt{2\pi l^2 t / \Delta t}} \exp\left(-\frac{x^2 \Delta t}{2 l^2 t}\right)
+\]</span></p></li>
+</ol>
+<p>This final expression is the continuous probability density function for displacement <span class="math inline">\(x\)</span> at time <span class="math inline">\(t\)</span>, matching equation (2) in the problem.</p>
+<hr>
+<p>Thank you for clarifying. Here’s a deeper look into each part:</p>
+<ol type="1">
+<li>Why is the combination written as <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span>?</li>
+</ol>
+<p>The combination <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> arises from a fundamental combinatorial principle when considering paths of independent steps. Here’s why this form is specifically chosen:</p>
+<ul>
+<li><strong>Fundamental Counting Principle</strong>: For <span class="math inline">\(N\)</span> total steps, if each step could either go right or left, you could naively think that each unique ordering of right and left steps forms a distinct path. However, some steps are identical (right steps and left steps).</li>
+<li><strong>Correcting for Identical Arrangements</strong>: Since a particular sequence with <span class="math inline">\(n_1\)</span> right steps and <span class="math inline">\(n_2\)</span> left steps will appear repeatedly due to the indistinguishability of identical steps, we divide by the factorials of these counts (<span class="math inline">\(n_1!\)</span> and <span class="math inline">\(n_2!\)</span>) to avoid overcounting.</li>
+<li><strong>Why Factorials Specifically?</strong>: Factorials count the number of ways to arrange <span class="math inline">\(n_1\)</span> right steps among themselves or <span class="math inline">\(n_2\)</span> left steps among themselves. By dividing <span class="math inline">\(N!\)</span> (the total permutations) by <span class="math inline">\(n_1! n_2!\)</span>, we’re specifically removing duplicate configurations of right and left steps, leaving only the unique paths. Thus, <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> counts the number of distinct ways to take <span class="math inline">\(n_1\)</span> right and <span class="math inline">\(n_2\)</span> left steps out of <span class="math inline">\(N\)</span>, preserving only unique configurations.</li>
+</ul>
+<ol start="2" type="1">
+<li>Why is the total probability the product of the combinatorial factor and the probability of a specific path occurring?</li>
+</ol>
+<p>To understand this, we need to consider the role of independence and probability aggregation:</p>
+<ul>
+<li><strong>Independence of Steps</strong>: Each step is independent and has its own probability of being right (<span class="math inline">\(p\)</span>) or left (<span class="math inline">\(q = 1 - p\)</span>). The probability of one particular sequence occurring is therefore <span class="math inline">\(p^{n_1} q^{n_2}\)</span>.</li>
+<li><strong>Probability of Each Unique Path</strong>: Since each unique path represents one way of achieving a final position <span class="math inline">\(m\)</span> (which corresponds to <span class="math inline">\(n_1\)</span> right steps and <span class="math inline">\(n_2\)</span> left steps), the probability of ending at <span class="math inline">\(m\)</span> is the sum of probabilities for all such unique paths.</li>
+<li><strong>Combinatorial Factor Accounts for All Unique Paths</strong>: Instead of explicitly summing over each arrangement (which would be infeasible for large <span class="math inline">\(N\)</span>), the combinatorial factor <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> tells us how many such paths exist. By multiplying this count by the probability of any specific path configuration <span class="math inline">\(p^{n_1} q^{n_2}\)</span>, we obtain the <strong>total probability</strong> of reaching position <span class="math inline">\(m\)</span>. This is because each of the <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> paths has the same probability <span class="math inline">\(p^{n_1} q^{n_2}\)</span>, and hence their total contribution to <span class="math inline">\(P(m, N)\)</span> is the product.</li>
+</ul>
+<ol start="3" type="1">
+<li>What does ‘first’ and ‘second central moments’ mean, and why are they ‘central’?</li>
+</ol>
+<p>Moments are measures of the shape of a distribution relative to a reference point:</p>
+<ul>
+<li><strong>First Moment</strong>: The first moment relative to zero (mean) is the average, which gives the central tendency.</li>
+<li><strong>Second Moment</strong>: The second moment relative to the mean is the variance, which describes the spread around the mean.</li>
+<li><strong>Why ‘Central’?</strong>: These moments are measured relative to the mean (a central point of the distribution), rather than from zero. This is crucial in probability and statistics because measuring variance relative to the mean provides a clearer picture of the dispersion around the most typical value rather than from a fixed point. For example, the second central moment is the <strong>variance</strong>, which quantifies how data points typically deviate from the mean, thus centralising the spread description.</li>
+</ul>
+<ol start="4" type="1">
+<li>Why does <span class="math inline">\(l\)</span> appear in the final expression, and how is it derived?</li>
+</ol>
+<p>The appearance of <span class="math inline">\(l\)</span> in the final expression relates to the <strong>scale of random steps</strong> in the walk. Here’s why <span class="math inline">\(l\)</span> enters the equation in that specific form:</p>
+<ul>
+<li><strong>Role of <span class="math inline">\(l\)</span></strong>: <span class="math inline">\(l\)</span> represents the step size or spatial scale for each step in the random walk. When scaling up to <span class="math inline">\(N\)</span> steps, the typical displacement (mean squared displacement) should depend on both the number of steps and the step size. Intuitively, larger steps (higher <span class="math inline">\(l\)</span>) mean the walker covers more distance over the same number of steps.</li>
+<li><strong>Variance Contribution</strong>: For each step, <span class="math inline">\(\xi\)</span> has unit variance, but since each step is scaled by <span class="math inline">\(l\)</span>, the effective variance of each step is <span class="math inline">\(l^2\)</span>. Consequently, after <span class="math inline">\(N\)</span> steps, the total variance in displacement (mean squared displacement) is <span class="math inline">\(N \times l^2\)</span>.</li>
+<li><strong>In the Limit to Continuous Space</strong>: When we transition to a continuous probability distribution for displacement, we see this dependence in the term <span class="math inline">\(l^2 t / \Delta t\)</span> in the denominator of the Gaussian expression, reflecting the cumulative effect of each step’s scale.</li>
+</ul>
+</details>
 
 
 
