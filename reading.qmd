@@ -639,4 +639,46 @@ What a beautiful way of interpreting general relativity!
 
 ---
 
-So far, having read up to Chapter 6, it has all been very interesting! But since Monday has come, let’s focus on my project again...
+So far, having read up to Chapter 6, it has all been very interesting! But since Monday has arrived, it’s time to focus on my project again...
+
+## 2024/11/14 - Skimming through papers
+
+Skimming through many papers since I forgot to charge my iPad in my office... I think this is productive ahead of my Monday project meeting next week.
+
+**Wetting Transition of Active Brownian Particles on a Thin Membrane [@turci2021wetting]**
+
+*Cited by 20*
+
+Unfortunately, not very interesting. The authors (my supervisors) investigated how ABPs interact with a planar surface with barrier strength $\epsilon_w$; decreasing this makes the surface resemble a thin penetrable (or porous) membrane. The research implications relate to artificial colloids or elementary swarm robots, but I’m not particularly interested in those systems.
+
+![On page 2, Partial and complete wetting of droplets of active Brownian particles](images/241115 Reading Papers/Screenshot 2024-11-15 at 00.37.35.png)
+
+The above image is a good summary of what the research is about, which coincidentally is from what I’m currently reading:
+
+---
+
+**Partial and Complete Wetting of Droplets of Active Brownian Particles [@turci2024partial]**
+
+*Cited by 5*
+
+It became quite technical from Chapter 2 onward, so I only read the introduction and the discussion & conclusions sections. I think I’m becoming increasingly uncertain about wanting to pursue my project. It doesn’t seem particularly mysterious or evoking my curiosity. I guess the highlight of this article was that, despite the inherent non-equilibrium mechanisms that engender phase separation and non-trivial flow patterns, the large-scale properties of the active model can be mapped onto an equilibrium one. This means that we can use techniques from equilibrium statistical mechanics, such as the renormalisation group, which I was hoping to learn deeply in my PhD. 
+
+If there were a connection between surface phase transitions of vapour inside the cap of my RDA (rebuildable dripping atomiser), it might be more interesting and relating to my interests, but I think this is likely an equilibrium condition rather than something relevant to active matter. **I must ask next week.**
+
+---
+
+**Motility-Induced Phase Separation [@cates2015motility]**
+
+*Cited by 1579 (Really surprising how much attention this topic has received!)*
+
+This one, too, I only read the introduction and conclusion. I wanted to read this because MIPS keeps appearing in many papers. Essentially, this phenomenon occurs because active particles generically accumulate where they move more slowly. What’s really worth noting is that the run-and-tumble model is inspired by *E. coli*, while active Brownian particles are inspired by synthetic colloids. Am I interested in either system? No... I think I should have done this activity of skimming through many papers earlier to clarify what I’m truly interested in.
+
+---
+
+**Proliferating Active Matter [@hallatschek2023proliferating]**
+
+*Cited by 48*
+
+I thought I should probably reread papers that inspired me to investigate active matter in my PhD almost a year ago. One particular article, even though it didn’t seem to attract much attention, was written by Keller: *‘Active Matter, Then and Now’* [@keller2016active]. I loved reading it so much that I probably read it three times. Skipping that one this time, I now started reading *Proliferating Active Matter*, which I also really enjoyed. 
+
+I remember the start of the article was quite strong, mentioning the book that I often reread, *What Is Life?* by Erwin Schrödinger, and also discussing the reshaping of the chessboard by the active matter paradigm (which was probably something to do with breaking mass-reversal symmetry?)—as if I’m playing the physics game like chess.
