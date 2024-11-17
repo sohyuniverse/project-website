@@ -285,6 +285,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#mathpix-and-stochastic-processes" id="toc-mathpix-and-stochastic-processes" class="nav-link" data-scroll-target="#mathpix-and-stochastic-processes">2024/11/13 Mathpix and Stochastic Processes</a></li>
   <li><a href="#reading-francescos-notes" id="toc-reading-francescos-notes" class="nav-link" data-scroll-target="#reading-francescos-notes">2024/11/14 Reading Francesco’s notes</a></li>
+  <li><a href="#sec-biophysics-lectures" id="toc-sec-biophysics-lectures" class="nav-link" data-scroll-target="#sec-biophysics-lectures">2024/11/16 Watching Biophysics Lectures</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -561,7 +562,7 @@ Cmglee. n.d. <span>“Phase Diagram of Water Simplified.”</span> <a href="http
 <p>These are the PDF notes that I wrote: <a href="documents/241108 Active Brownian Particles.pdf">My handwritten notes</a></p>
 </section>
 </section>
-<section id="week-9" class="level2">
+<section id="week-9" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="week-9">Week 9</h2>
 <section id="mathpix-and-stochastic-processes" class="level3">
 <h3 class="anchored" data-anchor-id="mathpix-and-stochastic-processes">2024/11/13 Mathpix and Stochastic Processes</h3>
@@ -612,111 +613,104 @@ Nigel
 </section>
 <section id="reading-francescos-notes" class="level3">
 <h3 class="anchored" data-anchor-id="reading-francescos-notes">2024/11/14 Reading Francesco’s notes</h3>
-<p>I asked a couple of questions to ChatGPT while reading it. Their answers were:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Particle-Based Simulation of Fluids/Screenshot 2024-11-14 at 19.30.16.png" class="img-fluid figure-img"></p>
 <figcaption>On One dimensional motion and its statistics, Random Walks</figcaption>
 </figure>
 </div>
-<details>
-<summary>
-Click to reveal the answer!
-</summary>
-<p>In this context, the <strong>factor 2</strong> accounts for a restriction in the random walk model related to how steps accumulate over time.</p>
-<p>For a simple one-dimensional random walk on a lattice (with lattice spacing <span class="math inline">\(a\)</span>), the particle moves by one lattice unit per time step, either to the left or right. This discrete nature of the walk leads to the following pattern:</p>
-<ol type="1">
-<li><strong>Even and Odd Positions:</strong>
-<ul>
-<li>If the walk starts at the origin, then after an even number of steps <span class="math inline">\(t\)</span>, the particle can only be at even lattice positions (multiples of <span class="math inline">\(2a\)</span>), because it has made an even number of moves.</li>
-<li>Similarly, after an odd number of steps <span class="math inline">\(t\)</span>, the particle will only be at odd lattice positions (odd multiples of <span class="math inline">\(a\)</span>).</li>
-</ul></li>
-<li><strong>Even and Odd Times:</strong>
-<ul>
-<li>For <strong>even <span class="math inline">\(t\)</span></strong>, the probability distribution <span class="math inline">\(P(x, t)\)</span> will only have non-zero values at <strong>even lattice positions</strong>.</li>
-<li>For <strong>odd <span class="math inline">\(t\)</span></strong>, <span class="math inline">\(P(x, t)\)</span> will only have non-zero values at <strong>odd lattice positions</strong>.</li>
-</ul></li>
-</ol>
-<p>This constraint implies that half of the possible bins (positions) are unfilled for a given time <span class="math inline">\(t\)</span> because only positions matching the parity of <span class="math inline">\(t\)</span> are reachable. To represent this correctly in the continuous approximation of <span class="math inline">\(P(x, t)\)</span>, the <strong>factor 2</strong> compensates for this limitation by doubling the probability density to account for the missing (unreachable) positions.</p>
-<p>In essence, the factor 2 ensures that the probability distribution <span class="math inline">\(P(x, t)\)</span> normalises correctly even though only half of the possible positions are accessible at any given time due to the parity constraint.</p>
+<p>Derivations: <a href="documents/241116 Random Walks 1.pdf">My handwritten notes</a></p>
+<p>Still not sure how <span class="math inline">\(l^2\)</span> came in the equations…</p>
+</section>
+<section id="sec-biophysics-lectures" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="sec-biophysics-lectures">2024/11/16 Watching Biophysics Lectures</h3>
+<p><img src="images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 12.32.43.png" class="img-fluid" alt="Welcome page"> <img src="images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 12.31.33.png" class="img-fluid" alt="Welcome page - Schedule"></p>
+<p>I decided to watch lectures from weeks 1, 2, 4, and 5.</p>
 <hr>
-<p>Here are answers to your questions based on the proof and equation provided:</p>
-<ol type="1">
-<li>Why is the combination written as <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span>?</li>
-</ol>
-<p>This combination term represents the <strong>number of distinct ways</strong> to arrange a sequence with <span class="math inline">\(n_1\)</span> right steps and <span class="math inline">\(n_2\)</span> left steps out of <span class="math inline">\(N\)</span> total steps. In combinatorics, when we have a sequence with repetitions (here, right and left steps), the number of unique arrangements is given by dividing the factorial of the total number of steps, <span class="math inline">\(N!\)</span>, by the factorials of the number of steps of each type, <span class="math inline">\(n_1!\)</span> and <span class="math inline">\(n_2!\)</span>. This accounts for the fact that swapping identical steps (all right steps, for example) doesn’t create a new unique path.</p>
-<ol start="2" type="1">
-<li>Why is this multiplied by <span class="math inline">\(p^{\frac{1}{2}(N+m)} q^{\frac{1}{2}(N-m)}\)</span> to give <span class="math inline">\(P(m, N)\)</span>?</li>
-</ol>
-<p>The probability of a specific path occurring (with exactly <span class="math inline">\(n_1\)</span> steps to the right and <span class="math inline">\(n_2\)</span> steps to the left) is the product of the probability of each step. Since each right step has probability <span class="math inline">\(p\)</span> and each left step has probability <span class="math inline">\(q = 1 - p\)</span>, the probability of any particular path with <span class="math inline">\(n_1 = \frac{1}{2}(N + m)\)</span> right steps and <span class="math inline">\(n_2 = \frac{1}{2}(N - m)\)</span> left steps is:</p>
-<p><span class="math display">\[
-p^{n_1} q^{n_2} = p^{\frac{1}{2}(N + m)} q^{\frac{1}{2}(N - m)}
-\]</span></p>
-<p>Multiplying this by the combinatorial factor <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> gives the total probability <span class="math inline">\(P(m, N)\)</span>, as it accounts for all possible distinct paths that result in the final position <span class="math inline">\(m\)</span>.</p>
-<ol start="3" type="1">
-<li>What does it mean by the ‘first’ and ‘second’ central moments?</li>
-</ol>
-<p>The <strong>first central moment</strong> of a distribution is the <strong>mean</strong> (or expected value) of the distribution, represented as <span class="math inline">\(\langle k \rangle\)</span> for the binomial distribution in this proof. It indicates the average or most likely position after <span class="math inline">\(N\)</span> steps.</p>
-<p>The <strong>second central moment</strong> is the <strong>variance</strong>, which is the expected value of the squared deviation from the mean. For the binomial distribution here, the variance is calculated as <span class="math inline">\(\sigma^2 = \langle k^2 \rangle - \langle k \rangle^2\)</span>. The variance measures the spread of the distribution around the mean. Together, the first and second moments describe the central tendency and spread of the distribution.</p>
-<ol start="4" type="1">
-<li>How can we use the final expression in the proof to arrive at equation (2)?</li>
-</ol>
-<p>To arrive at equation (2), follow these steps based on the large <span class="math inline">\(N\)</span> limit:</p>
-<ol type="1">
-<li><p><strong>Convergence to Normal Distribution</strong>: For large <span class="math inline">\(N\)</span>, the binomial distribution <span class="math inline">\(P(k, N)\)</span> converges to a normal distribution (Central Limit Theorem) with mean <span class="math inline">\(\langle k \rangle = N/2\)</span> and variance <span class="math inline">\(\text{Var}[k] = N/4\)</span>. The form becomes:</p>
-<p><span class="math display">\[
-P(k, N) \approx \frac{1}{\sqrt{2\pi N/4}} \exp\left(-\frac{(k - N/2)^2}{2N/4}\right)
-\]</span></p></li>
-<li><p><strong>Rewrite in Terms of <span class="math inline">\(m\)</span></strong>: Recall that <span class="math inline">\(m = 2k - N\)</span>. This substitution transforms <span class="math inline">\(P(k, N)\)</span> to <span class="math inline">\(P(m, N)\)</span>. Expressing <span class="math inline">\(k\)</span> in terms of <span class="math inline">\(m\)</span> gives <span class="math inline">\(k = \frac{N + m}{2}\)</span>. Substitute <span class="math inline">\(k\)</span> and rewrite the exponent in terms of <span class="math inline">\(m\)</span>.</p></li>
-<li><p><strong>Simplify the Result</strong>: After substitution and simplification, you obtain:</p>
-<p><span class="math display">\[
-P(m, N) = \frac{2}{\sqrt{2\pi N}} \exp\left(-\frac{m^2}{2N}\right)
-\]</span></p></li>
-<li><p><strong>Transition to Continuous Variables</strong>: In the continuous limit, let <span class="math inline">\(t = N \Delta t\)</span> (where <span class="math inline">\(\Delta t\)</span> is the time step). Then, replacing <span class="math inline">\(N\)</span> with <span class="math inline">\(t/\Delta t\)</span> in the expression, you arrive at the form of equation (2):</p>
-<p><span class="math display">\[
-P(x, t) \approx \frac{2}{\sqrt{2\pi l^2 t / \Delta t}} \exp\left(-\frac{x^2 \Delta t}{2 l^2 t}\right)
-\]</span></p></li>
-</ol>
-<p>This final expression is the continuous probability density function for displacement <span class="math inline">\(x\)</span> at time <span class="math inline">\(t\)</span>, matching equation (2) in the problem.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 13.13.22 (2).png" class="img-fluid figure-img"></p>
+<figcaption>Lecture, Monday October 3rd</figcaption>
+</figure>
+</div>
+<p>This was quite interesting, as it implies that the duality of the self and the world subsists in the possibility of having the same copy of DNA (which is also unique to myself compared to others, even though the similarity in DNA is striking across humans: approximately 99.9% of the DNA sequence is the same between any two individuals). For example, the clothes I am wearing now do not share the same DNA.</p>
+<p>However, after finishing week 1, it wasn’t very exciting. I would like to work with (idealised) mathematical objects that have relevance to empirical reality, not specific details about how DNA is formed, which chemicals and bonds are involved, or what functions it performs. When I was learning astrophysics, I remember only liking cosmology out of all the astrophysics fields because the other fields felt like the biology of stars, planets, or galaxies. It seems I’m not very interested in these phenomenological descriptions.</p>
 <hr>
-<p>Thank you for clarifying. Here’s a deeper look into each part:</p>
-<ol type="1">
-<li>Why is the combination written as <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span>?</li>
-</ol>
-<p>The combination <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> arises from a fundamental combinatorial principle when considering paths of independent steps. Here’s why this form is specifically chosen:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 17.02.44 (2).png" class="img-fluid figure-img"></p>
+<figcaption>Lecture, Monday October 10th</figcaption>
+</figure>
+</div>
+<p>This is quite interesting: the protein coat (capsid) enclosing the nucleic acid of a virus is always a multiple of 60, such as 60, 120, or 180. Why this number? Why does it exhibit icosahedral symmetry?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 17.12.54 (2).png" class="img-fluid figure-img"></p>
+<figcaption>Lecture, Monday October 10th</figcaption>
+</figure>
+</div>
+<p>Also, this is fascinating. Nature can achieve self-assembly, but humans cannot, no matter how much we know about the individual ingredients that make up these structures (even though the lecturer mentioned that simple structures like helices, such as the tobacco mosaic virus, can be made in the lab). Most of the lecture content here was quite engaging as it covered protein folding. I remembered writing an essay on AlphaFold for coursework while attending these lectures two years ago.</p>
+<p>But no, as soon as the next lecture started covering the chemistry of protein folding and the formation of primary and secondary structures, it completely lost me. It took a few hours to complete one lecture because it was just not interesting.</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 22.54.01 (2).png" class="img-fluid figure-img"></p>
+<figcaption>Lecture, October 19th</figcaption>
+</figure>
+</div>
+<p>I guess that’s why I’m more interested in fungal networks than other life forms, which I find mundane…? After this quiz, there were further explanations about hydrogen bonding, van der Waals attractions, hydrophobic effects, and so on, but they were all nightmares and torturous. There were mentions of entropic costs, enthalpically favourable states, and other concepts, but without equations, it all felt hollow and uninteresting. I’m not sure if this was the lecturer’s fault or the content itself, but I hated learning about all this. No wonder I gave a score of just 2 for this unit. I wanted to stop, but I know the upcoming topics will be about self-assembly or molecular motors, so I decided to persevere… What torture!</p>
+<hr>
+<p>It really makes me reflect on what I’ve been genuinely interested in. From my third year, I started rating how much I enjoyed each unit after finishing it, based on this scale:</p>
 <ul>
-<li><strong>Fundamental Counting Principle</strong>: For <span class="math inline">\(N\)</span> total steps, if each step could either go right or left, you could naively think that each unique ordering of right and left steps forms a distinct path. However, some steps are identical (right steps and left steps).</li>
-<li><strong>Correcting for Identical Arrangements</strong>: Since a particular sequence with <span class="math inline">\(n_1\)</span> right steps and <span class="math inline">\(n_2\)</span> left steps will appear repeatedly due to the indistinguishability of identical steps, we divide by the factorials of these counts (<span class="math inline">\(n_1!\)</span> and <span class="math inline">\(n_2!\)</span>) to avoid overcounting.</li>
-<li><strong>Why Factorials Specifically?</strong>: Factorials count the number of ways to arrange <span class="math inline">\(n_1\)</span> right steps among themselves or <span class="math inline">\(n_2\)</span> left steps among themselves. By dividing <span class="math inline">\(N!\)</span> (the total permutations) by <span class="math inline">\(n_1! n_2!\)</span>, we’re specifically removing duplicate configurations of right and left steps, leaving only the unique paths. Thus, <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> counts the number of distinct ways to take <span class="math inline">\(n_1\)</span> right and <span class="math inline">\(n_2\)</span> left steps out of <span class="math inline">\(N\)</span>, preserving only unique configurations.</li>
+<li><strong>5</strong>: I found it very interesting<br>
+</li>
+<li><strong>4</strong>: Interesting<br>
+</li>
+<li><strong>3</strong>: Okay<br>
+</li>
+<li><strong>2</strong>: Not much fun<br>
+</li>
+<li><strong>1</strong>: I hated it</li>
 </ul>
-<ol start="2" type="1">
-<li>Why is the total probability the product of the combinatorial factor and the probability of a specific path occurring?</li>
-</ol>
-<p>To understand this, we need to consider the role of independence and probability aggregation:</p>
+<p>Here are the scores for my third-year and fourth-year units:</p>
 <ul>
-<li><strong>Independence of Steps</strong>: Each step is independent and has its own probability of being right (<span class="math inline">\(p\)</span>) or left (<span class="math inline">\(q = 1 - p\)</span>). The probability of one particular sequence occurring is therefore <span class="math inline">\(p^{n_1} q^{n_2}\)</span>.</li>
-<li><strong>Probability of Each Unique Path</strong>: Since each unique path represents one way of achieving a final position <span class="math inline">\(m\)</span> (which corresponds to <span class="math inline">\(n_1\)</span> right steps and <span class="math inline">\(n_2\)</span> left steps), the probability of ending at <span class="math inline">\(m\)</span> is the sum of probabilities for all such unique paths.</li>
-<li><strong>Combinatorial Factor Accounts for All Unique Paths</strong>: Instead of explicitly summing over each arrangement (which would be infeasible for large <span class="math inline">\(N\)</span>), the combinatorial factor <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> tells us how many such paths exist. By multiplying this count by the probability of any specific path configuration <span class="math inline">\(p^{n_1} q^{n_2}\)</span>, we obtain the <strong>total probability</strong> of reaching position <span class="math inline">\(m\)</span>. This is because each of the <span class="math inline">\(\frac{N!}{n_1! n_2!}\)</span> paths has the same probability <span class="math inline">\(p^{n_1} q^{n_2}\)</span>, and hence their total contribution to <span class="math inline">\(P(m, N)\)</span> is the product.</li>
+<li><strong>5</strong>: Quantum Physics / Physics Research Project<br>
+</li>
+<li><strong>4.5</strong>: Particle Physics, Analytical Mechanics / The Physics of Phase Transitions<br>
+</li>
+<li><strong>4</strong>: Methods of Theoretical Physics / Foundations of Modern Physics, General Relativity and Cosmology, Quantum Information Theory<br>
+</li>
+<li><strong>3.5</strong>: Materials Physics</li>
+<li><strong>3</strong>: Environmental Physics<br>
+</li>
+<li><strong>2.5</strong>: Solid State Physics / Applied Materials Physics<br>
+</li>
+<li><strong>2</strong>: Biophysics</li>
 </ul>
-<ol start="3" type="1">
-<li>What does ‘first’ and ‘second central moments’ mean, and why are they ‘central’?</li>
-</ol>
-<p>Moments are measures of the shape of a distribution relative to a reference point:</p>
-<ul>
-<li><strong>First Moment</strong>: The first moment relative to zero (mean) is the average, which gives the central tendency.</li>
-<li><strong>Second Moment</strong>: The second moment relative to the mean is the variance, which describes the spread around the mean.</li>
-<li><strong>Why ‘Central’?</strong>: These moments are measured relative to the mean (a central point of the distribution), rather than from zero. This is crucial in probability and statistics because measuring variance relative to the mean provides a clearer picture of the dispersion around the most typical value rather than from a fixed point. For example, the second central moment is the <strong>variance</strong>, which quantifies how data points typically deviate from the mean, thus centralising the spread description.</li>
-</ul>
-<ol start="4" type="1">
-<li>Why does <span class="math inline">\(l\)</span> appear in the final expression, and how is it derived?</li>
-</ol>
-<p>The appearance of <span class="math inline">\(l\)</span> in the final expression relates to the <strong>scale of random steps</strong> in the walk. Here’s why <span class="math inline">\(l\)</span> enters the equation in that specific form:</p>
-<ul>
-<li><strong>Role of <span class="math inline">\(l\)</span></strong>: <span class="math inline">\(l\)</span> represents the step size or spatial scale for each step in the random walk. When scaling up to <span class="math inline">\(N\)</span> steps, the typical displacement (mean squared displacement) should depend on both the number of steps and the step size. Intuitively, larger steps (higher <span class="math inline">\(l\)</span>) mean the walker covers more distance over the same number of steps.</li>
-<li><strong>Variance Contribution</strong>: For each step, <span class="math inline">\(\xi\)</span> has unit variance, but since each step is scaled by <span class="math inline">\(l\)</span>, the effective variance of each step is <span class="math inline">\(l^2\)</span>. Consequently, after <span class="math inline">\(N\)</span> steps, the total variance in displacement (mean squared displacement) is <span class="math inline">\(N \times l^2\)</span>.</li>
-<li><strong>In the Limit to Continuous Space</strong>: When we transition to a continuous probability distribution for displacement, we see this dependence in the term <span class="math inline">\(l^2 t / \Delta t\)</span> in the denominator of the Gaussian expression, reflecting the cumulative effect of each step’s scale.</li>
-</ul>
-</details>
+<p>Based on this, how did I end up choosing my PhD project in active matter? There were complex reasons for choosing it, as I outlined in <a href="./notes.html#sec-skimming-papers">2024/11/14 - Skimming through papers</a>, but honestly, I should have thought it through more carefully (even though, at the time, I believed I was being very thorough).</p>
+<p>So, what am I really interested in? It would be the foundations of modern physics—fairly mathematical work, possibly with computational approaches. However, I’m also deeply interested in neuroscience. I thought I would find a connection by pursuing active matter projects, as studying the brain is a subset of biology. Now, I’m not so sure…</p>
+<p>So, I looked at the programme for the conference <em>Statistical Physics of Cognition</em> (happening in 10 days) to see if there is any research linking active matter and neuroscience. Although I couldn’t find one specifically about active matter, I found one that connects with non-equilibrium statistical physics:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/Biophysics Lectures/Screenshot 2024-11-17 at 01.20.37.png" class="img-fluid figure-img"></p>
+<figcaption><a href="https://iop.eventsair.com/spc2024/programme">Statistical Physics of Cognition - Programme</a></figcaption>
+</figure>
+</div>
+<p>It appears that the researcher has written several papers on this topic with William Bialek, who authored a seminal paper on applying the maximum entropy principle to elucidate collective behaviour in retinal neuronal networks (see <span class="citation" data-cites="schneidman2006weak">Schneidman et al. (<a href="#ref-schneidman2006weak" role="doc-biblioref">2006</a>)</span>), which inspired my MSci research project.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-schneidman2006weak" class="csl-entry" role="listitem">
+Schneidman, Elad, Michael J Berry, Ronen Segev, and William Bialek. 2006. <span>“Weak Pairwise Correlations Imply Strongly Correlated Network States in a Neural Population.”</span> <em>Nature</em> 440 (7087): 1007–12.
+</div><div id="ref-lynn2022emergence" class="csl-entry" role="listitem">
+———. 2022b. <span>“Emergence of Local Irreversibility in Complex Interacting Systems.”</span> <em>Physical Review E</em> 106 (3): 034102.
+</div></div><p>The abstract of the first paper (<span class="citation" data-cites="lynn2022emergence">Lynn et al. (<a href="#ref-lynn2022emergence" role="doc-biblioref">2022b</a>)</span>):</p>
+<blockquote class="blockquote">
+<p>Living systems are fundamentally irreversible, breaking detailed balance and establishing an arrow of time. But how does the evident arrow of time for a whole system arise from the interactions among its multiple elements? We show that the local evidence for the arrow of time, which is the entropy production for thermodynamic systems, can be decomposed. First, it can be split into two components: an independent term reflecting the dynamics of individual elements and an interaction term driven by the dependencies among elements. Adapting tools from nonequilibrium physics, we further decompose the interaction term into contributions from pairs of elements, triplets, and higher-order terms. We illustrate our methods on models of cellular sensing and logical computations, as well as on patterns of neural activity in the retina as it responds to visual inputs. We find that neural activity can define the arrow of time even when the visual inputs do not, and that the dominant contribution to this breaking of detailed balance comes from interactions among pairs of neurons.</p>
+</blockquote>
+<p>The abstract of the second paper (<span class="citation" data-cites="lynn2022decomposing">Lynn et al. (<a href="#ref-lynn2022decomposing" role="doc-biblioref">2022a</a>)</span>):</p>
+<div class="no-row-height column-margin column-container"><div id="ref-lynn2022decomposing" class="csl-entry" role="listitem">
+Lynn, Christopher W, Caroline M Holmes, William Bialek, and David J Schwab. 2022a. <span>“Decomposing the Local Arrow of Time in Interacting Systems.”</span> <em>Physical Review Letters</em> 129 (11): 118101.
+</div></div><blockquote class="blockquote">
+<p>We show that the evidence for a local arrow of time, which is equivalent to the entropy production in thermodynamic systems, can be decomposed. In a system with many degrees of freedom, there is a term that arises from the irreversible dynamics of the individual variables, and then a series of non-negative terms contributed by correlations among pairs, triplets, and higher-order combinations of variables. We illustrate this decomposition on simple models of noisy logical computations, and then apply it to the analysis of patterns of neural activity in the retina as it responds to complex dynamic visual scenes. We find that neural activity breaks detailed balance even when the visual inputs do not, and that this irreversibility arises primarily from interactions between pairs of neurons.</p>
+</blockquote>
 
 
 

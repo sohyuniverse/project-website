@@ -641,7 +641,7 @@ What a beautiful way of interpreting general relativity!
 
 So far, having read up to Chapter 6, it has all been very interesting! But since Monday has arrived, it’s time to focus on my project again...
 
-## 2024/11/14 - Skimming through papers
+## 2024/11/14 - Skimming through papers {#sec-skimming-papers}
 
 Skimming through many papers since I forgot to charge my iPad in my office... I think this is productive ahead of my Monday project meeting next week.
 
@@ -679,6 +679,32 @@ This one, too, I only read the introduction and conclusion. I wanted to read thi
 
 *Cited by 48*
 
-I thought I should probably reread papers that inspired me to investigate active matter in my PhD almost a year ago. One particular article, even though it didn’t seem to attract much attention, was written by Keller: *‘Active Matter, Then and Now’* [@keller2016active]. I loved reading it so much that I probably read it three times. Skipping that one this time, I now started reading *Proliferating Active Matter*, which I also really enjoyed. 
+I thought I should probably reread papers that inspired me to investigate active matter in my PhD almost a year ago. One particular article, even though it didn’t seem to attract much attention, was written by Keller: *‘Active Matter, Then and Now’* [@keller2016active]. I loved reading it so much that I probably read it three times. Skipping that one this time, I started reading *Proliferating Active Matter*, which I also really enjoyed. 
 
-I remember the start of the article was quite strong, mentioning the book that I often reread, *What Is Life?* by Erwin Schrödinger, and also discussing the reshaping of the chessboard by the active matter paradigm (which was probably something to do with breaking mass-reversal symmetry?)—as if I’m playing the physics game like chess.
+I remember the start of the article being quite strong, mentioning the book that I often reread, *What Is Life?* by Erwin Schrödinger, and also discussing the reshaping of the chessboard by the active matter paradigm (which was probably something to do with breaking mass-reversal symmetry?)—as if I were playing the physics game like chess.
+
+While reading (just before the chapter *Motile Proliferating Matter*), I got sidetracked because it wasn’t really interesting anymore. It seems my interests have shifted over the summer or possibly during the final stages of my MSci research project. It sort of makes sense when I think about it in terms of the timeline.
+
+In January 2024, when I was applying for my PhD:
+
+1. I wanted to pursue new physics. It appeared to me that two of my favourite fields (general relativity and quantum field theory) were already well-explored and largely complete.
+2. I also wanted to gain more employability skills, as I hoped to work at Google DeepMind after my PhD. I thought a computationally driven project was essential for this.
+3. Eager to formally learn about the renormalisation group, I looked into areas of new physics related to it. That’s when I discovered the emerging field of active matter. After reading Keller's account of its history and emergence, as well as McGivern's account of how it relates to cognition (which I should probably revisit tomorrow), I thought, *this is it!* This was the field I wanted to pursue! I met Nigel, who was such a brilliant and thoughtful person to talk with, and Francesco, who had already been amazing. I applied directly (and, in fact, only applied for this PhD, while my peers were applying for multiple positions).
+4. In my second term, I was also in the process of interviewing with Samsung Electronics, as they invited me to take on a data scientist role (this happened in early January, I think?). The role and salary were very attractive. However, once I received the final offer, I had to think deeply about what I truly wanted to do. There were still unsolved mysteries I hoped to explore during my PhD. I was curious about fundamental questions like: *What is time? What is space?* I thought about relativity theory and how Einstein built his ideas around the concept of a universal clock, which doesn’t depend on the mechanisms of the clock itself. But these clocks are also within a gravitational field. Can we truly justify that reading a clock on an observer’s wrist is the correct way to measure time, given that all clocks are fundamentally based on electromagnetism?
+5. So, I declined the job offer and decided to stay at university for another four years. Over the summer holidays, I continued reading neuroscience books (particularly on dreams and altered states of consciousness) and considered which topics would be interesting to investigate throughout my PhD.
+
+Before sleeping, I started reading *Time and Quantum Clocks: A Review of Recent Developments* [@altaie2022time], which I found very interesting.
+
+---
+
+**Active Materials: Minimal Models of Cognition? [@mcgivern2020active]**
+
+*Cited by 20*
+
+The next morning, I felt compelled to reread this paper, as it was one of the key works that truly ignited my interest in the field of active matter.
+
+![On page 8, 3. Minimal models](images/241115 Reading Papers/Screenshot 2024-11-16 at 09.43.46-tile.png)
+
+Yes! This was it! I was curious whether a simple model of active matter that I learn could be applied to biological systems by examining if they fall into the same universality class as a realistic model through the application of renormalisation group techniques.
+
+Very interesting. I’m glad I read it once again. I wonder what my supervisors think about this article. I thought it would be useful to clarify whether I truly want to pursue the field of biophysics (as I’m not particularly interested in synthetic colloids), so I decided to revisit the biophysics lectures (see [2024/11/16 Watching Biophysics Lectures](notes.qmd#sec-biophysics-lectures)).

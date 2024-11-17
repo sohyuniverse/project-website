@@ -322,113 +322,79 @@ Nigel
 
 ### 2024/11/14 Reading Francesco's notes
 
-I asked a couple of questions to ChatGPT while reading it. Their answers were:
-
 ![On One dimensional motion and its statistics, Random Walks](images/Particle-Based Simulation of Fluids/Screenshot 2024-11-14 at 19.30.16.png)
 
-<details>
-<summary>Click to reveal the answer!</summary>
+Derivations: [My handwritten notes](documents/241116 Random Walks 1.pdf)
 
-In this context, the **factor 2** accounts for a restriction in the random walk model related to how steps accumulate over time.
+Still not sure how $l^2$ came in the equations...
 
-For a simple one-dimensional random walk on a lattice (with lattice spacing $a$), the particle moves by one lattice unit per time step, either to the left or right. This discrete nature of the walk leads to the following pattern:
+### 2024/11/16 Watching Biophysics Lectures {#sec-biophysics-lectures}
 
-1. **Even and Odd Positions:** 
-   - If the walk starts at the origin, then after an even number of steps $t$, the particle can only be at even lattice positions (multiples of $2a$), because it has made an even number of moves.
-   - Similarly, after an odd number of steps $t$, the particle will only be at odd lattice positions (odd multiples of $a$).
+![Welcome page](images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 12.32.43.png)
+![Welcome page - Schedule](images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 12.31.33.png)
 
-2. **Even and Odd Times:**
-   - For **even $t$**, the probability distribution $P(x, t)$ will only have non-zero values at **even lattice positions**.
-   - For **odd $t$**, $P(x, t)$ will only have non-zero values at **odd lattice positions**.
-
-This constraint implies that half of the possible bins (positions) are unfilled for a given time $t$ because only positions matching the parity of $t$ are reachable. To represent this correctly in the continuous approximation of $P(x, t)$, the **factor 2** compensates for this limitation by doubling the probability density to account for the missing (unreachable) positions. 
-
-In essence, the factor 2 ensures that the probability distribution $P(x, t)$ normalises correctly even though only half of the possible positions are accessible at any given time due to the parity constraint.
+I decided to watch lectures from weeks 1, 2, 4, and 5.
 
 ---
 
-Here are answers to your questions based on the proof and equation provided:
+![Lecture, Monday October 3rd](images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 13.13.22 (2).png)
 
-1. Why is the combination written as $\frac{N!}{n_1! n_2!}$?
+This was quite interesting, as it implies that the duality of the self and the world subsists in the possibility of having the same copy of DNA (which is also unique to myself compared to others, even though the similarity in DNA is striking across humans: approximately 99.9% of the DNA sequence is the same between any two individuals). For example, the clothes I am wearing now do not share the same DNA.
 
-This combination term represents the **number of distinct ways** to arrange a sequence with $n_1$ right steps and $n_2$ left steps out of $N$ total steps. In combinatorics, when we have a sequence with repetitions (here, right and left steps), the number of unique arrangements is given by dividing the factorial of the total number of steps, $N!$, by the factorials of the number of steps of each type, $n_1!$ and $n_2!$. This accounts for the fact that swapping identical steps (all right steps, for example) doesn’t create a new unique path.
-
-2. Why is this multiplied by $p^{\frac{1}{2}(N+m)} q^{\frac{1}{2}(N-m)}$ to give $P(m, N)$?
-
-The probability of a specific path occurring (with exactly $n_1$ steps to the right and $n_2$ steps to the left) is the product of the probability of each step. Since each right step has probability $p$ and each left step has probability $q = 1 - p$, the probability of any particular path with $n_1 = \frac{1}{2}(N + m)$ right steps and $n_2 = \frac{1}{2}(N - m)$ left steps is:
-
-$$
-p^{n_1} q^{n_2} = p^{\frac{1}{2}(N + m)} q^{\frac{1}{2}(N - m)}
-$$
-
-Multiplying this by the combinatorial factor $\frac{N!}{n_1! n_2!}$ gives the total probability $P(m, N)$, as it accounts for all possible distinct paths that result in the final position $m$.
-
-3. What does it mean by the ‘first’ and ‘second’ central moments?
-
-The **first central moment** of a distribution is the **mean** (or expected value) of the distribution, represented as $\langle k \rangle$ for the binomial distribution in this proof. It indicates the average or most likely position after $N$ steps.
-
-The **second central moment** is the **variance**, which is the expected value of the squared deviation from the mean. For the binomial distribution here, the variance is calculated as $\sigma^2 = \langle k^2 \rangle - \langle k \rangle^2$. The variance measures the spread of the distribution around the mean. Together, the first and second moments describe the central tendency and spread of the distribution.
-
-4. How can we use the final expression in the proof to arrive at equation (2)?
-
-To arrive at equation (2), follow these steps based on the large $N$ limit:
-
-1. **Convergence to Normal Distribution**: For large $N$, the binomial distribution $P(k, N)$ converges to a normal distribution (Central Limit Theorem) with mean $\langle k \rangle = N/2$ and variance $\text{Var}[k] = N/4$. The form becomes:
-
-   $$
-   P(k, N) \approx \frac{1}{\sqrt{2\pi N/4}} \exp\left(-\frac{(k - N/2)^2}{2N/4}\right)
-   $$
-
-2. **Rewrite in Terms of $m$**: Recall that $m = 2k - N$. This substitution transforms $P(k, N)$ to $P(m, N)$. Expressing $k$ in terms of $m$ gives $k = \frac{N + m}{2}$. Substitute $k$ and rewrite the exponent in terms of $m$.
-
-3. **Simplify the Result**: After substitution and simplification, you obtain:
-
-   $$
-   P(m, N) = \frac{2}{\sqrt{2\pi N}} \exp\left(-\frac{m^2}{2N}\right)
-   $$
-
-4. **Transition to Continuous Variables**: In the continuous limit, let $t = N \Delta t$ (where $\Delta t$ is the time step). Then, replacing $N$ with $t/\Delta t$ in the expression, you arrive at the form of equation (2):
-
-   $$
-   P(x, t) \approx \frac{2}{\sqrt{2\pi l^2 t / \Delta t}} \exp\left(-\frac{x^2 \Delta t}{2 l^2 t}\right)
-   $$
-
-This final expression is the continuous probability density function for displacement $x$ at time $t$, matching equation (2) in the problem.
+However, after finishing week 1, it wasn’t very exciting. I would like to work with (idealised) mathematical objects that have relevance to empirical reality, not specific details about how DNA is formed, which chemicals and bonds are involved, or what functions it performs. When I was learning astrophysics, I remember only liking cosmology out of all the astrophysics fields because the other fields felt like the biology of stars, planets, or galaxies. It seems I’m not very interested in these phenomenological descriptions.
 
 ---
 
-Thank you for clarifying. Here’s a deeper look into each part:
+![Lecture, Monday October 10th](images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 17.02.44 (2).png)
 
-1. Why is the combination written as $\frac{N!}{n_1! n_2!}$?
+This is quite interesting: the protein coat (capsid) enclosing the nucleic acid of a virus is always a multiple of 60, such as 60, 120, or 180. Why this number? Why does it exhibit icosahedral symmetry?
 
-The combination $\frac{N!}{n_1! n_2!}$ arises from a fundamental combinatorial principle when considering paths of independent steps. Here’s why this form is specifically chosen:
+![Lecture, Monday October 10th](images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 17.12.54 (2).png)
 
-   - **Fundamental Counting Principle**: For $N$ total steps, if each step could either go right or left, you could naively think that each unique ordering of right and left steps forms a distinct path. However, some steps are identical (right steps and left steps).
-   - **Correcting for Identical Arrangements**: Since a particular sequence with $n_1$ right steps and $n_2$ left steps will appear repeatedly due to the indistinguishability of identical steps, we divide by the factorials of these counts ($n_1!$ and $n_2!$) to avoid overcounting.
-   - **Why Factorials Specifically?**: Factorials count the number of ways to arrange $n_1$ right steps among themselves or $n_2$ left steps among themselves. By dividing $N!$ (the total permutations) by $n_1! n_2!$, we’re specifically removing duplicate configurations of right and left steps, leaving only the unique paths. Thus, $\frac{N!}{n_1! n_2!}$ counts the number of distinct ways to take $n_1$ right and $n_2$ left steps out of $N$, preserving only unique configurations.
+Also, this is fascinating. Nature can achieve self-assembly, but humans cannot, no matter how much we know about the individual ingredients that make up these structures (even though the lecturer mentioned that simple structures like helices, such as the tobacco mosaic virus, can be made in the lab). Most of the lecture content here was quite engaging as it covered protein folding. I remembered writing an essay on AlphaFold for coursework while attending these lectures two years ago.
 
-2. Why is the total probability the product of the combinatorial factor and the probability of a specific path occurring?
+But no, as soon as the next lecture started covering the chemistry of protein folding and the formation of primary and secondary structures, it completely lost me. It took a few hours to complete one lecture because it was just not interesting.
 
-To understand this, we need to consider the role of independence and probability aggregation:
+---
 
-   - **Independence of Steps**: Each step is independent and has its own probability of being right ($p$) or left ($q = 1 - p$). The probability of one particular sequence occurring is therefore $p^{n_1} q^{n_2}$.
-   - **Probability of Each Unique Path**: Since each unique path represents one way of achieving a final position $m$ (which corresponds to $n_1$ right steps and $n_2$ left steps), the probability of ending at $m$ is the sum of probabilities for all such unique paths.
-   - **Combinatorial Factor Accounts for All Unique Paths**: Instead of explicitly summing over each arrangement (which would be infeasible for large $N$), the combinatorial factor $\frac{N!}{n_1! n_2!}$ tells us how many such paths exist. By multiplying this count by the probability of any specific path configuration $p^{n_1} q^{n_2}$, we obtain the **total probability** of reaching position $m$. This is because each of the $\frac{N!}{n_1! n_2!}$ paths has the same probability $p^{n_1} q^{n_2}$, and hence their total contribution to $P(m, N)$ is the product.
+![Lecture, October 19th](images/notes/Biophysics Lectures/Screenshot 2024-11-16 at 22.54.01 (2).png)
 
-3. What does ‘first’ and ‘second central moments’ mean, and why are they ‘central’?
+I guess that’s why I’m more interested in fungal networks than other life forms, which I find mundane...? After this quiz, there were further explanations about hydrogen bonding, van der Waals attractions, hydrophobic effects, and so on, but they were all nightmares and torturous. There were mentions of entropic costs, enthalpically favourable states, and other concepts, but without equations, it all felt hollow and uninteresting. I’m not sure if this was the lecturer’s fault or the content itself, but I hated learning about all this. No wonder I gave a score of just 2 for this unit. I wanted to stop, but I know the upcoming topics will be about self-assembly or molecular motors, so I decided to persevere... What torture!
 
-Moments are measures of the shape of a distribution relative to a reference point:
+---
 
-   - **First Moment**: The first moment relative to zero (mean) is the average, which gives the central tendency.
-   - **Second Moment**: The second moment relative to the mean is the variance, which describes the spread around the mean.
-   - **Why ‘Central’?**: These moments are measured relative to the mean (a central point of the distribution), rather than from zero. This is crucial in probability and statistics because measuring variance relative to the mean provides a clearer picture of the dispersion around the most typical value rather than from a fixed point. For example, the second central moment is the **variance**, which quantifies how data points typically deviate from the mean, thus centralising the spread description.
+It really makes me reflect on what I’ve been genuinely interested in. From my third year, I started rating how much I enjoyed each unit after finishing it, based on this scale:
 
-4. Why does $l$ appear in the final expression, and how is it derived?
+- **5**: I found it very interesting  
+- **4**: Interesting  
+- **3**: Okay  
+- **2**: Not much fun  
+- **1**: I hated it  
 
-The appearance of $l$ in the final expression relates to the **scale of random steps** in the walk. Here’s why $l$ enters the equation in that specific form:
+Here are the scores for my third-year and fourth-year units:
 
-   - **Role of $l$**: $l$ represents the step size or spatial scale for each step in the random walk. When scaling up to $N$ steps, the typical displacement (mean squared displacement) should depend on both the number of steps and the step size. Intuitively, larger steps (higher $l$) mean the walker covers more distance over the same number of steps.
-   - **Variance Contribution**: For each step, $\xi$ has unit variance, but since each step is scaled by $l$, the effective variance of each step is $l^2$. Consequently, after $N$ steps, the total variance in displacement (mean squared displacement) is $N \times l^2$.
-   - **In the Limit to Continuous Space**: When we transition to a continuous probability distribution for displacement, we see this dependence in the term $l^2 t / \Delta t$ in the denominator of the Gaussian expression, reflecting the cumulative effect of each step’s scale.
+- **5**: Quantum Physics / Physics Research Project  
+- **4.5**: Particle Physics, Analytical Mechanics / The Physics of Phase Transitions  
+- **4**: Methods of Theoretical Physics / Foundations of Modern Physics, General Relativity and Cosmology, Quantum Information Theory  
+- **3.5**: Materials Physics
+- **3**: Environmental Physics  
+- **2.5**: Solid State Physics / Applied Materials Physics  
+- **2**: Biophysics  
 
-</details>
+Based on this, how did I end up choosing my PhD project in active matter? There were complex reasons for choosing it, as I outlined in [2024/11/14 - Skimming through papers](notes.qmd#sec-skimming-papers), but honestly, I should have thought it through more carefully (even though, at the time, I believed I was being very thorough).
+
+So, what am I really interested in? It would be the foundations of modern physics—fairly mathematical work, possibly with computational approaches. However, I’m also deeply interested in neuroscience. I thought I would find a connection by pursuing active matter projects, as studying the brain is a subset of biology. Now, I’m not so sure...
+
+So, I looked at the programme for the conference *Statistical Physics of Cognition* (happening in 10 days) to see if there is any research linking active matter and neuroscience. Although I couldn’t find one specifically about active matter, I found one that connects with non-equilibrium statistical physics:
+
+![[Statistical Physics of Cognition - Programme](https://iop.eventsair.com/spc2024/programme)](images/notes/Biophysics Lectures/Screenshot 2024-11-17 at 01.20.37.png)
+
+It appears that the researcher has written several papers on this topic with William Bialek, who authored a seminal paper on applying the maximum entropy principle to elucidate collective behaviour in retinal neuronal networks (see @schneidman2006weak), which inspired my MSci research project.
+
+The abstract of the first paper (@lynn2022emergence):
+
+> Living systems are fundamentally irreversible, breaking detailed balance and establishing an arrow of time. But how does the evident arrow of time for a whole system arise from the interactions among its multiple elements? We show that the local evidence for the arrow of time, which is the entropy production for thermodynamic systems, can be decomposed. First, it can be split into two components: an independent term reflecting the dynamics of individual elements and an interaction term driven by the dependencies among elements. Adapting tools from nonequilibrium physics, we further decompose the interaction term into contributions from pairs of elements, triplets, and higher-order terms. We illustrate our methods on models of cellular sensing and logical computations, as well as on patterns of neural activity in the retina as it responds to visual inputs. We find that neural activity can define the arrow of time even when the visual inputs do not, and that the dominant contribution to this breaking of detailed balance comes from interactions among pairs of neurons.
+
+The abstract of the second paper (@lynn2022decomposing):
+
+> We show that the evidence for a local arrow of time, which is equivalent to the entropy production in thermodynamic systems, can be decomposed. In a system with many degrees of freedom, there is a term that arises from the irreversible dynamics of the individual variables, and then a series of non-negative terms contributed by correlations among pairs, triplets, and higher-order combinations of variables. We illustrate this decomposition on simple models of noisy logical computations, and then apply it to the analysis of patterns of neural activity in the retina as it responds to complex dynamic visual scenes. We find that neural activity breaks detailed balance even when the visual inputs do not, and that this irreversibility arises primarily from interactions between pairs of neurons.
