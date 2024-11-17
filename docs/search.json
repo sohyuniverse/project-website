@@ -181,7 +181,7 @@
     "href": "tutorial-document.html#sec-plot",
     "title": "Quarto Document",
     "section": "3.1 Plot",
-    "text": "3.1 Plot\n\n\nCode\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: Simple Plot",
+    "text": "3.1 Plot\n\n\nCode\nimport matplotlib.pyplot as plt\nplt.plot([1,23,2,4])\nplt.show()\n\n\n\n\n\n\n\n\nFigure 3.1: Simple Plot",
     "crumbs": [
       "Website Design",
       "Quarto Tutorial",
@@ -193,7 +193,7 @@
     "href": "tutorial-document.html#sec-equation",
     "title": "Quarto Document",
     "section": "3.2 Equation",
-    "text": "3.2 Equation\n\ns = \\sqrt{\\frac{1}{N-1} \\sum_{i=1}^N (x_i - \\overline{x})^2}\n\\tag{1}",
+    "text": "3.2 Equation\n\ns = \\sqrt{\\frac{1}{N-1} \\sum_{i=1}^N (x_i - \\overline{x})^2}\n\\tag{3.1}",
     "crumbs": [
       "Website Design",
       "Quarto Tutorial",
