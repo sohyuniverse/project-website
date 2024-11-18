@@ -277,7 +277,7 @@ He also shared his draft notes on random walks and stochastic processes: [Handbo
 I also received a very warm, thoughtful email from Nigel, my supervisor. Since I’d like to reread it often, I want to preserve it here with password protection:
 
 ```{=html}
-<div id="protected-content" style="display:none; white-space: pre-wrap; font-family: 'Courier New', Courier, monospace; padding: 20px; border: 1px solid #ccc; background-color: #fdf7e4; border-radius: 5px;">
+<div id="protected-content" style="display:none; white-space: pre-wrap; font-family: 'Lato', Courier, monospace; padding: 20px; border: 1px solid #ccc; background-color: #fdf7e4; border-radius: 5px;">
   <p>
 Hi Sohyun,
 
@@ -398,3 +398,87 @@ The abstract of the first paper (@lynn2022emergence):
 The abstract of the second paper (@lynn2022decomposing):
 
 > We show that the evidence for a local arrow of time, which is equivalent to the entropy production in thermodynamic systems, can be decomposed. In a system with many degrees of freedom, there is a term that arises from the irreversible dynamics of the individual variables, and then a series of non-negative terms contributed by correlations among pairs, triplets, and higher-order combinations of variables. We illustrate this decomposition on simple models of noisy logical computations, and then apply it to the analysis of patterns of neural activity in the retina as it responds to complex dynamic visual scenes. We find that neural activity breaks detailed balance even when the visual inputs do not, and that this irreversibility arises primarily from interactions between pairs of neurons.
+
+### 2024/11/17 The Moment of My Realisation {#sec-equality-sign}
+
+<div style="background-color: #fdf6e3; padding: 1.5em; font-family: 'Trebuchet MS', sans-serif, monospace; margin: 1.5em 0; line-height: 1.6; padding: 20px; border: 1px solid #ccc; background-color: #fdf7e4; border-radius: 5px;">
+The reason Einstein’s theory is beautiful is because it’s the ULTIMATE PATTERN!
+
+Space and time are interlinked!<br>
+Energy and mass are the same!<br>
+Mass is equal to frequency!<sup>1</sup><br>
+The beauty of mathematics was that ‘equality’ sign!  
+
+Just a very simple relationship revealed by mathematics!  
+That was the whole purpose of physics!  
+No matter what complicated language we use to describe concepts,  
+There comes the language of physics: “They are the same!”  
+
+I cannot stop laughing.  
+
+“Stop arguing! They are the same!”  
+
+The reason the renormalisation group naively appeared as beautiful was because, as we went to higher levels of description, we somehow discovered: ‘Oh! They are the same!’
+
+Now it all makes sense.  
+
+The reason the proof of Fermat’s Last Theorem was beautiful was because it linked modular forms to elliptic curves! They are the same!  
+The reason Euler’s relation is beautiful is because it links $e$, $\pi$, $i$, and $-1$!  
+The reason criticality is beautiful is because the Ising model and liquid-gas model, ‘only’ at the critical point, are the same! Hence the name ‘Universality’!  
+The reason Maxwell’s equations are beautiful is because they show that electric fields and magnetic fields are the same! The whole phenomenon you’ve been looking at, which you thought was different, is just the same!  
+The reason nature is beautiful is because it is the same thing! Not different things! The breath of perceiving their sameness!  
+
+The driving motivation for me in my MSci was to say: ‘Hey! The market and the brain are THE SAME!’
+
+I've been just chasing this beauty for my entire lifetime!
+</div>
+
+<p style="font-size: 0.9em; margin-top: 1em;">
+<sup>1</sup> By combining $E = mc^2$ and $E = hf$,
+$$
+E = mc^2 = hf \implies f = \frac{mc^2}{h}
+$$
+</p>
+
+---
+
+I shared this diary with ChatGPT, asking the question: *‘The above is my diary, and I realised that the beauty we feel comes from the equality sign! When we recognise the sameness in the different high-level structures of models, we feel the beauty! Are there any scholars who have noticed this?’*
+
+Here was a kind response I received:
+
+<details>
+<summary>Click to reveal the answer!</summary>
+
+Yes, the notion of "sameness" across seemingly disparate structures has long fascinated scholars across various disciplines. The diary entry you've shared resonates deeply with ideas explored in physics, mathematics, philosophy, and even cognitive science. Scholars have discussed the aesthetic appeal of discovering unifying principles—expressed through equalities, symmetries, or mappings—across different domains.
+
+Here are a few examples of scholars and their thoughts that align with your reflections:
+
+1. **Hermann Weyl**: In *Symmetry* (1952), Weyl extensively discusses the beauty inherent in mathematical symmetry and its unifying power across different physical phenomena. He was captivated by the way symmetry provides insight into the sameness of different structures.
+
+2. **Eugene Wigner**: His essay *The Unreasonable Effectiveness of Mathematics in the Natural Sciences* (1960) explores the mysterious and seemingly miraculous ability of mathematics to describe natural phenomena, suggesting that this effectiveness stems from the deep unity (or sameness) in the laws governing different systems.
+
+3. **Philip Anderson**: In his paper *More is Different* (1972), Anderson discusses the concept of emergence and universality in physics, emphasising how high-level behaviours often reflect underlying similarities (e.g., critical phenomena in phase transitions).
+
+4. **Roger Penrose**: Penrose, particularly in *The Road to Reality* (2004), highlights the elegance of mathematical relationships like Euler's formula and their role in unveiling deep truths about the universe.
+
+5. **Noam Chomsky** (in linguistics and cognitive science): Chomsky's ideas about "deep structure" in human language propose that surface differences in languages mask an underlying sameness—a universal grammar.
+
+6. **Benoît Mandelbrot**: Mandelbrot's work on fractals emphasises the beauty of self-similarity in nature, where complex structures emerge from simple iterative rules, demonstrating a unifying pattern.
+
+Your observation about the equality sign being a source of beauty is profound and aligns with discussions in the philosophy of mathematics. Scholars like Bertrand Russell and Alfred North Whitehead, in *Principia Mathematica*, discuss the foundational role of relations (like equality) in mathematical structures.
+
+In contemporary interdisciplinary work, the pursuit of identifying "sameness" across domains is central to fields like network theory (e.g., mapping similarities between neural networks and market behaviours), which directly aligns with your reflections on the market and the brain.
+
+Your diary elegantly captures a timeless insight: the beauty of science and mathematics often lies in the revelation that what seems different is, at its core, the same.
+
+</details>
+
+## Week 10
+
+### 2024/11/18 Weekly Project Meeting
+
+1. I can mention that I’m not particularly interested in surface phase transitions unless there is a link to my vape (see [2024/11/14 - Skimming through papers](notes.qmd#sec-skimming-papers)).
+
+2. I can also discuss the way I work, such as deriving mathematical equations and explaining how much beauty I perceive in those equations (see [2024/11/17 The Moment of My Realisation](#sec-equality-sign)).
+
+3. At the moment, I’m still exploring which project I would like to pursue for the next four years. When I was doing my MSci research, I felt so restless and excited, deeply engaged with all the required literature, like a sponge absorbing everything! Now, I don’t feel the same enthusiasm for my specific project. That said, I’m reading *Active Particles in Complex and Crowded Environments* (@bechinger2016active) because it appears to be a good review of this field—readable and offering insights into future directions.
