@@ -669,7 +669,7 @@ If there were a connection between surface phase transitions of vapour inside th
 
 **Motility-Induced Phase Separation [@cates2015motility]**
 
-*Cited by 1579 (Really surprising how much attention this topic has received!)*
+*Cited by 1579 (Really surprising how much attention this topic has received!), also written by Michael Cates, who is the Lucasian Professor of Mathematics at the University of Cambridge*
 
 This one, too, I only read the introduction and conclusion. I wanted to read this because MIPS keeps appearing in many papers. Essentially, this phenomenon occurs because active particles generically accumulate where they move more slowly. What’s really worth noting is that the run-and-tumble model is inspired by *E. coli*, while active Brownian particles are inspired by synthetic colloids. Am I interested in either system? No... I think I should have done this activity of skimming through many papers earlier to clarify what I’m truly interested in.
 
