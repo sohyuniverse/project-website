@@ -1,5 +1,5 @@
 ---
-title: Direction of My PhD
+title: Archive
 toc: true
 bibliography: references/quarto.bib
 reference-location: margin
@@ -37,6 +37,18 @@ Anyway, I hope these comments help and we can certainly discuss further next wee
 Best wishes,
  
 Nigel
+
+## 2024/11/14 Diary
+
+It seems my interests have shifted over the summer or possibly during the final stages of my MSci research project. It sort of makes sense when I think about it in terms of the timeline.
+
+In January 2024, when I was applying for my PhD:
+
+1. I wanted to pursue new physics. It appeared to me that two of my favourite fields (general relativity and quantum field theory) were already well-explored and largely complete.
+2. I also wanted to gain more employability skills, as I hoped to work at Google DeepMind after my PhD. I thought a computationally driven project was essential for this.
+3. Eager to formally learn about the renormalisation group, I looked into areas of new physics related to it. That’s when I discovered the emerging field of active matter. After reading Keller's account of its history and emergence, as well as McGivern's account of how it relates to cognition (which I should probably revisit tomorrow), I thought, *this is it!* This was the field I wanted to pursue! I met Nigel, who was such a brilliant and thoughtful person to talk with, and Francesco, who had already been amazing. I applied directly (and, in fact, only applied for this PhD, while my peers were applying for multiple positions).
+4. In my second term, I was also in the process of interviewing with Samsung Electronics, as they invited me to take on a data scientist role (this happened in early January, I think?). The role and salary were very attractive. However, I had to think deeply about what I truly wanted to do. There were still unsolved mysteries I hoped to explore during my PhD. I was curious about fundamental questions like: *What is time? What is space?* I thought about relativity theory and how Einstein built his ideas around the concept of a universal clock, which doesn’t depend on the mechanisms of the clock itself. But these clocks are also within a gravitational field. Can we truly justify that reading a clock on an observer’s wrist is the correct way to measure time, given that all clocks are fundamentally based on electromagnetism?
+5. So, I decided to stay at university for another four years. Over the summer holidays, I continued reading neuroscience books (particularly on dreams and altered states of consciousness) and considered which topics would be interesting to investigate throughout my PhD.
 
 ## 2024/11/16 Diary
 
@@ -186,6 +198,37 @@ Thank you for introducing Ian, but at this stage, I would like to refine my thou
 Thank you, as always, for your support.
 
 Sohyun
+
+## 2024/11/20 엄마의 메세지
+
+다시 다 읽어봤어.
+
+엄마가 보기에 학문적 접근이 4학년이 되면서 본격적으로 이루어졌고,<br>
+물리학에 관해서 이해하면서 앎의 지평이 크게 늘었다고 생각해.
+
+물론,<br>
+너의 호기심을 만족시켜줄수 있는 부분은 다분히 철학적인면, Fundamental 한것이고,<br>
+석사하면서 너가 실험적으로 해본것은,<br>
+Active matter를 연구하게 되는것까지 된것이 아닌가 싶어.<br>
+그래서 그 분야에서 펀딩을 받으며 지금의 너가 있는데,<br>
+음...한번 너가 이야기했던것이 기억나.<br>
+물리학의 발견은 이미 거의 다 이루어져서 새로이 먼가를 발견하는것은 힘들다 했던것같아.<br>
+석사과정 그리고 박사과정 몇달동안 심층적으로 공부가 된것같고,<br>
+엄마는 잘 모르지만,<br>
+아직 Supervisor 와의 프로젝트에 적극적으로 하지못한 부분이 있으니,<br>
+심화된 이해를 갖춘 바탕으로 연구를 차근 해보는것은 어떨까 생각해.<br>
+
+물리학을 전혀 모르는 엄마로서는 이번에는 머라 딱히 해줄 수 없는데,<br>
+너의 여정을 지켜본 엄마로서 봤을때에는 지금은 흥미롭지는 않더라도,<br>
+새로운 선구적인 연구를 하게될때에 또 다른 즐거움이 나타나지 않을지,.<br>
+
+참,..<br>
+고민 많았지.<br>
+컴퓨터 공학 ㅡ 천체물리학 ㅡ 물리학 ㅡ 관심이 어디에 쏠려있느냐에 따라 전과도 하고,<br>
+배움의 길을 걸어왔는데,<br>
+앞으로의 행보에 대해 고민이 더더욱 되는건 당연할꺼야.<br>
+관련된 교수진들을 만나보면서,<br>
+너가 어떤 연구방향으로 가게될지 자연스럽게 알게될것같아.
 
 ```{=html}
 </div>
