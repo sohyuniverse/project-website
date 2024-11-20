@@ -40,6 +40,10 @@ Nigel
 
 ## 2024/11/16 Diary
 
+See [2024/11/16 Watching Biophysics Lectures](notes.qmd#sec-biophysics-lectures)
+
+---
+
 It really makes me reflect on what I’ve been genuinely interested in. From my third year, I started rating how much I enjoyed each unit after finishing it, based on this scale:
 
 - **5**: I found it very interesting  
