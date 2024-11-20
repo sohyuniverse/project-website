@@ -15,6 +15,7 @@ website:
           - notes.qmd
           - reading.qmd
           - conferences.qmd
+          - direction.qmd
       - section: "Website Design"
         contents:
           - theme.qmd

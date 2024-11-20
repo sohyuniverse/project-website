@@ -197,9 +197,7 @@ Please let me know if you would like me to send my CV. For now, I have attached 
 
 ## Week 8
 
-### 2024/11/4 Weekly project meeting
-
-#### Things to discuss (written on 11/2)
+### 2024/11/2 Things to discuss {#sec-week8-project-meeting}
 
 **The meaning of our project**
 
@@ -219,7 +217,7 @@ I have chosen the active matter project because it's a framework that makes the 
 
 The significance of this new way of thinking is apparent to me. However, what is not clear is how observing a drying transition by active particles contributes to our understanding of drying phenomena. The reason I kept asking about real life examples is because I wasn't sure if our results (if we observe drying) would explain the experimental results that need to be explained. If there are such cases, this would be recognised as our correct understanding of drying phenomena, which leads us to think that moving out of equilibrium statistical physics is a more reasonable direction. Since we are dealing with such limited, specific systems where liquid and vapour coexist, which is already quite rare in nature, for this project meeting, I hoped to gain more understanding of the significance of our project.
 
-### 2024/11/4 Diary
+### 2024/11/4 Diary {#sec-week8-diary}
 
 I was quite ill last week, taking antibiotics from Monday to Saturday. While having more rest at home than in other weeks, I was thinking about a few things.
 
@@ -475,7 +473,7 @@ Your diary elegantly captures a timeless insight: the beauty of science and math
 
 ## Week 10
 
-### 2024/11/18 Weekly Project Meeting
+### 2024/11/18 Weekly Project Meeting {#sec-week10-project-meeting}
 
 1. I can mention that I’m not particularly interested in surface phase transitions unless there is a link to my vape (see [2024/11/14 - Skimming through papers](notes.qmd#sec-skimming-papers)).
 

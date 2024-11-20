@@ -1,0 +1,208 @@
+---
+title: Direction of My PhD
+toc: true
+bibliography: references/quarto.bib
+reference-location: margin
+citation-location: margin
+---
+
+```{=html}
+<div id="protected-content" style="display:none;">
+```
+
+## 2024/11/13 My Teams message to Nigel and Francesco
+
+Also, for the next project meeting, I think it’s probably worthwhile to discuss several concerns I have at this stage.
+ 
+1. Right now, I’m focusing on reading about molecular dynamics simulation. However, I’ve been told many times that a lot of the techniques discussed in this book are not related to active matter projects. Do you think it would be better to start reading the references on Zotero instead? There is a lot of material (one book, 21 papers, online resources, as well as code) being presented to me, but it’s not really clear to me what the priority is.
+
+2. There were things that I wanted to discuss last week (see [2024/11/2 Things to discuss](notes.qmd#sec-week8-project-meeting) and [2024/11/4 Diary](notes.qmd##sec-week8-diary)), but since not everyone could be present, it was postponed. The notes I wrote on 4 November reflect my feelings about our project and my progress in the PhD. I wonder if these points would be better discussed in the next project meeting before starting the book club meeting.
+
+## 2024/11/13 Email received from Nigel
+
+Hi Sohyun,
+ 
+Thanks for your messages. (I thought I’d move things to email as it is easier for longer conversations).
+ 
+Happy to talk about your worries at the next meeting. I would just say at the start that I am not currently concerned about your progress. It is normal at the start of a PhD to spend quite a lot of time “getting the lay of the land”. We appreciate that with such a lot of new ideas and concepts that things can sometimes feel overwhelming, and it can be difficult to separate the wood from the trees. Please be reassured that this is normal.
+ 
+I would also say that it is very positive that you are engaged with a good number of complex concepts and trying to understand them in your own terms. The students who don’t make progress are usually the ones who are not engaged, so again I think you can be reassured.
+ 
+When it comes to reading papers/books that we have suggested, I just wanted to comment that the way most scientists absorb information is usually not by sitting down, reading a paper from cover to cover and not putting it down until they understand every detail. If we did that, we wouldn’t get anything done. Rather we try to first get a feel for roughly what the message of the paper is talking about, the main ideas if you like, and very often that is as far as it goes. If there is something that we find particularly interesting or relevant we might go into more detail, but I would say that that is the exception. So, if we put papers on Zotero and suggest you look at them, we don’t mean that you need to read and understand everything in great detail. In most cases you might just want to get a rough idea of what a paper is about (AI can help here) and build up some familiarity with the types of approaches and language that are used in the field.
+ 
+Another comment I would make is that it is not always necessary as a PhD student to be able to derive from first principles the methods and results that underpin your approach. Of course, we need to feel reasonably confident that we are using tried and tested techniques for which the strengths and weakness are known. But often the methods themselves might be based on decades of work drawn from vast fields of literature. If one were not to try to make progress until all the foundations had been thoroughly understood, then there would be little time left to measure things. I think it is quite right and proper that you want to understand where the Langevin or ABP equations of motion comes from and how this translates into a time stepping algorithm for evolving the system. But I don’t think one necessarily needs to go all the way back to Einstein’s original papers to do this.  You told me (I think in the context of your project last year) that you felt the need to understand all the foundations before making progress on the project. I would just comment that often we learn ‘on the job’, so to say, ie we might start calculating or measuring without understanding completely what we are doing or why, but the process of ‘doing’ builds that understanding.
+ 
+Anyway, I hope these comments help and we can certainly discuss further next week.
+ 
+Best wishes,
+ 
+Nigel
+
+## 2024/11/16 Diary
+
+It really makes me reflect on what I’ve been genuinely interested in. From my third year, I started rating how much I enjoyed each unit after finishing it, based on this scale:
+
+- **5**: I found it very interesting  
+- **4**: Interesting  
+- **3**: Okay  
+- **2**: Not much fun  
+- **1**: I hated it  
+
+Here are the scores for my third-year and fourth-year units:
+
+- **5**: Quantum Physics / Physics Research Project  
+- **4.5**: Particle Physics, Analytical Mechanics / The Physics of Phase Transitions  
+- **4**: Methods of Theoretical Physics / Foundations of Modern Physics, General Relativity and Cosmology, Quantum Information Theory  
+- **3.5**: Materials Physics
+- **3**: Environmental Physics  
+- **2.5**: Solid State Physics / Applied Materials Physics  
+- **2**: Biophysics  
+
+Based on this, how did I end up choosing my PhD project in active matter? There were complex reasons for choosing it, as I outlined in [2024/11/14 - Skimming through papers](notes.qmd#sec-skimming-papers), but honestly, I should have thought it through more carefully (even though, at the time, I believed I was being very thorough).
+
+So, what am I really interested in? It would be the foundations of modern physics—fairly mathematical work, possibly with computational approaches. However, I’m also deeply interested in neuroscience. I thought I would find a connection by pursuing active matter projects, as studying the brain is a subset of biology. Now, I’m not so sure...
+
+## 2024/11/17 Some passages from my diary
+
+### 3:00pm
+
+Continuous time or discrete time are names. Just the named.
+
+### 3:51pm
+
+Wetting and drying, it’s not beautiful.<br>
+It’s such a domain of such an abstract domain.
+
+Time and space, I’m always experiencing. I want to study something that I’m always experiencing.
+
+### 4:13pm
+
+The reason Einstein’s theory is beautiful is because it’s the ULTIMATE PATTERN!
+
+Space and time are interlinked!<br>
+Energy and mass are the same!<br>
+Mass is equal to frequency!<sup>1</sup><br>
+The beauty of mathematics was that ‘equality’ sign!  
+
+Just a very simple relationship revealed by mathematics!  
+That was the whole purpose of physics!  
+No matter what complicated language we use to describe concepts,  
+There comes the language of physics: “They are the same!”  
+
+I cannot stop laughing.  
+
+“Stop arguing! They are the same!”  
+
+The reason the renormalisation group naively appeared as beautiful was because, as we went to higher levels of description, we somehow discovered: ‘Oh! They are the same!’
+
+Now it all makes sense.  
+
+The reason the proof of Fermat’s Last Theorem was beautiful was because it linked modular forms to elliptic curves! They are the same!  
+The reason Euler’s relation is beautiful is because it links $e$, $\pi$, $i$, and $-1$!  
+The reason criticality is beautiful is because the Ising model and liquid-gas model, ‘only’ at the critical point, are the same! Hence the name ‘Universality’!  
+The reason Maxwell’s equations are beautiful is because they show that electric fields and magnetic fields are the same! The whole phenomenon you’ve been looking at, which you thought was different, is just the same!  
+The reason nature is beautiful is because it is the same thing! Not different things! The breath of perceiving their sameness!  
+
+The driving motivation for me in my MSci was to say: ‘Hey! The market and the brain are THE SAME!’
+
+I've been just chasing this beauty for my entire lifetime!
+
+<sup>1</sup> By combining $E = mc^2$ and $E = hf$,
+$$
+E = mc^2 = hf \implies f = \frac{mc^2}{h}
+$$
+</p>
+
+### 5:11pm
+
+To get this sense of beauty, the things that are left and right of the equality sign have to be the systems that I’m truly interested in. The reason that the investigation of drying or wetting in non-equilibrium contexts using a very specific model (active Brownian particles) is not beautiful is because none of the systems that I’m considering (which is biology) are my interests!
+
+I don’t care about biology!<br>
+I’m afraid of insects!
+
+### 5:47pm
+
+We see the same beauty,<br>
+But the beauty is not the same.
+
+We see everyone’s face, but not ours.<br>
+We find the sameness between different things, but I’m not a thing that relates to those things.<br>
+When seeking the sameness between me and the others, it falls into trouble.<br>
+That’s why we can’t see our face.<br>
+That’s why I can’t see my face.<br>
+So that I do not self-reference.
+
+### 10:16pm
+
+I have a PhD project I want to do:<br>
+‘Equality’ sign in physics.<br>
+Starting from $F = ma$, all the way to $E = mc^2$ and $E = hf$<br>
+Searching for what are the left equalities.
+
+Start the proposal: ‘Considering a PhD project on the theme of the ‘Equality’ sign in physics, exploring its role from foundational equations like $F = ma$ to $E = mc^2$ and $E = hf$, and identifying other significant equalities.’
+
+### Next day
+
+If I think about my current project as spontaneous symmetry breaking, it is kind of interesting.
+
+## 2024/11/19 Email received from Nigel
+
+After having a project meeting discussing these points: [2024/11/18 Weekly Project Meeting](notes.qmd#sec-week10-project-meeting)
+
+---
+
+Dear Sohyun,
+ 
+I am writing to follow up on our conversation yesterday when you told me that you are no longer interested in pursuing your PhD project on surface phase transitions in active matter. I have to say that personally, I think that this is a pity because Francesco Turci and I are really excited by the idea of making progress on this topic which represents an unexplored frontier of non-equilibrium statistical physics (as are other people like Rob Jack and Mike Cates in Cambridge University). I would also note that I rather struggle to understand how this can be a fully informed decision when you have not yet engaged with the project in a meaningful way beyond reading a few background papers.  However, if you really can muster no enthusiasm for the topic then I must accept that.
+ 
+Active Matter is one of the main areas in which I see my research focussing for the foreseeable future. Are you ruling out just the particular project, or do you no longer wish to work in the field of Active Matter at all?  If the latter, then the areas of potential overlap for projects that I am qualified and willing to supervise is limited. Furthermore, if the topic were to change significantly, we would need to seek approval from the Faculty who awarded you UoB funding to do a PhD and who may insist that to retain the funding you don’t stray far from the topic for which your funding was agreed as constituting a strategic priority for the school. 
+ 
+Nevertheless, and with this caveat, there may be some options to consider.  I have made a tentative list (see [attached pdf](documents/241119 Redirection of PhD project.pdf)), which naturally reflects my interest and background in simulation of phase transitions and critical phenomena in both equilibrium and non-equilibrium statistical physics and soft matter. Please look at the list of topics in the middle column of the document. I am happy to discuss what each project might entail at our meeting on Monday.
+ 
+I am also happy for you to suggest a PhD project topic. But if you do this, I think that you need to go away and read about the topic in detail and prepare a written proposal that is both convincing in terms of potential for original research (as defined in the UoB PhD regulations) and likely to overlap with my research interests and expertise. Again, the topic would need to be acceptable to your funders in the faculty. To avoid wasting any time, I’ve also prepared a non-exhaustive list (third column) of projects that I happen to know from our conversations that you are interested in, but which I do not feel sufficiently well qualified or motivated to supervise.
+ 
+I think that in this situation it would be useful for you to seek some independent advice on possible next steps. Dr Ian Lindsay is the PGR director for the School of Physics and has indicated to me that he would be happy to meet with you to discuss the situation and explain any formal processes that apply. I would strongly suggest that you take him up on this offer and write to him to arrange a meeting. His email is i.d.lindsay@bristol.ac.uk
+ 
+Best regards
+ 
+Nigel
+
+## 2024/11/19 My reply to Nigel
+
+Hi Nigel,
+ 
+Thank you very much for your email. I completely agree that it was not a fully informed decision, as I have not yet engaged much with the simulation side of things. That is something I have been trying to address since yesterday. When I went back home, I came across the paper ‘Critical Motility-Induced Phase Separation Belongs to the Ising Universality Class’, which seemed so interesting that I thought it might be worthwhile to attempt simulations of active Brownian particles at the critical MIPS in 2D. Although computational resources would be demanding, it would be very interesting to perform renormalisation to rescale the system and demonstrate its scale-invariant features like the critical Ising model.
+ 
+I remain very interested in active matter because it represents a compelling and novel paradigm in physics that resonates with my ideas deeply. I am also not ruling out our current project. I shared my personal concerns in the hope of gaining further inspiration for the current project, and I apologise if I inadvertently gave the impression that I have no interest in either this project or the overarching theme I have chosen.
+ 
+I will not be in Bristol next Monday or Tuesday, so should we reschedule the meeting to later this week or next Wednesday? Thank you also for the separate document. I will read through the topics, as I am still quite naïve with many of the fields mentioned.
+ 
+Thank you for introducing Ian, but at this stage, I would like to refine my thoughts further by exploring your suggestions first. It seems that I was too hasty in yesterday’s meeting, and, in hindsight, I probably should not have brought up my concerns in the way that I did.
+ 
+Thank you, as always, for your support.
+
+Sohyun
+
+```{=html}
+</div>
+
+<div id="password-prompt" style="padding: 20px; text-align: center;">
+  <label for="password">Enter password to view the content:</label>
+  <input type="password" id="password" style="margin: 10px;">
+  <button onclick="checkPassword()">Submit</button>
+</div>
+
+<script>
+  function checkPassword() {
+    const inputPassword = document.getElementById('password').value;
+    const correctPassword = "7942";  // Set your password here
+
+    if (inputPassword === correctPassword) {
+      document.getElementById('protected-content').style.display = "block";
+      document.getElementById('password-prompt').style.display = "none";
+    } else {
+      alert("Incorrect password. Try again.");
+    }
+  }
+</script>
+```
