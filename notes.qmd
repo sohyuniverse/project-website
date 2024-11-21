@@ -508,3 +508,11 @@ The image source: [Microtubules: the basics](https://www.nature.com/scitable/con
 This lecture (Wednesday October 26th) has been particularly interesting, as it delved into the dynamics of cells. Topics included microtubules growing and collapsing to induce cell movement, how blood cells squeeze through capillaries (this was adorable! Although I think it was mentioned in the previous lecture), and connections to soft matter physics, where I feel most aligned. There were also discussions about self-assembly, which were very interesting.
 
 So, the topics that interest me in biophysics are cell dynamics, self-assembly (and disassembly).
+
+### 2024/11/21 A liquid droplet
+
+Suddenly, a strange thought occurred, which I was trying to phrase to ask my supervisor:
+
+> I’ve been thinking about the shape of a liquid droplet on a surface, particularly how it changes with wetting states. On a superhydrophobic surface, the droplet appears almost perfectly spherical because it minimises contact with the surface. As the surface becomes less hydrophobic, transitioning to a partially wetting state, the droplet flattens into a spherical cap shape. I was wondering if this change in shape could be thought of as a conceptual process where the spherical droplet 'expands,' exposing less of its 'head' above the surface as it flattens. In the extreme limit of complete wetting, it could correspond to a large sphere overlaying the surface, with only a tiny portion visible above it. Has anyone investigated this kind of analogy or thought about the wetting transition in a similar way? 
+
+I have derived some expressions in these [handwritten notes](documents/241121 Liquid Droplet.pdf), but I'm not sure where to go with this.

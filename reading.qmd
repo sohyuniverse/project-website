@@ -708,3 +708,55 @@ The next morning, I felt compelled to reread this paper, as it was one of the ke
 Yes! This was it! I was curious whether a simple model of active matter that I learn could be applied to biological systems by examining if they fall into the same universality class as a realistic model through the application of renormalisation group techniques.
 
 Very interesting. I’m glad I read it once again. I wonder what my supervisors think about this article. I thought it would be useful to clarify whether I truly want to pursue the field of biophysics (as I’m not particularly interested in synthetic colloids), so I decided to revisit the biophysics lectures (see [2024/11/16 Watching Biophysics Lectures](notes.qmd#sec-biophysics-lectures)).
+
+---
+
+I thought it would be important to develop a good understanding of why active colloids or motile bacteria are significant. While exploring this, I found a list of nice articles by Philip Ball.
+
+**Colloids Get Active [@ball2013colloids]**
+
+*Cited by 5*
+
+Philip Ball writes:  
+
+> Bacterial swarms—the prototypical form of active matter—model the motile bacteria.  
+
+which he mentioned is really important as active Brownian particles model the motile bacteria. I loved this very short *News & Views* article :) The cited paper also seems highly relevant, which begins with the abstract:  
+
+> An active colloid is a suspension of particles that transduce free energy from their environment and use the energy to engage in *intrinsically non-equilibrium* activities such as growth, replication, and self-propelled motility. An obvious example of active colloids is a suspension of bacteria such as *Escherichia coli*, their physical dimensions being almost invariably in the colloidal range. Synthetic self-propelled particles have also become available recently, such as two-faced, or Janus, particles propelled by differential chemical reactions on their surfaces driving a self-phoretic motion. In these lectures, I give a pedagogical introduction to the physics of single-particle and collective properties of active colloids, focusing on self-propulsion. I will compare and contrast phenomena in suspensions of ‘swimmers’ with the behavior of suspensions of passive particles, where only Brownian motion (discovered by Robert Brown in granules from the pollen of the wild flower *Clarkia pulchella*) is relevant. I will pay particular attention to issues that pertain to performing experiments using these active particle suspensions, such as how to characterize the suspension’s swimming speed distribution, and include an appendix to guide physicists wanting to start culturing motile bacteria.
+
+**From Clarkia to Escherichia and Janus: The physics of natural and synthetic active colloids [@poon2013clarkia]**
+
+*Cited by 74*
+
+This was probably the first time I realised the significance of the colloidal scale!  
+
+One video was introduced in this article about kinematic reversibility, really surprised!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/51-6QCJTAjU?si=7a3lQn3SGY1_Gp9D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Even though the article was very interesting, it didn't seem closely related to my specific project, so I stopped reading after page 9 and skipped to the conclusion. However, I really liked how it also started with the basics of fluid dynamics.
+
+In the conclusion, the author notes:  
+
+> I have already mentioned one potential source of experimental difficulties for corresponding experiments using active particles: the rapid depletion of “fuel,” so that any putative novel collective effects need to be carefully scrutinized to rule out fuel depletion as a causative factor.  
+
+I *think* this observation also applies to simulations, where particles are often assumed to have an infinite energy supply. And I especially loved the ending of the conclusion—read for yourself in the future again :)
+
+**Animate Materials [@ball2021animate]**
+
+*Cited by 12*
+
+Philip Ball writes:  
+
+> Ever since humans began constructing artifacts from materials—whether a stone bridge or a space rocket—we have regarded design as a fixed objective and have selected materials and structures that we believe will do the job as well as possible. Maintenance, repair, and alteration have then been regarded as additional tasks—necessary in most cases, but enacted post hoc. Typically, the aim has been to use materials that resist change: that will not break or corrode or deform. If these things happen, a whole new train of interventions is required. But for animate materials, responses to such changes are foreseen and accommodated from the outset.
+
+I really like his articles (I should read some of his books!) because they make me imagine a lot of sci-fi scenes that I watched. The most immediate ones that come to mind are *Foundation* on Apple TV, where both human skin and spaceship exteriors are auto-healed, and the iconic opening scene of *Ghost in the Shell* where Major Kusanagi body is being constructed.
+
+Also, Philip writes:
+
+> One perspective would be to equate “animate” with an autonomous capacity to “act”—which is reflected in the perception that many of the properties considered desirable in animate materials are prefixed with “self-”: assembly, repair, sensing, diagnosing, reporting, protecting.
+
+> One of the most obvious molecularscale differences between living and inanimate materials is the nature of the chemical bonding. Rocks and minerals tend to have rigid structures held together by strong (covalent or ionic) chemical bonds. In living systems, the molecules—such as proteins and nucleic acids—are generally dynamic in their conformation and interact with other molecules via weak interactions such as hydrogen bonding and hydrophobic forces. This enables information to be transmitted from place to place, and means that molecular entities can be assembled and disassembled on demand. The “looseness of structure” is surely also an essential feature for systems that are maintained away from equilibrium by a throughput of material and energy, and which can adapt to changes in the environment.
+
+This is probably also the first time I realised the importance of hydrophobicity in non-equilibrium systems. Even though there was no huge overlap with active matter topics, it was a very interesting read.
