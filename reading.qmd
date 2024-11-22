@@ -1,12 +1,24 @@
 ---
-title: List of My Reading
+title: Reading Archive
 toc: true
 bibliography: references/quarto.bib
 reference-location: margin
 citation-location: margin
 ---
 
-## 2024/9/21 - 10/3 *What is a Complex System?* (Completed)
+This archive contains a curated list of books and articles I’ve encountered during my research. To keep track of my progress:  
+- *Italicised titles* indicate works I’ve completed reading.  
+- Regular (non-italicised) titles indicate works I have not finished yet.  
+
+The materials are organised into two main categories:  
+1. **Books**: Full-length works, including textbooks, monographs, and popular science books.  
+2. **Articles**: Shorter works, such as journal articles, student theses, essays, and commentaries.
+
+---
+
+# Books
+
+## 2024/9/21 - 10/3 *What is a Complex System?*
 
 By James Ladyman and Karoline Wiesner
 
@@ -78,9 +90,170 @@ It took about two weeks to finish this book. It was an accessible read until I r
 
 Anyway, it was a good read. Would I buy a physical copy for myself? Maybe not, but it was a good one.
 
-## 2024/10/4 - *Hydrophobicity Across Length Scales: The Role of Surface Criticality*
+## 2024/10/23 - Understanding Molecular Simulation, 3rd Ed [@frenkel2023understanding]
 
-By Mary Kathryn Coe
+*Cited by 22954!*
+
+### Chapter 1. Introduction
+
+Before starting our project, I was a little concerned about whether computational simulation is a valid way to understand the fundamental order of nature. I thought that what we do as physicists is observe systems through experiments, theorise with idealised objects to gain predictive power, and then test the theory by observing again. This thought process was probably inspired by a Kantian perspective; I read his *Critique of Pure Reason* in high school, where he posits that causality is a presupposition of reasoning. For those purposes, idealised objects had to be mathematical (forms or images from Plato) and needed to represent what I directly observe in empirical reality.
+
+![On page 2, Introduction](images/Understanding Molecular Simulation/Screenshot 2024-11-08 at 21.40.30.png)
+
+I'm still not completely certain if computer simulation is truly the way to go, but as I work through it, I hope it will make more sense to me.
+
+---
+
+![On page 6, Introduction](images/Understanding Molecular Simulation/Screenshot 2024-10-23 at 16.38.54.png)
+
+Quite an interesting discussion on what *'model'* means in science.
+
+---
+
+### Chapter 2. Thermodynamics and Statistical Mechanics
+
+![On page 22, 2.1.2 Chemical Potential and Equilibrium](images/Understanding Molecular Simulation/Screenshot 2024-10-24 at 17.45.55.png)
+
+Important equilibrium conditions!
+
+---
+
+![On page 22, 2.1.2 Chemical Potential and Equilibrium](images/Understanding Molecular Simulation/Screenshot 2024-11-11 at 11.50.22.png)
+
+I'm not entirely sure why the extremum condition applies specifically to variations in $E_1$, $N_1$, and $V_1$. So, I asked ChatGPT:
+
+<details>
+<summary>Click to reveal the answer!</summary>
+
+You're right to question this subtle point. 
+
+The key insight lies in understanding that when we talk about maximising the total entropy $S_{\text{tot}} = S_1 + S_2$ of a closed system with fixed total values of energy, volume, and particle number, the only degrees of freedom available for changes are the distributions of $E$, $V$, and $N$ between the subsystems. 
+
+Here's the reasoning in detail:
+
+1. **Fixed Total Quantities Impose Constraints**: Because the total energy $E_{\text{tot}} = E_1 + E_2$, volume $V_{\text{tot}} = V_1 + V_2$, and particle number $N_{\text{tot}} = N_1 + N_2$ are fixed, any changes in $E_1$, $V_1$, or $N_1$ must be offset by corresponding changes in $E_2$, $V_2$, and $N_2$ to keep these sums constant.
+
+2. **Entropy Extremum Condition**: In equilibrium thermodynamics, the Second Law requires that the total entropy of an isolated (or closed) system reaches a maximum (or an extremum) at equilibrium. However, since the system is closed and these total quantities are fixed, the system cannot simply increase or decrease its overall $E_{\text{tot}}$, $V_{\text{tot}}$, or $N_{\text{tot}}$. Instead, any adjustments to entropy must occur through *redistributions* of these quantities between subsystems.
+
+3. **Redistribution as the Only Available Variation**: Thus, the extremisation of $S_{\text{tot}}$ must occur specifically with respect to the variables that can change within the subsystems while satisfying the overall conservation constraints. Since $E_{\text{tot}}$, $V_{\text{tot}}$, and $N_{\text{tot}}$ are fixed, the only available independent variations in $S_{\text{tot}}$ come from redistributing $E_1$, $V_1$, and $N_1$ (and equivalently $E_2$, $V_2$, and $N_2$).
+
+4. **Derivative Vanishing Condition**: For $S_{\text{tot}} = S_1 + S_2$ to be maximised (or extremised) under these constraints, the derivatives of $S_{\text{tot}}$ with respect to $E_1$, $V_1$, and $N_1$ must vanish. This is because any non-zero derivative would indicate that entropy could be further increased by adjusting these redistributive variables, contradicting the requirement of equilibrium.
+
+In summary, we require the extremum condition with respect to $E_1$, $V_1$, and $N_1$ specifically because these are the variables that can be redistributed between the subsystems within the constraint of fixed total quantities. This is why the extremum condition applies to these specific derivatives, and not to other parameters.
+
+</details>
+
+---
+
+![On page 30, 2.2.3 Towards Classical Statistical Mechanics](images/Understanding Molecular Simulation/Screenshot 2024-10-25 at 23.34.58.png)
+
+I’m not sure how to derive the transition from 2.2.17 to 2.2.18.
+
+## 2024/11/2 - 11/8 *Physics and Beyond* [@heisenberg1971physics] {#sec-physics-and-beyond}
+
+*Cited by 1832*
+
+It's the first time I'm reading this in English; the title of the book in Korean is 부분과 전체, which might translate to *Parts and the Whole*. I've read it many times since I was in high school, and it has been highly influential to me as a physicist throughout my life. To capture some of the things I want to revisit later:
+
+![On page 72, Fresh Fields (1926-1927)](images/Physics and Beyond/Screenshot 2024-11-04 at 08.43.51.png)
+
+![On page 80, Fresh Fields (1926-1927)](images/Physics and Beyond/Screenshot 2024-11-04 at 09.10.47.png)
+
+So far, having read up to page 89, it has all been interesting, except for Chapter 4 (*Lessons in Politics and History*). When the development of quantum mechanics was presented in Chapters 5 and 6, I felt my heart pounding as I read through, just as it did when I first read this book.
+
+---
+
+![On page 97, Atomic Physics and Pragmatism (1929)](images/Physics and Beyond/Screenshot 2024-11-04 at 20.20.52.png)
+
+All these realms were so enjoyable to learn, but now, as a researcher, I wonder what realms are still open. I thought one of them was non-equilibrium statistical thermodynamics, but it appears to me that this theory can't be axiomatic, implying that all systems out of equilibrium must be described differently.
+
+---
+
+![On page 109, The Relationship between Biology, Physics and Chemistry (1930-1932)](images/Physics and Beyond/Screenshot 2024-11-04 at 21.20.51-down.png)
+
+'Forms through which matter streams,' as Niels Bohr described, was the most profound characterisation of organisms I have encountered. I used to wonder, what about this structure remains? Does it actually persist, given that a person changes continuously as a child becomes an adult? Is it simply the name (person) we assign that represents this form of life? With this thought, is there really a distinction between animate and inanimate objects?
+
+When I read *Timaeus* by Plato in high school, he described geometrical forms as the basis of earth, fire, water, and air, even though I found his idea peculiar (like everything is made of right triangles). At the time, I thought the properties that define those mathematical forms were responsible for things maintaining their structure in the way we perceive over time (since all forms change shape as time passes). My master's research was also focused on investigating this homeostasis in an ideal structure—not physical but something we perceive—in the context of foreign exchange markets. This line of thought was also captured well by Bohr’s question: "Can quantum mechanics explain nature's tendency to form structures through which matter with fixed chemical properties can stream for a limited time?"
+
+---
+
+![On page 128, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 09.48.38.png)
+
+This passage about the discovery of antimatter was one of the reasons I chose a physics degree, along with my ambition to formally study general relativity. Although I didn’t score well in my particle physics exam in third year due to a part-time job over winter break, it remains one of the most exciting units I've taken. Here are the scores and ratings I gave to my third and fourth-year units with scores of at least 4:
+
+5: Physics Research Project (83), Quantum Physics (88)  
+4.5: Physics of Phase Transitions (85), Analytical Mechanics (66), Particle Physics (58)  
+4: Quantum Information Theory (68), Foundations of Modern Physics (68), Methods of Theoretical Physics (63)  
+
+It’s surprising that general relativity only scored 3.5, but it seems I didn’t enjoy the lecture style despite being fascinated by the content.
+
+---
+
+![On page 134, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 10.11.03.png)
+
+This passage captures the reason I didn’t pursue a philosophy degree, despite having written about philosophy of science. What I realised was the fluidity of language, and at some point, reading philosophy felt like participating in a language game. Even when I wrote [*The Self and the World*](https://docs.google.com/document/d/1lGEIUBTY_RgLZfvyVO8nhSzJ_3SpVR0n1QEegImHv4g/edit?usp=sharing), I included definitions for the terms I used in the document. In contrast, I conceived mathematical objects as eternal, grounded solidly in axioms. I couldn’t imagine any language other than this to describe the hidden secrets of the universe as eternal representations—unchanging, unmoved, and concrete.
+
+---
+
+![On page 136, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 11.16.00.png)
+
+Another book I feel closely connected to is the Tao Te Ching by Lao Tzu. It’s probably not an exaggeration to say that my whole life has been devoted to understanding the meaning of Tao, even though Lao Tzu paradoxically said, “The Tao that can be described is not the eternal Tao.” One day, I realised it is synonymous with the Truth or, in more Platonic terms, the formless. Ineffable. That’s when I wrote this diary: [Is "It" a Joke?](https://sohyuniverse.wordpress.com/2024/09/17/2023-03-27-is-it-a-joke/)
+
+---
+
+![On page 191, Toward a New Beginning (1941-1945)](images/Physics and Beyond/Screenshot 2024-11-05 at 23.29.36.png)
+
+These chapters were not enjoyable to read: *Revolution and University Life (1933)*, *Individual Behavior in the Face of Political Disaster (1937-1941)*, *Toward a New Beginning (1941-1945)*. I’m certainly not interested in politics or wars. However, the ending of this third chapter is beautifully written; beauty transcends ideology, opinions, and dualistic views of the world.
+
+---
+
+![On page 195, The Responsibility of the Scientist (1945-1950)](images/Physics and Beyond/Screenshot 2024-11-06 at 10.04.36.png)
+
+This reveals the reason why I chose the theme of *active matter*. I was curious about how this model suddenly emerged in the last 25 years. Why is there such a sudden interest in this concept? What possibilities does it offer for understanding nature? What contributions can I make to the circle of human knowledge?
+
+---
+
+While reading through the *Scientific and Political Disputes (1956-1957)* chapter, I realised I can only concentrate when scientific matters are being discussed, such as the conversations between Heisenberg and Wolfgang about the mathematical theory for elementary particles. 
+
+![On page 230, The Unified Field Theory (1957-1958)](images/Physics and Beyond/Screenshot 2024-11-08 at 10.33.36.png)
+
+However, everything that followed from the passage in the image was fascinating—especially when they started discussing symmetries (for example, the universe as a whole does not necessarily have to be symmetrical with respect to the operations under which natural laws remain invariant), relativistic quantum field theories, and more, which captivated me when I studied particle physics in my third year.
+
+---
+
+![On page 240, Elementary Particles and Platonic Philosophy (1961-1965)](images/Physics and Beyond/Screenshot 2024-11-08 at 17.04.56-down.png)
+
+I have finally finished the book. Although the above image is not the last page, I love this book because it begins with Plato and ends with him. *Timaeus* was the book that shaped my worldview when I was in high school, and when I first encountered *Physics and Beyond*, I was thrilled to find someone in history who asked the same questions I had while reading *Timaeus*. Since then, my understanding has deepened, and I’ve come to see that all philosophy traces back to Plato. Last year, a decade later, I finally had a direct understanding of what Plato described through some interesting experiences.
+
+Even beyond that passage in the screenshot, it’s truly worth rereading. People at that time were already considering how natural laws conform to different scales, touching on the concept of *emergence*, which is the field I’m now working in.
+
+While reading this book, I rewatched the documentary series *Atom*, hosted by Jim Al-Khalili. I remember watching it for the first time in high school, loving it immensely, and being struck by statements from scholars like Paul Dirac, who said, “A physical law must possess mathematical beauty.” I was curious about what QED implied once I start learning about it at university, such as how all the matter we see is just reflections of virtual particles. That was a long time ago, and that naïveté and curiosity are what led me to study physics. I’d like to close with what Jim Al-Khalili said (even though I largely disagree with his interpretation of quantum mechanics in that chapter) at the end of *The Illusion of Reality* (the third episode): 
+
+*In the last 100 years, we have peered deep inside the atom, the basic building block of the universe. And inside this tiny object, we have found a strange new world governed by exotic laws that at times seem to defy reason. Atoms present us with dizzying contradictions. They can behave both as particles or waves. They appear to be in more than one place at the same time. They force us to rethink what we mean by past and future, by cause and effect. And they tell us strange things about where the universe came from and where it's going. Pretty amazing stuff for something that's just a millionth of a millimetre across. That's why Niels Bohr, the father of atomic physics, once said that, when it comes to atoms, language can only be used as poetry. What's fascinating to me is that although we've learnt an incredible amount about atoms and their behaviour, our scientific journey has only just begun. Because although we know how a single atom or just a few atoms behave, the way trillions of them come together in concert to create the world around us is still largely a mystery. To give you one dramatic example, the atoms that make up my body are identical to the atoms in the rocks, the trees, the air, even the stars. And yet, they come together to create a conscious being who can ask the question, “What is an atom?” Explaining all that is surely the next great challenge in science.*
+
+I realised that the “next great challenge” he mentioned is the same one I’ve been drawn to since studying physics: the emergence of consciousness. The most intriguing question, perhaps prompted by an interesting dream I had last night, is how our mind creates the world and perceives it simultaneously when we dream. When I'm awake, I can do this partially; for instance, when I think about walking down the corridor where my office is located, I can imagine it while experiencing it at the same time. It seems this ability expands to full capacity in dreams. Once I understand that mechanism, I might be able to discern, even when awake, whether I am still dreaming and creating the world while simultaneously perceiving it.
+
+## 2024/11/9 - The Science of Interstellar [@thorne2014science]
+
+*Cited by 265*
+
+Today, I rewatched the film *Interstellar*, perhaps for the fourth time. I was deeply impressed by Nolan's previous film *Inception*, which I also probably watched five times already. Yesterday, I had to give *Inception* a 10-star rating for the first time in my life, as it just gets more interesting with every viewing. This 10-star rating is very special to me, as I have never rated any of the over 3,000 films I've watched so highly.
+
+After this purely fantastical journey, I became curious about the science behind it. Then I realised that the scientific adviser for the film, Kip Thorne, actually wrote a book about it! I knew I had planned to read *Understanding Molecular Simulation* today, but since it’s the weekend, I decided to indulge in this investigation instead.
+
+![On page 45, 4. Warped Time and Space, and Tidal Gravity](images/The Science of Interstella/Screenshot 2024-11-09 at 23.42.51.png)
+
+What a beautiful way of interpreting general relativity! 
+
+So far, having read up to Chapter 6, it has all been very interesting! But since Monday has arrived, it’s time to focus on my project again...
+
+---
+
+# Articles
+
+## 2024/10/4 - Hydrophobicity Across Length Scales: The Role of Surface Criticality [@coe2021hydrophobicity]
+
+*Cited by 5*
 
 ### Q1. *Resolved*
 
@@ -457,7 +630,9 @@ Chapter 2.4.5: *Wetting and Drying Phase Transitions* is very well written and f
 
 I've been reading up to *Views of Hydrophobicity*, but I realised that I'm not sure how much of the stuff I learn from this thesis is related to active systems. So, I decided to review all articles given by my supervisors.
 
-## 2024/10/14 - *Colloquium: Inclusions, boundaries, and disorder in scalar active matter*
+## 2024/10/14 - Colloquium: Inclusions, boundaries, and disorder in scalar active matter [@granek2024colloquium]
+
+*Cited by 3*
 
 Three different models of active matter are discussed here: ABP (active Brownian particles), RTP (run-and-tumble particles), and AOUP (active Ornstein-Uhlenbeck particles). ABP is a model that I'm going to investigate initially because it's the simplest particle model, but I want to be aware that there are other models. From page 3, what is interesting is this, since I saw somewhere that detailed balance doesn't hold for non-equilibrium systems:
 
@@ -467,11 +642,11 @@ On the contrary, in a harmonic potential AOUPs always have a steady state given 
 
 I wanted to revisit the detailed balance algorithm more deeply, so I started reading *Understanding Molecular Simulation*.
 
-## 2024/10/18 - 10/19 *On the Motion of Small Particles Suspended in Liquids at Rest Required by the Molecular-Kinetic Theory of Heat* (Completed)
+## 2024/10/18 - 10/19 *On the Motion of Small Particles Suspended in Liquids at Rest Required by the Molecular-Kinetic Theory of Heat* [@einstein1905motion]
 
-By Albert Einstein
+*Cited by 5001*
 
-Since I am studying a model called active Brownian particles, a thought occurred to me: I should actually read where this understanding of Brownian motion came from!  This was done by the very man: Albert Einstein in 1905 [@einstein1905motion]. I normally leave my iPad in my office so whenever I needed derivations, I used a pen and note, quite a classical way while reading a classical paper:
+Since I am studying a model called active Brownian particles, a thought occurred to me: I should actually read where this understanding of Brownian motion came from!  This was done by the very man: Albert Einstein in 1905. I normally leave my iPad in my office so whenever I needed derivations, I used a pen and note, quite a classical way while reading a classical paper:
 
 [My handwritten notes](documents/241019 Scan.pdf)
 
@@ -486,166 +661,7 @@ He then links the diffusion coefficient to two different contexts. The first is 
 
 I'm so happy to have chosen a theoretical physics PhD. Thinking about how theories interconnect reveals a universal understanding. I’m looking forward to reading more of his articles.
 
-## 2024/10/23 - *Understanding Molecular Simulation, 3rd Ed*
-
-By Daan Frenkel and Berend Smit
-
-### Chapter 1. Introduction
-
-Before starting our project, I was a little concerned about whether computational simulation is a valid way to understand the fundamental order of nature. I thought that what we do as physicists is observe systems through experiments, theorise with idealised objects to gain predictive power, and then test the theory by observing again. This thought process was probably inspired by a Kantian perspective; I read his *Critique of Pure Reason* in high school, where he posits that causality is a presupposition of reasoning. For those purposes, idealised objects had to be mathematical (forms or images from Plato) and needed to represent what I directly observe in empirical reality.
-
-![On page 2, Introduction](images/Understanding Molecular Simulation/Screenshot 2024-11-08 at 21.40.30.png)
-
-I'm still not completely certain if computer simulation is truly the way to go, but as I work through it, I hope it will make more sense to me.
-
----
-
-![On page 6, Introduction](images/Understanding Molecular Simulation/Screenshot 2024-10-23 at 16.38.54.png)
-
-Quite an interesting discussion on what *'model'* means in science.
-
----
-
-### Chapter 2. Thermodynamics and Statistical Mechanics
-
-![On page 22, 2.1.2 Chemical Potential and Equilibrium](images/Understanding Molecular Simulation/Screenshot 2024-10-24 at 17.45.55.png)
-
-Important equilibrium conditions!
-
----
-
-![On page 22, 2.1.2 Chemical Potential and Equilibrium](images/Understanding Molecular Simulation/Screenshot 2024-11-11 at 11.50.22.png)
-
-I'm not entirely sure why the extremum condition applies specifically to variations in $E_1$, $N_1$, and $V_1$. So, I asked ChatGPT:
-
-<details>
-<summary>Click to reveal the answer!</summary>
-
-You're right to question this subtle point. 
-
-The key insight lies in understanding that when we talk about maximising the total entropy $S_{\text{tot}} = S_1 + S_2$ of a closed system with fixed total values of energy, volume, and particle number, the only degrees of freedom available for changes are the distributions of $E$, $V$, and $N$ between the subsystems. 
-
-Here's the reasoning in detail:
-
-1. **Fixed Total Quantities Impose Constraints**: Because the total energy $E_{\text{tot}} = E_1 + E_2$, volume $V_{\text{tot}} = V_1 + V_2$, and particle number $N_{\text{tot}} = N_1 + N_2$ are fixed, any changes in $E_1$, $V_1$, or $N_1$ must be offset by corresponding changes in $E_2$, $V_2$, and $N_2$ to keep these sums constant.
-
-2. **Entropy Extremum Condition**: In equilibrium thermodynamics, the Second Law requires that the total entropy of an isolated (or closed) system reaches a maximum (or an extremum) at equilibrium. However, since the system is closed and these total quantities are fixed, the system cannot simply increase or decrease its overall $E_{\text{tot}}$, $V_{\text{tot}}$, or $N_{\text{tot}}$. Instead, any adjustments to entropy must occur through *redistributions* of these quantities between subsystems.
-
-3. **Redistribution as the Only Available Variation**: Thus, the extremisation of $S_{\text{tot}}$ must occur specifically with respect to the variables that can change within the subsystems while satisfying the overall conservation constraints. Since $E_{\text{tot}}$, $V_{\text{tot}}$, and $N_{\text{tot}}$ are fixed, the only available independent variations in $S_{\text{tot}}$ come from redistributing $E_1$, $V_1$, and $N_1$ (and equivalently $E_2$, $V_2$, and $N_2$).
-
-4. **Derivative Vanishing Condition**: For $S_{\text{tot}} = S_1 + S_2$ to be maximised (or extremised) under these constraints, the derivatives of $S_{\text{tot}}$ with respect to $E_1$, $V_1$, and $N_1$ must vanish. This is because any non-zero derivative would indicate that entropy could be further increased by adjusting these redistributive variables, contradicting the requirement of equilibrium.
-
-In summary, we require the extremum condition with respect to $E_1$, $V_1$, and $N_1$ specifically because these are the variables that can be redistributed between the subsystems within the constraint of fixed total quantities. This is why the extremum condition applies to these specific derivatives, and not to other parameters.
-
-</details>
-
----
-
-![On page 30, 2.2.3 Towards Classical Statistical Mechanics](images/Understanding Molecular Simulation/Screenshot 2024-10-25 at 23.34.58.png)
-
-I’m not sure how to derive the transition from 2.2.17 to 2.2.18.
-
-## 2024/11/2 - 11/8 *Physics and Beyond* {#sec-physics-and-beyond}
-
-It's the first time I'm reading this in English; the title of the book in Korean is 부분과 전체, which might translate to *Parts and the Whole*. I've read it many times since I was in high school, and it has been highly influential to me as a physicist throughout my life. To capture some of the things I want to revisit later:
-
-![On page 72, Fresh Fields (1926-1927)](images/Physics and Beyond/Screenshot 2024-11-04 at 08.43.51.png)
-
-![On page 80, Fresh Fields (1926-1927)](images/Physics and Beyond/Screenshot 2024-11-04 at 09.10.47.png)
-
-So far, having read up to page 89, it has all been interesting, except for Chapter 4 (*Lessons in Politics and History*). When the development of quantum mechanics was presented in Chapters 5 and 6, I felt my heart pounding as I read through, just as it did when I first read this book.
-
----
-
-![On page 97, Atomic Physics and Pragmatism (1929)](images/Physics and Beyond/Screenshot 2024-11-04 at 20.20.52.png)
-
-All these realms were so enjoyable to learn, but now, as a researcher, I wonder what realms are still open. I thought one of them was non-equilibrium statistical thermodynamics, but it appears to me that this theory can't be axiomatic, implying that all systems out of equilibrium must be described differently.
-
----
-
-![On page 109, The Relationship between Biology, Physics and Chemistry (1930-1932)](images/Physics and Beyond/Screenshot 2024-11-04 at 21.20.51-down.png)
-
-'Forms through which matter streams,' as Niels Bohr described, was the most profound characterisation of organisms I have encountered. I used to wonder, what about this structure remains? Does it actually persist, given that a person changes continuously as a child becomes an adult? Is it simply the name (person) we assign that represents this form of life? With this thought, is there really a distinction between animate and inanimate objects?
-
-When I read *Timaeus* by Plato in high school, he described geometrical forms as the basis of earth, fire, water, and air, even though I found his idea peculiar (like everything is made of right triangles). At the time, I thought the properties that define those mathematical forms were responsible for things maintaining their structure in the way we perceive over time (since all forms change shape as time passes). My master's research was also focused on investigating this homeostasis in an ideal structure—not physical but something we perceive—in the context of foreign exchange markets. This line of thought was also captured well by Bohr’s question: "Can quantum mechanics explain nature's tendency to form structures through which matter with fixed chemical properties can stream for a limited time?"
-
----
-
-![On page 128, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 09.48.38.png)
-
-This passage about the discovery of antimatter was one of the reasons I chose a physics degree, along with my ambition to formally study general relativity. Although I didn’t score well in my particle physics exam in third year due to a part-time job over winter break, it remains one of the most exciting units I've taken. Here are the scores and ratings I gave to my third and fourth-year units with scores of at least 4:
-
-5: Physics Research Project (83), Quantum Physics (88)  
-4.5: Physics of Phase Transitions (85), Analytical Mechanics (66), Particle Physics (58)  
-4: Quantum Information Theory (68), Foundations of Modern Physics (68), Methods of Theoretical Physics (63)  
-
-It’s surprising that general relativity only scored 3.5, but it seems I didn’t enjoy the lecture style despite being fascinated by the content.
-
----
-
-![On page 134, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 10.11.03.png)
-
-This passage captures the reason I didn’t pursue a philosophy degree, despite having written about philosophy of science. What I realised was the fluidity of language, and at some point, reading philosophy felt like participating in a language game. Even when I wrote [*The Self and the World*](https://docs.google.com/document/d/1lGEIUBTY_RgLZfvyVO8nhSzJ_3SpVR0n1QEegImHv4g/edit?usp=sharing), I included definitions for the terms I used in the document. In contrast, I conceived mathematical objects as eternal, grounded solidly in axioms. I couldn’t imagine any language other than this to describe the hidden secrets of the universe as eternal representations—unchanging, unmoved, and concrete.
-
----
-
-![On page 136, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 11.16.00.png)
-
-Another book I feel closely connected to is the Tao Te Ching by Lao Tzu. It’s probably not an exaggeration to say that my whole life has been devoted to understanding the meaning of Tao, even though Lao Tzu paradoxically said, “The Tao that can be described is not the eternal Tao.” One day, I realised it is synonymous with the Truth or, in more Platonic terms, the formless. Ineffable. That’s when I wrote this diary: [Is "It" a Joke?](https://sohyuniverse.wordpress.com/2024/09/17/2023-03-27-is-it-a-joke/)
-
----
-
-![On page 191, Toward a New Beginning (1941-1945)](images/Physics and Beyond/Screenshot 2024-11-05 at 23.29.36.png)
-
-These chapters were not enjoyable to read: *Revolution and University Life (1933)*, *Individual Behavior in the Face of Political Disaster (1937-1941)*, *Toward a New Beginning (1941-1945)*. I’m certainly not interested in politics or wars. However, the ending of this third chapter is beautifully written; beauty transcends ideology, opinions, and dualistic views of the world.
-
----
-
-![On page 195, The Responsibility of the Scientist (1945-1950)](images/Physics and Beyond/Screenshot 2024-11-06 at 10.04.36.png)
-
-This reveals the reason why I chose the theme of *active matter*. I was curious about how this model suddenly emerged in the last 25 years. Why is there such a sudden interest in this concept? What possibilities does it offer for understanding nature? What contributions can I make to the circle of human knowledge?
-
----
-
-While reading through the *Scientific and Political Disputes (1956-1957)* chapter, I realised I can only concentrate when scientific matters are being discussed, such as the conversations between Heisenberg and Wolfgang about the mathematical theory for elementary particles. 
-
-![On page 230, The Unified Field Theory (1957-1958)](images/Physics and Beyond/Screenshot 2024-11-08 at 10.33.36.png)
-
-However, everything that followed from the passage in the image was fascinating—especially when they started discussing symmetries (for example, the universe as a whole does not necessarily have to be symmetrical with respect to the operations under which natural laws remain invariant), relativistic quantum field theories, and more, which captivated me when I studied particle physics in my third year.
-
----
-
-![On page 240, Elementary Particles and Platonic Philosophy (1961-1965)](images/Physics and Beyond/Screenshot 2024-11-08 at 17.04.56-down.png)
-
-I have finally finished the book. Although the above image is not the last page, I love this book because it begins with Plato and ends with him. *Timaeus* was the book that shaped my worldview when I was in high school, and when I first encountered *Physics and Beyond*, I was thrilled to find someone in history who asked the same questions I had while reading *Timaeus*. Since then, my understanding has deepened, and I’ve come to see that all philosophy traces back to Plato. Last year, a decade later, I finally had a direct understanding of what Plato described through some interesting experiences.
-
-Even beyond that passage in the screenshot, it’s truly worth rereading. People at that time were already considering how natural laws conform to different scales, touching on the concept of *emergence*, which is the field I’m now working in.
-
-While reading this book, I rewatched the documentary series *Atom*, hosted by Jim Al-Khalili. I remember watching it for the first time in high school, loving it immensely, and being struck by statements from scholars like Paul Dirac, who said, “A physical law must possess mathematical beauty.” I was curious about what QED implied once I start learning about it at university, such as how all the matter we see is just reflections of virtual particles. That was a long time ago, and that naïveté and curiosity are what led me to study physics. I’d like to close with what Jim Al-Khalili said (even though I largely disagree with his interpretation of quantum mechanics in that chapter) at the end of *The Illusion of Reality* (the third episode): 
-
-*In the last 100 years, we have peered deep inside the atom, the basic building block of the universe. And inside this tiny object, we have found a strange new world governed by exotic laws that at times seem to defy reason. Atoms present us with dizzying contradictions. They can behave both as particles or waves. They appear to be in more than one place at the same time. They force us to rethink what we mean by past and future, by cause and effect. And they tell us strange things about where the universe came from and where it's going. Pretty amazing stuff for something that's just a millionth of a millimetre across. That's why Niels Bohr, the father of atomic physics, once said that, when it comes to atoms, language can only be used as poetry. What's fascinating to me is that although we've learnt an incredible amount about atoms and their behaviour, our scientific journey has only just begun. Because although we know how a single atom or just a few atoms behave, the way trillions of them come together in concert to create the world around us is still largely a mystery. To give you one dramatic example, the atoms that make up my body are identical to the atoms in the rocks, the trees, the air, even the stars. And yet, they come together to create a conscious being who can ask the question, “What is an atom?” Explaining all that is surely the next great challenge in science.*
-
-I realised that the “next great challenge” he mentioned is the same one I’ve been drawn to since studying physics: the emergence of consciousness. The most intriguing question, perhaps prompted by an interesting dream I had last night, is how our mind creates the world and perceives it simultaneously when we dream. When I'm awake, I can do this partially; for instance, when I think about walking down the corridor where my office is located, I can imagine it while experiencing it at the same time. It seems this ability expands to full capacity in dreams. Once I understand that mechanism, I might be able to discern, even when awake, whether I am still dreaming and creating the world while simultaneously perceiving it.
-
-## 2024/11/9 - *The Science of Interstellar*
-
-Today, I rewatched the film *Interstellar*, perhaps for the fourth time. I was deeply impressed by Nolan's previous film *Inception*, which I also probably watched five times already. Yesterday, I had to give *Inception* a 10-star rating for the first time in my life, as it just gets more interesting with every viewing. This 10-star rating is very special to me, as I have never rated any of the over 3,000 films I've watched so highly.
-
-After this purely fantastical journey, I became curious about the science behind it. Then I realised that the scientific adviser for the film, Kip Thorne, actually wrote a book about it! I knew I had planned to read *Understanding Molecular Simulation* today, but since it’s the weekend, I decided to indulge in this investigation instead.
-
-![On page 45, 4. Warped Time and Space, and Tidal Gravity](images/The Science of Interstella/Screenshot 2024-11-09 at 23.42.51.png)
-
-What a beautiful way of interpreting general relativity! 
-
----
-
-So far, having read up to Chapter 6, it has all been very interesting! But since Monday has arrived, it’s time to focus on my project again...
-
-## 2024/11/14 - Skimming through papers {#sec-skimming-papers}
-
-Skimming through many papers since I forgot to charge my iPad in my office... I think this is productive ahead of my Monday project meeting next week.
-
-**Wetting Transition of Active Brownian Particles on a Thin Membrane [@turci2021wetting]**
+## 2024/11/14 - *Wetting Transition of Active Brownian Particles on a Thin Membrane* [@turci2021wetting]
 
 *Cited by 20*
 
@@ -655,9 +671,7 @@ Unfortunately, not very interesting. The authors (my supervisors) investigated h
 
 The above image is a good summary of what the research is about, which coincidentally is from what I’m currently reading:
 
----
-
-**Partial and Complete Wetting of Droplets of Active Brownian Particles [@turci2024partial]**
+## 2024/11/14 - Partial and Complete Wetting of Droplets of Active Brownian Particles [@turci2024partial]
 
 *Cited by 5*
 
@@ -665,17 +679,13 @@ It became quite technical from Chapter 2 onward, so I only read the introduction
 
 If there were a connection between surface phase transitions of vapour inside the cap of my RDA (rebuildable dripping atomiser), it might be more interesting and relating to my interests, but I think this is likely an equilibrium condition rather than something relevant to active matter. **I must ask next week.**
 
----
-
-**Motility-Induced Phase Separation [@cates2015motility]**
+## 2024/11/15 - Motility-Induced Phase Separation [@cates2015motility]
 
 *Cited by 1579 (Really surprising how much attention this topic has received!), also written by Michael Cates, who is the Lucasian Professor of Mathematics at the University of Cambridge*
 
 This one, too, I only read the introduction and conclusion. I wanted to read this because MIPS keeps appearing in many papers. Essentially, this phenomenon occurs because active particles generically accumulate where they move more slowly. What’s really worth noting is that the run-and-tumble model is inspired by *E. coli*, while active Brownian particles are inspired by synthetic colloids. Am I interested in either system? No... I think I should have done this activity of skimming through many papers earlier to clarify what I’m truly interested in.
 
----
-
-**Proliferating Active Matter [@hallatschek2023proliferating]**
+## 2024/11/15 - Proliferating Active Matter [@hallatschek2023proliferating] {#sec-proliferating-active-matter}
 
 *Cited by 48*
 
@@ -695,25 +705,21 @@ In January 2024, when I was applying for my PhD:
 
 Before sleeping, I started reading *Time and Quantum Clocks: A Review of Recent Developments* [@altaie2022time], which I found very interesting.
 
----
-
-**Active Materials: Minimal Models of Cognition? [@mcgivern2020active]**
+## 2024/11/17 - *Active Materials: Minimal Models of Cognition?* [@mcgivern2020active]
 
 *Cited by 20*
 
 The next morning, I felt compelled to reread this paper, as it was one of the key works that truly ignited my interest in the field of active matter.
 
-![On page 8, 3. Minimal models](images/241115 Reading Papers/Screenshot 2024-11-16 at 09.43.46-tile.png)
+![On page 8, 3. Minimal models (LGA stands for *lattice gas automata*)](images/241115 Reading Papers/Screenshot 2024-11-16 at 09.43.46-tile.png)
 
 Yes! This was it! I was curious whether a simple model of active matter that I learn could be applied to biological systems by examining if they fall into the same universality class as a realistic model through the application of renormalisation group techniques.
 
 Very interesting. I’m glad I read it once again. I wonder what my supervisors think about this article. I thought it would be useful to clarify whether I truly want to pursue the field of biophysics (as I’m not particularly interested in synthetic colloids), so I decided to revisit the biophysics lectures (see [2024/11/16 Watching Biophysics Lectures](notes.qmd#sec-biophysics-lectures)).
 
----
-
 I thought it would be important to develop a good understanding of why active colloids or motile bacteria are significant. While exploring this, I found a list of nice articles by Philip Ball.
 
-**Colloids Get Active [@ball2013colloids]**
+## 2024/11/20 - *Colloids Get Active* [@ball2013colloids]
 
 *Cited by 5*
 
@@ -725,11 +731,11 @@ which he mentioned is really important as active Brownian particles model the mo
 
 > An active colloid is a suspension of particles that transduce free energy from their environment and use the energy to engage in *intrinsically non-equilibrium* activities such as growth, replication, and self-propelled motility. An obvious example of active colloids is a suspension of bacteria such as *Escherichia coli*, their physical dimensions being almost invariably in the colloidal range. Synthetic self-propelled particles have also become available recently, such as two-faced, or Janus, particles propelled by differential chemical reactions on their surfaces driving a self-phoretic motion. In these lectures, I give a pedagogical introduction to the physics of single-particle and collective properties of active colloids, focusing on self-propulsion. I will compare and contrast phenomena in suspensions of ‘swimmers’ with the behavior of suspensions of passive particles, where only Brownian motion (discovered by Robert Brown in granules from the pollen of the wild flower *Clarkia pulchella*) is relevant. I will pay particular attention to issues that pertain to performing experiments using these active particle suspensions, such as how to characterize the suspension’s swimming speed distribution, and include an appendix to guide physicists wanting to start culturing motile bacteria.
 
-**From Clarkia to Escherichia and Janus: The physics of natural and synthetic active colloids [@poon2013clarkia]**
+This was probably the first time I realised the significance of the colloidal scale!
+
+## 2024/11/21 - From Clarkia to Escherichia and Janus: The physics of natural and synthetic active colloids [@poon2013clarkia]
 
 *Cited by 74*
-
-This was probably the first time I realised the significance of the colloidal scale!  
 
 One video was introduced in this article about kinematic reversibility, really surprised!
 
@@ -743,7 +749,7 @@ In the conclusion, the author notes:
 
 I *think* this observation also applies to simulations, where particles are often assumed to have an infinite energy supply. And I especially loved the ending of the conclusion—read for yourself in the future again :)
 
-**Animate Materials [@ball2021animate]**
+## 2024/11/21 - *Animate Materials* [@ball2021animate]
 
 *Cited by 12*
 
@@ -760,3 +766,5 @@ Also, Philip writes:
 > One of the most obvious molecularscale differences between living and inanimate materials is the nature of the chemical bonding. Rocks and minerals tend to have rigid structures held together by strong (covalent or ionic) chemical bonds. In living systems, the molecules—such as proteins and nucleic acids—are generally dynamic in their conformation and interact with other molecules via weak interactions such as hydrogen bonding and hydrophobic forces. This enables information to be transmitted from place to place, and means that molecular entities can be assembled and disassembled on demand. The “looseness of structure” is surely also an essential feature for systems that are maintained away from equilibrium by a throughput of material and energy, and which can adapt to changes in the environment.
 
 This is probably also the first time I realised the importance of hydrophobicity in non-equilibrium systems. Even though there was no huge overlap with active matter topics, it was a very interesting read.
+
+But his another article, *Field work – the physics of sheep, from phase transitions to collective motion*, wasn't very exciting.
