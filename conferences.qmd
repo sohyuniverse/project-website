@@ -50,7 +50,7 @@ Before going to the seminar, there were concepts I couldn't understand from the 
 I could not understand most of what he talked about, so my mind wandered. I began thinking about how I could approach solving an important problem in the vaping industry: the ideal position (such as height) of the coil in the atomiser. The object of interest can be described as follows:
 
 1. There are posts (positive/negative), and the coil is usually installed between them. The coil is typically made from Kanthal A1, NiChrome80, or SS316L, listed in order of common usage.
-2. Since the coil is wrapped in a helical form, cotton is inserted inside the coil to hold the e-liquid (it's easier to see than explain—check my business [Instagram](https://www.instagram.com/mizzvape/)).
+2. Since the coil is wrapped in a helical form, cotton is inserted inside the coil to hold the e-liquid (it's easier to see than explain; check my business [Instagram](https://www.instagram.com/mizzvape/)).
 3. The e-liquid consists of four components: PG (propylene glycol), which has low viscosity, VG (vegetable glycerin), which has high viscosity, flavourings (dissolved in PG), and nicotine (also dissolved in PG). We can approximate the e-liquid as a mix of PG and VG.
 4. Air typically enters from the side, while the vaporised liquid and air leave through the top of the atomiser by suction.
 5. The temperature of the coil continuously changes, affecting the vaporisation process. This temperature is influenced by how incoming air interacts with the droplets formed on the coil.
@@ -60,7 +60,7 @@ The vaping industry mainly focuses on finding the optimal coil height by using c
 1. The power, which dictates the temperature gradient of the coil, is determined by the user's settings on their vape mod.
 2. Everyone's suction strength varies.
 3. Coil diameters differ.
-4. The ratio of PG to VG depends on the user—typically 50/50 for mouth-to-lung vaping and 30/70 for direct-lung vaping.
+4. The ratio of PG to VG depends on the user, typically 50/50 for mouth-to-lung vaping and 30/70 for direct-lung vaping.
 5. Ambient temperature, which affects the incoming air, differs from user to user.
 6. Depending on how the cotton is placed inside the atomiser, the available volume for airflow can change.
 7. There is a continuous influx of liquid through the cotton during vaporisation.
@@ -87,3 +87,42 @@ I'm glad that I went there. There were a few things that I want to remember:
 2. When he started to show diagrams and equations for quantum mechanics experiments, everyone seemed really bored, even though the topics can't be something boring! Because it included things like interaction-free measurement, the quantum Cheshire cat, contextuality, negative probabilities, etc. Also, the speaker wasn't a boring person! So, it appeared to me that as the formalisms of quantum mechanics became more and more complex, it was evident that the research they do seems very distant even to undergraduate students, which is almost like we can't know the relevance to reality anymore except that they found something interesting and paradoxical.
 3. That brings me to my third point. I'm kind of glad that I didn't go the quantum mechanics PhD route. I like talking about physics to people. And I don't think I could even make my talk interesting in the future once I start talking about such high-level quantum mechanics to an audience. My project, active drying, even if the research can sound quite mundane, allows me to talk about a lot of interesting things that seem related to our everyday experiences and curiosities. Such as, how can we think about what life is? What is criticality? Why is this thing important, such as hydrophobicity, which is one of the bases of the structure of living things, and which can also extend to swarms of robots?
 4. Finally, it seems that after he got the lectureship, he needs to apply for grants for research to hire PhD students and postdocs. So that's why it seems that all the research papers in quantum mechanics like to make bold headlines, like the smallest refrigerator, $1/2$ spin being measured as 100, bomb experiment, etc. He seemed depressed about the current state of academia. I think if I stay in the soft matter area, I'm sure I can more easily handle the process of applying for grants once I'm at the stage where I have to, since it's research about our everyday experiences. The length scale is too tiny for quantum mechanics.
+
+# 2024/11/25 Statistical Physics of Cognition
+
+## The Physics of Sentience by Karl Friston
+
+[Programme and Abstracts](https://iop.eventsair.com/spc2024/programme)
+
+![Quote](images/241125 Statistical Physics of Cognition/Screenshot 2024-11-25 at 20.26.31.png)
+
+He mentioned the importance of boundaries, quoting Schrödinger, emphasising that it’s essential to define the boundary of a system to individuate it or separate it from everything else.
+
+I found the first chapter of his talk too general, particularly when he described the application of the Markov blanket to perception and action. However, in the second chapter, he presented an interesting image:
+
+![Look at the flip side of the image!](images/241125 Statistical Physics of Cognition/Screenshot 2024-11-25 at 20.41.40.png)
+
+A different perspective completely changes the visual impression. For example, if I initially see a bowl of fruit, flipping the screen or my head reveals a face instead. The key point is that *I* created that face; it’s the pattern of sensory impressions *I* brought to the table. This is why I find neuroscience interesting: it’s the study of the starting point from which we picture the world.
+
+He also discussed the relationship between minimising prediction error and minimising Feynman’s variational free energy, which he mentioned was based on Helmholtz’s work (if I recall correctly). However, much of what he said felt overly qualitative, reminiscent of Lloyd Demetriou’s talk titled *The Evolutionary Dynamics of Collective Behaviour: From Inorganic Matter to Living Matter.* Both talks introduced ideas that felt overly general, claiming to explain everything but ultimately failing to explain much in specific terms.
+
+One interesting takeaway was that Helmholtz himself thought deeply about perception and its mechanisms. Friston’s total citations, as of today, stand at 366,130; perhaps I’m just not fully grasping his points.
+
+## Harnessing the Vicinity of Criticality to Adapt Information Processing by Johannes Zierenberg
+
+I didn’t find it very interesting or inspiring. However, he did mention the Fokker–Planck equation, which seems to be a very important equation for describing neural dynamics.
+
+## Scaling of Neural Network Activity and Optimal Functionality: From Real Neurons in the Brain to Artificial Intelligence by Miguel A Munoz
+
+He is a very good presenter. BUT, the IOP didn’t provide a direct PowerPoint feed, only a camera feed, so I couldn’t read anything from the slides! Terribly organised!
+
+At one point, he introduced work by Bialek from Princeton, which applied the renormalisation group to actual neurons. Since Miguel mentioned superneurons and the RG flow, it seems that Bialek et al. probably used some form of Kadanoff block scaling, applying different levels of coarse-graining. This approach suggested scale invariance in the hippocampus, where their analysis was conducted.
+
+What I don’t understand is why the presenter was trying to find universality with only 800 neurons, given that criticality only makes sense for infinitely large systems. Hmm...
+
+One particularly interesting point he mentioned was that the head movement of the mouse was codified in a one-dimensional manifold revealed by principal component analysis. By examining the position on this manifold, the direction of the mouse’s head could be detected. This makes sense since the horizontal angle is also one-dimensional.
+
+After that, he discussed how the maximum performance shown by similarities between the mouse brain and reservoir computing, using topological arguments, coincides with the edge of criticality. This was, once again, very interesting! It was worth watching, and the paper he suggested by Kenneth seems worth reading. Additionally, all the questions asked by others were interesting and helpful.
+
+## Fluctuation-Dissipation Relations and equilibrium conditions for the brain in healthy and pathological conditions by Lucilla de Arcangelis
+

@@ -173,7 +173,7 @@ All these realms were so enjoyable to learn, but now, as a researcher, I wonder 
 
 'Forms through which matter streams,' as Niels Bohr described, was the most profound characterisation of organisms I have encountered. I used to wonder, what about this structure remains? Does it actually persist, given that a person changes continuously as a child becomes an adult? Is it simply the name (person) we assign that represents this form of life? With this thought, is there really a distinction between animate and inanimate objects?
 
-When I read *Timaeus* by Plato in high school, he described geometrical forms as the basis of earth, fire, water, and air, even though I found his idea peculiar (like everything is made of right triangles). At the time, I thought the properties that define those mathematical forms were responsible for things maintaining their structure in the way we perceive over time (since all forms change shape as time passes). My master's research was also focused on investigating this homeostasis in an ideal structure—not physical but something we perceive—in the context of foreign exchange markets. This line of thought was also captured well by Bohr’s question: "Can quantum mechanics explain nature's tendency to form structures through which matter with fixed chemical properties can stream for a limited time?"
+When I read *Timaeus* by Plato in high school, he described geometrical forms as the basis of earth, fire, water, and air, even though I found his idea peculiar (like everything is made of right triangles). At the time, I thought the properties that define those mathematical forms were responsible for things maintaining their structure in the way we perceive over time (since all forms change shape as time passes). My master's research was also focused on investigating this homeostasis in an ideal structure, not physical but something we perceive, in the context of foreign exchange markets. This line of thought was also captured well by Bohr’s question: "Can quantum mechanics explain nature's tendency to form structures through which matter with fixed chemical properties can stream for a limited time?"
 
 ---
 
@@ -191,7 +191,7 @@ It’s surprising that general relativity only scored 3.5, but it seems I didn�
 
 ![On page 134, Discussions about Language (1933)](images/Physics and Beyond/Screenshot 2024-11-05 at 10.11.03.png)
 
-This passage captures the reason I didn’t pursue a philosophy degree, despite having written about philosophy of science. What I realised was the fluidity of language, and at some point, reading philosophy felt like participating in a language game. Even when I wrote [*The Self and the World*](https://docs.google.com/document/d/1lGEIUBTY_RgLZfvyVO8nhSzJ_3SpVR0n1QEegImHv4g/edit?usp=sharing), I included definitions for the terms I used in the document. In contrast, I conceived mathematical objects as eternal, grounded solidly in axioms. I couldn’t imagine any language other than this to describe the hidden secrets of the universe as eternal representations—unchanging, unmoved, and concrete.
+This passage captures the reason I didn’t pursue a philosophy degree, despite having written about philosophy of science. What I realised was the fluidity of language, and at some point, reading philosophy felt like participating in a language game. Even when I wrote [*The Self and the World*](https://docs.google.com/document/d/1lGEIUBTY_RgLZfvyVO8nhSzJ_3SpVR0n1QEegImHv4g/edit?usp=sharing), I included definitions for the terms I used in the document. In contrast, I conceived mathematical objects as eternal, grounded solidly in axioms. I couldn’t imagine any language other than this to describe the hidden secrets of the universe as eternal representations, unchanging, unmoved, and concrete.
 
 ---
 
@@ -217,7 +217,7 @@ While reading through the *Scientific and Political Disputes (1956-1957)* chapte
 
 ![On page 230, The Unified Field Theory (1957-1958)](images/Physics and Beyond/Screenshot 2024-11-08 at 10.33.36.png)
 
-However, everything that followed from the passage in the image was fascinating—especially when they started discussing symmetries (for example, the universe as a whole does not necessarily have to be symmetrical with respect to the operations under which natural laws remain invariant), relativistic quantum field theories, and more, which captivated me when I studied particle physics in my third year.
+However, everything that followed from the passage in the image was fascinating, especially when they started discussing symmetries (for example, the universe as a whole does not necessarily have to be symmetrical with respect to the operations under which natural laws remain invariant), relativistic quantum field theories, and more, which captivated me when I studied particle physics in my third year.
 
 ---
 
@@ -691,7 +691,7 @@ This one, too, I only read the introduction and conclusion. I wanted to read thi
 
 I thought I should probably reread papers that inspired me to investigate active matter in my PhD almost a year ago. One particular article, even though it didn’t seem to attract much attention, was written by Keller: *‘Active Matter, Then and Now’* [@keller2016active]. I loved reading it so much that I probably read it three times. Skipping that one this time, I started reading *Proliferating Active Matter*, which I also really enjoyed. 
 
-I remember the start of the article being quite strong, mentioning the book that I often reread, *What Is Life?* by Erwin Schrödinger, and also discussing the reshaping of the chessboard by the active matter paradigm (which was probably something to do with breaking mass-reversal symmetry?)—as if I were playing the physics game like chess.
+I remember the start of the article being quite strong, mentioning the book that I often reread, *What Is Life?* by Erwin Schrödinger, and also discussing the reshaping of the chessboard by the active matter paradigm (which was probably something to do with breaking mass-reversal symmetry?); as if I were playing the physics game like chess.
 
 While reading (just before the chapter *Motile Proliferating Matter*), I got sidetracked because it wasn’t really interesting anymore. It seems my interests have shifted over the summer or possibly during the final stages of my MSci research project. It sort of makes sense when I think about it in terms of the timeline.
 
@@ -747,7 +747,7 @@ In the conclusion, the author notes:
 
 > I have already mentioned one potential source of experimental difficulties for corresponding experiments using active particles: the rapid depletion of “fuel,” so that any putative novel collective effects need to be carefully scrutinized to rule out fuel depletion as a causative factor.  
 
-I *think* this observation also applies to simulations, where particles are often assumed to have an infinite energy supply. And I especially loved the ending of the conclusion—read for yourself in the future again :)
+I *think* this observation also applies to simulations, where particles are often assumed to have an infinite energy supply. And I especially loved the ending of the conclusion. Read it for yourself in the future again :)
 
 ## 2024/11/21 - *Animate Materials* [@ball2021animate]
 
