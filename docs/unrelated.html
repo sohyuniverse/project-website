@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Unrelated</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./notes.html">Project Notes</a></li><li class="breadcrumb-item"><a href="./unrelated.html">Unrelated</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Bristol Active Matter Group</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Project Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Weekly Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reading Archive</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conferences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conferences</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./unrelated.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Unrelated</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./direction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archive</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Website Design</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./theme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Theme Showdown</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Quarto Tutorial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tutorial-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Basics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tutorial-computations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Computations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tutorial-document.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Document</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#things-i-did-so-far" id="toc-things-i-did-so-far" class="nav-link active" data-scroll-target="#things-i-did-so-far">2024/9/27 Things I did so far</a></li>
+  <li><a href="#sec-physics-and-beyond" id="toc-sec-physics-and-beyond" class="nav-link" data-scroll-target="#sec-physics-and-beyond">2024/11/2 - 11/8 <em>Physics and Beyond</em> <span class="citation" data-cites="heisenberg1971physics">(Heisenberg et al. 1971)</span></a></li>
+  <li><a href="#being-a-good-lecturer" id="toc-being-a-good-lecturer" class="nav-link" data-scroll-target="#being-a-good-lecturer">2024/11/5 Being a Good Lecturer</a></li>
+  <li><a href="#the-science-of-interstellar-thorne2014science" id="toc-the-science-of-interstellar-thorne2014science" class="nav-link" data-scroll-target="#the-science-of-interstellar-thorne2014science">2024/11/9 - The Science of Interstellar <span class="citation" data-cites="thorne2014science">(Thorne 2014)</span></a></li>
+  <li><a href="#sec-equality-sign" id="toc-sec-equality-sign" class="nav-link" data-scroll-target="#sec-equality-sign">2024/11/17 The Moment of My Realisation</a></li>
+  <li><a href="#personalities" id="toc-personalities" class="nav-link" data-scroll-target="#personalities">2024/11/23 16personalities</a></li>
+  <li><a href="#iq-test" id="toc-iq-test" class="nav-link" data-scroll-target="#iq-test">2024/11/27 IQ Test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./notes.html">Project Notes</a></li><li class="breadcrumb-item"><a href="./unrelated.html">Unrelated</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Unrelated</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This page contains diary entries that are largely unrelated to my PhD project.</p>
+<hr>
+<section id="things-i-did-so-far" class="level3">
+<h3 class="anchored" data-anchor-id="things-i-did-so-far">2024/9/27 Things I did so far</h3>
+<p>Busy weeks due to starting three teaching modules: <a href="onenote:Overview.one#Links&amp;section-id=%7BD4B227EF-F9FF-864E-A042-9B9A7C2E06E3%7D&amp;page-id=%7BB7874627-D52D-5043-9E1A-2067E68FAD02%7D&amp;object-id=%7B537C7D03-2CEB-3142-8063-0EF93BF5A5E9%7D&amp;25&amp;base-path=https://uob-my.sharepoint.com/personal/sp13328_bristol_ac_uk/Documents/PhD%20in%20Active%20Matter">Weekly update of my TSR (Teaching Support Roles)</a>. Looking back, I wish I could have completed more reading, as there isn’t much to talk about in terms of active matter research for the next project meeting on Monday.</p>
+</section>
+<section id="sec-physics-and-beyond" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="sec-physics-and-beyond">2024/11/2 - 11/8 <em>Physics and Beyond</em> <span class="citation" data-cites="heisenberg1971physics">(<a href="#ref-heisenberg1971physics" role="doc-biblioref">Heisenberg et al. 1971</a>)</span></h3>
+<div class="no-row-height column-margin column-container"><div id="ref-heisenberg1971physics" class="csl-entry" role="listitem">
+Heisenberg, Werner et al. 1971. <em>Physics and Beyond</em>. Allen &amp; Unwin London.
+</div></div><p><em>Cited by 1832</em></p>
+<p>It’s the first time I’m reading this in English; the title of the book in Korean is 부분과 전체, which might translate to <em>Parts and the Whole</em>. I’ve read it many times since I was in high school, and it has been highly influential to me as a physicist throughout my life. To capture some of the things I want to revisit later:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-04 at 08.43.51.png" class="img-fluid figure-img"></p>
+<figcaption>On page 72, Fresh Fields (1926-1927)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-04 at 09.10.47.png" class="img-fluid figure-img"></p>
+<figcaption>On page 80, Fresh Fields (1926-1927)</figcaption>
+</figure>
+</div>
+<p>So far, having read up to page 89, it has all been interesting, except for Chapter 4 (<em>Lessons in Politics and History</em>). When the development of quantum mechanics was presented in Chapters 5 and 6, I felt my heart pounding as I read through, just as it did when I first read this book.</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-04 at 20.20.52.png" class="img-fluid figure-img"></p>
+<figcaption>On page 97, Atomic Physics and Pragmatism (1929)</figcaption>
+</figure>
+</div>
+<p>All these realms were so enjoyable to learn, but now, as a researcher, I wonder what realms are still open. I thought one of them was non-equilibrium statistical thermodynamics, but it appears to me that this theory can’t be axiomatic, implying that all systems out of equilibrium must be described differently.</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-04 at 21.20.51-down.png" class="img-fluid figure-img"></p>
+<figcaption>On page 109, The Relationship between Biology, Physics and Chemistry (1930-1932)</figcaption>
+</figure>
+</div>
+<p>‘Forms through which matter streams,’ as Niels Bohr described, was the most profound characterisation of organisms I have encountered. I used to wonder, what about this structure remains? Does it actually persist, given that a person changes continuously as a child becomes an adult? Is it simply the name (person) we assign that represents this form of life? With this thought, is there really a distinction between animate and inanimate objects?</p>
+<p>When I read <em>Timaeus</em> by Plato in high school, he described geometrical forms as the basis of earth, fire, water, and air, even though I found his idea peculiar (like everything is made of right triangles). At the time, I thought the properties that define those mathematical forms were responsible for things maintaining their structure in the way we perceive over time (since all forms change shape as time passes). My master’s research was also focused on investigating this homeostasis in an ideal structure, not physical but something we perceive, in the context of foreign exchange markets. This line of thought was also captured well by Bohr’s question: “Can quantum mechanics explain nature’s tendency to form structures through which matter with fixed chemical properties can stream for a limited time?”</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-05 at 09.48.38.png" class="img-fluid figure-img"></p>
+<figcaption>On page 128, Discussions about Language (1933)</figcaption>
+</figure>
+</div>
+<p>This passage about the discovery of antimatter was one of the reasons I chose a physics degree, along with my ambition to formally study general relativity. Although I didn’t score well in my particle physics exam in third year due to a part-time job over winter break, it remains one of the most exciting units I’ve taken. Here are the scores and ratings I gave to my third and fourth-year units with scores of at least 4:</p>
+<p>5: Physics Research Project (83), Quantum Physics (88)<br>
+4.5: Physics of Phase Transitions (85), Analytical Mechanics (66), Particle Physics (58)<br>
+4: Quantum Information Theory (68), Foundations of Modern Physics (68), Methods of Theoretical Physics (63)</p>
+<p>It’s surprising that general relativity only scored 3.5, but it seems I didn’t enjoy the lecture style despite being fascinated by the content.</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-05 at 10.11.03.png" class="img-fluid figure-img"></p>
+<figcaption>On page 134, Discussions about Language (1933)</figcaption>
+</figure>
+</div>
+<p>This passage captures the reason I didn’t pursue a philosophy degree, despite having written about philosophy of science. What I realised was the fluidity of language, and at some point, reading philosophy felt like participating in a language game. Even when I wrote <a href="https://docs.google.com/document/d/1lGEIUBTY_RgLZfvyVO8nhSzJ_3SpVR0n1QEegImHv4g/edit?usp=sharing"><em>The Self and the World</em></a>, I included definitions for the terms I used in the document. In contrast, I conceived mathematical objects as eternal, grounded solidly in axioms. I couldn’t imagine any language other than this to describe the hidden secrets of the universe as eternal representations, unchanging, unmoved, and concrete.</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-05 at 11.16.00.png" class="img-fluid figure-img"></p>
+<figcaption>On page 136, Discussions about Language (1933)</figcaption>
+</figure>
+</div>
+<p>Another book I feel closely connected to is the Tao Te Ching by Lao Tzu. It’s probably not an exaggeration to say that my whole life has been devoted to understanding the meaning of Tao, even though Lao Tzu paradoxically said, “The Tao that can be described is not the eternal Tao.” One day, I realised it is synonymous with the Truth or, in more Platonic terms, the formless. Ineffable. That’s when I wrote this diary: <a href="https://sohyuniverse.wordpress.com/2024/09/17/2023-03-27-is-it-a-joke/">Is “It” a Joke?</a></p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-05 at 23.29.36.png" class="img-fluid figure-img"></p>
+<figcaption>On page 191, Toward a New Beginning (1941-1945)</figcaption>
+</figure>
+</div>
+<p>These chapters were not enjoyable to read: <em>Revolution and University Life (1933)</em>, <em>Individual Behavior in the Face of Political Disaster (1937-1941)</em>, <em>Toward a New Beginning (1941-1945)</em>. I’m certainly not interested in politics or wars. However, the ending of this third chapter is beautifully written; beauty transcends ideology, opinions, and dualistic views of the world.</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-06 at 10.04.36.png" class="img-fluid figure-img"></p>
+<figcaption>On page 195, The Responsibility of the Scientist (1945-1950)</figcaption>
+</figure>
+</div>
+<p>This reveals the reason why I chose the theme of <em>active matter</em>. I was curious about how this model suddenly emerged in the last 25 years. Why is there such a sudden interest in this concept? What possibilities does it offer for understanding nature? What contributions can I make to the circle of human knowledge?</p>
+<hr>
+<p>While reading through the <em>Scientific and Political Disputes (1956-1957)</em> chapter, I realised I can only concentrate when scientific matters are being discussed, such as the conversations between Heisenberg and Wolfgang about the mathematical theory for elementary particles.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-08 at 10.33.36.png" class="img-fluid figure-img"></p>
+<figcaption>On page 230, The Unified Field Theory (1957-1958)</figcaption>
+</figure>
+</div>
+<p>However, everything that followed from the passage in the image was fascinating, especially when they started discussing symmetries (for example, the universe as a whole does not necessarily have to be symmetrical with respect to the operations under which natural laws remain invariant), relativistic quantum field theories, and more, which captivated me when I studied particle physics in my third year.</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Physics and Beyond/Screenshot 2024-11-08 at 17.04.56-down.png" class="img-fluid figure-img"></p>
+<figcaption>On page 240, Elementary Particles and Platonic Philosophy (1961-1965)</figcaption>
+</figure>
+</div>
+<p>I have finally finished the book. Although the above image is not the last page, I love this book because it begins with Plato and ends with him. <em>Timaeus</em> was the book that shaped my worldview when I was in high school, and when I first encountered <em>Physics and Beyond</em>, I was thrilled to find someone in history who asked the same questions I had while reading <em>Timaeus</em>. Since then, my understanding has deepened, and I’ve come to see that all philosophy traces back to Plato. Last year, a decade later, I finally had a direct understanding of what Plato described through some interesting experiences.</p>
+<p>Even beyond that passage in the screenshot, it’s truly worth rereading. People at that time were already considering how natural laws conform to different scales, touching on the concept of <em>emergence</em>, which is the field I’m now working in.</p>
+<p>While reading this book, I rewatched the documentary series <em>Atom</em>, hosted by Jim Al-Khalili. I remember watching it for the first time in high school, loving it immensely, and being struck by statements from scholars like Paul Dirac, who said, “A physical law must possess mathematical beauty.” I was curious about what QED implied once I start learning about it at university, such as how all the matter we see is just reflections of virtual particles. That was a long time ago, and that naïveté and curiosity are what led me to study physics. I’d like to close with what Jim Al-Khalili said (even though I largely disagree with his interpretation of quantum mechanics in that chapter) at the end of <em>The Illusion of Reality</em> (the third episode):</p>
+<p><em>In the last 100 years, we have peered deep inside the atom, the basic building block of the universe. And inside this tiny object, we have found a strange new world governed by exotic laws that at times seem to defy reason. Atoms present us with dizzying contradictions. They can behave both as particles or waves. They appear to be in more than one place at the same time. They force us to rethink what we mean by past and future, by cause and effect. And they tell us strange things about where the universe came from and where it’s going. Pretty amazing stuff for something that’s just a millionth of a millimetre across. That’s why Niels Bohr, the father of atomic physics, once said that, when it comes to atoms, language can only be used as poetry. What’s fascinating to me is that although we’ve learnt an incredible amount about atoms and their behaviour, our scientific journey has only just begun. Because although we know how a single atom or just a few atoms behave, the way trillions of them come together in concert to create the world around us is still largely a mystery. To give you one dramatic example, the atoms that make up my body are identical to the atoms in the rocks, the trees, the air, even the stars. And yet, they come together to create a conscious being who can ask the question, “What is an atom?” Explaining all that is surely the next great challenge in science.</em></p>
+<p>I realised that the “next great challenge” he mentioned is the same one I’ve been drawn to since studying physics: the emergence of consciousness. The most intriguing question, perhaps prompted by an interesting dream I had last night, is how our mind creates the world and perceives it simultaneously when we dream. When I’m awake, I can do this partially; for instance, when I think about walking down the corridor where my office is located, I can imagine it while experiencing it at the same time. It seems this ability expands to full capacity in dreams. Once I understand that mechanism, I might be able to discern, even when awake, whether I am still dreaming and creating the world while simultaneously perceiving it.</p>
+</section>
+<section id="being-a-good-lecturer" class="level3">
+<h3 class="anchored" data-anchor-id="being-a-good-lecturer">2024/11/5 Being a Good Lecturer</h3>
+<p>After attending <a href="https://www.bristol.ac.uk/people/person/Hermes-Gadelha-d024bd20-e1b7-4c53-af70-94acac5c6425/">Hermes</a>’ lecture, I realised there are certain qualities that a very good lecturer shares. To describe him:</p>
+<p>He was smiling, making jokes, honest, sharing life stories, and, most importantly, engaging with students at their level.</p>
+<p>Often, when I talk with certain lecturers or fellow physics PGRs, they ramble without checking if the person listening is following. Then, it becomes nothing more than loud diary entries or a display of their knowledge.</p>
+<p>I also felt that the language barrier was irrelevant. Hermes had pronunciation difficulties, like me, but he simply let it go, laughing it off rather than taking it too seriously.</p>
+<p>I was quite surprised by how many qualities he actually shared with another of my favourite lecturers, Sandu Popescu. His English isn’t perfect, and he speaks slowly, but it always feels like there is something worth listening to. Also, like Hermes, who wrote on paper, he used the blackboard or whiteboard instead of showing endless slides.</p>
+<p>Hermes made plenty of eye contact and made excellent use of pauses during his explanations, allowing students to form images in their minds for better understanding.</p>
+<p>There was much for me to learn from his approach to lecturing. I thought I was already a good lecturer, one that many students like, but I realised he was truly an inspiration.</p>
+</section>
+<section id="the-science-of-interstellar-thorne2014science" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="the-science-of-interstellar-thorne2014science">2024/11/9 - The Science of Interstellar <span class="citation" data-cites="thorne2014science">(<a href="#ref-thorne2014science" role="doc-biblioref">Thorne 2014</a>)</span></h3>
+<div class="no-row-height column-margin column-container"><div id="ref-thorne2014science" class="csl-entry" role="listitem">
+Thorne, Kip. 2014. <em>The Science of Interstellar</em>. WW Norton &amp;Company.
+</div></div><p><em>Cited by 265</em></p>
+<p>Today, I rewatched the film <em>Interstellar</em>, perhaps for the fourth time. I was deeply impressed by Nolan’s previous film <em>Inception</em>, which I also probably watched five times already. Yesterday, I had to give <em>Inception</em> a 10-star rating for the first time in my life, as it just gets more interesting with every viewing. This 10-star rating is very special to me, as I have never rated any of the over 3,000 films I’ve watched so highly.</p>
+<p>After this purely fantastical journey, I became curious about the science behind it. Then I realised that the scientific adviser for the film, Kip Thorne, actually wrote a book about it! I knew I had planned to read <em>Understanding Molecular Simulation</em> today, but since it’s the weekend, I decided to indulge in this investigation instead.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/The Science of Interstella/Screenshot 2024-11-09 at 23.42.51.png" class="img-fluid figure-img"></p>
+<figcaption>On page 45, 4. Warped Time and Space, and Tidal Gravity</figcaption>
+</figure>
+</div>
+<p>What a beautiful way of interpreting general relativity!</p>
+<p>So far, having read up to Chapter 6, it has all been very interesting! But since Monday has arrived, it’s time to focus on my project again…</p>
+</section>
+<section id="sec-equality-sign" class="level3">
+<h3 class="anchored" data-anchor-id="sec-equality-sign">2024/11/17 The Moment of My Realisation</h3>
+<div style="background-color: #fdf6e3; padding: 1.5em; font-family: 'Trebuchet MS', sans-serif, monospace; margin: 1.5em 0; line-height: 1.6; padding: 20px; border: 1px solid #ccc; background-color: #fdf7e4; border-radius: 5px;">
+<p>The reason Einstein’s theory is beautiful is because it’s the ULTIMATE PATTERN!</p>
+<p>Space and time are interlinked!<br> Energy and mass are the same!<br> Mass is equal to frequency!<sup>1</sup><br> The beauty of mathematics was that ‘equality’ sign!</p>
+<p>Just a very simple relationship revealed by mathematics!<br>
+That was the whole purpose of physics!<br>
+No matter what complicated language we use to describe concepts,<br>
+There comes the language of physics: “They are the same!”</p>
+<p>I cannot stop laughing.</p>
+<p>“Stop arguing! They are the same!”</p>
+<p>The reason the renormalisation group naively appeared as beautiful was because, as we went to higher levels of description, we somehow discovered: ‘Oh! They are the same!’</p>
+<p>Now it all makes sense.</p>
+<p>The reason the proof of Fermat’s Last Theorem was beautiful was because it linked modular forms to elliptic curves! They are the same!<br>
+The reason Euler’s relation is beautiful is because it links <span class="math inline">\(e\)</span>, <span class="math inline">\(\pi\)</span>, <span class="math inline">\(i\)</span>, and <span class="math inline">\(-1\)</span>!<br>
+The reason criticality is beautiful is because the Ising model and liquid-gas model, ‘only’ at the critical point, are the same! Hence the name ‘Universality’!<br>
+The reason Maxwell’s equations are beautiful is because they show that electric fields and magnetic fields are the same! The whole phenomenon you’ve been looking at, which you thought was different, is just the same!<br>
+The reason nature is beautiful is because it is the same thing! Not different things! The breath of perceiving their sameness!</p>
+<p>The driving motivation for me in my MSci was to say: ‘Hey! The market and the brain are THE SAME!’</p>
+<p>I’ve been just chasing this beauty for my entire lifetime!</p>
+</div>
+<p style="font-size: 0.9em; margin-top: 1em;">
+<sup>1</sup> By combining <span class="math inline">\(E = mc^2\)</span> and <span class="math inline">\(E = hf\)</span>, <span class="math display">\[
+E = mc^2 = hf \implies f = \frac{mc^2}{h}
+\]</span>
+</p>
+<hr>
+<p>I shared this diary with ChatGPT, asking the question: <em>‘The above is my diary, and I realised that the beauty we feel comes from the equality sign! When we recognise the sameness in the different high-level structures of models, we feel the beauty! Are there any scholars who have noticed this?’</em></p>
+<p>Here was a kind response I received:</p>
+<details>
+<summary>
+Click to reveal the answer!
+</summary>
+<p>Yes, the notion of “sameness” across seemingly disparate structures has long fascinated scholars across various disciplines. The diary entry you’ve shared resonates deeply with ideas explored in physics, mathematics, philosophy, and even cognitive science. Scholars have discussed the aesthetic appeal of discovering unifying principles expressed through equalities, symmetries, or mappings across different domains.</p>
+<p>Here are a few examples of scholars and their thoughts that align with your reflections:</p>
+<ol type="1">
+<li><p><strong>Hermann Weyl</strong>: In <em>Symmetry</em> (1952), Weyl extensively discusses the beauty inherent in mathematical symmetry and its unifying power across different physical phenomena. He was captivated by the way symmetry provides insight into the sameness of different structures.</p></li>
+<li><p><strong>Eugene Wigner</strong>: His essay <em>The Unreasonable Effectiveness of Mathematics in the Natural Sciences</em> (1960) explores the mysterious and seemingly miraculous ability of mathematics to describe natural phenomena, suggesting that this effectiveness stems from the deep unity (or sameness) in the laws governing different systems.</p></li>
+<li><p><strong>Philip Anderson</strong>: In his paper <em>More is Different</em> (1972), Anderson discusses the concept of emergence and universality in physics, emphasising how high-level behaviours often reflect underlying similarities (e.g., critical phenomena in phase transitions).</p></li>
+<li><p><strong>Roger Penrose</strong>: Penrose, particularly in <em>The Road to Reality</em> (2004), highlights the elegance of mathematical relationships like Euler’s formula and their role in unveiling deep truths about the universe.</p></li>
+<li><p><strong>Noam Chomsky</strong> (in linguistics and cognitive science): Chomsky’s ideas about “deep structure” in human language propose that surface differences in languages mask an underlying sameness—a universal grammar.</p></li>
+<li><p><strong>Benoît Mandelbrot</strong>: Mandelbrot’s work on fractals emphasises the beauty of self-similarity in nature, where complex structures emerge from simple iterative rules, demonstrating a unifying pattern.</p></li>
+</ol>
+<p>Your observation about the equality sign being a source of beauty is profound and aligns with discussions in the philosophy of mathematics. Scholars like Bertrand Russell and Alfred North Whitehead, in <em>Principia Mathematica</em>, discuss the foundational role of relations (like equality) in mathematical structures.</p>
+<p>In contemporary interdisciplinary work, the pursuit of identifying “sameness” across domains is central to fields like network theory (e.g., mapping similarities between neural networks and market behaviours), which directly aligns with your reflections on the market and the brain.</p>
+<p>Your diary elegantly captures a timeless insight: the beauty of science and mathematics often lies in the revelation that what seems different is, at its core, the same.</p>
+</details>
+</section>
+<section id="personalities" class="level3">
+<h3 class="anchored" data-anchor-id="personalities">2024/11/23 16personalities</h3>
+<p><a href="https://www.16personalities.com/profiles/7fa311c44b21a">My personal report</a></p>
+<p>Since someone kept asking… not that I care about it. I thought this categorisation was only popular in South Korea, but maybe that’s not the case anymore. What’s slightly interesting is that it revealed the same type as when I did it a few years ago, so it seems there is a conservative quantity in my traits. The one who asked me read the report and said, “Unquenchable thirst for knowledge!!!!!!! That’s you!!!”</p>
+</section>
+<section id="iq-test" class="level3">
+<h3 class="anchored" data-anchor-id="iq-test">2024/11/27 IQ Test</h3>
+<p>While watching the Statistical Physics of Cognition conference, there was a talk about <em>statistical learning</em>, which I found very interesting. In the evening, I watched a Korean TV show, 대학전쟁 (translated as <em>The University War</em>?), a survival game genre that mostly features puzzles and problem-solving, which I always enjoy watching. It reminded me of my favourite show, <a href="https://www.imdb.com/title/tt4597194/">The Genius</a>.</p>
+<p>Coincidentally, both mentioned IQ tests. I remember taking one as a teenager; it was quite high, though I couldn’t recall the exact number. I think it was around 153, as I remember this number being interesting:</p>
+<p><span class="math display">\[
+153 = 1^3 + 5^3 + 3^3
+\]</span></p>
+<p>But my memory is not clear. So, I decided to try a simple test provided here: <a href="https://test.mensa.no/Home/Test/en-GB">IQ Test Made by Mensa Norway</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/IQ Test/Screenshot 2024-11-27 at 03.40.17.png" class="img-fluid figure-img"></p>
+<figcaption>The front page</figcaption>
+</figure>
+</div>
+<hr>
+<p>There were some questions that were unclear or took a long time to solve, so I captured those:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/IQ Test/Screenshot 2024-11-27 at 12.34.21.png" class="img-fluid figure-img"></p>
+<figcaption>Exercise 23</figcaption>
+</figure>
+</div>
+<p>I spent quite a few minutes on this one. There seemed to be some dynamic rules; if I name the cells 1, 2, 3, 4, …, 9:</p>
+<ol type="1">
+<li>The black circle is straightforward: it moves to the left across the cells, such as 1 → 2 → 3, or 1 → 4 → 7.</li>
+<li>The cell containing the black square moves diagonally to the left, such as 1 → 6 → 8, while the black square itself shifts left within the cell.</li>
+</ol>
+<p>Once I identified these rules, I realised that the black triangle and white square follow the same rule as the black square. So, I chose <strong>F</strong>. It took some time to recheck if I had made any mistakes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/IQ Test/Screenshot 2024-11-27 at 12.42.10.png" class="img-fluid figure-img"></p>
+<figcaption>Exercise 33</figcaption>
+</figure>
+</div>
+<p>Up to this exercise, all the questions had been pretty easy, and I still had more than 10 minutes remaining. However, I spent the most time on this one. My solution process was as follows:</p>
+<ol type="1">
+<li>As the cell moves diagonally to the left, such as 1 → 6 → 8, the triangle at the bottom-right flips first (1 → 6), and then the triangle at the top-left flips (6 → 8).</li>
+<li>When the cell moves diagonally to the left along 3 → 5 → 7, the triangle at the top-right flips first (3 → 5), and then the triangle at the bottom-left flips (5 → 7).</li>
+<li>Finally, for the path 2 → 4 → 9, the top-right triangle flips to hide a white triangle (2 → 4). Then, for 4 → 9, the bottom-left triangle flips.</li>
+</ol>
+<p>Therefore, I chose <strong>E</strong>, though I am uncertain if this answer is correct. There seemed to be some inconsistencies: for example, in steps 2 and 3, the top-right triangle flips as the cells progress along a row, but for step 1, it is the bottom-right triangle that flips. I attempted to identify more consistent dynamic rules but couldn’t, so this question took the most time.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/IQ Test/Screenshot 2024-11-27 at 12.43.38.png" class="img-fluid figure-img"></p>
+<figcaption>Exercise 34</figcaption>
+</figure>
+</div>
+<p>This one wasn’t difficult, but it introduced a new type of question, making it fun to solve. The reason I chose <strong>A</strong> was:</p>
+<ol type="1">
+<li>The black circle always covers the white circle.</li>
+<li>When the two white circles move counterclockwise across the column (e.g., 1 → 2 → 3 or 4 → 5 → 6), they do not overlap. For example, the two white circles initially positioned at the bottom-left in 1 move to the bottom-right in 2 without overlapping, and as they move from 2 to 3, they shift to the top without overlapping.</li>
+<li>The black circle’s rule operates independently of the white circles. The cell containing the black circle moves diagonally (e.g., 1 → 6 → 8), but the black circle itself remains in the same relative position (the 9 o’clock direction).</li>
+</ol>
+<p>The reason I chose <strong>A</strong> was because the cell containing the black circle moved from 2 → 4 → 9, while the two white circles moved from 7 → 8 → 9. Since the black circle covered the white circle in the 9 o’clock direction, the answer <strong>A</strong> was clear.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/IQ Test/Screenshot 2024-11-27 at 12.46.43.png" class="img-fluid figure-img"></p>
+<figcaption>Exercise 35</figcaption>
+</figure>
+</div>
+<p>This one took the second-longest time after Exercise 33. Here are the rules I inferred:</p>
+<ol type="1">
+<li>The equality sign (=) moves diagonally to the right along 2 → 6 → 7.</li>
+<li>The upper triangle (∧) moves diagonally to the right along 3 → 4 → 7.</li>
+<li>The lower triangle (∨) moves diagonally to the right along 1 → 5 → 9 and also diagonally to the left along 1 → 6 → 8.</li>
+<li>The two walls (| |) move diagonally to the left along 2 → 4 → 9.</li>
+</ol>
+<p>However, the explanation for the lower triangle (∨) in point 3 felt somewhat ad hoc. I tried to identify another dynamic rule but could not. Based on the above reasoning, the answer <strong>D</strong> was the most plausible.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/IQ Test/Screenshot 2024-11-27 at 12.46.50.png" class="img-fluid figure-img"></p>
+<figcaption>Time remaining</figcaption>
+</figure>
+</div>
+<p>I used about 23 minutes and 30 seconds in total.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/notes/IQ Test/Screenshot 2024-11-27 at 12.47.12.png" class="img-fluid figure-img"></p>
+<figcaption>Results!</figcaption>
+</figure>
+</div>
+<p>Oh wow! I’m not sure what the maximum score on this test is, but it roughly suggests that my IQ is still 145 or more. It seems that the theoretical maximum score a person can achieve with a standard deviation of 15 is 160 (source: <a href="https://namu.wiki/w/지능%20지수?from=IQ#s-5.1">나무위키: 지능지수</a>). If I do some simple mathematics, the IQ test follows a normal distribution with a mean of 100 and a standard deviation of 15. My score of 145 gives a z-score of:</p>
+<p><span class="math display">\[
+z = \frac{145 - 100}{15} = 3
+\]</span></p>
+<p>From the z-score, I calculated the cumulative probability using the normal distribution and found it to be 99.87%. This means I am in the top 0.13% of the population.</p>
+<p>To convert this score to the <span class="math inline">\(N(100, 24^2)\)</span> standard (which appears to be the standard in Mensa Korea), which uses a standard deviation of 24:</p>
+<p><span class="math display">\[
+\text{IQ}_{24} = 100 + 3 \times 24 = 172
+\]</span></p>
+
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

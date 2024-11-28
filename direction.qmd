@@ -230,6 +230,89 @@ Active matter를 연구하게 되는것까지 된것이 아닌가 싶어.<br>
 관련된 교수진들을 만나보면서,<br>
 너가 어떤 연구방향으로 가게될지 자연스럽게 알게될것같아.
 
+## 2024/11/28 Email sent to Nigel and Francesco
+
+Dear Nigel and Francesco,
+ 
+I feel that it’s quite unfortunate that our project meeting ended abruptly today. 
+After having a conversation with Ian, it became quite clear to me that there were misunderstandings in our previous meeting last week, so I hoped to clarify those today as I realised that was an important step. 
+ 
+I deeply appreciate that you set two agendas to talk about today, and both of them were really helpful! Also, you allowed me to mention what I hoped to talk about after we went through those agendas. 
+However, I felt that when I started to bring up a conversation for clarifying my points, it appeared that both of you wanted me to leave before resolving the misunderstandings. 
+I tried to address those concerns, but it just didn’t work, and I started to wonder if my way of communicating was not correct. 
+ 
+In our previous meeting, the reason I mentioned the vape products was because I wanted to talk about how wetting and spreading (or drying) could be interesting to me in terms of my own experiences (even though it was not an active fluid), but you misunderstood me as hoping to make a new vape product (which you wrote in the document that you can’t supervise). 
+The whole point of the previous meeting last week was for me to consult with you on why our initial project was interesting from your perspectives. You mentioned that you started to investigate drying at first but didn’t see any drying. Also, the point I raised to Ian and you was that we don’t observe a drying transition in active fluids in real life, so I hoped to understand your motivation for pursuing it. 
+ 
+I chose my PhD in active matter because I was largely inspired by two philosophical papers: 
+1. Keller, Evelyn Fox. 2016. “Active Matter, Then and Now.” *History and Philosophy of the Life Sciences* 38: 1–11. 
+2. McGivern, Patrick. 2020. “Active Materials: Minimal Models of Cognition?” *Adaptive Behavior* 28 (6): 441–51. 
+ 
+This new field, which has gained significant popularity over the past 20 years, struck me as a paradigm shift. The advertised project was quite general, and in January, you mentioned that it could evolve based on my interests. However, once I started my PhD, I was given an initial project that, if I were to summarise concisely (for Ian), involves investigating how active Brownian particles (ABPs), which evolve through overdamped Langevin equations, interact with surfaces to induce drying surface phase transitions via molecular dynamics simulations. What was very interesting about this model was that, without any attractive interactions, the particles form large-scale structures, described as motility-induced phase separation, simply by turning on activity (motility). Also, it appeared that this model maps to artificial colloids (e.g., Janus particles) or motile bacteria. 
+ 
+The problem arose from the fact that I’ve never observed a drying transition in these systems in empirical reality, which kept bringing me back to the map-territory relation. I was also uncertain whether the results I might obtain could be generalisable to a broader class of active matter systems. 
+As I was reading Physics and Beyond by Werner Heisenberg, I came across Einstein’s remark: “It is the theory which decides what we can observe,” made after he considered Mach’s perspective to be naïve. However, it seemed to me that, as I was reading through papers and articles, many statistical physicists simply play with models without carefully examining their assumptions or their relation to empirical evidence. 
+I tried raising this concern last week so that I could gain a different perspective from you, but if it was to be largely dismissed as being “too philosophical” to pursue further discussion, then that’s fine, but it’s just unfortunate. 
+ 
+So, in summary, I raised my concern to gain more insights from you, while you understood it as me having completely lost interest in the project, which I found out with Ian was a miscommunication. 
+ 
+Also, in terms of progress, yes, I did engage with other materials outside our project (there are for fun! Not to be confused with what I do in my working hours). But I have always spent a lot of time reading articles and papers related to our project, as well as understanding the code. 
+In the beginning, you clearly pointed out that, as a PhD student, at first, it’s important to understand the wider context, and it’s a mistake for them to just start working on the problems without this background reading. 
+I’ve been doing so, and you said in the first email (which you sent on the 13th) that you were not worried about my progress. Then, in your second email after our project meeting, I was told that I’m not making meaningful progress. 
+ 
+I’m quite confused about all this. It takes a long time to read papers from a new field because, during my undergraduate studies, we didn’t cover non-equilibrium statistical physics or colloidal physics. 
+For example, Francesco asked me if I had learned about random walks, but we also didn’t cover this basic concept either! 
+Also, it takes a long time to understand the code written in C++. Yes, there are similarities as I did C and Java in the past, but even a single file such as fix_abp.cpp has a lot of links to other codes such as fix_abp.h, force.h, random_mars.h, etc. 
+ 
+As you pointed out in terms of supervision, yes, I won’t raise any philosophical concerns or my interests outside the set project at all. 
+Because if I try to do so, it seems I create misunderstandings. 
+However, I did want to emphasise that my mind is now clear, and maybe I could bring what I wrote on the 25th, which summarises how my motivation and ambition have settled: 
+ 
+---
+ 
+When I got home, I had a phone call with my mum and shared how much the situation had changed. Reflecting on what I said to her: 
+ 
+While I was at the train station for hours, I found myself thinking deeply about my project, the papers I read last week, and my conversations with Nigel and Ian. I realised that my project presents a perfect opportunity to learn about useful concepts for describing non-equilibrium systems, such as entropy production, the Fokker–Planck equation, and the fluctuation-dissipation theorem. Now, investigating these concepts using the simplest models from the particle perspective of active matter feels really exciting! If a drying transition is observed, it will also be a great chance to master the theoretical understanding and application of renormalisation group techniques. 
+ 
+Reading various papers helped me appreciate how interesting colloids and bacteria can be. Bacteria represent the simplest form of living systems, and through motility-induced phase separation, these systems form large-scale structures without any attractive interactions. Thinking about surface phase transitions became particularly intriguing when I considered how 3D structures form 2D boundaries. Boundaries are key to how we differentiate objects. Even in comics, we draw the boundaries of characters and objects. This perspective made the topic even more interesting. 
+ 
+I also admire how my supervisors approached the problem, using an order parameter to measure the asymmetry within the capillary system. This method effectively avoids the complexities of defining surface tensions and focuses instead on the geometrical aspects of the problem. Once these ideas crystallised in my mind, I felt certain that I wanted to become an expert in this field. If someone asks about surface phase transitions in non-equilibrium systems, I want to be the person they turn to for advice. 
+ 
+These thoughts were swirling in my mind, and strangely, the weather even stopped me from travelling to London to attend the Statistical Physics of Cognition conference, where I had planned to network with people in that field. I don’t believe in mystical things, but the timing was mysterious. This kind of weather disruption, preventing travel between cities, hasn’t happened to me in my five years living in the UK. 
+ 
+I was also thinking about Nigel and Francesco and how thoughtful they both are. I want to become a light that brightens the path for us. 
+ 
+---
+ 
+But, as you pointed out, I will separate our project notes from my logbook on my project website. 
+Also, thank you very much for introducing the Casimir effect in active fluids analogues. I’ll read through the materials on my own over this week. 
+(Initially, as my mind has settled, I was going to work on the simulation side as I wasn’t certain how to construct a wall as you did in your papers with my given code, but I will delay that work until next week.) 
+ 
+Somehow, your email which followed from our meeting just now has arrived while I was writing this email. I’ll read through your email after I send this. 
+ 
+Thank you, 
+Sohyun
+
+## 2024/11/28 Email received from Nigel
+
+Dear Sohyun (cc Francesco, Ian),
+ 
+I wanted to follow up on our meeting today and reiterate and elaborate in writing some of the points covered.
+ 
+As you had previously expressed reservations about continuing with the Active Drying project, we discussed an alternative project in Active Matter centred around the Critical Casimir Effect. You said that on reflection you are happy to continue with the original project, and we agreed that we could keep the Critical Casimir Effect project as a backup or as a topic for future work.
+ 
+On more general matters, we stated that from the point of view of the student-supervisor relationship, there needs to be a clear separation between your work on the project and outside interests. The responsibilities of PhD supervisors do not extend beyond supporting your work on the project and advising/supporting should there be any issues (eg illness/personal situation) that are affecting your ability to progress with the project.  Project meetings are therefore not for discussing anything with you except the science of the project or pastoral issues that may be affecting your ability to work.
+ 
+Similarly, if you want to use a blog as a lab book to record progress and notes on papers read etc, this is laudable and desirable for facilitating discussions, but what you have been writing and sharing with us has turned into a sort of personal diary and that’s inappropriate for the student-supervisor relationship. If you want us to read things then they need to be confined to matters directly related to the project.
+ 
+Being a successful PhD student requires a certain level of commitment.  While it is early days and we don’t have serious concerns about your progress, we do note that you seem to be spending considerable time writing blogs and thinking about philosophy, vaping, neuroscience, and reading and rereading books, and lecture notes, etc., the relevance of which is not clear. While you can of course do what you want in your own time, we feel that you need to take care not to blur the boundaries between what is in scope for the project work and what is not. From your blog and recent conversations, we are concerned that this might be happening.
+ 
+I hope that these comments are helpful. They are not intended to be critical – we just want you to have clear and realistic expectations of the process so that you have a satisfied, enjoyable, and successful PhD journey.
+ 
+Best regards
+ 
+Nigel and Francesco
+
 ```{=html}
 </div>
 

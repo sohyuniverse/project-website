@@ -6,12 +6,6 @@ reference-location: margin
 citation-location: margin
 ---
 
-## Week 2
-
-### 2024/9/27 Things I did so far
-
-Busy weeks due to starting three teaching modules: [Weekly update of my TSR (Teaching Support Roles)](onenote:Overview.one#Links&section-id={D4B227EF-F9FF-864E-A042-9B9A7C2E06E3}&page-id={B7874627-D52D-5043-9E1A-2067E68FAD02}&object-id={537C7D03-2CEB-3142-8063-0EF93BF5A5E9}&25&base-path=https://uob-my.sharepoint.com/personal/sp13328_bristol_ac_uk/Documents/PhD%20in%20Active%20Matter). Looking back, I wish I could have completed more reading, as there isn’t much to talk about in terms of active matter research for the next project meeting on Monday.
-
 ## Week 3
 ### 2024/9/30 Weekly project meeting
 
@@ -235,22 +229,6 @@ I was quite ill last week, taking antibiotics from Monday to Saturday. While hav
 
 4. That was the reason that my rest has been quite different and sidetracked this time in week 7. I started reading *Physics and Beyond* written by Werner Heisenberg (see [2024/11/2 - 11/8 *Physics and Beyond*](reading.qmd#sec-physics-and-beyond)). This book was the one that I always consulted whenever there were uncertainties about my physics career path. I am on page 108 now out of 268. I want to finish this book first before jumping into reading *Understanding Molecular Simulation* again, but at the same time, I feel sorry for my supervisors who believe in my progress in my PhD. It's all difficult now in terms of my situation.
 
-### 2024/11/5 Being a Good Lecturer
-
-After attending [Hermes](https://www.bristol.ac.uk/people/person/Hermes-Gadelha-d024bd20-e1b7-4c53-af70-94acac5c6425/)' lecture, I realised there are certain qualities that a very good lecturer shares. To describe him:
-
-He was smiling, making jokes, honest, sharing life stories, and, most importantly, engaging with students at their level.
-
-Often, when I talk with certain lecturers or fellow physics PGRs, they ramble without checking if the person listening is following. Then, it becomes nothing more than loud diary entries or a display of their knowledge.
-
-I also felt that the language barrier was irrelevant. Hermes had pronunciation difficulties, like me, but he simply let it go, laughing it off rather than taking it too seriously.
-
-I was quite surprised by how many qualities he actually shared with another of my favourite lecturers, Sandu Popescu. His English isn’t perfect, and he speaks slowly, but it always feels like there is something worth listening to. Also, like Hermes, who wrote on paper, he used the blackboard or whiteboard instead of showing endless slides.
-
-Hermes made plenty of eye contact and made excellent use of pauses during his explanations, allowing students to form images in their minds for better understanding.
-
-There was much for me to learn from his approach to lecturing. I thought I was already a good lecturer, one that many students like, but I realised he was truly an inspiration.
-
 ### 2024/11/8 Active Brownian Particles (ABPs)
 
 I now understand why ABPs drive the system out of equilibrium. I love deriving everything mathematically from first principles.
@@ -397,80 +375,6 @@ The abstract of the second paper (@lynn2022decomposing):
 
 > We show that the evidence for a local arrow of time, which is equivalent to the entropy production in thermodynamic systems, can be decomposed. In a system with many degrees of freedom, there is a term that arises from the irreversible dynamics of the individual variables, and then a series of non-negative terms contributed by correlations among pairs, triplets, and higher-order combinations of variables. We illustrate this decomposition on simple models of noisy logical computations, and then apply it to the analysis of patterns of neural activity in the retina as it responds to complex dynamic visual scenes. We find that neural activity breaks detailed balance even when the visual inputs do not, and that this irreversibility arises primarily from interactions between pairs of neurons.
 
-### 2024/11/17 The Moment of My Realisation {#sec-equality-sign}
-
-<div style="background-color: #fdf6e3; padding: 1.5em; font-family: 'Trebuchet MS', sans-serif, monospace; margin: 1.5em 0; line-height: 1.6; padding: 20px; border: 1px solid #ccc; background-color: #fdf7e4; border-radius: 5px;">
-The reason Einstein’s theory is beautiful is because it’s the ULTIMATE PATTERN!
-
-Space and time are interlinked!<br>
-Energy and mass are the same!<br>
-Mass is equal to frequency!<sup>1</sup><br>
-The beauty of mathematics was that ‘equality’ sign!  
-
-Just a very simple relationship revealed by mathematics!  
-That was the whole purpose of physics!  
-No matter what complicated language we use to describe concepts,  
-There comes the language of physics: “They are the same!”  
-
-I cannot stop laughing.  
-
-“Stop arguing! They are the same!”  
-
-The reason the renormalisation group naively appeared as beautiful was because, as we went to higher levels of description, we somehow discovered: ‘Oh! They are the same!’
-
-Now it all makes sense.  
-
-The reason the proof of Fermat’s Last Theorem was beautiful was because it linked modular forms to elliptic curves! They are the same!  
-The reason Euler’s relation is beautiful is because it links $e$, $\pi$, $i$, and $-1$!  
-The reason criticality is beautiful is because the Ising model and liquid-gas model, ‘only’ at the critical point, are the same! Hence the name ‘Universality’!  
-The reason Maxwell’s equations are beautiful is because they show that electric fields and magnetic fields are the same! The whole phenomenon you’ve been looking at, which you thought was different, is just the same!  
-The reason nature is beautiful is because it is the same thing! Not different things! The breath of perceiving their sameness!  
-
-The driving motivation for me in my MSci was to say: ‘Hey! The market and the brain are THE SAME!’
-
-I've been just chasing this beauty for my entire lifetime!
-</div>
-
-<p style="font-size: 0.9em; margin-top: 1em;">
-<sup>1</sup> By combining $E = mc^2$ and $E = hf$,
-$$
-E = mc^2 = hf \implies f = \frac{mc^2}{h}
-$$
-</p>
-
----
-
-I shared this diary with ChatGPT, asking the question: *‘The above is my diary, and I realised that the beauty we feel comes from the equality sign! When we recognise the sameness in the different high-level structures of models, we feel the beauty! Are there any scholars who have noticed this?’*
-
-Here was a kind response I received:
-
-<details>
-<summary>Click to reveal the answer!</summary>
-
-Yes, the notion of "sameness" across seemingly disparate structures has long fascinated scholars across various disciplines. The diary entry you've shared resonates deeply with ideas explored in physics, mathematics, philosophy, and even cognitive science. Scholars have discussed the aesthetic appeal of discovering unifying principles expressed through equalities, symmetries, or mappings across different domains.
-
-Here are a few examples of scholars and their thoughts that align with your reflections:
-
-1. **Hermann Weyl**: In *Symmetry* (1952), Weyl extensively discusses the beauty inherent in mathematical symmetry and its unifying power across different physical phenomena. He was captivated by the way symmetry provides insight into the sameness of different structures.
-
-2. **Eugene Wigner**: His essay *The Unreasonable Effectiveness of Mathematics in the Natural Sciences* (1960) explores the mysterious and seemingly miraculous ability of mathematics to describe natural phenomena, suggesting that this effectiveness stems from the deep unity (or sameness) in the laws governing different systems.
-
-3. **Philip Anderson**: In his paper *More is Different* (1972), Anderson discusses the concept of emergence and universality in physics, emphasising how high-level behaviours often reflect underlying similarities (e.g., critical phenomena in phase transitions).
-
-4. **Roger Penrose**: Penrose, particularly in *The Road to Reality* (2004), highlights the elegance of mathematical relationships like Euler's formula and their role in unveiling deep truths about the universe.
-
-5. **Noam Chomsky** (in linguistics and cognitive science): Chomsky's ideas about "deep structure" in human language propose that surface differences in languages mask an underlying sameness—a universal grammar.
-
-6. **Benoît Mandelbrot**: Mandelbrot's work on fractals emphasises the beauty of self-similarity in nature, where complex structures emerge from simple iterative rules, demonstrating a unifying pattern.
-
-Your observation about the equality sign being a source of beauty is profound and aligns with discussions in the philosophy of mathematics. Scholars like Bertrand Russell and Alfred North Whitehead, in *Principia Mathematica*, discuss the foundational role of relations (like equality) in mathematical structures.
-
-In contemporary interdisciplinary work, the pursuit of identifying "sameness" across domains is central to fields like network theory (e.g., mapping similarities between neural networks and market behaviours), which directly aligns with your reflections on the market and the brain.
-
-Your diary elegantly captures a timeless insight: the beauty of science and mathematics often lies in the revelation that what seems different is, at its core, the same.
-
-</details>
-
 ## Week 10
 
 ### 2024/11/18 Weekly Project Meeting {#sec-week10-project-meeting}
@@ -517,12 +421,6 @@ Suddenly, a strange thought occurred, which I was trying to phrase to ask my sup
 
 I have derived some expressions in these [handwritten notes](documents/241121 Liquid Droplet.pdf), but I'm not sure where to go with this.
 
-### 2024/11/23 16personalities
-
-[My personal report](https://www.16personalities.com/profiles/7fa311c44b21a)
-
-Since someone kept asking... not that I care about it. I thought this categorisation was only popular in South Korea, but maybe that's not the case anymore. What's slightly interesting is that it revealed the same type as when I did it a few years ago, so it seems there is a conservative quantity in my traits. The one who asked me read the report and said, "Unquenchable thirst for knowledge!!!!!!! That's you!!!"
-
 ## Week 11
 
 ### 2024/11/25 Stuck in Bristol
@@ -555,81 +453,3 @@ I was also thinking about Nigel and Francesco and how thoughtful they both are. 
 In our models of ABPs, we have a self-propulsion force that drives the motility. One thought occurred suddenly. Our models effectively ignore the inertial terms, dictated by the overdamped Langevin equation, and wet the surface. On contrary, for purely repulsive particles banging on the hard wall, it also dries the surface. Then, when we have a cluster forming due to motility-induced phase separation, there must arise an overall momentum current stemming from the collective behaviour of active particles. This collective matter can then be thought of as being in an underdamped situation, where inertial terms could emerge through coarse-graining. It's 2am, so I'm probably thinking of something silly, but in my intuition, strong inertial terms could lead to a possible drying scenario by overcoming surface trapping mechanisms. 
 
 The overdamped assumption is deeply tied to the low Reynolds number regime typical of ABPs. Even at the collective level, the viscosity of the medium might suppress inertial effects. I'm uncertain whether the collective velocity field is sufficiently strong to overcome this dissipation...
-
-### 2024/11/27 IQ Test
-
-While watching the Statistical Physics of Cognition conference, there was a talk about *statistical learning*, which I found very interesting. In the evening, I watched a Korean TV show, 대학전쟁 (translated as *The University War*?), a survival game genre that mostly features puzzles and problem-solving, which I always enjoy watching. It reminded me of my favourite show, [The Genius](https://www.imdb.com/title/tt4597194/).
-
-Coincidentally, both mentioned IQ tests. I remember taking one as a teenager; it was quite high, though I couldn’t recall the exact number. I think it was around 153, as I remember this number being interesting:
-
-$$
-153 = 1^3 + 5^3 + 3^3
-$$
-
-But my memory is not clear. So, I decided to try a simple test provided here: [IQ Test Made by Mensa Norway](https://test.mensa.no/Home/Test/en-GB).
-
-![The front page](images/notes/IQ Test/Screenshot 2024-11-27 at 03.40.17.png)
-
----
-
-There were some questions that were unclear or took a long time to solve, so I captured those:
-
-![Exercise 23](images/notes/IQ Test/Screenshot 2024-11-27 at 12.34.21.png)
-
-I spent quite a few minutes on this one. There seemed to be some dynamic rules; if I name the cells 1, 2, 3, 4, ..., 9:
-
-1. The black circle is straightforward: it moves to the left across the cells, such as 1 → 2 → 3, or 1 → 4 → 7.
-2. The cell containing the black square moves diagonally to the left, such as 1 → 6 → 8, while the black square itself shifts left within the cell.
-
-Once I identified these rules, I realised that the black triangle and white square follow the same rule as the black square. So, I chose **F**. It took some time to recheck if I had made any mistakes.
-
-![Exercise 33](images/notes/IQ Test/Screenshot 2024-11-27 at 12.42.10.png)
-
-Up to this exercise, all the questions had been pretty easy, and I still had more than 10 minutes remaining. However, I spent the most time on this one. My solution process was as follows:
-
-1. As the cell moves diagonally to the left, such as 1 → 6 → 8, the triangle at the bottom-right flips first (1 → 6), and then the triangle at the top-left flips (6 → 8).
-2. When the cell moves diagonally to the left along 3 → 5 → 7, the triangle at the top-right flips first (3 → 5), and then the triangle at the bottom-left flips (5 → 7).
-3. Finally, for the path 2 → 4 → 9, the top-right triangle flips to hide a white triangle (2 → 4). Then, for 4 → 9, the bottom-left triangle flips.
-
-Therefore, I chose **E**, though I am uncertain if this answer is correct. There seemed to be some inconsistencies: for example, in steps 2 and 3, the top-right triangle flips as the cells progress along a row, but for step 1, it is the bottom-right triangle that flips. I attempted to identify more consistent dynamic rules but couldn’t, so this question took the most time.
-
-![Exercise 34](images/notes/IQ Test/Screenshot 2024-11-27 at 12.43.38.png)
-
-This one wasn’t difficult, but it introduced a new type of question, making it fun to solve. The reason I chose **A** was:
-
-1. The black circle always covers the white circle.
-2. When the two white circles move counterclockwise across the column (e.g., 1 → 2 → 3 or 4 → 5 → 6), they do not overlap. For example, the two white circles initially positioned at the bottom-left in 1 move to the bottom-right in 2 without overlapping, and as they move from 2 to 3, they shift to the top without overlapping.
-3. The black circle’s rule operates independently of the white circles. The cell containing the black circle moves diagonally (e.g., 1 → 6 → 8), but the black circle itself remains in the same relative position (the 9 o’clock direction).
-
-The reason I chose **A** was because the cell containing the black circle moved from 2 → 4 → 9, while the two white circles moved from 7 → 8 → 9. Since the black circle covered the white circle in the 9 o’clock direction, the answer **A** was clear.
-
-![Exercise 35](images/notes/IQ Test/Screenshot 2024-11-27 at 12.46.43.png)
-
-This one took the second-longest time after Exercise 33. Here are the rules I inferred:
-
-1. The equality sign (=) moves diagonally to the right along 2 → 6 → 7.
-2. The upper triangle (∧) moves diagonally to the right along 3 → 4 → 7.
-3. The lower triangle (∨) moves diagonally to the right along 1 → 5 → 9 and also diagonally to the left along 1 → 6 → 8.
-4. The two walls (|   |) move diagonally to the left along 2 → 4 → 9.
-
-However, the explanation for the lower triangle (∨) in point 3 felt somewhat ad hoc. I tried to identify another dynamic rule but could not. Based on the above reasoning, the answer **D** was the most plausible.
-
-![Time remaining](images/notes/IQ Test/Screenshot 2024-11-27 at 12.46.50.png)
-
-I used about 23 minutes and 30 seconds in total.
-
-![Results!](images/notes/IQ Test/Screenshot 2024-11-27 at 12.47.12.png)
-
-Oh wow! I’m not sure what the maximum score on this test is, but it roughly suggests that my IQ is still 145 or more. It seems that the theoretical maximum score a person can achieve with a standard deviation of 15 is 160 (source: [나무위키: 지능지수](https://namu.wiki/w/지능%20지수?from=IQ#s-5.1)). If I do some simple mathematics, the IQ test follows a normal distribution with a mean of 100 and a standard deviation of 15. My score of 145 gives a z-score of:
-
-$$
-z = \frac{145 - 100}{15} = 3
-$$
-
-From the z-score, I calculated the cumulative probability using the normal distribution and found it to be 99.87%. This means I am in the top 0.13% of the population.
-
-To convert this score to the $N(100, 24^2)$ standard (which appears to be the standard in Mensa Korea), which uses a standard deviation of 24:
-
-$$
-\text{IQ}_{24} = 100 + 3 \times 24 = 172
-$$
