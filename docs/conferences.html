@@ -266,7 +266,7 @@ window.Quarto = {
   <li><a href="#the-physics-of-sentience-by-karl-friston" id="toc-the-physics-of-sentience-by-karl-friston" class="nav-link" data-scroll-target="#the-physics-of-sentience-by-karl-friston">The Physics of Sentience by Karl Friston</a></li>
   <li><a href="#harnessing-the-vicinity-of-criticality-to-adapt-information-processing-by-johannes-zierenberg" id="toc-harnessing-the-vicinity-of-criticality-to-adapt-information-processing-by-johannes-zierenberg" class="nav-link" data-scroll-target="#harnessing-the-vicinity-of-criticality-to-adapt-information-processing-by-johannes-zierenberg">Harnessing the Vicinity of Criticality to Adapt Information Processing by Johannes Zierenberg</a></li>
   <li><a href="#scaling-of-neural-network-activity-and-optimal-functionality-from-real-neurons-in-the-brain-to-artificial-intelligence-by-miguel-a-munoz" id="toc-scaling-of-neural-network-activity-and-optimal-functionality-from-real-neurons-in-the-brain-to-artificial-intelligence-by-miguel-a-munoz" class="nav-link" data-scroll-target="#scaling-of-neural-network-activity-and-optimal-functionality-from-real-neurons-in-the-brain-to-artificial-intelligence-by-miguel-a-munoz">Scaling of Neural Network Activity and Optimal Functionality: From Real Neurons in the Brain to Artificial Intelligence by Miguel A Munoz</a></li>
-  <li><a href="#fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis" id="toc-fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis" class="nav-link" data-scroll-target="#fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis">Fluctuation-Dissipation Relations and equilibrium conditions for the brain in healthy and pathological conditions by Lucilla de Arcangelis</a></li>
+  <li><a href="#fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis" id="toc-fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis" class="nav-link" data-scroll-target="#fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis">Fluctuation Dissipation Relations and Equilibrium Conditions for the Brain in Healthy and Pathological Conditions by Lucilla de Arcangelis</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -426,7 +426,27 @@ window.Quarto = {
 <p>After that, he discussed how the maximum performance shown by similarities between the mouse brain and reservoir computing, using topological arguments, coincides with the edge of criticality. This was, once again, very interesting! It was worth watching, and the paper he suggested by Kenneth seems worth reading. Additionally, all the questions asked by others were interesting and helpful.</p>
 </section>
 <section id="fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis" class="level3">
-<h3 class="anchored" data-anchor-id="fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis">Fluctuation-Dissipation Relations and equilibrium conditions for the brain in healthy and pathological conditions by Lucilla de Arcangelis</h3>
+<h3 class="anchored" data-anchor-id="fluctuation-dissipation-relations-and-equilibrium-conditions-for-the-brain-in-healthy-and-pathological-conditions-by-lucilla-de-arcangelis">Fluctuation Dissipation Relations and Equilibrium Conditions for the Brain in Healthy and Pathological Conditions by Lucilla de Arcangelis</h3>
+<p>I think the content was very interesting, but sadly and honestly, the speaker’s voice was quite unbearable to listen to. Maybe I am overly sensitive to the occasional extreme high pitch.</p>
+<p>However, a lot of the concepts she introduced were very useful. For example:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/241125 Statistical Physics of Cognition/Screenshot 2024-11-28 at 23.39.05.png" class="img-fluid figure-img"></p>
+<figcaption>Fluctuation dissipation relations</figcaption>
+</figure>
+</div>
+<p>The function in the second line was very interesting, as it relates the fluctuation of a variable (which can be energy, magnetisation, or density in a gas) on the left at equilibrium to a response function on the right that takes the system out of equilibrium. Also, the solution to that equation is the Einstein relation, which essentially relates the fluctuation measured by the diffusion coefficient to the response function. Specifically, it is the mobility that describes how the velocity of a particle changes when a standard force is applied.</p>
+<p>A classical and ubiquitous theorem!</p>
+<hr>
+<p>Then she introduced the Stochastic Wilson Cowan model to discuss the non-equilibrium analogue of the above equation and to analyse excitatory and inhibitory neuron populations.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/241125 Statistical Physics of Cognition/Screenshot 2024-11-28 at 23.52.42.png" class="img-fluid figure-img"></p>
+<figcaption>Langevin equations!</figcaption>
+</figure>
+</div>
+<p>After a few steps, she introduced the familiar Langevin equation where <span class="math inline">\(\xi\)</span> is the fluctuation. This equation is used in stochastic processes to study the approach to equilibrium under a restoring force that is fluctuating. Similar to our project, the restoring force in that equation was the delta correlated noise.</p>
+<p>Then she analysed the correlation functions to obtain the characteristic times, which are the inverses of the eigenvalues of the coupling matrix above. This matrix has a peculiar triangular form that essentially implies that a fluctuation in <span class="math inline">\(\Sigma\)</span> cannot affect <span class="math inline">\(\Delta\)</span>, but a fluctuation in <span class="math inline">\(\Delta\)</span> can affect <span class="math inline">\(\Sigma\)</span>. There, she observed the scale invariance!</p>
 
 
 </section>

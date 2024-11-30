@@ -124,5 +124,24 @@ One particularly interesting point he mentioned was that the head movement of th
 
 After that, he discussed how the maximum performance shown by similarities between the mouse brain and reservoir computing, using topological arguments, coincides with the edge of criticality. This was, once again, very interesting! It was worth watching, and the paper he suggested by Kenneth seems worth reading. Additionally, all the questions asked by others were interesting and helpful.
 
-### Fluctuation-Dissipation Relations and equilibrium conditions for the brain in healthy and pathological conditions by Lucilla de Arcangelis
+### Fluctuation Dissipation Relations and Equilibrium Conditions for the Brain in Healthy and Pathological Conditions by Lucilla de Arcangelis
 
+I think the content was very interesting, but sadly and honestly, the speaker’s voice was quite unbearable to listen to. Maybe I am overly sensitive to the occasional extreme high pitch.
+
+However, a lot of the concepts she introduced were very useful. For example:
+
+![Fluctuation dissipation relations](images/241125%20Statistical%20Physics%20of%20Cognition/Screenshot%202024-11-28%20at%2023.39.05.png)
+
+The function in the second line was very interesting, as it relates the fluctuation of a variable (which can be energy, magnetisation, or density in a gas) on the left at equilibrium to a response function on the right that takes the system out of equilibrium. Also, the solution to that equation is the Einstein relation, which essentially relates the fluctuation measured by the diffusion coefficient to the response function. Specifically, it is the mobility that describes how the velocity of a particle changes when a standard force is applied.
+
+A classical and ubiquitous theorem!
+
+---
+
+Then she introduced the Stochastic Wilson Cowan model to discuss the non-equilibrium analogue of the above equation and to analyse excitatory and inhibitory neuron populations.
+
+![Langevin equations!](images/241125%20Statistical%20Physics%20of%20Cognition/Screenshot%202024-11-28%20at%2023.52.42.png)
+
+After a few steps, she introduced the familiar Langevin equation where $\xi$ is the fluctuation. This equation is used in stochastic processes to study the approach to equilibrium under a restoring force that is fluctuating. Similar to our project, the restoring force in that equation was the delta correlated noise.
+
+Then she analysed the correlation functions to obtain the characteristic times, which are the inverses of the eigenvalues of the coupling matrix above. This matrix has a peculiar triangular form that essentially implies that a fluctuation in $\Sigma$ cannot affect $\Delta$, but a fluctuation in $\Delta$ can affect $\Sigma$. There, she observed the scale invariance!
