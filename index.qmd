@@ -21,6 +21,8 @@ The aggregation effect at a hard wall arises because ABPs become trapped at the 
 
 [Document search](https://www-webofscience-com.bris.idm.oclc.org/wos/woscc/basic-search)
 
+[Clarity portal](https://claritygo.travel)
+
 [Courses to audit](https://www.bris.ac.uk/unit-programme-catalogue/RouteStructure.jsa?byCohort=N&cohort=Y&routeLevelCode=4&ayrCode=24%2F25&modeOfStudyCode=Full+Time&programmeCode=2PHYS024U)
 
 [MPAGS Training Modules](https://warwick.ac.uk/fac/sci/physics/mpags/modules/)

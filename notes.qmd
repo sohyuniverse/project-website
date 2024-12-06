@@ -7,29 +7,6 @@ citation-location: margin
 ---
 
 ## Week 3
-### 2024/9/30 Weekly project meeting
-
-#### Things to discuss
-
-1. Meeting with Max on Friday at noon (4th of Oct), thinking of going to Budapest Café
-
-2. ‘Setting Expectations’ document
-
-3. Two conferences to join:
-
-    • [The Dao of Complexity workshop](https://iop.eventsair.com/doc2024)
-
-    • [The Statistical Physics of Cognition](http://complexity-physics.org/blog/2024/08/19/the-statistical-physics-of-cognition)
-
-    So, a trip to London, how to sort out things with Clarity, and other arrangements.
-
-4. Set up [RDSF](https://uob.sharepoint.com/sites/itservices/SitePages/filestores.aspx) data storage
-(Though I checked, OneDrive for Business offers 2TB of storage: [Overview of OneDrive for Business](https://uob.sharepoint.com/sites/systemsupport/SitePages/onedrive-overview.aspx))
-
-5. Brief plan discussion: reading Mary Coe's thesis, then *Understanding Molecular Simulation* book
-
-6. Are there MSci students working on this project?
-![MSci project proposal](images/notes/ProjectProposalsMsci2024-112.jpg)
 
 ### 2024/10/2 Why are the clouds at the same height when I look at the cloudy sky?
 
@@ -80,11 +57,6 @@ So the renormalisation group is really an idea that ties a lot of puzzles togeth
 That's the basic idea of the renormalisation group. The problem ultimately with RG is that to implement it in anything other than the simplest of systems is a technical nightmare. It's extremely difficult, takes a long time, and the results are very hard to obtain. However, people have done that, and it's correct—it works; it's just very hard. So that's the idea, the philosophy of the RG, and it's one of the most beautiful ideas in theoretical physics.
 
 ## Week 4
-### 2024/10/7 Weekly project meeting
-
-#### Things to discuss
-
-1. Overleaf template for the thesis, as I will start writing what I learn for either the introduction or theory sections. Found one: [Link](https://www.overleaf.com/latex/templates/university-of-bristol-thesis-template/kzqrfvyxxcdm)
 
 ### 2024/10/8 Analytical Mechanics
 
@@ -155,79 +127,9 @@ A beautiful quote from Tom:
 
 *From AM 3.4, classical mechanics is the geometry of phase space. All of the geometries (symplectic form, canonical transformations, etc.) describe the phenomenology of classical mechanics.*
 
-### 2024/10/12 Making a presentation
-
-[241016 Overleaf Presentation for Project Meeting](https://www.overleaf.com/project/670f722528944d7d9b10009d)
-
 </details>
 
-## Week 6
-
-### 2024/10/23 Molsim-2025 School Application
-
-[MolSim-2025](https://www.cecam.org/workshop-details/molsim-2025-1335) is 2-week school that offers a program focusing on basic and advanced molecular simulation methods. It targets PhD candidates and postdoctoral researchers who want to understand and apply these methods to study topics in physics, chemistry or biology. The program has an integrated and balanced structure of lectures and hands-on exercises. It offers a recap of the basic theory relevant for molecular simulation, followed by a thorough covering of basic and advanced simulation techniques. All techniques will be accompanied by illustrative examples of present day research.
-
-#### My application (submitted on 241023)
-
-I am a PhD student in theoretical and computational physics at the University of Bristol, specialising in the simulation of surface phase transitions with a focus on active matter using high-performance computing. My supervisors are Nigel Wilding, who has strongly recommended this winter school and has done substantial work on developing efficient algorithms for MC simulations [1-4], and Francesco Turci, who specialises in disordered systems. My initial project involves investigating drying (surface) phase transitions using Monte Carlo and molecular dynamics techniques, introducing an additional parameter to how they approached the problem in PRL 2021 [5].
-
-I am highly motivated to join this winter school since it is my first year of PhD studies and also my first time learning how to conduct molecular simulations. I am currently reading the book *Understanding Molecular Simulation* to grasp the methodologies, and I was very excited by the fact that the authors of this book will be present for the lectures. Even though this book is enjoyable to read, many concepts within it are quite new to me, so it will be a great opportunity to deepen my knowledge in this area and meet colleagues with similar interests. The latter reason is also very important since I am the only PhD student learning models of active particles for surface phase transitions in my department.
-
-Please let me know if you would like me to send my CV. For now, I have attached my personal statement, which I submitted for my PhD application, showing my dynamic and multifaceted experience. I hope this wonderful opportunity will materialise.
-
-- [1] N.B. Wilding, A.D. Bruce, Density fluctuations and field mixing in the critical fluid, J. Phys. Condens. Matter 4 (12) (1992) 3087–3108
-- [2] N.B. Wilding, Critical point and coexistence curve properties of the Lennard-Jones fluid: a finite-size scaling study, Phys. Rev. E 52 (1) (1995) 602–611
-- [3] A.D. Bruce, N.B. Wilding, G.J. Ackland, Free energy of crystalline solids: a lattice-switch Monte Carlo method, Phys. Rev. Lett. 79 (16) (1997) 3002–3005
-- [4] S. Consta, N.B. Wilding, D. Frenkel, Z. Alexandrowicz, Recoil growth: an efficient simulation method for multi-polymer systems, J. Chem. Phys. 110 (6) (1999) 3220–3228
-- [5] F. Turci, N.B. Wilding, Phase separation and multibody effects in three-dimensional active Brownian particles, Phys. Rev. Lett. 126.3 (2021) 038002.
-
-## Week 7
-
-### 2024/10/28 Weekly project meeting
-
-#### Things to discuss
-
-1. Ask about page 51 on *Molecular Dynamics Simulation* showing notes written on Zotero.
-
 ## Week 8
-
-### 2024/11/2 Things to discuss {#sec-week8-project-meeting}
-
-**The meaning of our project**
-
-I'm afraid to say I'm not exactly certain about the importance of our initial project. To me, a naive student who has just finished my undergraduate in physics, physics operates by explaining experimental results in mathematical language. As a few examples,
-
-- In the early 20th century, we realised that classical physics could not explain the ultraviolet catastrophe. So Planck suggested that light exists in quanta to explain the spectra we observe, which later led to Bohr's theory of electron orbits. Furthermore, when classical electrodynamics dictated that an orbiting electron around the nucleus should radiate energy and spiral inward, the new language of quantum mechanics was formulated to explain the stability of atoms. This process of experimental results leading to theoretical explanations, which further lead to contradictions with existing theories, gives birth to new frameworks that unite our understanding.
-
-- The Michelson–Morley experiment investigating the existence of the ether disproved their hypothesis, supporting the constancy of the speed of light, $c$. This result led Einstein to create a theory which completely changed the very meanings of our familiar, intuitive concepts: space and time. Another example of how experimental results led to the unification of our understanding; for example, magnetism can be understood as electricity in special relativity.
-
-- Even in statistical physics, the phase diagram of water has been known for a long time, but the critical point wasn't understood until the mid to late 20th century. It was not until Ken Wilson formulated the renormalisation group to explain this by rescaling physical theories (which I find one of the most beautiful results in theoretical physics).
-
-I have chosen the active matter project because it's a framework that makes the most sense to me, due to my keen interest in philosophy throughout the years, which has made me already familiar with the active matter paradigm shift. If I describe briefly,
-
-- The reason that Newtonian mechanics completely altered how scientific disciplines have progressed is because I believe it gave us what it means by our 'understanding'. Before Newton, Ptolemy's circles and epicycles could fully explain the orbits of planetary bodies. However, we don't consider this as 'understanding' the underlying mechanism because what Ptolemy did was to focus only on motions. What Newton did, on the other hand, was to identify the 'cause' of motion, which is force. By introducing that concept, he was able to derive his simple equation of universal gravity, which applies to many different things, not just planetary bodies, but also projectiles, pendulums, etc. So by his theory, we were able to unite many phenomena that we observe into one unified framework.
-
-- However, he still couldn't explain how these forces arise, so he devised what are called 'active principles'. I could elaborate further, but I shall stop here. The important thing about this new revelation was that, from the Newtonian way of thinking, we conceived matter as passive and forces as active. We thought of matter as inert, dead, inanimate. No wonder the physicalist view in biology had failed by the end of the 19th century, which led to the 'century of the gene' in the 20th century, explaining everything in terms of gene expression. However, thinking only about genes couldn't explain many things in biology such as: what is the difference between animate and inanimate things? Why are there many phenotypes from the same genotype? So what Thomas Huxley hoped for at the end of the 19th century, the physical language to explain biological matter, has resurfaced at the beginning of the 21st century with the emergence of active matter, where soft matter physicists could contribute. All in all, at Oxford University, there is the phrase: 'Biology is soft matter come alive'. I would interpret it as 'active', though.
-
-The significance of this new way of thinking is apparent to me. However, what is not clear is how observing a drying transition by active particles contributes to our understanding of drying phenomena. The reason I kept asking about real life examples is because I wasn't sure if our results (if we observe drying) would explain the experimental results that need to be explained. If there are such cases, this would be recognised as our correct understanding of drying phenomena, which leads us to think that moving out of equilibrium statistical physics is a more reasonable direction. Since we are dealing with such limited, specific systems where liquid and vapour coexist, which is already quite rare in nature, for this project meeting, I hoped to gain more understanding of the significance of our project.
-
-### 2024/11/4 Diary {#sec-week8-diary}
-
-I was quite ill last week, taking antibiotics from Monday to Saturday. While having more rest at home than in other weeks, I was thinking about a few things.
-
-1. At first, I started thinking about why I began to study physics. It was driven by mysteries and curiosities. At that time, I didn't know that what I was going to learn were representations of empirical observations; rather, I naively thought it would be the objective truth. As I was learning physics in my undergraduate studies, I realised there are different mathematical formalisms to describe the same physical phenomena, such as Newtonian, Lagrangian, and Hamiltonian mechanics in classical physics, or matrix mechanics by Heisenberg and wave mechanics by Schrödinger in quantum mechanics. Then my approach to physics became more like, 'Which model makes the most sense to me for understanding the observed?' or 'Which models lead to more universal descriptions of all things?' Then I encountered the concept of universality: many of the microscopic details that go into the theory are irrelevant under successive renormalisation group transformations; the theory that describes the critical point is *universal*. I thought this idea was stunningly beautiful, and I thought that if I were to start my PhD, I would investigate how these patterns that interlace between different systems or physical theories emerge.
-2. Then, as I was ill and thinking about many things, I reflected on what has captivated me in my undergraduate studies. The list follows like this:
-
-- Year 1, The breakdown of the concept, simultaneity: As I was learning special relativity, I realised that the notion I thought was objective was actually subjective. The only way to know what time is is to look at the clock. This idea was profound for me, emphasising that time is not an absolute entity. Einstein's theory was so elegant in the way that it started with only two assumptions: first, the speed of light is constant based on empirical observations; second, the laws of physics are the same in all inertial frames of reference. The consequences of the theory based on these assumptions were just mind-blowing.
-- Year 2, first term, quantum tunnelling: I was always fascinated by the implications of quantum mechanics even before starting my physics degree. Once I was able to explain the phenomenon of the wavefunction trapped in a finite potential well, which allows for the probability of finding a particle on the other side of the barrier, it was really mind-blowing that I clearly understood the mathematics but had no idea how to comprehend it, even though this phenomenon is the foundation of all technologies I use now.
-- Year 2, second term, Maxwell's equations: The universal descriptions that entail all electromagnetic phenomena in such simple mathematical forms using vector calculus. I was struck by the beauty of these equations that I set them as a screensaver since my second year. Also, when I went to Edinburgh and saw a statue of Maxwell with his equations, I couldn't leave that place for a long time.
-- Year 3, second term, the principle of least action: This whole Lagrangian formulation of classical mechanics was the clearest and the deepest representation I had encountered. The path is chosen to extremise the action, which was such a profound perspective that changed all my ways of thinking. I could go on and on about this, but in short, I loved the encounter with this concept so much that I used it as a nickname on several websites.
-- Year 4, first term, the whole ideas from general relativity: This subject was of tremendous importance to me. When I decided to study physics, this was the subject I intended to study and also the reason I chose the MSci, as it was a unit for fourth-year students. I would say this is the subject which made me come to university. The idea that if we also include a time axis overlaid onto three spatial axes, an object at rest in a given reference frame moves at the speed of light along the time axis. Then, if an object moves, since the magnitude of speed is bound by the speed of light, the component that lies on the time axis decreases as it increases along the spatial axes. It was such a beautiful way of describing how time and space were interlinked. Also, the calculus of variations, which led to Lagrangian mechanics that I loved, started from considering the straight line in a global perspective. Einstein's theory started with thinking about the straight line (or rather more precisely, a vector) from a local perspective with parallel transport. The implication of this led to Einstein's field equations, which imply matter tells spacetime how to curve and spacetime tells matter how to move. These whole ideas related very closely to some of my psychedelic experiences, and I thought it was THE subject I would want to learn much more deeply in the coming years, before I met the language of the physics of phase transitions.
-- Year 4, second term, the whole ideas from the physics of phase transitions: the correlation length diverging at criticality, universality classes, and critical exponents telling how to rescale a physical theory. All these ideas were so captivating that it almost felt like meta-foundational physics, like the physics of physical theory. Also, a lot of concepts extended even beyond the realm of physics, such as the critical brain hypothesis in neuroscience. This perspective of considering the structure of physical theory was like the final lesson of my undergraduate studies and the one that I wanted to pursue for the rest of my physics career. At that time, I met Nigel, my supervisor, who told me that in statistical physics, a small number of people make a great contribution to the field, unlike astrophysicists or particle physicists who are in large groups and don't get to decide the direction. That was the moment I felt that I chose the field of statistical physics, even though I have loved concepts from astrophysics (general relativity) and particle physics (quantum field theory).
-
-3. Now I'm in week 8 of my PhD, but I can't say that I have been really engaged with my research. The biggest fault is down to me: I haven't read references thoroughly so that I can appreciate the field in general yet. I'm the person who likes to read one book over and over again (and it seems that the only professor who likes to do this is Sandu Popescu), but I am kind of overwhelmed by how many references were uploaded in Zotero and the time it takes for me to read *understanding molecular simulation*. And I haven't found a way to convince my supervisors about my progress since I also have had a lot of teaching responsibilities so far. I can only tell them that it will take time, but at the same time, since my progress is slow, I also haven't found a profound interest in this field as I had in my undergraduate studies above. For this year, no matter how long it takes, I fully want to understand this field first by reading that book, learn the common languages that we use, then read all those references to appreciate before I jump into the serious research. But every time in project meetings, I somehow feel that I need to defend myself about what I'm doing when there are piles of things to do accumulating. In short, I feel overwhelmed.
-
-4. That was the reason that my rest has been quite different and sidetracked this time in week 7. I started reading *Physics and Beyond* written by Werner Heisenberg (see [2024/11/2 - 11/8 *Physics and Beyond*](reading.qmd#sec-physics-and-beyond)). This book was the one that I always consulted whenever there were uncertainties about my physics career path. I am on page 108 now out of 268. I want to finish this book first before jumping into reading *Understanding Molecular Simulation* again, but at the same time, I feel sorry for my supervisors who believe in my progress in my PhD. It's all difficult now in terms of my situation.
 
 ### 2024/11/8 Active Brownian Particles (ABPs)
 
@@ -377,14 +279,6 @@ The abstract of the second paper (@lynn2022decomposing):
 
 ## Week 10
 
-### 2024/11/18 Weekly Project Meeting {#sec-week10-project-meeting}
-
-1. I can mention that I’m not particularly interested in surface phase transitions unless there is a link to my vape (see [2024/11/14 - Skimming through papers](notes.qmd#sec-skimming-papers)).
-
-2. I can also discuss the way I work, such as deriving mathematical equations and explaining how much beauty I perceive in those equations (see [2024/11/17 The Moment of My Realisation](#sec-equality-sign)).
-
-3. At the moment, I’m still exploring which project I would like to pursue for the next four years. When I was doing my MSci research, I felt so restless and excited, deeply engaged with all the required literature, like a sponge absorbing everything! Now, I don’t feel the same enthusiasm for my specific project. That said, I’m reading *Active Particles in Complex and Crowded Environments* (@bechinger2016active) because it appears to be a good review of this field, readable and offering insights into future directions.
-
 ### 2024/11/19 Continuing to Watch Biophysics Lectures
 
 ![Lecture, Monday October 24th](images/notes/Biophysics Lectures/Screenshot 2024-11-19 at 10.10.06 (2).png)
@@ -423,45 +317,8 @@ I have derived some expressions in these [handwritten notes](documents/241121 Li
 
 ## Week 11
 
-### 2024/11/25 Stuck in Bristol
-
-Yesterday, [Storm Bert](https://www.gov.uk/government/news/the-latest-updates-on-storm-bert) disrupted all trains to London, preventing me from travelling to my hotel. As a result, I can no longer attend the Statistical Physics of Cognition conference in person. While I will still join via Zoom, yesterday was so frustrating that all I could do was laugh. It felt like the best thing to do under the circumstances! Strangely, it almost felt as though I was hearing a voice saying, "Stop focusing on neuroscience for now! Embrace your project!"
-
-These are the notes I wrote for cancelling the rail tickets through Clarity (for future reference):
-
-> I am requesting a refund for this ticket. When I arrived at Clifton Down station at 3:50 pm, I waited 15 minutes only to find out that the train to Bristol Temple Meads had been cancelled. I then took an Uber costing £19.92 to the station, where I discovered that my connecting train was also cancelled. Later, at 8:00 pm, I learned that all trains to eastern destinations, including London, were cancelled due to heavy storms. I have a screenshot as proof and can provide it upon request via email.
-
-This was my expense claim made through MyERP:
-
-> The train at 4:02 pm from Clifton Down was cancelled, and it was urgent to take a taxi to Bristol Temple Meads as the train was supposed to arrive at 4:30 pm. Sadly, when I went to Temple Meads, this train was also cancelled. I am claiming this expense as I was on my way to the conference; please refer to my past claims made through Clarity.<br><br>
-> Another update: the train that goes to all eastern destinations, including London, was cancelled, and I only found out at 8 pm. I cancelled my hotel and train bookings through Clarity. Many chaotic events occurred while I was at Temple Meads, and I eventually ended up at Bristol Parkway. I took a bus to Gloucester Road and then came home by Uber.
-
-When I got home, I had a phone call with my mum and shared how much the situation had changed. Reflecting on what I said to her:
-
-While I was at the train station for hours, I found myself thinking deeply about my project, the papers I read last week, and my conversations with Nigel and Ian. I realised that my project presents a perfect opportunity to learn about useful concepts for describing non-equilibrium systems, such as entropy production, the Fokker–Planck equation, and the fluctuation-dissipation theorem. Now, investigating these concepts using the simplest models from the particle perspective of active matter feels really exciting! If a drying transition is observed, it will also be a great chance to master the theoretical understanding and application of renormalisation group techniques.
-
-Reading various papers helped me appreciate how interesting colloids and bacteria can be. Bacteria represent the simplest form of living systems, and through motility-induced phase separation, these systems form large-scale structures without any attractive interactions. Thinking about surface phase transitions became particularly intriguing when I considered how 3D structures form 2D boundaries. Boundaries are key to how we differentiate objects. Even in comics, we draw the boundaries of characters and objects. This perspective made the topic even more interesting.
-
-I also admire how my supervisors approached the problem, using an order parameter to measure the asymmetry within the capillary system. This method effectively avoids the complexities of defining surface tensions and focuses instead on the geometrical aspects of the problem. Once these ideas crystallised in my mind, I felt certain that I wanted to become an expert in this field. If someone asks about surface phase transitions in non-equilibrium systems, I want to be the person they turn to for advice.
-
-These thoughts were swirling in my mind, and strangely, the weather even stopped me from travelling to London to attend the Statistical Physics of Cognition conference, where I had planned to network with people in that field. I don’t believe in mystical things, but the timing was mysterious. This kind of weather disruption, preventing travel between cities, hasn’t happened to me in my five years living in the UK.
-
-I was also thinking about Nigel and Francesco and how thoughtful they both are. I want to become a light that brightens the path for us.
-
 ### 2024/11/26 What if we coarse-grain to introduce the dominance of inertial terms?
 
 In our models of ABPs, we have a self-propulsion force that drives the motility. One thought occurred suddenly. Our models effectively ignore the inertial terms, dictated by the overdamped Langevin equation, and wet the surface. On contrary, for purely repulsive particles banging on the hard wall, it also dries the surface. Then, when we have a cluster forming due to motility-induced phase separation, there must arise an overall momentum current stemming from the collective behaviour of active particles. This collective matter can then be thought of as being in an underdamped situation, where inertial terms could emerge through coarse-graining. It's 2am, so I'm probably thinking of something silly, but in my intuition, strong inertial terms could lead to a possible drying scenario by overcoming surface trapping mechanisms. 
 
 The overdamped assumption is deeply tied to the low Reynolds number regime typical of ABPs. Even at the collective level, the viscosity of the medium might suppress inertial effects. I'm uncertain whether the collective velocity field is sufficiently strong to overcome this dissipation...
-
-### 2024/11/28 Critical Casimir Effect
-
-From our project meeting, Nigel introduced another possible project: the critical Casimir effect in active fluids. The Casimir effect is probably one of the most important effects in physics along with the Aharonov-Bohm effect, the Hall effect, the Meissner effect (which I can’t remember the name exactly, but it describes that magnetic field lines cannot enter a superconductor), the Doppler effect, and, of course, the photoelectric effect.
-
-The reason the Casimir effect is so interesting is this: everybody knows that two metal plates will attract to each other if one is positively charged and the other negatively charged. Somehow, plates also attract each other even if they are uncharged! This is the essence of the Casimir effect, named after Hendrik Casimir (see [Wikipedia - Casimir effect](https://en.wikipedia.org/wiki/Casimir_effect)). It basically arises due to quantum fluctuations, which create a pressure difference: the pressure between the plates is lower than outside, so the two plates are pushed towards each other. However, the force from the Casimir effect is very weak and can be measured only at very short distances.
-
-Critical Casimir effect is a classical analogue of this quantum phenomenon, occurring in systems near a critical point of a phase transition. At criticality, the correlation length of fluctuations in an order parameter (such as density or magnetisation) diverges, leading to long-range correlations. When a critical fluid is confined between boundaries, such as two walls, the boundaries modify these fluctuations, imposing constraints that result in an effective force between the walls. This force is mediated by the critical fluctuations and depends on factors like the boundary conditions (e.g., symmetry breaking or preservation) and the distance between the boundaries.
-
-How does this effect relate to active fluids? I found this paper: *Casimir effect in active matter systems* by @ray2014casimir
-
-Oh my god, this is actually very interesting!

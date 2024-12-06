@@ -178,7 +178,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./theme.html">Website Design</a></li><li class="breadcrumb-item"><a href="./tutorial-basics.html">Quarto Tutorial</a></li><li class="breadcrumb-item"><a href="./tutorial-document.html">Quarto Document</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./diary.html">Archive (No updates since 2024/11/29)</a></li><li class="breadcrumb-item"><a href="./tutorial-basics.html">Quarto Tutorial</a></li><li class="breadcrumb-item"><a href="./tutorial-document.html">Quarto Document</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -220,14 +220,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./meetings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project Meetings</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./notes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Weekly Notes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Archive (No updates since 2024/11/29)</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./diary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Diary</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">List of My Reading</span></a>
+ <span class="menu-text">Reading Archive</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -236,17 +259,12 @@ window.Quarto = {
  <span class="menu-text">Conferences</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Website Design</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./redirection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PhD Redirection</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./theme.html" class="sidebar-item-text sidebar-link">
@@ -321,7 +339,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./theme.html">Website Design</a></li><li class="breadcrumb-item"><a href="./tutorial-basics.html">Quarto Tutorial</a></li><li class="breadcrumb-item"><a href="./tutorial-document.html">Quarto Document</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./diary.html">Archive (No updates since 2024/11/29)</a></li><li class="breadcrumb-item"><a href="./tutorial-basics.html">Quarto Tutorial</a></li><li class="breadcrumb-item"><a href="./tutorial-document.html">Quarto Document</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Quarto Document</h1>
 </div>
@@ -444,7 +462,7 @@ Note
 <section id="placing-colorbars" class="level1 page-columns page-full" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Placing Colorbars</h1>
 <p>Colorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;See the <a href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/colorbar_placement.html">Matplotlib Gallery</a> to explore colorbars further</p></div></div><div id="333dfb12" class="cell" data-execution_count="2">
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;See the <a href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/colorbar_placement.html">Matplotlib Gallery</a> to explore colorbars further</p></div></div><div id="1a95bf5c" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># #| column: screen-inset</span></span>

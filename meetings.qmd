@@ -1,0 +1,266 @@
+---
+title: Project Meetings
+toc: true
+bibliography: references/quarto.bib
+reference-location: margin
+citation-location: margin
+---
+
+## Week 3
+
+### 2024/9/30 Things to discuss
+
+1. Meeting with Max on Friday at noon (4th of Oct), thinking of going to Budapest Café
+
+2. ‘Setting Expectations’ document
+
+3. Two conferences to join:
+
+    • [The Dao of Complexity workshop](https://iop.eventsair.com/doc2024)
+
+    • [The Statistical Physics of Cognition](http://complexity-physics.org/blog/2024/08/19/the-statistical-physics-of-cognition)
+
+    So, a trip to London, how to sort out things with Clarity, and other arrangements.
+
+4. Set up [RDSF](https://uob.sharepoint.com/sites/itservices/SitePages/filestores.aspx) data storage
+(Though I checked, OneDrive for Business offers 2TB of storage: [Overview of OneDrive for Business](https://uob.sharepoint.com/sites/systemsupport/SitePages/onedrive-overview.aspx))
+
+5. Brief plan discussion: reading Mary Coe's thesis, then *Understanding Molecular Simulation* book
+
+6. Are there MSci students working on this project?
+![MSci project proposal](images/notes/ProjectProposalsMsci2024-112.jpg)
+
+## Week 4
+
+### 2024/10/7 Things to discuss
+
+1. Overleaf template for the thesis, as I will start writing what I learn for either the introduction or theory sections. Found one: [Link](https://www.overleaf.com/latex/templates/university-of-bristol-thesis-template/kzqrfvyxxcdm)
+
+## Week 5
+
+### 2024/10/12 Making a presentation
+
+[241016 Overleaf Presentation for Project Meeting](https://www.overleaf.com/project/670f722528944d7d9b10009d)
+
+## Week 6
+
+### 2024/10/23 Molsim-2025 School Application
+
+[MolSim-2025](https://www.cecam.org/workshop-details/molsim-2025-1335) is 2-week school that offers a program focusing on basic and advanced molecular simulation methods. It targets PhD candidates and postdoctoral researchers who want to understand and apply these methods to study topics in physics, chemistry or biology. The program has an integrated and balanced structure of lectures and hands-on exercises. It offers a recap of the basic theory relevant for molecular simulation, followed by a thorough covering of basic and advanced simulation techniques. All techniques will be accompanied by illustrative examples of present day research.
+
+#### My application (submitted on 241023)
+
+I am a PhD student in theoretical and computational physics at the University of Bristol, specialising in the simulation of surface phase transitions with a focus on active matter using high-performance computing. My supervisors are Nigel Wilding, who has strongly recommended this winter school and has done substantial work on developing efficient algorithms for MC simulations [1-4], and Francesco Turci, who specialises in disordered systems. My initial project involves investigating drying (surface) phase transitions using Monte Carlo and molecular dynamics techniques, introducing an additional parameter to how they approached the problem in PRL 2021 [5].
+
+I am highly motivated to join this winter school since it is my first year of PhD studies and also my first time learning how to conduct molecular simulations. I am currently reading the book *Understanding Molecular Simulation* to grasp the methodologies, and I was very excited by the fact that the authors of this book will be present for the lectures. Even though this book is enjoyable to read, many concepts within it are quite new to me, so it will be a great opportunity to deepen my knowledge in this area and meet colleagues with similar interests. The latter reason is also very important since I am the only PhD student learning models of active particles for surface phase transitions in my department.
+
+Please let me know if you would like me to send my CV. For now, I have attached my personal statement, which I submitted for my PhD application, showing my dynamic and multifaceted experience. I hope this wonderful opportunity will materialise.
+
+- [1] N.B. Wilding, A.D. Bruce, Density fluctuations and field mixing in the critical fluid, J. Phys. Condens. Matter 4 (12) (1992) 3087–3108
+- [2] N.B. Wilding, Critical point and coexistence curve properties of the Lennard-Jones fluid: a finite-size scaling study, Phys. Rev. E 52 (1) (1995) 602–611
+- [3] A.D. Bruce, N.B. Wilding, G.J. Ackland, Free energy of crystalline solids: a lattice-switch Monte Carlo method, Phys. Rev. Lett. 79 (16) (1997) 3002–3005
+- [4] S. Consta, N.B. Wilding, D. Frenkel, Z. Alexandrowicz, Recoil growth: an efficient simulation method for multi-polymer systems, J. Chem. Phys. 110 (6) (1999) 3220–3228
+- [5] F. Turci, N.B. Wilding, Phase separation and multibody effects in three-dimensional active Brownian particles, Phys. Rev. Lett. 126.3 (2021) 038002.
+
+## Week 7
+
+### 2024/10/28 Things to discuss
+
+1. Ask about page 51 on *Molecular Dynamics Simulation* showing notes written on Zotero.
+
+## Week 8
+
+### 2024/11/4 Things to discuss {#sec-week8-project-meeting}
+
+**The meaning of our project**
+
+I'm afraid to say I'm not exactly certain about the importance of our initial project. To me, a naive student who has just finished my undergraduate in physics, physics operates by explaining experimental results in mathematical language. As a few examples,
+
+- In the early 20th century, we realised that classical physics could not explain the ultraviolet catastrophe. So Planck suggested that light exists in quanta to explain the spectra we observe, which later led to Bohr's theory of electron orbits. Furthermore, when classical electrodynamics dictated that an orbiting electron around the nucleus should radiate energy and spiral inward, the new language of quantum mechanics was formulated to explain the stability of atoms. This process of experimental results leading to theoretical explanations, which further lead to contradictions with existing theories, gives birth to new frameworks that unite our understanding.
+
+- The Michelson–Morley experiment investigating the existence of the ether disproved their hypothesis, supporting the constancy of the speed of light, $c$. This result led Einstein to create a theory which completely changed the very meanings of our familiar, intuitive concepts: space and time. Another example of how experimental results led to the unification of our understanding; for example, magnetism can be understood as electricity in special relativity.
+
+- Even in statistical physics, the phase diagram of water has been known for a long time, but the critical point wasn't understood until the mid to late 20th century. It was not until Ken Wilson formulated the renormalisation group to explain this by rescaling physical theories (which I find one of the most beautiful results in theoretical physics).
+
+I have chosen the active matter project because it's a framework that makes the most sense to me, due to my keen interest in philosophy throughout the years, which has made me already familiar with the active matter paradigm shift. If I describe briefly,
+
+- The reason that Newtonian mechanics completely altered how scientific disciplines have progressed is because I believe it gave us what it means by our 'understanding'. Before Newton, Ptolemy's circles and epicycles could fully explain the orbits of planetary bodies. However, we don't consider this as 'understanding' the underlying mechanism because what Ptolemy did was to focus only on motions. What Newton did, on the other hand, was to identify the 'cause' of motion, which is force. By introducing that concept, he was able to derive his simple equation of universal gravity, which applies to many different things, not just planetary bodies, but also projectiles, pendulums, etc. So by his theory, we were able to unite many phenomena that we observe into one unified framework.
+
+- However, he still couldn't explain how these forces arise, so he devised what are called 'active principles'. I could elaborate further, but I shall stop here. The important thing about this new revelation was that, from the Newtonian way of thinking, we conceived matter as passive and forces as active. We thought of matter as inert, dead, inanimate. No wonder the physicalist view in biology had failed by the end of the 19th century, which led to the 'century of the gene' in the 20th century, explaining everything in terms of gene expression. However, thinking only about genes couldn't explain many things in biology such as: what is the difference between animate and inanimate things? Why are there many phenotypes from the same genotype? So what Thomas Huxley hoped for at the end of the 19th century, the physical language to explain biological matter, has resurfaced at the beginning of the 21st century with the emergence of active matter, where soft matter physicists could contribute. All in all, at Oxford University, there is the phrase: 'Biology is soft matter come alive'. I would interpret it as 'active', though.
+
+The significance of this new way of thinking is apparent to me. However, what is not clear is how observing a drying transition by active particles contributes to our understanding of drying phenomena. The reason I kept asking about real life examples is because I wasn't sure if our results (if we observe drying) would explain the experimental results that need to be explained. If there are such cases, this would be recognised as our correct understanding of drying phenomena, which leads us to think that moving out of equilibrium statistical physics is a more reasonable direction. Since we are dealing with such limited, specific systems where liquid and vapour coexist, which is already quite rare in nature, for this project meeting, I hoped to gain more understanding of the significance of our project.
+
+## Week 10
+
+### 2024/11/18 Things to discuss {#sec-week10-project-meeting}
+
+1. I can mention that I’m not particularly interested in surface phase transitions unless there is a link to my vape (see [2024/11/14 - Skimming through papers](notes.qmd#sec-skimming-papers)).
+
+2. I can also discuss the way I work, such as deriving mathematical equations and explaining how much beauty I perceive in those equations (see [2024/11/17 The Moment of My Realisation](#sec-equality-sign)).
+
+3. At the moment, I’m still exploring which project I would like to pursue for the next four years. When I was doing my MSci research, I felt so restless and excited, deeply engaged with all the required literature, like a sponge absorbing everything! Now, I don’t feel the same enthusiasm for my specific project. That said, I’m reading *Active Particles in Complex and Crowded Environments* (@bechinger2016active) because it appears to be a good review of this field, readable and offering insights into future directions.
+
+## Week 11
+
+### 2024/11/28 Critical Casimir Effect
+
+From our project meeting, Nigel introduced another possible project: the critical Casimir effect in active fluids. The Casimir effect is probably one of the most important effects in physics along with the Aharonov-Bohm effect, the Hall effect, the Meissner effect (which I can’t remember the name exactly, but it describes that magnetic field lines cannot enter a superconductor), the Doppler effect, and, of course, the photoelectric effect.
+
+The reason the Casimir effect is so interesting is this: everybody knows that two metal plates will attract to each other if one is positively charged and the other negatively charged. Somehow, plates also attract each other even if they are uncharged! This is the essence of the Casimir effect, named after Hendrik Casimir (see [Wikipedia - Casimir effect](https://en.wikipedia.org/wiki/Casimir_effect)). It basically arises due to quantum fluctuations, which create a pressure difference: the pressure between the plates is lower than outside, so the two plates are pushed towards each other. However, the force from the Casimir effect is very weak and can be measured only at very short distances.
+
+Critical Casimir effect is a classical analogue of this quantum phenomenon, occurring in systems near a critical point of a phase transition. At criticality, the correlation length of fluctuations in an order parameter (such as density or magnetisation) diverges, leading to long-range correlations. When a critical fluid is confined between boundaries, such as two walls, the boundaries modify these fluctuations, imposing constraints that result in an effective force between the walls. This force is mediated by the critical fluctuations and depends on factors like the boundary conditions (e.g., symmetry breaking or preservation) and the distance between the boundaries.
+
+How does this effect relate to active fluids? I found this paper: *Casimir effect in active matter systems* by @ray2014casimir
+
+Oh my god, this is actually very interesting!
+
+## Week 12
+
+### 2024/11/28 Questions
+
+(Postponed to Week 12 Project Meeting)  
+
+1. I’m using `mpirun -np 16 ~/mylammps/src/lmp_mpi -in drying-2D.lmp`, but it’s still slow, and 32 is often not available. Did it also take this long?  
+```
+---------------------------------------------------------------  
+Loop time of 1437.69 on 16 procs for 2,500,001 steps with 7,200 atoms  
+
+Performance: 751,203.143 tau/day, 1,738.896 timesteps/s, 12.520 Matom-step/s  
+98.6% CPU use with 16 MPI tasks x no OpenMP threads  
+
+MPI task timing breakdown:  
+Section | Min Time  | Avg Time  | Max Time  | %varavg | %total  
+---------------------------------------------------------------  
+Pair    | 6.237      | 31.572     | 88.773     | 591.0   |  2.20  
+Neigh   | 1.8579     | 5.9445     | 14.931     | 214.1   |  0.41  
+Comm    | 28.584     | 70.366     | 125.07     | 444.4   |  4.89  
+Output  | 14.731     | 116.78     | 270.86     | 803.0   |  8.12  
+Modify  | 185.53     | 424.09     | 970.39     | 1,533.8 | 29.50  
+Other   |            | 788.9      |            |         | 54.88  
+
+Nlocal:            450 ave        1,086 max         147 min  
+Histogram: 8 2 0 1 0 1 0 0 1 3  
+Nghost:           85.5 ave         201 max          26 min  
+Histogram: 8 0 2 0 1 1 0 0 2 2  
+Neighs:        1,040.62 ave      3,214 max          81 min  
+Histogram: 9 1 0 1 0 1 0 0 1 3  
+
+Total # of neighbors = 16,650  
+Ave neighs/atom = 2.3125  
+Neighbor list builds = 106,669  
+Dangerous builds = 0  
+Total wall time: 0:23:57  
+---------------------------------------------------------------  
+```
+
+2. In the code of `wetting-2D.lmp`, I used `variable friction equal 50  # translational friction coefficient`, as I saw in `equilibrate.lmp`, but is there a specific reason for this value?  
+
+3. I changed from `min_style fire` to `min_style cg` as the system is immediately unstable:  
+```
+—  
+Setting up FIRE-style minimization ...  
+  Unit style    : lj  
+  Current step  : 0  
+  Parameters for FIRE:  
+    dmax  delaystep dtgrow dtshrink alpha0 alphashrink tmax tmin   integrator   halfstepback   abcfire  
+     0.1     20      1.1     0.5     0.25     0.99      10  0.02 eulerimplicit      yes          no  
+
+Per MPI rank memory allocation (min/avg/max) = 3.857 | 3.858 | 3.858 Mbytes  
+
+   Step          Time        v_tscaled        PotEng        Density         Press     
+         0   0              0              1.7111115e+25  0.5            5.1333344e+25  
+ERROR: Lost atoms: original 7,200 current 4,594 (../thermo.cpp:494)  
+Last command: minimize 1.0e-9 1.0e-9 1,000 1,000  
+--------------------------------------------------------------------------  
+
+`prterun` detected that one or more processes exited with non-zero status,  
+thus causing the job to be terminated. The first process to do so was:  
+
+   Process name: [prterun-bp1-login01-2890156@1,14] Exit code:    1  
+--------------------------------------------------------------------------  
+```
+
+I’m not sure how to make it work with FIRE.  
+(11/31 update: I added `overlap ${sigma}` as an argument.)  
+
+4. Also, your `fix_abp2d.cpp` needed to be changed since all particles moved to the right at first (check the `before-correction` folder). There are some changes I made; search for `// correction!`. Also, it wasn’t renormalised like 3D, so I renormalised when doing integration.  
+
+5. What’s the reason you assigned `lj/cut` as 3.0? Is it to do with coordination shells? And what is `v_tscaled` in thermo data? Also, since thermo data produces such a huge file, I excluded saving `time` and `pressure`. Do we need these at some point?  
+
+6. To calculate the asymmetry order parameter, how should I allow the system to relax to collect statistics? For `dumps/test/wet.ew.20.ly.120.gz`, it seems to roughly relax after 4 million time steps to induce the asymmetric steady state. (The time taken to relax is a lot shorter in higher potential to induce a symmetric steady state.)  
+
+7. As noted in the paper, for values less than `ew=30`, the system quickly becomes unstable. How can I make my code stable?  
+
+For (1), it is now (24/12/02) a lot faster with reduced information being saved:  
+```
+---------------------------------------------------------------  
+Loop time of 1,275.74 on 16 procs for 2,500,001 steps with 14,400 atoms  
+
+Performance: 846,568.754 tau/day, 1,959.650 timesteps/s, 28.219 Matom-step/s  
+99.4% CPU use with 16 MPI tasks x no OpenMP threads  
+
+MPI task timing breakdown:  
+Section | Min Time  | Avg Time  | Max Time  | %varavg | %total  
+---------------------------------------------------------------  
+Pair    | 37.333     | 68.22      | 89.448     | 209.4   |  5.35  
+Neigh   | 8.6982     | 12.866     | 15.493     |  63.5   |  1.01  
+Comm    | 54.905     | 77.189     | 110.42     | 201.1   |  6.05  
+Output  | 4.0046     | 31.432     | 60.902     | 334.9   |  2.46  
+Modify  | 747.32     | 845.8      | 928.32     | 157.5   | 66.30  
+Other   |            | 240.2      |            |         | 18.83  
+
+Nlocal:            900 ave        1,317 max         491 min  
+Histogram: 1 1 0 1 5 5 1 0 1 1  
+Nghost:        196.812 ave        269 max          69 min  
+Histogram: 2 1 0 2 1 0 1 0 3 6  
+Neighs:        2,118.69 ave      3,876 max         488 min  
+Histogram: 3 2 0 1 0 1 7 0 1 1  
+
+Total # of neighbors = 33,899  
+Ave neighs/atom = 2.3540972  
+Neighbor list builds = 112,125  
+Dangerous builds = 0  
+Total wall time: 0:21:16  
+---------------------------------------------------------------  
+```
+
+### 2024/12/3 After project meeting  
+
+1. For friction = 50, it boils down to how far a single particle moves in a single step of the self-propulsion force. For example, if it moves too far, it may not resolve the collision in a very dense system because the particle cannot observe the true collisions. Otherwise, it jumps across, which is not physical.  
+He mentioned this paper (which is cited by the SM paper) but couldn’t find anything about that specific choice of friction: [https://iopscience.iop.org/article/10.1088/1367-2630/aa9d4b/pdf](https://iopscience.iop.org/article/10.1088/1367-2630/aa9d4b/pdf).  
+
+2. He said I don’t need minimisation anymore since particles are spaced without overlapping using `overlap ${sigma}`.  
+
+3. For `pair_style lj/cut 3.0`, LAMMPS checks how large the cutoff is for calculating the neighbour list. Then we use a smaller cutoff where the potential is truncated (or shifted) by the next commands. Setting it to just ${r_c}$ instead of 3.0 could be risky for ensuring correct calculations of neighbours. The number can be checked by seeing if the dynamics do not depend on the cutoff (e.g., obtaining the same trajectory, energies, etc.). 3.0 was an overcautious choice, but it’s good to be cautious. For example, `neigh_modify every 1 delay 0 check yes` ensures the neighbour list is checked every step. This is important because if a particle travels a long way, it could suddenly move into the dilute phase, especially if it’s likely an interfacial particle. Therefore, we need to keep the timestep small and make an extra neighbour list so that the results don’t depend on specific choices.  
+
+4. Regarding `tscaled`, he said LJ units do not matter as much as in the case of equilibrium. So we are using this different, interesting timescale.  
+
+5. Nobody has a perfect answer for when the steady state happens. If some statistical features converge (or appear asymptotic), we might see that the system has passed the relaxation time. The good thing is that even if the initial conditions are different (e.g., by assigning a different seed that produces slightly different time evolution), the characteristic relaxation time remains fixed. Without special methods, it’s very difficult to know where the actual transition point is. However, the entire point is that there can be memory effects, where something does not change for some time. Away from the transition itself, I can have a reasonable estimate of the relaxation time.  
+
+6. He also said that to estimate whether the system is in the steady state or not, we can look at the energy because the energy is related to the number of neighbours particles have. He didn’t specifically have a systematic way of determining $\tau_c$ for all different trajectories. For example, he doesn’t have $\tau_c$ vs $\epsilon$, which he said is something I can investigate. He estimated $\tau_c$, then took a larger order of magnitude (like 10 times that value) to be safe. Beyond that, he collected the statistics.  
+
+7. When they said the system becomes unstable in their paper, they meant the droplet detaches from the barrier, not the simulation. He said a ‘lost atoms’ error can’t really happen with small $\epsilon$ unless it’s a very large $\epsilon$. He said I should reduce $dt$.  
+
+## Week 13
+
+### 2024/12/9 Things to discuss
+
+1. Molsim is not successful. Are there any active matter schools? (Should I ask them if I could be on the waiting list?)  
+
+Other schools:  
+
+[CCP5 Summer School](https://www.ccp5.ac.uk)  
+
+[Interfacial Soft Matter: Mechanics, Physical Chemistry and Interactions](https://www.houches-school-physics.com/program/program-2025/interfacial-soft-matter-mechanics-physical-chemistry-and-interactions-1498390.kjsp?RH=1725456499536)
+: *June 8 - June 13, 2025*
+
+[Han-sur-Lesse Winterschool (in summer) on 'Soft matter and biological physics'](https://hslwinterschool.com)
+: *June 16 – 20, 2025*
+
+[2025 IHES Summer School - Statistical Aspects of Nonlinear Physics](https://indico.math.cnrs.fr/event/12319/overview)
+: *June 23 - July 4, 2025* 
+
+2. Are both of you leaving in the winter? It seems everyone is leaving for holidays after around the 20th.  
+
+Last meeting this year: 16th Dec  
+First meeting next year: 6th Jan  

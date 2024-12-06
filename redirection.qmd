@@ -1,5 +1,5 @@
 ---
-title: Archive
+title: PhD Redirection
 toc: true
 bibliography: references/quarto.bib
 reference-location: margin
@@ -312,6 +312,22 @@ I hope that these comments are helpful. They are not intended to be critical –
 Best regards
  
 Nigel and Francesco
+
+## 2024/11/29 Email sent to Nigel and Francesco
+
+Dear Nigel,
+ 
+Thank you for your email. I’ve been reading about the critical Casimir effect, and it’s so interesting! There was research using the run-and-tumble model by Ray et al. in 2014, and since run-and-tumble and ABPs can be mapped onto each other, I thought this paper was quite relevant, so I uploaded it to Zotero (under the category of Active Casimir Effect). Also, there was a concise review on this theme by Bechinger et al. in 2016. Even recently, there has been work on this topic using flocking active matter by Fava et al. in 2024. It’s so interesting, and I deeply appreciate you coming up with this suggestion! By Monday next week, I’ll read more and finalise my choice, though at this stage, I feel it would be more worthwhile to continue with the active drying project first to apply the concepts I’ve learned over the past two months in simulations. If that’s the decision, I can see myself working on the active Casimir effect right after the initial project.
+ 
+Yes, I won’t share anything unrelated to the project anymore. If I may offer an excuse, there were two occasions I shared something: one was a dialogue related to active matter on 17th of September, and the other was a note on ‘things to discuss’ for the project meeting when I was concerned about the project two weeks ago. I thought both were related, but I apologise and appreciate your pointing out that they were not the right forms to share. I won’t do it again.
+ 
+I have honestly felt quite isolated at times this semester as the only PhD student in theoretical physics investigating active matter. So, it was such an enjoyable opportunity for me to have a conversation with you and Francesco, even in broader contexts beyond our project. However, I’ll make sure to confine my conversations strictly to the current project.
+ 
+Your comments have been helpful, and I’ll be more realistic from now on. I have also closed the website, as I probably enjoyed designing it a bit too much. While it was intended to document everything I do during my PhD in a self-contained way, it may not have conveyed how much time I dedicate to our project.
+ 
+Thank you,
+
+Sohyun
 
 ```{=html}
 </div>

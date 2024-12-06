@@ -12,13 +12,14 @@ website:
         href: index.qmd
       - section: "Project Notes"
         contents: 
+          - meetings.qmd
           - notes.qmd
+      - section: "Archive (No updates since 2024/11/29)"
+        contents:
+          - diary.qmd
           - reading.qmd
           - conferences.qmd
-          - unrelated.qmd
-          - direction.qmd
-      - section: "Website Design"
-        contents:
+          - redirection.qmd
           - theme.qmd
           - section: "Quarto Tutorial"
             contents:
