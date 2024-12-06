@@ -180,6 +180,12 @@ window.Quarto = {
  <span class="menu-text">Weekly Notes</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./computations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Computations</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -295,6 +301,10 @@ window.Quarto = {
   <li><a href="#week-11" id="toc-week-11" class="nav-link" data-scroll-target="#week-11">Week 11</a>
   <ul class="collapse">
   <li><a href="#what-if-we-coarse-grain-to-introduce-the-dominance-of-inertial-terms" id="toc-what-if-we-coarse-grain-to-introduce-the-dominance-of-inertial-terms" class="nav-link" data-scroll-target="#what-if-we-coarse-grain-to-introduce-the-dominance-of-inertial-terms">2024/11/26 What if we coarse-grain to introduce the dominance of inertial terms?</a></li>
+  </ul></li>
+  <li><a href="#week-12" id="toc-week-12" class="nav-link" data-scroll-target="#week-12">Week 12</a>
+  <ul class="collapse">
+  <li><a href="#learn" id="toc-learn" class="nav-link" data-scroll-target="#learn">2024/12/6 Learn</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -662,6 +672,37 @@ Lynn, Christopher W, Caroline M Holmes, William Bialek, and David J Schwab. 2022
 <h3 class="anchored" data-anchor-id="what-if-we-coarse-grain-to-introduce-the-dominance-of-inertial-terms">2024/11/26 What if we coarse-grain to introduce the dominance of inertial terms?</h3>
 <p>In our models of ABPs, we have a self-propulsion force that drives the motility. One thought occurred suddenly. Our models effectively ignore the inertial terms, dictated by the overdamped Langevin equation, and wet the surface. On contrary, for purely repulsive particles banging on the hard wall, it also dries the surface. Then, when we have a cluster forming due to motility-induced phase separation, there must arise an overall momentum current stemming from the collective behaviour of active particles. This collective matter can then be thought of as being in an underdamped situation, where inertial terms could emerge through coarse-graining. It’s 2am, so I’m probably thinking of something silly, but in my intuition, strong inertial terms could lead to a possible drying scenario by overcoming surface trapping mechanisms.</p>
 <p>The overdamped assumption is deeply tied to the low Reynolds number regime typical of ABPs. Even at the collective level, the viscosity of the medium might suppress inertial effects. I’m uncertain whether the collective velocity field is sufficiently strong to overcome this dissipation…</p>
+</section>
+</section>
+<section id="week-12" class="level2">
+<h2 class="anchored" data-anchor-id="week-12">Week 12</h2>
+<section id="learn" class="level3">
+<h3 class="anchored" data-anchor-id="learn">2024/12/6 Learn</h3>
+<p><a href="https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-linux/14_task01.html">https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-linux/14_task01.html</a></p>
+<p>Explanation for <code>fix</code> codes:</p>
+<div id="protected-content" style="display:none;">
+<p><a href="https://chatgpt.com/share/675260ec-86a0-800e-a845-5ad713be6d20">https://chatgpt.com/share/675260ec-86a0-800e-a845-5ad713be6d20</a></p>
+</div>
+
+<div id="password-prompt" style="padding: 20px; text-align: center;">
+  <label for="password">Enter password to view the content:</label>
+  <input type="password" id="password" style="margin: 10px;">
+  <button onclick="checkPassword()">Submit</button>
+</div>
+
+<script>
+  function checkPassword() {
+    const inputPassword = document.getElementById('password').value;
+    const correctPassword = "7942";  // Set your password here
+
+    if (inputPassword === correctPassword) {
+      document.getElementById('protected-content').style.display = "block";
+      document.getElementById('password-prompt').style.display = "none";
+    } else {
+      alert("Incorrect password. Try again.");
+    }
+  }
+</script>
 
 
 

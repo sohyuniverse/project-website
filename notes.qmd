@@ -322,3 +322,41 @@ I have derived some expressions in these [handwritten notes](documents/241121 Li
 In our models of ABPs, we have a self-propulsion force that drives the motility. One thought occurred suddenly. Our models effectively ignore the inertial terms, dictated by the overdamped Langevin equation, and wet the surface. On contrary, for purely repulsive particles banging on the hard wall, it also dries the surface. Then, when we have a cluster forming due to motility-induced phase separation, there must arise an overall momentum current stemming from the collective behaviour of active particles. This collective matter can then be thought of as being in an underdamped situation, where inertial terms could emerge through coarse-graining. It's 2am, so I'm probably thinking of something silly, but in my intuition, strong inertial terms could lead to a possible drying scenario by overcoming surface trapping mechanisms. 
 
 The overdamped assumption is deeply tied to the low Reynolds number regime typical of ABPs. Even at the collective level, the viscosity of the medium might suppress inertial effects. I'm uncertain whether the collective velocity field is sufficiently strong to overcome this dissipation...
+
+## Week 12
+
+### 2024/12/6 Learn
+
+[https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-linux/14_task01.html](https://www.acrc.bris.ac.uk/protected/hpc-docs/training/intro-to-linux/14_task01.html)  
+
+Explanation for `fix` codes: 
+
+```{=html}
+<div id="protected-content" style="display:none;">
+```
+
+[https://chatgpt.com/share/675260ec-86a0-800e-a845-5ad713be6d20](https://chatgpt.com/share/675260ec-86a0-800e-a845-5ad713be6d20)  
+
+```{=html}
+</div>
+
+<div id="password-prompt" style="padding: 20px; text-align: center;">
+  <label for="password">Enter password to view the content:</label>
+  <input type="password" id="password" style="margin: 10px;">
+  <button onclick="checkPassword()">Submit</button>
+</div>
+
+<script>
+  function checkPassword() {
+    const inputPassword = document.getElementById('password').value;
+    const correctPassword = "7942";  // Set your password here
+
+    if (inputPassword === correctPassword) {
+      document.getElementById('protected-content').style.display = "block";
+      document.getElementById('password-prompt').style.display = "none";
+    } else {
+      alert("Incorrect password. Try again.");
+    }
+  }
+</script>
+```

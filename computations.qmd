@@ -1,0 +1,342 @@
+---
+title: "Computations"
+author: "Sohyun Park"
+# date: 'Oct 4, 2024'
+toc: true
+number-sections: true
+highlight-style: pygments
+format: 
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf: 
+    geometry: 
+      - top=30mm
+      - left=20mm
+  docx: default
+bibliography: 
+  - references/From 14:08:24.bib
+  - references/From 16:09:24.bib
+reference-location: margin
+citation-location: margin
+jupyter: python3
+---
+
+# Localised external potential {#sec-localised-external-potential}
+
+The localised external potential added to the system [@turci_wetting_2021]:  
+
+$$
+V_{\text{ext}}(x) = \varepsilon_w \left[ \cos\left(\frac{\pi x}{d}\right) + 1 \right] \times H(d - x) H(x + d),
+$$ {#eq-extpot}
+
+where $H(x)$ is the Heaviside function, $d = \sigma$, and $\varepsilon_w$ represents the repulsive barrier strength.
+
+```{python}
+#| label: fig-eps
+#| fig-cap: "External potential $V_{\\text{ext}}(x)$ for different $\\epsilon_w$"
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Parameters
+sigma = 1.0  # Particle diameter
+d = sigma    # Barrier width
+ew_values = np.arange(20, 55, 5)  # Barrier strength values from 20 to 50 incrementing by 5
+
+# Define the potential function
+def V_ext(x, epsilon_w, d):
+    H = lambda x: np.heaviside(x, 0.5)  # Heaviside step function
+    return epsilon_w * (np.cos(np.pi * x / d) + 1) * H(d - x) * H(x + d)
+
+# x range
+x = np.linspace(-2 * d, 2 * d, 500)
+
+# Plot
+plt.figure(figsize=(10, 6))
+for ew in ew_values:
+    V = V_ext(x, ew, d)
+    plt.plot(x, V, label=f"$\\epsilon_w = {ew}$")
+
+plt.axvline(-d, color='gray', linestyle='--', label=r"$x = -d$", linewidth=0.8)
+plt.axvline(d, color='gray', linestyle='--', label=r"$x = d$", linewidth=0.8)
+plt.axhline(0, color='black', linewidth=0.5)
+plt.xlabel("$x$", fontsize=12)
+plt.ylabel("$V_{\\text{ext}}(x)$", fontsize=12)
+plt.legend(fontsize=10, loc='upper right')
+plt.grid(alpha=0.5)
+plt.show()
+```
+
+::: {.callout-note}
+Intermediate values can be thought of as representing a thin porous membrane with nonzero crossing probability.
+:::
+
+<details>
+<summary>Callout tip</summary>
+::: {.callout-tip}
+Note that there are five types of callouts, including:
+`note`, `tip`, `warning`, `caution`, and `important`.
+:::
+</details>
+
+# Asymmetry order parameter
+
+The degree of asymmetry of the instantaneous density profile $\rho(x, t)$ with respect to the barrier location is quantified as:  
+
+$$
+\mathcal{A}(t) = \left| \frac{\int_{0}^{L_x/2} \rho(x, t) \, dx - \int_{-L_x/2}^{0} \rho(x, t) \, dx}{(\rho - \rho_{\text{LD}}) L_x} \right|.
+$$  
+
+In the steady state, the average $\overline{\mathcal{A}(t)}$ (over time and distinct initial conditions) provides a measure of the typical asymmetry of the liquid region with respect to $x = 0$.
+
+```{python}
+#| label: fig-aop
+#| fig-cap: "Asymmetry order parameter $\\mathcal{A}(t)$ over time for $\\epsilon_w$ = 20"
+import pandas as pd
+import numpy as np
+import re
+import os
+import matplotlib.pyplot as plt
+
+def load_profile(filename):
+    """
+    Load LAMMPS profile dump file into a pandas DataFrame.
+    Reads multiple timesteps and returns a DataFrame containing data for all timesteps.
+    """
+    data = []
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        # Skip comment lines and empty lines
+        if line.startswith('#') or line == '':
+            i += 1
+            continue
+        tokens = line.split()
+        if len(tokens) == 3:
+            # Try to parse the line as Timestep and Number-of-chunks
+            try:
+                timestep = int(tokens[0])
+                chunk_count = int(tokens[1])
+                # total_count is ignored
+            except ValueError:
+                # If parsing fails, skip this line
+                i += 1
+                continue
+            # Read the data for this timestep
+            data_start = i + 1
+            data_end = data_start + chunk_count
+            for j in range(data_start, data_end):
+                if j >= len(lines):
+                    break  # Prevent index out of range
+                dl = lines[j].strip()
+                if dl == '':
+                    continue
+                dl_tokens = dl.split()
+                if len(dl_tokens) != 4:
+                    continue
+                try:
+                    chunk = int(dl_tokens[0])
+                    coord1 = float(dl_tokens[1])
+                    ncount = int(float(dl_tokens[2]))  # Convert to float first to handle possible decimals
+                    density = float(dl_tokens[3])
+                    data.append({
+                        'Timestep': timestep,
+                        'Chunk': chunk,
+                        'Coord1': coord1,
+                        'Ncount': ncount,
+                        'density': density
+                    })
+                except ValueError:
+                    continue  # Skip lines with invalid data
+            i = data_end
+        else:
+            i += 1
+
+    df = pd.DataFrame(data)
+    return df  # Return the DataFrame with all timesteps
+
+def calculate_asymmetry(data, lx, rho_ld, rho):
+    """
+    Compute the asymmetry order parameter A(t) with proper normalization.
+    """
+    x_bins = data['Coord1']  # Bin center positions along x-axis
+    densities = data['density']  # Density per bin
+
+    # Ensure that x_bins and densities are sorted according to x_bins
+    sorted_indices = np.argsort(x_bins)
+    x_bins = x_bins.iloc[sorted_indices].reset_index(drop=True)
+    densities = densities.iloc[sorted_indices].reset_index(drop=True)
+
+    bin_width = abs(x_bins.iloc[1] - x_bins.iloc[0])  # Calculate bin width
+
+    # Split the bins into left and right of the barrier (x = 0)
+    left_mask = x_bins < 0
+    right_mask = x_bins > 0
+
+    left_bins = densities[left_mask]
+    right_bins = densities[right_mask]
+
+    # Integrate density over the left and right regions
+    left_integral = (left_bins * bin_width).sum()
+    right_integral = (right_bins * bin_width).sum()
+
+    # Numerator for A(t)
+    numerator = abs(right_integral - left_integral)
+
+    # Denominator normalisation
+    denominator = (rho - rho_ld) * lx
+
+    # Asymmetry order parameter
+    asymmetry = numerator / denominator if denominator != 0 else 0
+
+    return asymmetry
+
+def plot_asymmetry_vs_time(filename, lx, rho_ld, rho, taur):
+    """
+    Compute and plot the asymmetry order parameter A(t) as a function of t/taur for a given dump file.
+    Estimate the steady-state relaxation time tau_c based on the rate of change of A(t).
+    """
+    data = load_profile(filename)
+    # Compute asymmetry at each timestep
+    asymmetry_list = []
+    timesteps = []
+    grouped = data.groupby('Timestep')
+    for timestep, df_timestep in grouped:
+        asymmetry = calculate_asymmetry(df_timestep, lx=lx, rho_ld=rho_ld, rho=rho)
+        asymmetry_list.append(asymmetry)
+        timesteps.append(timestep)
+
+    # Convert to numpy arrays
+    asymmetry_array = np.array(asymmetry_list)
+    timestep_array = np.array(timesteps)
+
+    # Sort by timestep
+    sorted_indices = np.argsort(timestep_array)
+    timestep_array = timestep_array[sorted_indices]
+    asymmetry_array = asymmetry_array[sorted_indices]
+
+    # Calculate t / taur
+    dt = 0.00004 * taur  # From LAMMPS script
+    t_over_taur = timestep_array * dt / taur  # Simplifies to timestep_array * 0.00004
+
+    # Extract epsilon_w from filename
+    # filename format: 'wet.<timestamp>.eps.<epsilon_w>.ly.<ly>.dump'
+    pattern = r'wet\..*\.eps\.(\d+)\.ly\.(\d+)\.dump'
+    match = re.match(pattern, os.path.basename(filename))
+    if match:
+        epsilon_w = match.group(1)
+        ly = match.group(2)
+    else:
+        epsilon_w = 'Unknown'
+        ly = 'Unknown'
+
+    # Compute the absolute rate of change of A(t)
+    delta_A = np.abs(np.diff(asymmetry_array))
+    delta_t = np.diff(t_over_taur)
+
+    # Avoid division by zero
+    delta_t[delta_t == 0] = np.nan
+
+    # Compute the rate of change per unit time
+    rate_of_change = delta_A / delta_t
+
+    # Define a threshold for the rate of change
+    # For example, 1% of the maximum A(t) per unit time
+    threshold = 0.1 * np.max(asymmetry_array)
+
+    # Identify when rate of change consistently remains below the threshold
+    window_size = max(1, len(rate_of_change) // 5)  # For example, 5% of data length
+    below_threshold = rate_of_change < threshold
+    # Use a rolling window to check for consecutive points below threshold
+    below_threshold_series = pd.Series(below_threshold)
+    rolling_sum = below_threshold_series.rolling(window=window_size, min_periods=1).sum()
+    # Find the index where the rolling sum equals the window size (steady state)
+    steady_indices = np.where(rolling_sum == window_size)[0]
+    if len(steady_indices) > 0:
+        tau_c_index = steady_indices[0] + 1  # +1 because rate_of_change is one element shorter
+        tau_c_timestep = timestep_array[tau_c_index]
+        tau_c = t_over_taur[tau_c_index]
+        # print(f"Estimated relaxation time tau_c: {tau_c:.2f} tau_r (Timestep: {tau_c_timestep})")
+    else:
+        # print("Could not determine relaxation time tau_c; rate of change did not consistently fall below threshold.")
+        tau_c = None
+
+    # Plot A(t) vs t / taur
+    plt.figure(figsize=(10, 6))
+    plt.plot(t_over_taur, asymmetry_array, linestyle='-', label=r'$\mathcal{A}(t)$')
+    if tau_c is not None:
+        plt.axvline(x=tau_c, color='red', linestyle='--', label=r'Estimated $\tau_c$')
+    plt.xlabel(r'$t / \tau_r$', fontsize=14)
+    plt.ylabel(r'$\mathcal{A}(t)$', fontsize=14)
+    # plt.title(f'Asymmetry Order Parameter over Time\n($\epsilon_w$ = {epsilon_w}, $L_y$ = {ly})', fontsize=16)
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+    return t_over_taur, asymmetry_array, tau_c
+
+def compute_taur():
+    """
+    Compute the persistence time tau_r based on the LAMMPS input script variables.
+    """
+    sigma = 1.0
+    wcaepsilon = 1.0    
+    friction = 50.0
+    Pe = 50.0
+    activity = 24 * wcaepsilon / (sigma * friction)  # activity = 24*epsilon/(sigma*friction)
+    T = activity * friction * sigma / (3 * Pe)  # temperature
+    Dr = 3 * T / (friction * sigma**2)  # rotational diffusion
+    taur = 1 / Dr  # persistence time
+    return taur
+
+# Main script
+if __name__ == "__main__":
+    folder = "dumps"  # Folder containing dump files
+    lx = 240.0  # Total system size in x-direction (2 * lx in your LAMMPS script)
+    rho_ld = 0.15  # Low-density phase value (from your context)
+    rho = 0.5  # Total system density (from your LAMMPS input)
+    # Compute taur
+    taur = compute_taur()
+
+    # Plot asymmetry vs time for a specific dump file
+    filename = os.path.join(folder, 'wet.241206.0213.eps.20.ly.120.dump')
+    if os.path.exists(filename):
+        t_over_taur, asymmetry_array, tau_c = plot_asymmetry_vs_time(filename, lx=lx, rho_ld=rho_ld, rho=rho, taur=taur)
+        print(f"Computed tau_r (persistence time): {taur}")
+        if tau_c is not None:
+            print(f"Estimated steady-state relaxation time tau_c: {tau_c:.2f} tau_r")
+        else:
+            print("Could not determine relaxation time tau_c.")
+    else:
+        print(f"File {filename} does not exist.")
+
+```
+
+# Slurm Jobs  
+
+- **slurm-10797760**: It took 20 minutes to compute 2,500,000 steps.  
+  → This means I need about 27 hours to compute 4 × 50,000,000 steps for four epsilons.  
+
+- **slurm-10802470**: Lost atoms in all epsilons.  
+
+- **slurm-10814916**: Cancelled, since I realised what was happening was:  
+  ABPs interacted to form clusters before the wall was even there.  
+  So, I commented out the following lines:  
+  ```  
+  # variable relaxation equal ceil(10*${taur}/${dt})  
+  # thermo_style custom step time v_tscaled pe density press  
+  # thermo ${snapshot} # output thermo data every snapshot steps  
+  # run ${relaxation}  
+  ```  
+
+- **slurm-10815371**: Lost atoms again in `eps=20` even when `dt = 0.00002*${taur}`.  
+
+- **slurm-10815451**: Lost atoms again for all epsilons even when `dt = 0.00001*${taur}`...  
+  I realised I didn’t include `timestep ${dt}`! Now it works perfectly.  
+
+- **slurm-10824222**: All of them were extremely successful! It took about 8 hours to compute 4 different potentials for 4 × 25,000,000 steps.  
+  Removed OMPI error by adding `export OMPI_MCA_mca_base_component_show_load_errors=0`.  

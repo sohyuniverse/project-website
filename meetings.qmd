@@ -6,6 +6,22 @@ reference-location: margin
 citation-location: margin
 ---
 
+## Week 1
+
+### 2024/9/16 Questions
+
+1. Do I need to upload content to Pure?  
+2. How do I claim my research allowance?  
+3. Are there any lectures recommended to audit?  
+4. Can I work from home until I recover?  
+
+## Week 2
+
+### 2024/9/24 My Research Allowance
+
+If I don’t spend £2000 per year, it will be lost.  
+So I can pay my IOP.  
+
 ## Week 3
 
 ### 2024/9/30 Things to discuss
@@ -36,11 +52,22 @@ citation-location: margin
 
 1. Overleaf template for the thesis, as I will start writing what I learn for either the introduction or theory sections. Found one: [Link](https://www.overleaf.com/latex/templates/university-of-bristol-thesis-template/kzqrfvyxxcdm)
 
+### 2024/10/7 After project meeting
+
+Case study 4 from the molecular simulation book, p. 98  
+And change to `fix nvt` command for LAMMPS  
+
+Maria’s thesis: read the first part  
+
 ## Week 5
 
 ### 2024/10/12 Making a presentation
 
 [241016 Overleaf Presentation for Project Meeting](https://www.overleaf.com/project/670f722528944d7d9b10009d)
+
+### 2024/10/16 Project meeting
+
+![Critical drying](images/meetings/241016 Critical Drying.jpg)
 
 ## Week 6
 
@@ -67,6 +94,10 @@ Please let me know if you would like me to send my CV. For now, I have attached 
 ### 2024/10/28 Things to discuss
 
 1. Ask about page 51 on *Molecular Dynamics Simulation* showing notes written on Zotero.
+
+### 2024/10/28 Project meeting
+
+![Programming](images/meetings/241028 Programming.jpg)
 
 ## Week 8
 
@@ -223,6 +254,14 @@ Dangerous builds = 0
 Total wall time: 0:21:16  
 ---------------------------------------------------------------  
 ```
+
+### 2024/12/02 Project meeting
+
+![Fluctuation Theorem 1](images/meetings/241202 Fluctuation Theorem 1.jpg)
+
+![Fluctuation Theorem 2](images/meetings/241202 Fluctuation Theorem 2.jpg)
+
+![Fluctuation Theorem 3](images/meetings/241202 Fluctuation Theorem 3.jpg)
 
 ### 2024/12/3 After project meeting  
 

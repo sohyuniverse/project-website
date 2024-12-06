@@ -14,6 +14,7 @@ website:
         contents: 
           - meetings.qmd
           - notes.qmd
+          - computations.qmd
       - section: "Archive (No updates since 2024/11/29)"
         contents:
           - diary.qmd
