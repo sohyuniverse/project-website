@@ -284,7 +284,7 @@ He mentioned this paper (which is cited by the SM paper) but couldn’t find any
 
 ### 2024/12/9 Things to discuss
 
-1. Molsim is not successful. Are there any active matter schools? (Should I ask them if I could be on the waiting list?)  
+1. Molsim is not successful. *Should I ask them if I could be on the waiting list?* Are there any active matter schools?  
 
 Other schools:  
 
@@ -303,3 +303,5 @@ Other schools:
 
 Last meeting this year: 16th Dec  
 First meeting next year: 6th Jan  
+
+3. I think something is a bit confusing in the paper. Within SM, $L_x$ is fixed as 240$\sigma$ as the total system size in the $x$-direction while varying $L_y$ to 30, 60, 100, 120, …, 180$\sigma$. However, within the letter, in Fig. 2, it says $L_x = 120\sigma$ as well as saying $L_y = 60\sigma$ on page 3 (search *in fact, the formation of bubbles that span the system parallel to the barrier was observed for systems of sizes up to $L_y = 60\sigma$*), which I believe should be written as $L_x = 240\sigma$ and $L_y = 120\sigma$, respectively, considering the context.  

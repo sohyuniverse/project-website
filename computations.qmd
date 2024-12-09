@@ -120,7 +120,7 @@ def load_profile(filename):
             try:
                 timestep = int(tokens[0])
                 chunk_count = int(tokens[1])
-                # total_count is ignored
+                # Total-count is ignored
             except ValueError:
                 # If parsing fails, skip this line
                 i += 1
@@ -219,7 +219,7 @@ def plot_asymmetry_vs_time(filename, lx, rho_ld, rho, taur):
     asymmetry_array = asymmetry_array[sorted_indices]
 
     # Calculate t / taur
-    dt = 0.00004 * taur  # From LAMMPS script
+    dt = 0.00004 * taur
     t_over_taur = timestep_array * dt / taur  # Simplifies to timestep_array * 0.00004
 
     # Extract epsilon_w from filename
@@ -233,51 +233,22 @@ def plot_asymmetry_vs_time(filename, lx, rho_ld, rho, taur):
         epsilon_w = 'Unknown'
         ly = 'Unknown'
 
-    # Compute the absolute rate of change of A(t)
-    delta_A = np.abs(np.diff(asymmetry_array))
-    delta_t = np.diff(t_over_taur)
-
-    # Avoid division by zero
-    delta_t[delta_t == 0] = np.nan
-
-    # Compute the rate of change per unit time
-    rate_of_change = delta_A / delta_t
-
-    # Define a threshold for the rate of change
-    # For example, 1% of the maximum A(t) per unit time
-    threshold = 0.1 * np.max(asymmetry_array)
-
-    # Identify when rate of change consistently remains below the threshold
-    window_size = max(1, len(rate_of_change) // 5)  # For example, 5% of data length
-    below_threshold = rate_of_change < threshold
-    # Use a rolling window to check for consecutive points below threshold
-    below_threshold_series = pd.Series(below_threshold)
-    rolling_sum = below_threshold_series.rolling(window=window_size, min_periods=1).sum()
-    # Find the index where the rolling sum equals the window size (steady state)
-    steady_indices = np.where(rolling_sum == window_size)[0]
-    if len(steady_indices) > 0:
-        tau_c_index = steady_indices[0] + 1  # +1 because rate_of_change is one element shorter
-        tau_c_timestep = timestep_array[tau_c_index]
-        tau_c = t_over_taur[tau_c_index]
-        # print(f"Estimated relaxation time tau_c: {tau_c:.2f} tau_r (Timestep: {tau_c_timestep})")
-    else:
-        # print("Could not determine relaxation time tau_c; rate of change did not consistently fall below threshold.")
-        tau_c = None
-
     # Plot A(t) vs t / taur
     plt.figure(figsize=(10, 6))
     plt.plot(t_over_taur, asymmetry_array, linestyle='-', label=r'$\mathcal{A}(t)$')
-    if tau_c is not None:
-        plt.axvline(x=tau_c, color='red', linestyle='--', label=r'Estimated $\tau_c$')
     plt.xlabel(r'$t / \tau_r$', fontsize=14)
     plt.ylabel(r'$\mathcal{A}(t)$', fontsize=14)
-    # plt.title(f'Asymmetry Order Parameter over Time\n($\epsilon_w$ = {epsilon_w}, $L_y$ = {ly})', fontsize=16)
+    plt.text(0.05, 0.95, f'$\\epsilon_w$ = {epsilon_w}, $L_y$ = {ly}',
+            transform=plt.gca().transAxes,
+            fontsize=12,
+            verticalalignment='top',
+            bbox=dict(facecolor='white', edgecolor='black', boxstyle='round', pad=0.5))
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
     plt.show()
 
-    return t_over_taur, asymmetry_array, tau_c
+    return t_over_taur, asymmetry_array
 
 def compute_taur():
     """
@@ -296,24 +267,20 @@ def compute_taur():
 # Main script
 if __name__ == "__main__":
     folder = "dumps"  # Folder containing dump files
-    lx = 240.0  # Total system size in x-direction (2 * lx in your LAMMPS script)
-    rho_ld = 0.15  # Low-density phase value (from your context)
-    rho = 0.5  # Total system density (from your LAMMPS input)
+    lx = 240.0  # Total system size in x-direction
+    rho_ld = 0.15  # Low-density MIPS value
+    rho = 0.5  # Total system density
     # Compute taur
     taur = compute_taur()
+    print(f"Computed tau_r (persistence time): {taur}")
 
-    # Plot asymmetry vs time for a specific dump file
-    filename = os.path.join(folder, 'wet.241206.0213.eps.20.ly.120.dump')
-    if os.path.exists(filename):
-        t_over_taur, asymmetry_array, tau_c = plot_asymmetry_vs_time(filename, lx=lx, rho_ld=rho_ld, rho=rho, taur=taur)
-        print(f"Computed tau_r (persistence time): {taur}")
-        if tau_c is not None:
-            print(f"Estimated steady-state relaxation time tau_c: {tau_c:.2f} tau_r")
-        else:
-            print("Could not determine relaxation time tau_c.")
-    else:
-        print(f"File {filename} does not exist.")
-
+    # Plot asymmetry vs time for multiple dump files
+    for eps in range(20, 51, 5):  # Iterate over eps values: 20, 25, 30, ..., 50
+        filename = os.path.join(folder, f'wet.241206.0213.eps.{eps}.ly.120.dump')
+        if os.path.exists(filename):
+            t_over_taur, asymmetry_array = plot_asymmetry_vs_time(filename, lx=lx, rho_ld=rho_ld, rho=rho, taur=taur)
+        # else:
+            # print(f"File {filename} does not exist.")
 ```
 
 # Slurm Jobs  
