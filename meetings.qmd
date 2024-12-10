@@ -121,6 +121,21 @@ I have chosen the active matter project because it's a framework that makes the 
 
 The significance of this new way of thinking is apparent to me. However, what is not clear is how observing a drying transition by active particles contributes to our understanding of drying phenomena. The reason I kept asking about real life examples is because I wasn't sure if our results (if we observe drying) would explain the experimental results that need to be explained. If there are such cases, this would be recognised as our correct understanding of drying phenomena, which leads us to think that moving out of equilibrium statistical physics is a more reasonable direction. Since we are dealing with such limited, specific systems where liquid and vapour coexist, which is already quite rare in nature, for this project meeting, I hoped to gain more understanding of the significance of our project.
 
+### 2024/11/8 Messages from Francesco
+
+> Hi Sohyun, given what you told me, you may want to have a look at the attached reference (see [@ten2011brownian]), which discusses in detail the properties of (isolated) ABPs.
+
+## Week 9
+
+### 2024/11/12 Teams chat
+
+> **Francesco:** Hi Sohyun, here are the draft notes on the Langevin equations that I mentioned earlier: they contain proofs for most of the key steps but also some minimal code to show you how the maths provides you with an algorithm to integrate such stochastic processes. The book is not complete (yet), but the relevant part on stochastic processes at equilibrium essentially is.  
+> [https://atooms.frama.io/handbook/html/contents/langevin.html](https://atooms.frama.io/handbook/html/contents/langevin.html)  
+
+> **Nigel:** [https://www.youtube.com/live/TmWuOZJlRE0](https://www.youtube.com/live/TmWuOZJlRE0)  
+
+> **Francesco:** I know the hexbugs; I wanted to buy some for teaching demonstrations (or open days...). I think the fact that they do not have an equation of state (differently from ABPs) makes things much more complicated, but it may be unavoidable (ABPs are indeed special).
+
 ## Week 10
 
 ### 2024/11/18 Things to discuss {#sec-week10-project-meeting}
@@ -130,6 +145,12 @@ The significance of this new way of thinking is apparent to me. However, what is
 2. I can also discuss the way I work, such as deriving mathematical equations and explaining how much beauty I perceive in those equations (see [2024/11/17 The Moment of My Realisation](#sec-equality-sign)).
 
 3. At the moment, I’m still exploring which project I would like to pursue for the next four years. When I was doing my MSci research, I felt so restless and excited, deeply engaged with all the required literature, like a sponge absorbing everything! Now, I don’t feel the same enthusiasm for my specific project. That said, I’m reading *Active Particles in Complex and Crowded Environments* (@bechinger2016active) because it appears to be a good review of this field, readable and offering insights into future directions.
+
+### 2024/11/20 Messages from Nigel
+
+> Stephen Clark told me about this:  
+> [https://chatgpt.com/g/g-NWXFRfEKx-paper-navigator](https://chatgpt.com/g/g-NWXFRfEKx-paper-navigator)  
+> Probably you've seen it already.
 
 ## Week 11
 
@@ -301,7 +322,67 @@ Other schools:
 
 2. Are both of you leaving in the winter? It seems everyone is leaving for holidays after around the 20th.  
 
+3. I think something is a bit confusing in the paper. Within SM, $L_x$ is fixed as 240$\sigma$ as the total system size in the $x$-direction while varying $L_y$ to 30, 60, 100, 120, …, 180$\sigma$. However, within the letter, in Fig. 2, it says $L_x = 120\sigma$ as well as saying $L_y = 60\sigma$ on page 3 (search *in fact, the formation of bubbles that span the system parallel to the barrier was observed for systems of sizes up to $L_y = 60\sigma$*), which I believe should be written as $L_x = 240\sigma$ and $L_y = 120\sigma$, respectively, considering the context.  
+
+### 2024/12/10 After project meeting
+
+#### Regarding 1
+
+He said the relevance to my project would be 2 > 1 > 3, but number 2 seems to only allow Dutch students to join, so I should email them to clarify. I can still ask to be on the waiting list for MolSim, but he said it's better to keep it aside for now.
+
+#### Regarding 2
+
 Last meeting this year: 16th Dec  
 First meeting next year: 6th Jan  
 
-3. I think something is a bit confusing in the paper. Within SM, $L_x$ is fixed as 240$\sigma$ as the total system size in the $x$-direction while varying $L_y$ to 30, 60, 100, 120, …, 180$\sigma$. However, within the letter, in Fig. 2, it says $L_x = 120\sigma$ as well as saying $L_y = 60\sigma$ on page 3 (search *in fact, the formation of bubbles that span the system parallel to the barrier was observed for systems of sizes up to $L_y = 60\sigma$*), which I believe should be written as $L_x = 240\sigma$ and $L_y = 120\sigma$, respectively, considering the context.  
+#### Regarding 3
+
+*Messages from Teams chat*
+
+> **Nigel:** Hi Francesco, Sohyun had a question which, if I understood correctly, is the following: Imagine I am close to the transition from the wet state to the partially wet state, i.e., in the regime where the asymmetry order parameter is changing rapidly. In this region, the slab can fluctuate between asymmetric and symmetric configurations with respect to the barrier (we are in 2D). How does one measure the asymmetry order parameter? I guess one simply does a simple average over a long trajectory; you don't confine the average to certain types of configurations. So the ability to transition from one state of symmetry to another in 2D is why the order parameter doesn't take on a large value in the partial wetting regime.  
+> Another question is what happens if there is an unbinding event during a trajectory, so the slab wanders off. Presumably, one shouldn't include such trajectories in the average because they are doing something unrelated to the wetting behaviour...?
+
+> **Francesco:**  
+> 1. Yes, the average is not confined to certain types of configurations. It is just a long-time average.  
+> 2. If I remember correctly, the unbinding was monitored with quick space-time plots of the density profiles. The unbinding trajectories were discarded. This also gave me a sense of where to stop with decreasing epsilon (if there are no stable trajectories, it is over).  
+
+**Messages from Francesco**
+
+> Hi Sohyun, I guess you must be right about the $L_x = 240$ in 2D, as it seems to be the case also in Fig. 4. I will need to dig out the original scripts, but it seems that I clearly have used these large systems! Obviously, larger systems dampen the fluctuations, but they also take a long time to simulate...
+
+> This looks good! I only use Ovito Basic (the license is so expensive), but you can use the Python package `Ovito` if you want to do more. We can talk about it (once I am done with the enormous amount of marking I have now!).
+
+> I have had a look at the stored data for 2D, and I found:  
+> - That the data plotted in the paper is averaged over many realisations (i.e. different seeds for the random number generator).  
+> - That in 2D for high epsilon, you can see some realisations jumping up and down roughly in the range that you showed me yesterday over 1000 $\tau_r$, while others jump less. In fact, this reminded me of the difficulties we had in assessing the order of the transition in 2D: I have apparently stored many space-time plots to check the trajectories and the intermittency, but we never truly got a single simple explanation. Comparing 2D with 3D, we realised that the interfaces in 2D have a characteristic dynamics, and all the bubble formation (that we essentially do not see in 3D) triggers these instabilities. We may want to sit down with Nigel and think about it carefully: on the one hand, the peculiar large fluctuations of the 2D dynamics seem to help with the formation of the gas in the vicinity of the barrier (good for drying), but it also introduces additional timescales (e.g. the slow relaxation that I show in the quench figures in the paper).
+
+*After this...*
+
+> **Francesco:** Well done for managing all these initial steps. They (sub2d.sh and sub3d.sh) look good to me. Obviously, you can have more than one job running, so for 3D, you could have submitted independent epsilon runs if you wanted.
+
+> **Me:** Oh! I wanted to be merciful to others, but I'll do it once it's very urgent!
+
+> **Francesco:** Exactly. Do not worry about the others; the system manages that.
+
+> **Me:** How many CPUs did you use in the past?
+
+> **Francesco:** I was on Catalyst, which was very different in its architecture... By the way, did you check that you always have 64 cores? I do not remember if BlueCrystal always has 64 cores per node. Blue Pebble, actually, right?
+
+> **Me:** Yes, Blue Pebble. If I copy the relevant information from Slurm:
+
+```
+Created orthogonal box = (-50 -12 -12) to (50 12 12)
+  16 by 2 by 2 MPI processor grid
+Created 43200 atoms
+  using lattice units in orthogonal box = (-50 -12 -12) to (50 12 12)
+  create_atoms CPU = 3.492 seconds
+ 
+Loop time of 20254.7 on 64 procs for 25000000 steps with 43200 atoms
+ 
+Performance: 533209.921 tau/day, 1234.282 timesteps/s, 53.321 Matom-step/s
+99.4% CPU use with 64 MPI tasks x no OpenMP threads
+```
+
+> **Francesco:** Well, this is LAMMPS; it does not truly tell what the machine has. Some CPUs can create virtual "processes" even if the physical cores are fewer. I typed:  
+> `sinfo --Node --long`  
+> It seems that most have 64. Some are 48, though. Hopefully, you always get the ones you request! I'll go back to my biophysics marking, but well done on progressing.
