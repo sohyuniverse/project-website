@@ -386,3 +386,11 @@ Performance: 533209.921 tau/day, 1234.282 timesteps/s, 53.321 Matom-step/s
 > **Francesco:** Well, this is LAMMPS; it does not truly tell what the machine has. Some CPUs can create virtual "processes" even if the physical cores are fewer. I typed:  
 > `sinfo --Node --long`  
 > It seems that most have 64. Some are 48, though. Hopefully, you always get the ones you request! I'll go back to my biophysics marking, but well done on progressing.
+
+## Week 14
+
+### 2024/12/9 Things to discuss
+
+1. I currently set low-density MIPS value to be 0.15 for 2D and 0.45 for 3D, but can you confirm if they are those?
+
+2. For 3D, the liquid slab already depins from the wall at $\epsilon_w = 2$ (also the time evolution of A(t) is fluctuating so hard, see the plot.), but in your paper, it happens when it's less than $\epsilon_w = 2$. Do you think it just happened to be this case since I only had one realisation?

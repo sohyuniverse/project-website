@@ -1765,5 +1765,38 @@
       "Project Notes",
       "Project Meetings"
     ]
+  },
+  {
+    "objectID": "meetings.html#week-14",
+    "href": "meetings.html#week-14",
+    "title": "Project Meetings",
+    "section": "Week 14",
+    "text": "Week 14\n\n2024/12/9 Things to discuss\n\nI currently set low-density MIPS value to be 0.15 for 2D and 0.45 for 3D, but can you confirm if they are those?\nFor 3D, the liquid slab already depins from the wall at \\(\\epsilon_w = 2\\) (also the time evolution of A(t) is fluctuating so hard, see the plot.), but in your paper, it happens when it’s less than \\(\\epsilon_w = 2\\). Do you think it just happened to be this case since I only had one realisation?",
+    "crumbs": [
+      "Project Notes",
+      "Project Meetings"
+    ]
+  },
+  {
+    "objectID": "computations.html#coordination-analysis",
+    "href": "computations.html#coordination-analysis",
+    "title": "Computations",
+    "section": "4.1 Coordination Analysis",
+    "text": "4.1 Coordination Analysis\nTo visualise a meaningful local density, I used the Coordination Number (the number of neighbours within a defined radius) as a property for each particle. The Coordination Analysis modifier in OVITO provides an approximate measure of local density by counting the neighbours within a specified cutoff radius. In my case, the neighbour cutoff radius, derived from the LAMMPS simulation setup, is r_{\\text{eff}} = 2^{1/6} \\cdot \\sigma + 0.3 = 1.422462, where 0.3 is the buffer added to the neighbour list with neighbor 0.3 bin.\nThe local density is calculated as: \n\\rho_{\\text{local}} = \\frac{\\text{Coordination Number}}{\\frac{4}{3} \\pi r_{\\text{eff}}^3},\n where r_{\\text{eff}} = 1.422462 is the effective cutoff radius. The denominator represents the volume of a sphere with radius r_{\\text{eff}}, corresponding to the local volume used for density estimation. In the Compute Property modifier, I used the following expression to calculate the density:\nCoordination / (4/3 * pi * 1.422462^3)\nThis output property was named Density, as it was subsequently used for colour coding in the visualisation.\n\n\n\nModifcations\n\n\nTo visualise the density, I applied a Color Coding modifier to map the density property to a colour scale. Regions with high coordination numbers (dense regions) are highlighted in brighter colours, while sparse regions appear dimmer.\nThe number of histogram bins in the Coordination Analysis was carefully chosen to balance resolution and computational efficiency. The number of bins is given by: \n\\text{Number of bins} = \\frac{\\text{Effective cutoff radius}}{\\text{Bin width}} = \\frac{1.422462}{0.002} \\approx 711.\n The choice of a bin width of 0.002 LJ units is grounded in standard practices for molecular dynamics simulations. While the specific value is not prescribed in the literature, texts like Frenkel and Smit’s Understanding Molecular Simulation, 3rd Edition, Chapter 5.1 emphasises the importance of sufficient resolution to capture sharp features in dense systems.\nA bin width of 0.002 represents 0.2% of the particle size, which is sufficient to resolve narrow features, such as the first peak in the RDF. This strikes a balance between resolution and computational cost. A smaller bin width, such as 0.001, would provide even higher resolution but require significantly more memory and computational resources (unless I’m studying very sharp features, such as crystalline structures). Conversely, a bin width of 0.005 would reduce the number of bins to approximately 284, which I found empirically oversmooths the RDF in dense systems like mine (\\rho = 0.75).",
+    "crumbs": [
+      "Project Notes",
+      "Computations"
+    ]
+  },
+  {
+    "objectID": "computations.html#coordination-analysis-1",
+    "href": "computations.html#coordination-analysis-1",
+    "title": "Computations",
+    "section": "5.1 Coordination Analysis",
+    "text": "5.1 Coordination Analysis\nTo visualise a meaningful local density, I used the Coordination Number (the number of neighbours within a defined radius) as a property for each particle. The Coordination Analysis modifier in OVITO provides an approximate measure of local density by counting the neighbours within a specified cutoff radius. In my case, the neighbour cutoff radius, derived from the LAMMPS simulation setup, is r_{\\text{eff}} = 2^{1/6} \\cdot \\sigma + 0.3 = 1.422462, where 0.3 is the buffer added to the neighbour list with neighbor 0.3 bin.\nThe local density is calculated as: \n\\rho_{\\text{local}} = \\frac{\\text{Coordination Number}}{\\frac{4}{3} \\pi r_{\\text{eff}}^3},\n where r_{\\text{eff}} = 1.422462 is the effective cutoff radius. The denominator represents the volume of a sphere with radius r_{\\text{eff}}, corresponding to the local volume used for density estimation. In the Compute Property modifier, I used the following expression to calculate the density:\nCoordination / (4/3 * pi * 1.422462^3)\nThis output property was named Density, as it was subsequently used for colour coding in the visualisation.\n\n\n\nModifcations\n\n\nTo visualise the density, I applied a Color Coding modifier to map the density property to a colour scale. Regions with high coordination numbers (dense regions) are highlighted in brighter colours, while sparse regions appear dimmer.\nThe number of histogram bins in the Coordination Analysis was carefully chosen to balance resolution and computational efficiency. The number of bins is given by: \n\\text{Number of bins} = \\frac{\\text{Effective cutoff radius}}{\\text{Bin width}} = \\frac{1.422462}{0.002} \\approx 711.\n The choice of a bin width of 0.002 LJ units is grounded in standard practices for molecular dynamics simulations. While the specific value is not prescribed in the literature, texts like Frenkel and Smit’s Understanding Molecular Simulation emphasize the importance of sufficient resolution to capture sharp features in dense systems.\nA bin width of 0.002 represents 0.2% of the particle size, which is sufficient to resolve narrow features, such as the first peak in the RDF. This strikes a balance between resolution and computational cost. A smaller bin width, such as 0.001, would provide even higher resolution but require significantly more memory and computational resources. Conversely, a bin width of 0.005 would reduce the number of bins to approximately 284, which I found empirically oversmooths the RDF in dense systems like mine (\\rho = 0.75).\n\nLet me know if there’s anything else you’d like to refine!",
+    "crumbs": [
+      "Project Notes",
+      "Computations"
+    ]
   }
 ]
