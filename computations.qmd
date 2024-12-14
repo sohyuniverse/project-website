@@ -1,19 +1,10 @@
 ---
 title: "Computations"
-author: "Sohyun Park"
-# date: 'Oct 4, 2024'
 toc: true
 number-sections: true
-highlight-style: pygments
 format: 
   html: 
     code-fold: true
-    html-math-method: katex
-  pdf: 
-    geometry: 
-      - top=30mm
-      - left=20mm
-  docx: default
 bibliography: 
   - references/From 14:08:24.bib
   - references/From 16:09:24.bib
@@ -324,7 +315,7 @@ if __name__ == "__main__":
   > I fixed it! I realised the random insertion was basically the Monte Carlo placement of atoms in the box, so I relaxed the constraint for the overlap parameter to be 0.8 rather than ${sigma} (which is 1), then added a short soft-potential relaxation before switching to WCA parameters, allowing atoms to move apart. Then I ran a short FIRE minimisation before proceeding with ABP dynamics, and boom! It all works out perfectly! It took about 6 hours of reading LAMMPS documentation to solve this issue, but it worked, so I was so happy to share!
 
   **Before**:
-  ```
+  ```bash
   # Define simulation box and atoms
   region box block -${lx} ${lx} -${ly} ${ly} -${lz} ${lz}
   create_box 1 box # allocate one atom type within this region
@@ -345,7 +336,7 @@ if __name__ == "__main__":
   ```
 
   **After**:
-  ```
+  ```bash
   # Define simulation box and atoms
   region box block -${lx} ${lx} -${ly} ${ly} -${lz} ${lz}
   create_box 1 box # allocate one atom type within this region
@@ -390,6 +381,130 @@ if __name__ == "__main__":
   fix 1 all abp ${T} ${friction} ${activity} ${seed} # implements fix_abp
   ```
 
+- **slurm-10848549, slurm-10852370, slurm-10864052**: Three jobs were submitted to produce trajectories for 3D simulations based on the following submission script:
+
+    ```bash
+    # Set fixed variables
+    SEED=1
+    RHO=0.75
+    LY=12 # half of Ly = 24σ (Ly = 16, 24, 32, 44σ), chosen to compare with Fig. 3(a)
+
+    # Create timestamp variables for date and time
+    DATE=$(date +%y%m%d)
+    TIME=$(date +%H%M)
+
+    # Run the LAMMPS job for EPS values incrementing by 2 from 2 to 38
+    #for EPS in {2..38..4}; do # slurm-10848549
+    #for EPS in {4..36..4}; do # slurm-10852370
+    for EPS in {28..36..4}; do # slurm-10864052
+    #for EPS in {28..36..4}; do
+    FILENAME="${DATE}.${TIME}.eps.${EPS}.ly.$((2*LY))"
+    echo "Running with EPS=$EPS"
+    mpirun --bind-to none -n 64 $HOME/mylammps/src/lmp_mpi -in abp3d-wet.lmp \
+        -var dumpfolder dumps \
+        -var dumpfile $FILENAME \
+        -var seed $SEED \
+        -var rho $RHO \
+        -var eps $EPS \
+        -var ly $LY
+    done
+    ```
+
+At some point, I had to stop the job associated with `slurm-10852370`, as it critically slowed down the computation when $\text{EPS} = 28$. This job, allocated to `NodeList=bp1-compute194`, was already slower than the job from `slurm-10848549`, which was allocated to `bp1-compute158`. The comparison is as follows:
+
+- **From `bp1-compute158` (average total wall time)**:  
+  $$
+  \frac{\text{(5:37:42 + 5:34:02 + 5:39:12 + 5:34:59 + 5:34:57 + 5:35:16 + 5:40:10 + 5:38:25 + 5:40:58 + 5:36:07)}}{10} = \text{5:37:10.8}
+  $$
+
+- **From `bp1-compute194` (average total wall time)**:  
+  $$
+  \frac{\text{(7:23:53 + 7:49:35 + 14:03:35 + 6:54:52 + 6:22:22 + 7:52:00)}}{6} = \text{8:24:22.8}
+  $$
+
+- **From `bp1-compute147` (average total wall time)** (running while writing the SLURM script for `slurm-10864052`):  
+  $$
+  \frac{\text{(5:35:53 + 5:36:36)}}{2} = \text{5:36:14.5}
+  $$
+
+If I compare the last two jobs, I can only spot one difference: the slow job used the `Backfill` scheduler, which prioritises filling gaps in resource allocation. This may affect performance compared to the `Main` scheduler used for the fast job.
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+```
+scontrol show job 10852370
+JobId=10852370 JobName=active_drying
+   UserId=sp13328(275000) GroupId=phys(1364) MCS_label=N/A
+   Priority=10489 Nice=0 Account=phys030385 QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=2-10:43:03 TimeLimit=14-00:00:00 TimeMin=N/A
+   SubmitTime=2024-12-10T15:41:44 EligibleTime=2024-12-10T15:41:44
+   AccrueTime=2024-12-10T15:41:44
+   StartTime=2024-12-10T16:04:36 EndTime=2024-12-24T16:04:36 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-12-10T16:04:36 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=bp1-login01:511021
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=bp1-compute194
+   BatchHost=bp1-compute194
+   NumNodes=1 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=64,mem=6400M,node=1,billing=64
+   AllocTRES=cpu=64,mem=6400M,node=1,billing=64
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=100M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/user/work/sp13328/active-drying/sub3d.sh
+   WorkDir=/user/work/sp13328/active-drying
+   StdErr=/user/work/sp13328/active-drying/slurms/slurm-10852370.out
+   StdIn=/dev/null
+   StdOut=/user/work/sp13328/active-drying/slurms/slurm-10852370.out
+   Power=
+   TresPerTask=cpu:1
+```
+:::
+
+::: {.column width="50%"}
+```
+scontrol show job 10864052
+JobId=10864052 JobName=active_drying
+   UserId=sp13328(275000) GroupId=phys(1364) MCS_label=N/A
+   Priority=10325 Nice=0 Account=phys030385 QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=16:01:00 TimeLimit=14-00:00:00 TimeMin=N/A
+   SubmitTime=2024-12-13T03:02:37 EligibleTime=2024-12-13T03:02:37
+   AccrueTime=2024-12-13T03:02:37
+   StartTime=2024-12-13T03:02:38 EndTime=2024-12-27T03:02:38 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-12-13T03:02:38 Scheduler=Main
+   Partition=compute AllocNode:Sid=bp1-login01:1994760
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=bp1-compute147
+   BatchHost=bp1-compute147
+   NumNodes=1 NumCPUs=64 NumTasks=64 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=64,mem=6400M,node=1,billing=64
+   AllocTRES=cpu=64,mem=6400M,node=1,billing=64
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=100M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/user/work/sp13328/active-drying/sub3d.sh
+   WorkDir=/user/work/sp13328/active-drying
+   StdErr=/user/work/sp13328/active-drying/slurms/slurm-10864052.out
+   StdIn=/dev/null
+   StdOut=/user/work/sp13328/active-drying/slurms/slurm-10864052.out
+   Power=
+   TresPerTask=cpu:1
+```
+:::
+::::
+
+---
+
+Next time, I should check `scontrol show node bp1-compute<NODE-ID>` when this happens again...
+
 # OVITO
 
 ## Coordination Analysis
@@ -406,7 +521,7 @@ Coordination / (4/3 * pi * 1.422462^3)
 ```
 This output property was named **Density**, as it was subsequently used for colour coding in the visualisation.
 
-![Modifcations](images/computations/Screenshot 2024-12-10 at 04.13.16-side.png)
+![Modifcations](images/computations/Screenshot 2024-12-11 at 18.21.27-side.png)
 
 To visualise the density, I applied a **Color Coding** modifier to map the density property to a colour scale. Regions with high coordination numbers (dense regions) are highlighted in brighter colours, while sparse regions appear dimmer. 
 

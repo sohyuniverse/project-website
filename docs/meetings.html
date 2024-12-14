@@ -329,14 +329,14 @@ window.Quarto = {
   <li><a href="#project-meeting-2" id="toc-project-meeting-2" class="nav-link" data-scroll-target="#project-meeting-2">2024/12/02 Project meeting</a></li>
   <li><a href="#after-project-meeting-1" id="toc-after-project-meeting-1" class="nav-link" data-scroll-target="#after-project-meeting-1">2024/12/3 After project meeting</a></li>
   </ul></li>
-  <li><a href="#week-13" id="toc-week-13" class="nav-link" data-scroll-target="#week-13">Week 13</a>
+  <li><a href="#assessment-period---tb1" id="toc-assessment-period---tb1" class="nav-link" data-scroll-target="#assessment-period---tb1">Assessment Period - TB1</a>
   <ul class="collapse">
   <li><a href="#things-to-discuss-3" id="toc-things-to-discuss-3" class="nav-link" data-scroll-target="#things-to-discuss-3">2024/12/9 Things to discuss</a></li>
   <li><a href="#after-project-meeting-2" id="toc-after-project-meeting-2" class="nav-link" data-scroll-target="#after-project-meeting-2">2024/12/10 After project meeting</a></li>
   </ul></li>
-  <li><a href="#week-14" id="toc-week-14" class="nav-link" data-scroll-target="#week-14">Week 14</a>
+  <li><a href="#winter-vacation-week-1" id="toc-winter-vacation-week-1" class="nav-link" data-scroll-target="#winter-vacation-week-1">Winter Vacation Week 1</a>
   <ul class="collapse">
-  <li><a href="#things-to-discuss-4" id="toc-things-to-discuss-4" class="nav-link" data-scroll-target="#things-to-discuss-4">2024/12/9 Things to discuss</a></li>
+  <li><a href="#things-to-discuss-4" id="toc-things-to-discuss-4" class="nav-link" data-scroll-target="#things-to-discuss-4">2024/12/16 Things to discuss</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -687,8 +687,8 @@ He mentioned this paper (which is cited by the SM paper) but couldn’t find any
 </ol>
 </section>
 </section>
-<section id="week-13" class="level2">
-<h2 class="anchored" data-anchor-id="week-13">Week 13</h2>
+<section id="assessment-period---tb1" class="level2">
+<h2 class="anchored" data-anchor-id="assessment-period---tb1">Assessment Period - TB1</h2>
 <section id="things-to-discuss-3" class="level3">
 <h3 class="anchored" data-anchor-id="things-to-discuss-3">2024/12/9 Things to discuss</h3>
 <ol type="1">
@@ -728,7 +728,10 @@ First meeting next year: 6th Jan</p>
 </section>
 <section id="regarding-3" class="level4">
 <h4 class="anchored" data-anchor-id="regarding-3">Regarding 3</h4>
-<p><em>Messages from Teams chat</em></p>
+<details>
+<summary>
+Messages from Teams chat
+</summary>
 <blockquote class="blockquote">
 <p><strong>Nigel:</strong> Hi Francesco, Sohyun had a question which, if I understood correctly, is the following: Imagine I am close to the transition from the wet state to the partially wet state, i.e., in the regime where the asymmetry order parameter is changing rapidly. In this region, the slab can fluctuate between asymmetric and symmetric configurations with respect to the barrier (we are in 2D). How does one measure the asymmetry order parameter? I guess one simply does a simple average over a long trajectory; you don’t confine the average to certain types of configurations. So the ability to transition from one state of symmetry to another in 2D is why the order parameter doesn’t take on a large value in the partial wetting regime.<br>
 Another question is what happens if there is an unbinding event during a trajectory, so the slab wanders off. Presumably, one shouldn’t include such trajectories in the average because they are doing something unrelated to the wetting behaviour…?</p>
@@ -784,16 +787,21 @@ Performance: 533209.921 tau/day, 1234.282 timesteps/s, 53.321 Matom-step/s
 <code>sinfo --Node --long</code><br>
 It seems that most have 64. Some are 48, though. Hopefully, you always get the ones you request! I’ll go back to my biophysics marking, but well done on progressing.</p>
 </blockquote>
+</details>
 </section>
 </section>
 </section>
-<section id="week-14" class="level2">
-<h2 class="anchored" data-anchor-id="week-14">Week 14</h2>
+<section id="winter-vacation-week-1" class="level2">
+<h2 class="anchored" data-anchor-id="winter-vacation-week-1">Winter Vacation Week 1</h2>
 <section id="things-to-discuss-4" class="level3">
-<h3 class="anchored" data-anchor-id="things-to-discuss-4">2024/12/9 Things to discuss</h3>
+<h3 class="anchored" data-anchor-id="things-to-discuss-4">2024/12/16 Things to discuss</h3>
 <ol type="1">
-<li><p>I currently set low-density MIPS value to be 0.15 for 2D and 0.45 for 3D, but can you confirm if they are those?</p></li>
-<li><p>For 3D, the liquid slab already depins from the wall at <span class="math inline">\(\epsilon_w = 2\)</span> (also the time evolution of A(t) is fluctuating so hard, see the plot.), but in your paper, it happens when it’s less than <span class="math inline">\(\epsilon_w = 2\)</span>. Do you think it just happened to be this case since I only had one realisation?</p></li>
+<li><p>I currently set the low-density MIPS value to 0.15 for 2D and 0.45 for 3D. Can you confirm if these are correct?</p></li>
+<li><p>For 3D, the liquid slab already unbinds from the wall at <span class="math inline">\(\epsilon_w = 2\)</span> (also, the time evolution of <span class="math inline">\(\mathcal{A}(t)\)</span> fluctuates so strongly; see the plot). However, in your paper, it happens when it is less than <span class="math inline">\(\epsilon_w = 1\)</span>. Do you think this just happened to be the case since I only had one realisation at a specific <span class="math inline">\(L_y = 24\sigma\)</span>?</p></li>
+<li><p>From the time evolution of <span class="math inline">\(\mathcal{A}(t)\)</span> plot for 3D, I see that it starts to fluctuate strongly near <span class="math inline">\(\epsilon_w = 18\)</span>. Was this a clue about the approximate wetting point in the paper?</p></li>
+<li><p>Until the next meeting (2025/1/6), I plan to use my time to study non-equilibrium statistical mechanics and stochastic processes for three weeks.</p></li>
+<li><p>Do we have any empirical data that might allow me to infer the mechanisms for drying?</p></li>
+<li><p>When do you normally have annual leave in summer? My mum said she needs to know at least half a year in advance so she can buy plane tickets with her mileage.</p></li>
 </ol>
 
 

@@ -301,7 +301,7 @@ He mentioned this paper (which is cited by the SM paper) but couldn’t find any
 
 7. When they said the system becomes unstable in their paper, they meant the droplet detaches from the barrier, not the simulation. He said a ‘lost atoms’ error can’t really happen with small $\epsilon$ unless it’s a very large $\epsilon$. He said I should reduce $dt$.  
 
-## Week 13
+## Assessment Period - TB1
 
 ### 2024/12/9 Things to discuss
 
@@ -337,7 +337,8 @@ First meeting next year: 6th Jan
 
 #### Regarding 3
 
-*Messages from Teams chat*
+<details>
+<summary>Messages from Teams chat</summary>
 
 > **Nigel:** Hi Francesco, Sohyun had a question which, if I understood correctly, is the following: Imagine I am close to the transition from the wet state to the partially wet state, i.e., in the regime where the asymmetry order parameter is changing rapidly. In this region, the slab can fluctuate between asymmetric and symmetric configurations with respect to the barrier (we are in 2D). How does one measure the asymmetry order parameter? I guess one simply does a simple average over a long trajectory; you don't confine the average to certain types of configurations. So the ability to transition from one state of symmetry to another in 2D is why the order parameter doesn't take on a large value in the partial wetting regime.  
 > Another question is what happens if there is an unbinding event during a trajectory, so the slab wanders off. Presumably, one shouldn't include such trajectories in the average because they are doing something unrelated to the wetting behaviour...?
@@ -387,10 +388,20 @@ Performance: 533209.921 tau/day, 1234.282 timesteps/s, 53.321 Matom-step/s
 > `sinfo --Node --long`  
 > It seems that most have 64. Some are 48, though. Hopefully, you always get the ones you request! I'll go back to my biophysics marking, but well done on progressing.
 
-## Week 14
+</details>
 
-### 2024/12/9 Things to discuss
+## Winter Vacation Week 1
 
-1. I currently set low-density MIPS value to be 0.15 for 2D and 0.45 for 3D, but can you confirm if they are those?
+### 2024/12/16 Things to discuss
 
-2. For 3D, the liquid slab already depins from the wall at $\epsilon_w = 2$ (also the time evolution of A(t) is fluctuating so hard, see the plot.), but in your paper, it happens when it's less than $\epsilon_w = 2$. Do you think it just happened to be this case since I only had one realisation?
+1. I currently set the low-density MIPS value to 0.15 for 2D and 0.45 for 3D. Can you confirm if these are correct?
+
+2. For 3D, the liquid slab already unbinds from the wall at $\epsilon_w = 2$ (also, the time evolution of $\mathcal{A}(t)$ fluctuates so strongly; see the plot). However, in your paper, it happens when it is less than $\epsilon_w = 1$. Do you think this just happened to be the case since I only had one realisation at a specific $L_y = 24\sigma$?
+
+3. From the time evolution of $\mathcal{A}(t)$ plot for 3D, I see that it starts to fluctuate strongly near $\epsilon_w = 18$. Was this a clue about the approximate wetting point in the paper?
+
+4. Until the next meeting (2025/1/6), I plan to use my time to study non-equilibrium statistical mechanics and stochastic processes for three weeks.
+
+5. Do we have any empirical data that might allow me to infer the mechanisms for drying?
+
+6. When do you normally have annual leave in summer? My mum said she needs to know at least half a year in advance so she can buy plane tickets with her mileage.
