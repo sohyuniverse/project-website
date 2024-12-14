@@ -69,26 +69,6 @@ Maria’s thesis: read the first part
 
 ![Critical drying](images/meetings/241016 Critical Drying.jpg)
 
-## Week 6
-
-### 2024/10/23 Molsim-2025 School Application
-
-[MolSim-2025](https://www.cecam.org/workshop-details/molsim-2025-1335) is 2-week school that offers a program focusing on basic and advanced molecular simulation methods. It targets PhD candidates and postdoctoral researchers who want to understand and apply these methods to study topics in physics, chemistry or biology. The program has an integrated and balanced structure of lectures and hands-on exercises. It offers a recap of the basic theory relevant for molecular simulation, followed by a thorough covering of basic and advanced simulation techniques. All techniques will be accompanied by illustrative examples of present day research.
-
-#### My application (submitted on 241023)
-
-I am a PhD student in theoretical and computational physics at the University of Bristol, specialising in the simulation of surface phase transitions with a focus on active matter using high-performance computing. My supervisors are Nigel Wilding, who has strongly recommended this winter school and has done substantial work on developing efficient algorithms for MC simulations [1-4], and Francesco Turci, who specialises in disordered systems. My initial project involves investigating drying (surface) phase transitions using Monte Carlo and molecular dynamics techniques, introducing an additional parameter to how they approached the problem in PRL 2021 [5].
-
-I am highly motivated to join this winter school since it is my first year of PhD studies and also my first time learning how to conduct molecular simulations. I am currently reading the book *Understanding Molecular Simulation* to grasp the methodologies, and I was very excited by the fact that the authors of this book will be present for the lectures. Even though this book is enjoyable to read, many concepts within it are quite new to me, so it will be a great opportunity to deepen my knowledge in this area and meet colleagues with similar interests. The latter reason is also very important since I am the only PhD student learning models of active particles for surface phase transitions in my department.
-
-Please let me know if you would like me to send my CV. For now, I have attached my personal statement, which I submitted for my PhD application, showing my dynamic and multifaceted experience. I hope this wonderful opportunity will materialise.
-
-- [1] N.B. Wilding, A.D. Bruce, Density fluctuations and field mixing in the critical fluid, J. Phys. Condens. Matter 4 (12) (1992) 3087–3108
-- [2] N.B. Wilding, Critical point and coexistence curve properties of the Lennard-Jones fluid: a finite-size scaling study, Phys. Rev. E 52 (1) (1995) 602–611
-- [3] A.D. Bruce, N.B. Wilding, G.J. Ackland, Free energy of crystalline solids: a lattice-switch Monte Carlo method, Phys. Rev. Lett. 79 (16) (1997) 3002–3005
-- [4] S. Consta, N.B. Wilding, D. Frenkel, Z. Alexandrowicz, Recoil growth: an efficient simulation method for multi-polymer systems, J. Chem. Phys. 110 (6) (1999) 3220–3228
-- [5] F. Turci, N.B. Wilding, Phase separation and multibody effects in three-dimensional active Brownian particles, Phys. Rev. Lett. 126.3 (2021) 038002.
-
 ## Week 7
 
 ### 2024/10/28 Things to discuss
