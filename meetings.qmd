@@ -385,3 +385,21 @@ Performance: 533209.921 tau/day, 1234.282 timesteps/s, 53.321 Matom-step/s
 5. Do we have any empirical data that might allow me to infer the mechanisms for drying?
 
 6. When do you normally have annual leave in summer? My mum said she needs to know at least half a year in advance so she can buy plane tickets with her mileage.
+
+## Week 14
+
+### 2025/01/21 Things to Discuss
+
+1. I've been investigating active drying. To implement a physical dipole-dipole interaction between fluid dipoles and wall dipoles, I've tried creating custom code for `pair style` that loops over fluid-wall pairs. However, I kept running into segmentation faults (e.g., `Signal: Segmentation fault (11)`) and, in the end, could not handle domain decomposition for parallel runs, so I gave up. Instead, I introduced an effective **one-body** torque, where each fluid particle entering the region is oriented outward by a cross product, $\mathbf{\mu}_i \times \hat{\mathbf{n}}$, by varying the strength of the torque. Varying that quantity also didn't 'dry off' the surface. Francesco mentioned the quadratic potential from the surface tension talk, but I wasn't particularly inspired to pursue it.
+
+2. Instead, I started working on the critical Casimir effect. For background reading, I consulted the following:
+
+   - Wikipedia on the Casimir effect.
+   - A resource I found very helpful: [The Casimir Effect: A Force from Nothing](https://physicsworld.com/a/the-casimir-effect-a-force-from-nothing/).
+   - "Casimir Effect in Active Matter System" by D. Ray, C. Reichhardt, and C. J. Olson Reichhardt. Their work is not very exciting since it's a dilute system, and it's intuitive that increasing the density of particles within the plates would put more pressure on the plates.
+
+   Additionally, I skimmed through other papers. It became clear that the **critical** Casimir effect in active systems has not been investigated yet (at least, not that I know of). So, I designed a simulation:
+
+   - A box of size $120 \times 60 \times 60 \, \sigma^3$, following the geometry from the paper that inspired this work.
+   - Separated one centred cosine potential into two separate ones, spreading on the $y$-$z$ plane, with the $z$-direction at the edge for easier visualisation (I'll draw this on the blackboard).
+   - I read your 2021 paper on 3D active Brownian bulk criticality and used $\rho = 0.94$ and $\text{Pe} = 36$. Drastically increasing the density (from 0.75 to 0.94) resulted in lost atoms errors, so I reduced the time step scale from 0.00004 to 0.00002. Comparing that phase diagram from the paper with the [temperature-density phase diagram of water](https://physicsworld.com/a/the-casimir-effect-a-force-from-nothing/) was particularly inspiring. (since Pe is like the inverse temperature).

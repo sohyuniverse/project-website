@@ -328,6 +328,10 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#things-to-discuss-4" id="toc-things-to-discuss-4" class="nav-link" data-scroll-target="#things-to-discuss-4">2024/12/16 Things to discuss</a></li>
   </ul></li>
+  <li><a href="#week-14" id="toc-week-14" class="nav-link" data-scroll-target="#week-14">Week 14</a>
+  <ul class="collapse">
+  <li><a href="#things-to-discuss-5" id="toc-things-to-discuss-5" class="nav-link" data-scroll-target="#things-to-discuss-5">2025/01/21 Things to Discuss</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -772,6 +776,27 @@ It seems that most have 64. Some are 48, though. Hopefully, you always get the o
 <li><p>Until the next meeting (2025/1/6), I plan to use my time to study non-equilibrium statistical mechanics and stochastic processes for three weeks.</p></li>
 <li><p>Do we have any empirical data that might allow me to infer the mechanisms for drying?</p></li>
 <li><p>When do you normally have annual leave in summer? My mum said she needs to know at least half a year in advance so she can buy plane tickets with her mileage.</p></li>
+</ol>
+</section>
+</section>
+<section id="week-14" class="level2">
+<h2 class="anchored" data-anchor-id="week-14">Week 14</h2>
+<section id="things-to-discuss-5" class="level3">
+<h3 class="anchored" data-anchor-id="things-to-discuss-5">2025/01/21 Things to Discuss</h3>
+<ol type="1">
+<li><p>I’ve been investigating active drying. To implement a physical dipole-dipole interaction between fluid dipoles and wall dipoles, I’ve tried creating custom code for <code>pair style</code> that loops over fluid-wall pairs. However, I kept running into segmentation faults (e.g., <code>Signal: Segmentation fault (11)</code>) and, in the end, could not handle domain decomposition for parallel runs, so I gave up. Instead, I introduced an effective <strong>one-body</strong> torque, where each fluid particle entering the region is oriented outward by a cross product, <span class="math inline">\(\mathbf{\mu}_i \times \hat{\mathbf{n}}\)</span>, by varying the strength of the torque. Varying that quantity also didn’t ‘dry off’ the surface. Francesco mentioned the quadratic potential from the surface tension talk, but I wasn’t particularly inspired to pursue it.</p></li>
+<li><p>Instead, I started working on the critical Casimir effect. For background reading, I consulted the following:</p>
+<ul>
+<li>Wikipedia on the Casimir effect.</li>
+<li>A resource I found very helpful: <a href="https://physicsworld.com/a/the-casimir-effect-a-force-from-nothing/">The Casimir Effect: A Force from Nothing</a>.</li>
+<li>“Casimir Effect in Active Matter System” by D. Ray, C. Reichhardt, and C. J. Olson Reichhardt. Their work is not very exciting since it’s a dilute system, and it’s intuitive that increasing the density of particles within the plates would put more pressure on the plates.</li>
+</ul>
+<p>Additionally, I skimmed through other papers. It became clear that the <strong>critical</strong> Casimir effect in active systems has not been investigated yet (at least, not that I know of). So, I designed a simulation:</p>
+<ul>
+<li>A box of size <span class="math inline">\(120 \times 60 \times 60 \, \sigma^3\)</span>, following the geometry from the paper that inspired this work.</li>
+<li>Separated one centred cosine potential into two separate ones, spreading on the <span class="math inline">\(y\)</span>-<span class="math inline">\(z\)</span> plane, with the <span class="math inline">\(z\)</span>-direction at the edge for easier visualisation (I’ll draw this on the blackboard).</li>
+<li>I read your 2021 paper on 3D active Brownian bulk criticality and used <span class="math inline">\(\rho = 0.94\)</span> and <span class="math inline">\(\text{Pe} = 36\)</span>. Drastically increasing the density (from 0.75 to 0.94) resulted in lost atoms errors, so I reduced the time step scale from 0.00004 to 0.00002. Comparing that phase diagram from the paper with the <a href="https://physicsworld.com/a/the-casimir-effect-a-force-from-nothing/">temperature-density phase diagram of water</a> was particularly inspiring. (since Pe is like the inverse temperature).</li>
+</ul></li>
 </ol>
 
 
