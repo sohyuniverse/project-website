@@ -319,7 +319,7 @@ Here are the scores for my third-year and fourth-year units:
 - **2.5**: Solid State Physics / Applied Materials Physics  
 - **2**: Biophysics  
 
-Based on this, how did I end up choosing my PhD project in active matter? There were complex reasons for choosing it, as I outlined in [2024/11/15 - Proliferating Active Matter](notes.qmd#sec-proliferating-active-matter), but honestly, I should have thought it through more carefully (even though, at the time, I believed I was being very thorough).
+Based on this, how did I end up choosing my PhD project in active matter? There were complex reasons for choosing it, as I outlined in [2024/11/15 - Proliferating Active Matter](reading.qmd#sec-proliferating-active-matter), but honestly, I should have thought it through more carefully (even though, at the time, I believed I was being very thorough).
 
 So, what am I really interested in? It would be the foundations of modern physics: fairly mathematical work, possibly with computational approaches. However, I’m also deeply interested in neuroscience. I thought I would find a connection by pursuing active matter projects, as studying the brain is a subset of biology. Now, I’m not so sure...
 

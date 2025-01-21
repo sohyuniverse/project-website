@@ -120,9 +120,9 @@ The significance of this new way of thinking is apparent to me. However, what is
 
 ### 2024/11/18 Things to discuss {#sec-week10-project-meeting}
 
-1. I can mention that I’m not particularly interested in surface phase transitions unless there is a link to my vape (see [2024/11/14 - Skimming through papers](notes.qmd#sec-skimming-papers)).
+1. I can mention that I’m not particularly interested in surface phase transitions unless there is a link to my vape.
 
-2. I can also discuss the way I work, such as deriving mathematical equations and explaining how much beauty I perceive in those equations (see [2024/11/17 The Moment of My Realisation](#sec-equality-sign)).
+2. I can also discuss the way I work, such as deriving mathematical equations and explaining how much beauty I perceive in those equations (see [2024/11/17 The Moment of My Realisation](notes.qmd#sec-equality-sign)).
 
 3. At the moment, I’m still exploring which project I would like to pursue for the next four years. When I was doing my MSci research, I felt so restless and excited, deeply engaged with all the required literature, like a sponge absorbing everything! Now, I don’t feel the same enthusiasm for my specific project. That said, I’m reading *Active Particles in Complex and Crowded Environments* (@bechinger2016active) because it appears to be a good review of this field, readable and offering insights into future directions.
 
@@ -390,16 +390,20 @@ Performance: 533209.921 tau/day, 1234.282 timesteps/s, 53.321 Matom-step/s
 
 ### 2025/01/21 Things to Discuss
 
-1. I've been investigating active drying. To implement a physical dipole-dipole interaction between fluid dipoles and wall dipoles, I've tried creating custom code for `pair style` that loops over fluid-wall pairs. However, I kept running into segmentation faults (e.g., `Signal: Segmentation fault (11)`) and, in the end, could not handle domain decomposition for parallel runs, so I gave up. Instead, I introduced an effective **one-body** torque, where each fluid particle entering the region is oriented outward by a cross product, $\mathbf{\mu}_i \times \hat{\mathbf{n}}$, by varying the strength of the torque. Varying that quantity also didn't 'dry off' the surface. Francesco mentioned the quadratic potential from the surface tension talk, but I wasn't particularly inspired to pursue it.
+1. I've been investigating active drying. To implement a physical dipole-dipole interaction between fluid dipoles and wall dipoles, I've tried creating custom code for `pair style` that loops over fluid-wall pairs. However, I kept running into segmentation faults (e.g., `Signal: Segmentation fault (11)`) and, in the end, could not handle domain decomposition for parallel runs, so I gave up. 
+
+   Instead, I introduced an effective **one-body** torque, where each fluid particle entering the region is oriented outward by a cross product, $\mathbf{\mu}_i \times \hat{\mathbf{n}}$, by varying the strength of the torque. Varying that quantity also didn't 'dry off' the surface. Francesco mentioned the quadratic potential from the surface tension talk, but I wasn't particularly inspired to pursue it, because, in their paper, they cited this paper [The statistical mechanics of wetting](https://www.tandfonline.com/doi/abs/10.1080/00268977700102021?casa_token=9HhRSJTnK5oAAAAA:9-JAlA4p5Pr6Lid09j2jfVeqF_qHmnDp09kMepXrO--vC_KkWjPDwGH695FQ-WWh6wyZLgRYs4Yd), but that paper also didn't specify the liquid-solid interaction potential.
 
 2. Instead, I started working on the critical Casimir effect. For background reading, I consulted the following:
 
    - Wikipedia on the Casimir effect.
    - A resource I found very helpful: [The Casimir Effect: A Force from Nothing](https://physicsworld.com/a/the-casimir-effect-a-force-from-nothing/).
-   - "Casimir Effect in Active Matter System" by D. Ray, C. Reichhardt, and C. J. Olson Reichhardt. Their work is not very exciting since it's a dilute system, and it's intuitive that increasing the density of particles within the plates would put more pressure on the plates.
+   - "Casimir Effect in Active Matter System" by D. Ray, C. Reichhardt, and C. J. Olson Reichhardt. Their work is not very exciting since it's a dilute system, and it's intuitive that increasing the density of particles within the plates would put more outward pressure on the plates.
 
-   Additionally, I skimmed through other papers. It became clear that the **critical** Casimir effect in active systems has not been investigated yet (at least, not that I know of). So, I designed a simulation:
+   Additionally, I skimmed through some other papers. It became clear that the **critical** Casimir effect in **active** systems has not been investigated yet (at least, not that I know of). So, I designed a simulation:
 
-   - A box of size $120 \times 60 \times 60 \, \sigma^3$, following the geometry from the paper that inspired this work.
-   - Separated one centred cosine potential into two separate ones, spreading on the $y$-$z$ plane, with the $z$-direction at the edge for easier visualisation (I'll draw this on the blackboard).
-   - I read your 2021 paper on 3D active Brownian bulk criticality and used $\rho = 0.94$ and $\text{Pe} = 36$. Drastically increasing the density (from 0.75 to 0.94) resulted in lost atoms errors, so I reduced the time step scale from 0.00004 to 0.00002. Comparing that phase diagram from the paper with the [temperature-density phase diagram of water](https://physicsworld.com/a/the-casimir-effect-a-force-from-nothing/) was particularly inspiring. (since Pe is like the inverse temperature).
+   - A box of size $120 \times 60 \times 60 \, \sigma^3$, following the geometry from the paper above that inspired this work. Later, I changed to $60 \times 60 \times 60 \, \sigma^3$ since it took about 19 hours to simulate 100 $t / \tau_r$, as I initially planned to average over at least 1000 $t / \tau_r$. 
+   - Separated one centred cosine potential into two separate ones, spreading on the $y$-$z$ plane, with the $z$-direction at the edge for easier visualisation (I'll draw this on the blackboard). $d = 15$ corresponds to having an equal amount of distance as $30 \sigma$ between the plates, considering the periodic boundary conditions. I additionally ran $d = 10$ and $d = 20$, which would prepare the distance between the closest plates as $20 \sigma$, just to check what sort of effects the periodic boundary conditions along the $x$ direction would have on the systems. I'm waiting for the simulation results to be released.
+   - I read your 2021 paper on 3D active Brownian bulk criticality and used $\rho = 0.94$ and $\text{Pe} = 36$. Comparing that phase diagram from the paper with the [temperature-density phase diagram of water](https://physicsworld.com/a/the-casimir-effect-a-force-from-nothing/) was particularly inspiring (since Pe is like the inverse temperature). Drastically increasing the density (from 0.75 to 0.94) resulted in lost atoms errors, so I changed the minimisation routine to the Polak-Ribiere version of conjugate gradient.
+
+3. Reading [The Casimir effect in critical systems by Michael Krech](https://archive.org/details/casimireffectinc0000krec/page/6/mode/2up?view=theater) and "Critical casimir effect: Exact results" by DM Dantchev, S Dietrich.

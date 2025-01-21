@@ -16,7 +16,7 @@ Also, for the next project meeting, I think it’s probably worthwhile to discus
  
 1. Right now, I’m focusing on reading about molecular dynamics simulation. However, I’ve been told many times that a lot of the techniques discussed in this book are not related to active matter projects. Do you think it would be better to start reading the references on Zotero instead? There is a lot of material (one book, 21 papers, online resources, as well as code) being presented to me, but it’s not really clear to me what the priority is.
 
-2. There were things that I wanted to discuss last week (see [2024/11/2 Things to discuss](notes.qmd#sec-week8-project-meeting) and [2024/11/4 Diary](notes.qmd##sec-week8-diary)), but since not everyone could be present, it was postponed. The notes I wrote on 4 November reflect my feelings about our project and my progress in the PhD. I wonder if these points would be better discussed in the next project meeting before starting the book club meeting.
+2. There were things that I wanted to discuss last week (see [2024/11/2 Things to discuss](meetings.qmd#sec-week8-project-meeting) and [2024/11/4 Diary](notes.qmd#sec-week8-diary)), but since not everyone could be present, it was postponed. The notes I wrote on 4 November reflect my feelings about our project and my progress in the PhD. I wonder if these points would be better discussed in the next project meeting before starting the book club meeting.
 
 ## 2024/11/13 Email received from Nigel
 
@@ -74,7 +74,7 @@ Here are the scores for my third-year and fourth-year units:
 - **2.5**: Solid State Physics / Applied Materials Physics  
 - **2**: Biophysics  
 
-Based on this, how did I end up choosing my PhD project in active matter? There were complex reasons for choosing it, as I outlined in [2024/11/14 - Skimming through papers](notes.qmd#sec-skimming-papers), but honestly, I should have thought it through more carefully (even though, at the time, I believed I was being very thorough).
+Based on this, how did I end up choosing my PhD project in active matter? There were complex reasons for choosing it, as I outlined in [2024/11/15 - Proliferating Active Matter](reading.qmd#sec-proliferating-active-matter), but honestly, I should have thought it through more carefully (even though, at the time, I believed I was being very thorough).
 
 So, what am I really interested in? It would be the foundations of modern physics—fairly mathematical work, possibly with computational approaches. However, I’m also deeply interested in neuroscience. I thought I would find a connection by pursuing active matter projects, as studying the brain is a subset of biology. Now, I’m not so sure...
 
@@ -163,7 +163,7 @@ If I think about my current project as spontaneous symmetry breaking, it is kind
 
 ## 2024/11/19 Email received from Nigel
 
-After having a project meeting discussing these points: [2024/11/18 Weekly Project Meeting](notes.qmd#sec-week10-project-meeting)
+After having a project meeting discussing these points: [2024/11/18 Weekly Project Meeting](meetings.qmd#sec-week10-project-meeting)
 
 ---
 
